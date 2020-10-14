@@ -1509,6 +1509,304 @@ literal "false"
 这些内容似乎本应收入上一章.
 \end_layout
 
+\begin_layout Exercise
+设
+\begin_inset Formula $A$
+\end_inset
+
+为非空数集, 并且
+\begin_inset Formula $\eta$
+\end_inset
+
+是实数.
+ 以书中定义为准, 指出下列定义方式的错误:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+若对任意
+\begin_inset Formula $x\in A$
+\end_inset
+
+都可以找到实数
+\begin_inset Formula $M$
+\end_inset
+
+, 使得
+\begin_inset Formula $x\leqslant M$
+\end_inset
+
+, 就说
+\begin_inset Formula $M$
+\end_inset
+
+是
+\begin_inset Formula $A$
+\end_inset
+
+的上界.
+\end_layout
+
+\begin_layout Enumerate
+若对任意
+\begin_inset Formula $x\in A$
+\end_inset
+
+总成立
+\begin_inset Formula $x\leqslant\eta$
+\end_inset
+
+, 则称
+\begin_inset Formula $\eta$
+\end_inset
+
+是
+\begin_inset Formula $A$
+\end_inset
+
+的上确界.
+\end_layout
+
+\begin_layout Enumerate
+若
+\begin_inset Formula $\eta\in A$
+\end_inset
+
+, 且对任意
+\begin_inset Formula $x\in A$
+\end_inset
+
+都有
+\begin_inset Formula $x\leqslant\eta$
+\end_inset
+
+, 则称
+\begin_inset Formula $\eta$
+\end_inset
+
+是
+\begin_inset Formula $A$
+\end_inset
+
+的上确界.
+\end_layout
+
+\begin_layout Enumerate
+如果对任意
+\begin_inset Formula $x\in A$
+\end_inset
+
+而言, 总存在
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 使得
+\begin_inset Formula $x>\eta-\varepsilon$
+\end_inset
+
+且
+\begin_inset Formula $x\leqslant\eta+\varepsilon$
+\end_inset
+
+, 就说
+\begin_inset Formula $\eta$
+\end_inset
+
+是
+\begin_inset Formula $A$
+\end_inset
+
+的上确界.
+\end_layout
+
+\begin_layout Enumerate
+如果对任意
+\begin_inset Formula $x\in A$
+\end_inset
+
+而言, 总有
+\begin_inset Formula $x\leqslant\eta$
+\end_inset
+
+, 并且存在
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+使得
+\begin_inset Formula $x>\eta-\varepsilon$
+\end_inset
+
+, 则称
+\begin_inset Formula $\eta$
+\end_inset
+
+是
+\begin_inset Formula $A$
+\end_inset
+
+的上确界.
+\end_layout
+
+\begin_layout Enumerate
+称
+\begin_inset Formula $\eta$
+\end_inset
+
+是
+\begin_inset Formula $A$
+\end_inset
+
+的上确界, 如果它满足下面两个条件: (1) 对任意
+\begin_inset Formula $x\in A$
+\end_inset
+
+都有
+\begin_inset Formula $x\leqslant\eta$
+\end_inset
+
+; (2) 存在
+\begin_inset Formula $x\in A$
+\end_inset
+
+使得
+\begin_inset Formula $x>\eta-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+称
+\begin_inset Formula $\eta$
+\end_inset
+
+是
+\begin_inset Formula $A$
+\end_inset
+
+的上确界, 如果它满足下面两个条件: (1) 对任意
+\begin_inset Formula $x\in A$
+\end_inset
+
+都有
+\begin_inset Formula $x\leqslant\eta$
+\end_inset
+
+; (2) 若
+\begin_inset Formula $\alpha\in A$
+\end_inset
+
+且
+\begin_inset Formula $\alpha<\eta$
+\end_inset
+
+, 则存在
+\begin_inset Formula $x_{0}\in A$
+\end_inset
+
+使得
+\begin_inset Formula $x_{0}>\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+如果对任意
+\begin_inset Formula $x\in A$
+\end_inset
+
+而言总有
+\begin_inset Formula $x<\eta$
+\end_inset
+
+, 并且对任意
+\begin_inset Formula $\alpha<\eta$
+\end_inset
+
+而言总存在
+\begin_inset Formula $x_{0}\in A$
+\end_inset
+
+使得
+\begin_inset Formula $\alpha<x_{0}<\eta$
+\end_inset
+
+, 就说
+\begin_inset Formula $\eta$
+\end_inset
+
+是
+\begin_inset Formula $A$
+\end_inset
+
+的上确界.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+设
+\begin_inset Formula $A$
+\end_inset
+
+为非空数集, 并且
+\begin_inset Formula $\eta$
+\end_inset
+
+是实数, 指出下列说法的错误:
+\end_layout
+
+\begin_layout Enumerate
+若
+\begin_inset Formula $\eta$
+\end_inset
+
+是
+\begin_inset Formula $A$
+\end_inset
+
+的上确界, 则不存在不在
+\begin_inset Formula $A$
+\end_inset
+
+内且小于
+\begin_inset Formula $\eta$
+\end_inset
+
+的数.
+\end_layout
+
+\begin_layout Enumerate
+若
+\begin_inset Formula $\eta$
+\end_inset
+
+是
+\begin_inset Formula $A$
+\end_inset
+
+的上确界, 则对任意
+\begin_inset Formula $x<\eta$
+\end_inset
+
+而言, 总存在
+\begin_inset Formula $a\in(x,\eta)$
+\end_inset
+
+使得
+\begin_inset Formula $a\in A$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Problem
 设函数
 \begin_inset Formula $f$
