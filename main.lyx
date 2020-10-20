@@ -1829,7 +1829,7 @@ literal "false"
 \end_layout
 
 \begin_layout Enumerate
-设
+定义: 设
 \begin_inset Formula $S$
 \end_inset
 
@@ -1857,12 +1857,127 @@ literal "false"
 无界集既无上界也无下界.
 \end_layout
 
+\begin_layout Enumerate
+定义: 设
+\begin_inset Formula $S$
+\end_inset
+
+为非空数集.
+ 如果对任意
+\begin_inset Formula $x\in S$
+\end_inset
+
+而言, 总存在
+\begin_inset Formula $x'\in S$
+\end_inset
+
+使得
+\begin_inset Formula $x'>x$
+\end_inset
+
+, 就说
+\begin_inset Formula $S$
+\end_inset
+
+无上界.
+\end_layout
+
+\begin_layout Enumerate
+定义: 设
+\begin_inset Formula $S$
+\end_inset
+
+为非空数集.
+ 如果存在
+\begin_inset Formula $x\in S$
+\end_inset
+
+, 使得
+\begin_inset Formula $x>$
+\end_inset
+
+任意数
+\begin_inset Formula $y$
+\end_inset
+
+, 就说
+\begin_inset Formula $S$
+\end_inset
+
+无上界.
+\end_layout
+
+\begin_layout Enumerate
+定义: 设
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+为数列, 
+\begin_inset Formula $a$
+\end_inset
+
+为定数.
+ 若对任给的正数
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+, 总存在正整数
+\begin_inset Formula $n$
+\end_inset
+
+, 使得
+\begin_inset Formula $|a_{n}-a|<\varepsilon$
+\end_inset
+
+, 则称
+\begin_inset Formula $a$
+\end_inset
+
+是数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+的极限.
+\end_layout
+
+\begin_layout Enumerate
+设
+\begin_inset Formula $S$
+\end_inset
+
+有下界.
+ 那么
+\begin_inset Formula $S\geqslant\inf S$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Exercise
 指出下述证明的错误:
 \end_layout
 
 \begin_layout Exercise
-我们要证
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status collapsed
+
+\begin_layout Plain Layout
+试证
 \begin_inset Formula $\lim_{n\rightarrow\infty}\frac{n}{a^{n}}=0$
 \end_inset
 
@@ -1871,7 +1986,14 @@ literal "false"
 \end_inset
 
 .
- 注意:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Flex ProofAsInset
+status open
+
+\begin_layout Plain Layout
+首先观察到
 \begin_inset Formula 
 \[
 \left|\frac{n}{a^{n}}-0\right|=\frac{n}{a^{n}}.
@@ -1922,6 +2044,228 @@ n>\left[\frac{\varepsilon}{1-\varepsilon h}\right]+1,
 \end_inset
 
 .
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+指出下述证明的错误:
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status collapsed
+
+\begin_layout Plain Layout
+设
+\begin_inset Formula $S$
+\end_inset
+
+为非空有下界数集, 证明
+\begin_inset Formula 
+\[
+\xi=\min S\Rightarrow\inf S=\xi\in S.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Flex ProofAsInset
+status open
+
+\begin_layout Plain Layout
+因为对所有
+\begin_inset Formula $n\in S$
+\end_inset
+
+都有
+\begin_inset Formula $n\geqslant\xi$
+\end_inset
+
+, 所以
+\begin_inset Formula $\xi$
+\end_inset
+
+是
+\begin_inset Formula $S$
+\end_inset
+
+的一个下界.
+\end_layout
+
+\begin_layout Plain Layout
+对任意
+\begin_inset Formula $a>\xi$
+\end_inset
+
+ (其中
+\begin_inset Formula $a\in S$
+\end_inset
+
+)而言, 由稠密性可知存在
+\begin_inset Formula $x_{0}\in S$
+\end_inset
+
+使得
+\begin_inset Formula $x_{0}\in(\xi,a)$
+\end_inset
+
+, 亦即
+\begin_inset Formula $\xi$
+\end_inset
+
+为
+\begin_inset Formula $S$
+\end_inset
+
+的下确界.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+指出下述证明的错误:
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status collapsed
+
+\begin_layout Plain Layout
+试证明: 当
+\begin_inset Formula $x<0$
+\end_inset
+
+时, 
+\begin_inset Formula $1\leqslant x[1/x]<1-x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Flex ProofAsInset
+status open
+
+\begin_layout Plain Layout
+要证
+\begin_inset Formula 
+\[
+1\leqslant x\left[\frac{1}{x}\right]<1-x,
+\]
+
+\end_inset
+
+即证
+\begin_inset Formula 
+\[
+\frac{1}{x}\leqslant\left[\frac{1}{x}\right]<1-\frac{1}{x}.
+\]
+
+\end_inset
+
+因为
+\begin_inset Formula $x<0$
+\end_inset
+
+, 所以
+\begin_inset Formula 
+\[
+\left[\frac{1}{x}\right]\geqslant\frac{1}{x}.
+\]
+
+\end_inset
+
+因为
+\begin_inset Formula 
+\[
+-1<\left[\frac{1}{x}\right]-\frac{1}{x}\leqslant0,
+\]
+
+\end_inset
+
+所以
+\begin_inset Formula 
+\[
+\left[\frac{1}{x}\right]<1-\frac{1}{x},
+\]
+
+\end_inset
+
+故原式成立.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Chapter
