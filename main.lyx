@@ -199,7 +199,7 @@ LatexCommand tableofcontents
 
 \begin_layout Standard
 \begin_inset Tabular
-<lyxtabular version="3" rows="22" columns="2">
+<lyxtabular version="3" rows="23" columns="2">
 <features islongtable="true" longtabularalignment="left">
 <column alignment="left" valignment="top" width="0pt">
 <column alignment="left" valignment="top" width="0pt">
@@ -410,6 +410,32 @@ LatexCommand tableofcontents
 \end_inset
 
 中最小的数
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $n!$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $n$
+\end_inset
+
+的阶乘
 \end_layout
 
 \end_inset
@@ -1763,6 +1789,7 @@ literal "false"
 是实数, 指出下列说法的错误:
 \end_layout
 
+\begin_deeper
 \begin_layout Enumerate
 若
 \begin_inset Formula $\eta$
@@ -1807,6 +1834,7 @@ literal "false"
 .
 \end_layout
 
+\end_deeper
 \begin_layout Problem
 设函数
 \begin_inset Formula $f$
@@ -1824,6 +1852,7 @@ literal "false"
 指出下列说法的错误:
 \end_layout
 
+\begin_deeper
 \begin_layout Enumerate
 周期函数一定有最小正周期.
 \end_layout
@@ -1953,30 +1982,20 @@ literal "false"
 .
 \end_layout
 
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
 \begin_layout Exercise
 指出下述证明的错误:
 \end_layout
 
-\begin_layout Exercise
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status collapsed
-
-\begin_layout Plain Layout
+\begin_deeper
+\begin_layout Quotation
 试证
 \begin_inset Formula $\lim_{n\rightarrow\infty}\frac{n}{a^{n}}=0$
 \end_inset
@@ -1988,9 +2007,9 @@ status collapsed
 .
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Quotation
 \begin_inset Flex ProofAsInset
-status open
+status collapsed
 
 \begin_layout Plain Layout
 首先观察到
@@ -2051,11 +2070,7 @@ n>\left[\frac{\varepsilon}{1-\varepsilon h}\right]+1,
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
+\end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
 \end_inset
@@ -2067,26 +2082,8 @@ n>\left[\frac{\varepsilon}{1-\varepsilon h}\right]+1,
 指出下述证明的错误:
 \end_layout
 
-\begin_layout Exercise
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status collapsed
-
-\begin_layout Plain Layout
+\begin_deeper
+\begin_layout Quotation
 设
 \begin_inset Formula $S$
 \end_inset
@@ -2102,9 +2099,9 @@ status collapsed
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Quotation
 \begin_inset Flex ProofAsInset
-status open
+status collapsed
 
 \begin_layout Plain Layout
 因为对所有
@@ -2159,115 +2156,7 @@ status open
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Exercise
-指出下述证明的错误:
-\end_layout
-
-\begin_layout Exercise
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status collapsed
-
-\begin_layout Plain Layout
-试证明: 当
-\begin_inset Formula $x<0$
-\end_inset
-
-时, 
-\begin_inset Formula $1\leqslant x[1/x]<1-x$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Flex ProofAsInset
-status open
-
-\begin_layout Plain Layout
-要证
-\begin_inset Formula 
-\[
-1\leqslant x\left[\frac{1}{x}\right]<1-x,
-\]
-
-\end_inset
-
-即证
-\begin_inset Formula 
-\[
-\frac{1}{x}\leqslant\left[\frac{1}{x}\right]<1-\frac{1}{x}.
-\]
-
-\end_inset
-
-因为
-\begin_inset Formula $x<0$
-\end_inset
-
-, 所以
-\begin_inset Formula 
-\[
-\left[\frac{1}{x}\right]\geqslant\frac{1}{x}.
-\]
-
-\end_inset
-
-因为
-\begin_inset Formula 
-\[
--1<\left[\frac{1}{x}\right]-\frac{1}{x}\leqslant0,
-\]
-
-\end_inset
-
-所以
-\begin_inset Formula 
-\[
-\left[\frac{1}{x}\right]<1-\frac{1}{x},
-\]
-
-\end_inset
-
-故原式成立.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
+\end_deeper
 \begin_layout Chapter
 观点
 \end_layout
