@@ -199,7 +199,7 @@ LatexCommand tableofcontents
 
 \begin_layout Standard
 \begin_inset Tabular
-<lyxtabular version="3" rows="23" columns="2">
+<lyxtabular version="3" rows="24" columns="2">
 <features islongtable="true" longtabularalignment="left">
 <column alignment="left" valignment="top" width="0pt">
 <column alignment="left" valignment="top" width="0pt">
@@ -525,6 +525,33 @@ LatexCommand tableofcontents
 
 \begin_layout Plain Layout
 实数集
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathbb{R}_{+}$
+\end_inset
+
+或
+\begin_inset Formula $\mathbf{R}^{+}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+全体正实数构成的集合
 \end_layout
 
 \end_inset
@@ -1428,6 +1455,170 @@ status collapsed
 \end_layout
 
 \begin_layout Section
+数列极限
+\end_layout
+
+\begin_layout Standard
+定义
+\series bold
+数列
+\series default
+及其记号.
+\end_layout
+
+\begin_layout Standard
+用两种方式定义数列的
+\series bold
+收敛
+\series default
+与
+\series bold
+极限
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+定义
+\series bold
+发散
+\series default
+数列.
+\end_layout
+
+\begin_layout Standard
+定义
+\series bold
+无穷小数列
+\series default
+(
+\series bold
+无穷小量
+\series default
+)与
+\series bold
+无穷大数列
+\series default
+(
+\series bold
+无穷大量
+\series default
+).
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+唯一性
+\end_layout
+
+\end_inset
+
+一个收敛数列只有一个极限.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+有界性
+\end_layout
+
+\end_inset
+
+收敛数列都是有界的.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+保号性
+\end_layout
+
+\end_inset
+
+一个数列, 若收敛到正数, 必最终
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+这里``最终''指的是从某一项开始全部满足条件, 但华东师大教材中好像没有这个术语, 你们就不要用这个术语了.
+\end_layout
+
+\end_inset
+
+为正数; 若收敛到负数, 必最终为负数.
+\end_layout
+
+\begin_layout Corollary
+若
+\begin_inset Formula $\lim a_{n}<\lim b_{n}$
+\end_inset
+
+, 则最终有
+\begin_inset Formula $a_{n}<b_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+保不等式性
+\end_layout
+
+\end_inset
+
+设
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+与
+\begin_inset Formula $\{b_{n}\}$
+\end_inset
+
+收敛.
+ 若
+\begin_inset Formula $a_{n}\leqslant b_{n}$
+\end_inset
+
+恒成立, 则有
+\begin_inset Formula $\lim a_{n}\leqslant\lim b_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
 讨论
 \end_layout
 
@@ -1545,7 +1736,11 @@ literal "false"
 \end_inset
 
 是实数.
- 以书中定义为准, 指出下列定义方式的错误:
+ 以书中定义为准, 指出下列定义方式的
+\color red
+错误
+\color inherit
+:
 \end_layout
 
 \begin_deeper
@@ -1786,7 +1981,11 @@ literal "false"
 \begin_inset Formula $\eta$
 \end_inset
 
-是实数, 指出下列说法的错误:
+是实数, 指出下列说法的
+\color red
+错误
+\color inherit
+:
 \end_layout
 
 \begin_deeper
@@ -1849,12 +2048,83 @@ literal "false"
 \end_layout
 
 \begin_layout Exercise
-指出下列说法的错误:
+指出下列说法的
+\color red
+错误
+\color inherit
+:
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
+设
+\begin_inset Formula $S$
+\end_inset
+
+有下界.
+ 那么
+\begin_inset Formula $S\geqslant\inf S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+无界集既无上界也无下界.
+\end_layout
+
+\begin_layout Enumerate
 周期函数一定有最小正周期.
+\end_layout
+
+\begin_layout Enumerate
+定义: 设
+\begin_inset Formula $S$
+\end_inset
+
+为非空数集.
+ 如果存在
+\begin_inset Formula $x\in S$
+\end_inset
+
+, 使得
+\begin_inset Formula $x>$
+\end_inset
+
+任意数
+\begin_inset Formula $y$
+\end_inset
+
+, 就说
+\begin_inset Formula $S$
+\end_inset
+
+无上界.
+\end_layout
+
+\begin_layout Enumerate
+定义: 设
+\begin_inset Formula $S$
+\end_inset
+
+为非空数集.
+ 如果对任意
+\begin_inset Formula $x\in S$
+\end_inset
+
+而言, 都不存在
+\begin_inset Formula $M$
+\end_inset
+
+使得
+\begin_inset Formula $x\leqslant M$
+\end_inset
+
+恒成立, 则称
+\begin_inset Formula $S$
+\end_inset
+
+无上界.
 \end_layout
 
 \begin_layout Enumerate
@@ -1883,10 +2153,6 @@ literal "false"
 \end_layout
 
 \begin_layout Enumerate
-无界集既无上界也无下界.
-\end_layout
-
-\begin_layout Enumerate
 定义: 设
 \begin_inset Formula $S$
 \end_inset
@@ -1902,31 +2168,6 @@ literal "false"
 
 使得
 \begin_inset Formula $x'>x$
-\end_inset
-
-, 就说
-\begin_inset Formula $S$
-\end_inset
-
-无上界.
-\end_layout
-
-\begin_layout Enumerate
-定义: 设
-\begin_inset Formula $S$
-\end_inset
-
-为非空数集.
- 如果存在
-\begin_inset Formula $x\in S$
-\end_inset
-
-, 使得
-\begin_inset Formula $x>$
-\end_inset
-
-任意数
-\begin_inset Formula $y$
 \end_inset
 
 , 就说
@@ -1970,13 +2211,29 @@ literal "false"
 \end_layout
 
 \begin_layout Enumerate
-设
+设非空数集
 \begin_inset Formula $S$
 \end_inset
 
-有下界.
- 那么
-\begin_inset Formula $S\geqslant\inf S$
+无界.
+ 那么不存在数
+\begin_inset Formula $M$
+\end_inset
+
+或
+\begin_inset Formula $L$
+\end_inset
+
+, 使得对一切
+\begin_inset Formula $x\in S$
+\end_inset
+
+都有
+\begin_inset Formula $x\leqslant M$
+\end_inset
+
+或
+\begin_inset Formula $x\geqslant L$
 \end_inset
 
 .
@@ -1991,7 +2248,11 @@ literal "false"
 \end_layout
 
 \begin_layout Exercise
-指出下述证明的错误:
+指出下述证明的
+\color red
+错误
+\color inherit
+:
 \end_layout
 
 \begin_deeper
@@ -2079,7 +2340,11 @@ n>\left[\frac{\varepsilon}{1-\varepsilon h}\right]+1,
 \end_layout
 
 \begin_layout Exercise
-指出下述证明的错误:
+指出下述证明的
+\color red
+错误
+\color inherit
+:
 \end_layout
 
 \begin_deeper
