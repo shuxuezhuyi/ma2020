@@ -1726,6 +1726,10 @@ literal "false"
 这些内容似乎本应收入上一章.
 \end_layout
 
+\begin_layout Section
+反例
+\end_layout
+
 \begin_layout Exercise
 设
 \begin_inset Formula $A$
@@ -2034,17 +2038,11 @@ literal "false"
 \end_layout
 
 \end_deeper
-\begin_layout Problem
-设函数
-\begin_inset Formula $f$
+\begin_layout Standard
+\begin_inset Separator plain
 \end_inset
 
-有反函数.
- 在什么样的条件下, 
-\begin_inset Formula $f$
-\end_inset
 
-一定是严格单调函数?
 \end_layout
 
 \begin_layout Exercise
@@ -2239,6 +2237,30 @@ literal "false"
 .
 \end_layout
 
+\begin_layout Enumerate
+若
+\begin_inset Formula $f'(x)\geqslant0$
+\end_inset
+
+恒成立, 则
+\begin_inset Formula $f$
+\end_inset
+
+严格单调递增.
+\end_layout
+
+\begin_layout Enumerate
+若
+\begin_inset Formula $f$
+\end_inset
+
+不连续, 则
+\begin_inset Formula $f$
+\end_inset
+
+不是单调函数.
+\end_layout
+
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -2422,6 +2444,1406 @@ status collapsed
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+指出下述答案的
+\color red
+错误
+\color inherit
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Quotation
+设
+\begin_inset Formula $a_{n}=\frac{1+(-1)^{n}}{n}$
+\end_inset
+
+, 
+\begin_inset Formula $n=1,2,\cdots$
+\end_inset
+
+, 并且
+\begin_inset Formula $a=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Quotation
+现在对下列
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+已经分别求出极限定义中相应的
+\begin_inset Formula $N$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\varepsilon_{1}=0.1,\quad\varepsilon_{2}=0.01,\quad\varepsilon_{3}=0.001.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+(1) 对
+\begin_inset Formula $\varepsilon_{1},\varepsilon_{2},\varepsilon_{3}$
+\end_inset
+
+可找到相应的
+\begin_inset Formula $N$
+\end_inset
+
+, 这是否证明了
+\begin_inset Formula $a_{n}$
+\end_inset
+
+趋于
+\begin_inset Formula $0$
+\end_inset
+
+? 应该怎样做才对;
+\end_layout
+
+\begin_layout Quotation
+(2) 对给定的
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+是否只能找到一个
+\begin_inset Formula $N$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+解
+\end_layout
+
+\end_inset
+
+(1) 否.
+ 应当分奇偶性讨论: 若
+\begin_inset Formula $n$
+\end_inset
+
+为奇数, 则
+\begin_inset Formula $a_{n}=0$
+\end_inset
+
+; 若
+\begin_inset Formula $n$
+\end_inset
+
+为偶数, 则
+\begin_inset Formula $\lim_{n\rightarrow\infty}a_{n}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+(2) 不一定.
+ 若
+\begin_inset Formula $\varepsilon=0$
+\end_inset
+
+, 则
+\begin_inset Formula $N$
+\end_inset
+
+取任意奇数都满足.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+正例
+\end_layout
+
+\begin_layout Example
+(1) 正整数集
+\begin_inset Formula $\mathbb{N}_{+}$
+\end_inset
+
+: 它的下确界为
+\begin_inset Formula $1$
+\end_inset
+
+; 它没有上界; 它没有上确界; 它有非正常上确界
+\begin_inset Formula $+\infty$
+\end_inset
+
+; 
+\begin_inset Formula $\inf\mathbb{N}_{+}=1$
+\end_inset
+
+且
+\begin_inset Formula $\sup\mathbb{N}_{+}=+\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+(2) 设
+\begin_inset Formula $a,b$
+\end_inset
+
+是实数, 并且
+\begin_inset Formula $a<b$
+\end_inset
+
+.
+ 那么对于
+\begin_inset Formula $S=(a,b)$
+\end_inset
+
+或
+\begin_inset Formula $(a,b]$
+\end_inset
+
+或
+\begin_inset Formula $[a,b)$
+\end_inset
+
+或
+\begin_inset Formula $[a,b]$
+\end_inset
+
+而言, 以下说法均成立: 它的上确界为
+\begin_inset Formula $b$
+\end_inset
+
+; 它的下确界为
+\begin_inset Formula $a$
+\end_inset
+
+; 
+\begin_inset Formula $\sup S=b$
+\end_inset
+
+; 
+\begin_inset Formula $\inf S=a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+(3) 若
+\begin_inset Formula $S=\{1\}$
+\end_inset
+
+, 则
+\begin_inset Formula $\sup S=1$
+\end_inset
+
+且
+\begin_inset Formula $\inf S=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Problem
+设函数
+\begin_inset Formula $f$
+\end_inset
+
+有反函数.
+ 在什么样的条件下, 
+\begin_inset Formula $f$
+\end_inset
+
+一定是严格单调函数?
+\end_layout
+
+\begin_layout Chapter
+作业参考答案
+\end_layout
+
+\begin_layout Standard
+本章答案并不是什么标准答案.
+ 有的地方可能写得太琐碎, 有的地方可能写得太简略.
+ 仅供参考.
+\end_layout
+
+\begin_layout Section
+实数集与函数
+\end_layout
+
+\begin_layout Exercise
+设
+\begin_inset Formula $S$
+\end_inset
+
+为非空数集.
+ 试对下列概念给出定义:
+\end_layout
+
+\begin_layout Exercise
+(1) 
+\begin_inset Formula $S$
+\end_inset
+
+无上界; (2) 
+\begin_inset Formula $S$
+\end_inset
+
+无界.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+解
+\end_layout
+
+\end_inset
+
+(1) 如果对任意实数
+\begin_inset Formula $M$
+\end_inset
+
+而言, 都存在
+\begin_inset Formula $x\in S$
+\end_inset
+
+使得
+\begin_inset Formula $x>M$
+\end_inset
+
+, 就说
+\begin_inset Formula $S$
+\end_inset
+
+无上界.
+\end_layout
+
+\begin_layout Plain Layout
+(2) 如果对任意实数
+\begin_inset Formula $M$
+\end_inset
+
+而言, 都存在
+\begin_inset Formula $x\in S$
+\end_inset
+
+使得
+\begin_inset Formula $x>|M|$
+\end_inset
+
+, 就说
+\begin_inset Formula $S$
+\end_inset
+
+无界.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+求下列数集的上、下确界, 并依定义加以验证:
+\end_layout
+
+\begin_layout Exercise
+(2) 
+\begin_inset Formula $S=\{x|x=n!,n\in\mathbb{N}_{+}\}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Exercise
+(4) 
+\begin_inset Formula $S=\{x|x=1-\frac{1}{2^{n}},n\in\mathbb{N}_{+}\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex HINTAsInset
+status collapsed
+
+\begin_layout Plain Layout
+1.
+ 不要把
+\begin_inset Formula $x=n!$
+\end_inset
+
+看成
+\begin_inset Formula $x=n$
+\end_inset
+
+了.
+\end_layout
+
+\begin_layout Plain Layout
+2.
+ 不要说``因为对所有
+\begin_inset Formula $A>0$
+\end_inset
+
+而言, 总
+\color red
+存在
+\color inherit
+ 
+\begin_inset Formula $x_{0}\in S$
+\end_inset
+
+使得
+\begin_inset Formula $x_{0}>A$
+\end_inset
+
+, 所以
+\begin_inset Formula $S$
+\end_inset
+
+无上界''.
+ 不能就说``存在''; 要把它构造出来啊.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+解
+\end_layout
+
+\end_inset
+
+
+\series bold
+(2)
+\series default
+ 
+\begin_inset Formula $\sup S=+\infty$
+\end_inset
+
+, 因为: 对任意实数
+\begin_inset Formula $M$
+\end_inset
+
+, 取
+\begin_inset Formula $x=M!$
+\end_inset
+
+, 则有
+\begin_inset Formula $x\in S$
+\end_inset
+
+且
+\begin_inset Formula $x\geqslant M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\inf S=1$
+\end_inset
+
+, 因为:
+\end_layout
+
+\begin_layout Plain Layout
+(i) 若
+\begin_inset Formula $x\in S$
+\end_inset
+
+, 则存在
+\begin_inset Formula $n\in\mathbb{N}_{+}$
+\end_inset
+
+使得
+\begin_inset Formula $x=n!\geqslant1$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Plain Layout
+(ii) 若
+\begin_inset Formula $\alpha>1$
+\end_inset
+
+, 则存在
+\begin_inset Formula $x_{0}=1!\in S$
+\end_inset
+
+使得
+\begin_inset Formula $x_{0}<\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+(4)
+\series default
+ 
+\begin_inset Formula $\sup S=1$
+\end_inset
+
+, 因为:
+\end_layout
+
+\begin_layout Plain Layout
+(i) 若
+\begin_inset Formula $x\in S$
+\end_inset
+
+, 则存在
+\begin_inset Formula $n\in\mathbb{N}_{+}$
+\end_inset
+
+使得
+\begin_inset Formula $x=1-\frac{1}{2^{n}}<1$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Plain Layout
+(ii) 若
+\begin_inset Formula $\alpha<1$
+\end_inset
+
+, 取
+\begin_inset Formula $n_{0}\in\mathbb{N}_{+}$
+\end_inset
+
+使得
+\begin_inset Formula 
+\[
+\frac{1}{2^{n_{0}}}<1-\alpha,
+\]
+
+\end_inset
+
+令
+\begin_inset Formula $x_{0}=1-\frac{1}{2^{n_{0}}}$
+\end_inset
+
+, 则有
+\begin_inset Formula $x_{0}\in S$
+\end_inset
+
+且
+\begin_inset Formula $x_{0}>\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\inf S=\frac{1}{2}$
+\end_inset
+
+, 因为:
+\end_layout
+
+\begin_layout Plain Layout
+(i) 若
+\begin_inset Formula $x\in S$
+\end_inset
+
+, 则存在
+\begin_inset Formula $n\in\mathbb{N}_{+}$
+\end_inset
+
+使得
+\begin_inset Formula 
+\[
+x=1-\frac{1}{2^{n}}\geqslant1-\frac{1}{2^{1}}=\frac{1}{2};
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(ii) 若
+\begin_inset Formula $\alpha>\frac{1}{2}$
+\end_inset
+
+, 则存在
+\begin_inset Formula $x_{0}=\frac{1}{2}=1-\frac{1}{2}\in S$
+\end_inset
+
+, 使得
+\begin_inset Formula $x_{0}<\alpha$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+设
+\begin_inset Formula $S$
+\end_inset
+
+为非空有下界数集.
+ 证明:
+\begin_inset Formula 
+\[
+\inf S=\xi\in S\Leftrightarrow\xi=\min S.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+(
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+): 由下确界的定义可知, 对任意
+\begin_inset Formula $x\in S$
+\end_inset
+
+都有
+\begin_inset Formula 
+\[
+x\geqslant\inf S=\xi.
+\]
+
+\end_inset
+
+又因为
+\begin_inset Formula $\xi\in S$
+\end_inset
+
+, 所以
+\begin_inset Formula $\xi=\min S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+(
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+): 因为
+\begin_inset Formula $\xi=\min S$
+\end_inset
+
+, 所以
+\begin_inset Formula $\xi\in S$
+\end_inset
+
+, 并且对任意
+\begin_inset Formula $x\in S$
+\end_inset
+
+都有
+\begin_inset Formula $x\geqslant\xi$
+\end_inset
+
+.
+ 现在因为
+\end_layout
+
+\begin_layout Plain Layout
+(i) 对任意
+\begin_inset Formula $x\in S$
+\end_inset
+
+都有
+\begin_inset Formula $x\geqslant\xi$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Plain Layout
+(ii) 对任意实数
+\begin_inset Formula $\alpha>\xi$
+\end_inset
+
+, 都存在
+\begin_inset Formula $x_{0}=\xi\in S$
+\end_inset
+
+使得
+\begin_inset Formula $x_{0}<\alpha$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Plain Layout
+所以
+\begin_inset Formula $\inf S=\xi$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+证明关于函数
+\begin_inset Formula $y=[x]$
+\end_inset
+
+的如下不等式:
+\end_layout
+
+\begin_layout Exercise
+(1) 当
+\begin_inset Formula $x>0$
+\end_inset
+
+时, 
+\begin_inset Formula $1-x<x[1/x]\leqslant1$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Exercise
+(2) 当
+\begin_inset Formula $x<0$
+\end_inset
+
+时, 
+\begin_inset Formula $1\leqslant x[1/x]<1-x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+由函数
+\begin_inset Formula $y=[x]$
+\end_inset
+
+的定义可知, 当
+\begin_inset Formula $x\neq0$
+\end_inset
+
+时有
+\begin_inset Formula 
+\begin{equation}
+\frac{1}{x}-1<\left[\frac{1}{x}\right]\leqslant\frac{1}{x}.\label{eq:homework_1.3.12}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(1) 当
+\begin_inset Formula $x>0$
+\end_inset
+
+时, 用
+\begin_inset Formula $x$
+\end_inset
+
+乘以式
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:homework_1.3.12"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 可得
+\begin_inset Formula 
+\[
+1-x<x\left[\frac{1}{x}\right]\leqslant1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(2) 当
+\begin_inset Formula $x<0$
+\end_inset
+
+时, 用
+\begin_inset Formula $x$
+\end_inset
+
+乘以式
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:homework_1.3.12"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 可得
+\begin_inset Formula 
+\[
+1-x>x\left[\frac{1}{x}\right]\geqslant1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+设
+\begin_inset Formula $f$
+\end_inset
+
+为定义在
+\begin_inset Formula $D$
+\end_inset
+
+上的有界函数, 证明:
+\end_layout
+
+\begin_layout Exercise
+(1) 
+\begin_inset Formula $\sup_{x\in D}\{-f(x)\}=-\inf_{x\in D}f(x)$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Exercise
+(2) 
+\begin_inset Formula $\inf_{x\in D}\{-f(x)\}=-\sup_{x\in D}f(x)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex HINTAsInset
+status collapsed
+
+\begin_layout Plain Layout
+1.
+ 不要证了(1)就说同理可知(2)成立.
+\end_layout
+
+\begin_layout Plain Layout
+2.
+ 这里上下确界不一定能取到.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+这里只提供(1)的证明, 因为(2)是完全类似的.
+\begin_inset Formula $\qquad\leftarrow$
+\end_inset
+
+重申: 考试不能这样写
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+证法一:
+\end_layout
+
+\begin_layout Plain Layout
+记
+\begin_inset Formula $\xi=\inf_{x\in D}f(x)$
+\end_inset
+
+.
+ 由下确界的定义可知:
+\end_layout
+
+\begin_layout Plain Layout
+(i) 对任意
+\begin_inset Formula $x\in D$
+\end_inset
+
+都有
+\begin_inset Formula $f(x)\geqslant\xi$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Plain Layout
+(ii) 若
+\begin_inset Formula $\alpha>\xi$
+\end_inset
+
+, 则存在
+\begin_inset Formula $x_{0}\in D$
+\end_inset
+
+使得
+\begin_inset Formula $f(x_{0})<\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+由此可见:
+\end_layout
+
+\begin_layout Plain Layout
+(i
+\begin_inset Formula $'$
+\end_inset
+
+) 对任意
+\begin_inset Formula $x\in D$
+\end_inset
+
+都有
+\begin_inset Formula $-f(x)\leqslant-\xi$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Plain Layout
+(ii
+\begin_inset Formula $'$
+\end_inset
+
+) 若
+\begin_inset Formula $-\alpha<-\xi$
+\end_inset
+
+, 则存在
+\begin_inset Formula $x_{0}\in D$
+\end_inset
+
+使得
+\begin_inset Formula $-f(x_{0})>-\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+这表明
+\begin_inset Formula $-\xi$
+\end_inset
+
+是
+\begin_inset Formula $-f(D)$
+\end_inset
+
+的上确界, 亦即
+\begin_inset Formula 
+\[
+\sup_{x\in D}\{-f(x)\}=-\xi=-\inf_{x\in D}f(x).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+证法二:
+\end_layout
+
+\begin_layout Plain Layout
+记
+\begin_inset Formula 
+\[
+\xi=\sup_{x\in D}\{-f(x)\},\quad\eta=\inf_{x\in D}f(x).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+由上确界的定义可知, 对任意
+\begin_inset Formula $x\in D$
+\end_inset
+
+都有
+\begin_inset Formula $-f(x)\leqslant\xi$
+\end_inset
+
+, 亦即
+\begin_inset Formula $f(x)\geqslant-\xi$
+\end_inset
+
+, 这说明
+\begin_inset Formula $-\xi$
+\end_inset
+
+是
+\begin_inset Formula $f(D)$
+\end_inset
+
+的一个下界.
+ 又因为
+\begin_inset Formula $\eta$
+\end_inset
+
+是
+\begin_inset Formula $f(D)$
+\end_inset
+
+的下确界, 所以
+\begin_inset Formula $-\xi\leqslant\eta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+由下确界的定义可知, 对任意
+\begin_inset Formula $x\in D$
+\end_inset
+
+都有
+\begin_inset Formula $f(x)\geqslant\eta$
+\end_inset
+
+, 亦即
+\begin_inset Formula $-f(x)\leqslant-\eta$
+\end_inset
+
+, 这说明
+\begin_inset Formula $-\eta$
+\end_inset
+
+是
+\begin_inset Formula $-f(D)$
+\end_inset
+
+的一个上界.
+ 又因为
+\begin_inset Formula $\xi$
+\end_inset
+
+是
+\begin_inset Formula $-f(D)$
+\end_inset
+
+的上确界, 所以
+\begin_inset Formula $\xi\leqslant-\eta$
+\end_inset
+
+, 亦即
+\begin_inset Formula $-\xi\geqslant\eta$
+\end_inset
+
+.
+ 再结合上面得到的
+\begin_inset Formula $-\xi\leqslant\eta$
+\end_inset
+
+, 就得到了
+\begin_inset Formula $-\xi=\eta$
+\end_inset
+
+, 这就是我们要证的结论.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+讨论Dirichlet函数
+\begin_inset Formula 
+\[
+D(x)=\begin{cases}
+1, & \text{当}\,x\,\text{为有理数},\\
+0, & \text{当}\,x\,\text{为无理数}.
+\end{cases}
+\]
+
+\end_inset
+
+的有界性、单调性与周期性.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+解
+\end_layout
+
+\end_inset
+
+(1) 因为对任意
+\begin_inset Formula $x$
+\end_inset
+
+都有
+\begin_inset Formula $0\leqslant D(x)\leqslant1$
+\end_inset
+
+, 所以
+\begin_inset Formula $D$
+\end_inset
+
+是有界函数.
+\end_layout
+
+\begin_layout Plain Layout
+(2) 考虑
+\begin_inset Formula 
+\[
+x_{1}=1,\quad x_{2}=\sqrt{2},\quad x_{3}=3,
+\]
+
+\end_inset
+
+那么
+\begin_inset Formula $x_{1}<x_{2}<x_{3}$
+\end_inset
+
+, 并且由
+\begin_inset Formula $D(1)=D(3)=1$
+\end_inset
+
+且
+\begin_inset Formula $D(\sqrt{2})=0$
+\end_inset
+
+可知
+\begin_inset Formula $D(x_{1})>D(x_{2})<D(x_{3})$
+\end_inset
+
+.
+ 由此可见
+\begin_inset Formula $D$
+\end_inset
+
+不是单调函数.
+\end_layout
+
+\begin_layout Plain Layout
+(3) 若
+\begin_inset Formula $T$
+\end_inset
+
+是有理数, 则由有理数加有理数还是有理数、无理数加有理数还是无理数可知
+\begin_inset Formula $D(x+T)=D(x)$
+\end_inset
+
+.
+ 故任意正有理数都是
+\begin_inset Formula $D$
+\end_inset
+
+的周期, 并且
+\begin_inset Formula $D$
+\end_inset
+
+没有最小周期.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+证明: 
+\begin_inset Formula $f(x)=x+\sin x$
+\end_inset
+
+在
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+上严格增.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex HINTAsInset
+status collapsed
+
+\begin_layout Plain Layout
+因为第一章还没讲到导数, 所以不能用导数做这一题.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+设
+\begin_inset Formula $x_{1}<x_{2}$
+\end_inset
+
+, 那么
+\begin_inset Formula 
+\begin{align*}
+f(x_{1})-f(x_{2}) & =x_{1}+\sin x_{1}-(x_{2}+\sin x_{2})\\
+ & =(x_{1}-x_{2})+(\sin x_{1}-\sin x_{2})\\
+ & =(x_{1}-x_{2})+2\sin\frac{x_{1}-x_{2}}{2}\cos\frac{x_{1}+x_{2}}{2}\quad\leftarrow\text{和\text{差\text{化\text{积公式}}}}\\
+ & \leqslant(x_{1}-x_{2})+2\left|\sin\frac{x_{1}-x_{2}}{2}\right|\cdot\left|\cos\frac{x_{1}+x_{2}}{2}\right|\\
+ & \leqslant(x_{1}-x_{2})+2\sin\frac{|x_{1}-x_{2}|}{2}\quad\leftarrow\text{因为}\,0\leqslant\left|\cos\frac{x_{1}+x_{2}}{2}\right|\leqslant1\\
+ & {\color{red}<}(x_{1}-x_{2})+2\cdot\frac{|x_{1}-x_{2}|}{2}\quad\leftarrow\text{因为对任意}\,t>0\,\text{都有}\sin t<t\\
+ & =0,
+\end{align*}
+
+\end_inset
+
+可见
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+上严格增.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+按
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+-
+\begin_inset Formula $N$
+\end_inset
+
+定义证明:
+\begin_inset Formula 
+\begin{align*}
+(3) & \lim_{n\rightarrow\infty}\frac{n!}{n^{n}}=0;\\
+(5) & \lim_{n\rightarrow\infty}\frac{n}{a^{n}}=0\quad(a>1).
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+(3)
+\series default
+ 因为
+\begin_inset Formula 
+\[
+\left|\frac{n!}{n^{n}}-0\right|=\frac{n!}{n^{n}}=\frac{1\cdot2\cdot\cdots\cdot n}{n\cdot n\cdot\cdots\cdot n}\leqslant\frac{1}{n},
+\]
+
+\end_inset
+
+所以对任意
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+而言, 只要取
+\begin_inset Formula $N=\frac{1}{\varepsilon}$
+\end_inset
+
+, 则当
+\begin_inset Formula $n>N$
+\end_inset
+
+时总有
+\begin_inset Formula 
+\[
+\left|\frac{n!}{n^{n}}-0\right|\leqslant\frac{1}{n}<\frac{1}{N}=\varepsilon.
+\]
+
+\end_inset
+
+这就证明了
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}\frac{n!}{n^{n}}=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+(5)
+\series default
+ 因为
+\begin_inset Formula $a>1$
+\end_inset
+
+, 所以存在
+\begin_inset Formula $h>0$
+\end_inset
+
+使得
+\begin_inset Formula $a=1+h$
+\end_inset
+
+.
+ 注意到
+\begin_inset Formula 
+\begin{align*}
+\left|\frac{n}{a^{n}}-0\right|=\frac{n}{a^{n}}=\frac{n}{(1+h)^{n}} & =\frac{n}{1+nh+\frac{n(n-1)}{2}h^{2}+\cdots}\\
+ & \leqslant\frac{n}{\frac{n(n-1)}{2}h^{2}}\\
+ & =\frac{2}{(n-1)h^{2}},
+\end{align*}
+
+\end_inset
+
+可见对任意
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+而言, 只要取
+\begin_inset Formula 
+\[
+N=\frac{2}{h^{2}\varepsilon}+1,
+\]
+
+\end_inset
+
+则当
+\begin_inset Formula $n>N$
+\end_inset
+
+时总有
+\begin_inset Formula 
+\[
+\left|\frac{n}{a^{n}}-0\right|\leqslant\frac{2}{(n-1)h^{2}}<\frac{2}{(N-1)h^{2}}=\varepsilon.
+\]
+
+\end_inset
+
+这就证明了
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}\frac{n}{a^{n}}=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 观点
 \end_layout
