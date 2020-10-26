@@ -1618,6 +1618,29 @@ status open
 .
 \end_layout
 
+\begin_layout Example
+(1) 
+\begin_inset Formula $\lim_{n\rightarrow\infty}\sqrt[n]{n}=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+(2) 
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}\frac{a_{m}n^{m}+a_{m-1}n^{m-1}+\cdots+a_{1}n+a_{0}}{b_{k}n^{k}+b_{k-1}n^{k-1}+\cdots+b_{1}n+b_{0}}=\begin{cases}
+\frac{a_{m}}{b_{m}}, & k=m,\\
+0, & k>m.
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 讨论
 \end_layout
@@ -1718,6 +1741,94 @@ literal "false"
 另外, 对于这道题, 某本答案书上的答案并不完整.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+设
+\begin_inset Formula $x_{n}=a_{1}+a_{2}+\cdots+a_{n}$
+\end_inset
+
+, 且有
+\begin_inset Formula $\lim_{n\rightarrow\infty}x_{n}=a$
+\end_inset
+
+.
+ 试证明:
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}\frac{a_{1}+2a_{2}+3a_{3}+\cdots+na_{n}}{n}=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+对任意
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+而言, 总存在
+\begin_inset Formula $N\in\mathbb{N}_{+}$
+\end_inset
+
+, 使得当
+\begin_inset Formula $m\geqslant n>N$
+\end_inset
+
+时有
+\begin_inset Formula 
+\[
+|a_{n}+a_{n+1}+\cdots+a_{m}|<\varepsilon.
+\]
+
+\end_inset
+
+此时
+\begin_inset Formula 
+\begin{align*}
+\left|\frac{a_{1}+2a_{2}+\cdots+na_{n}+(n+1)a_{n+1}+\cdots+ma_{m}}{m}-0\right| & \leqslant\left|\frac{a_{1}+2a_{2}+\cdots+(n-1)a_{n-1}}{m}\right|\\
+ & \qquad+\frac{1}{m}((a_{n}+\cdots+a_{m})+(a_{n+1}+\cdots+a_{m})+\cdots+a_{m})\\
+ & \leqslant\left|\frac{a_{1}+2a_{2}+\cdots+(n-1)a_{n-1}}{m}\right|+\frac{m-n+1}{m}\varepsilon\\
+ & \leqslant\left|\frac{a_{1}+2a_{2}+\cdots+(n-1)a_{n-1}}{m}\right|+\varepsilon-\frac{n-1}{m}\varepsilon.
+\end{align*}
+
+\end_inset
+
+固定
+\begin_inset Formula $n$
+\end_inset
+
+, 在上式两边令
+\begin_inset Formula $m\rightarrow\infty$
+\end_inset
+
+, 可见右侧收敛到
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+, 进而由
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+的任意性可知命题成立.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 正反例
 \end_layout
@@ -1727,7 +1838,11 @@ literal "false"
 \end_layout
 
 \begin_layout Section
-反例
+作业中出现的错误
+\end_layout
+
+\begin_layout Standard
+本节标题本来叫“反例”; 后来想想, 本节收录的内容并不具有多少学术价值, 还是老老实实地叫“错误”好了.
 \end_layout
 
 \begin_layout Exercise
@@ -2581,6 +2696,75 @@ status open
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+指出下列说法的
+\color red
+错误
+\color inherit
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+对任意
+\begin_inset Formula $a\in\mathbb{R}$
+\end_inset
+
+, 取
+\begin_inset Formula $\varepsilon_{0}=1$
+\end_inset
+
+, 则数列
+\begin_inset Formula $\{1/n\}$
+\end_inset
+
+中所有满足
+\begin_inset Formula $1/n>a+1$
+\end_inset
+
+的项都落在
+\begin_inset Formula $U(a;\varepsilon_{0})$
+\end_inset
+
+之外.
+ 于是
+\begin_inset Formula $U(a;\varepsilon_{0})$
+\end_inset
+
+之外不是只有数列
+\begin_inset Formula $\{1/n\}$
+\end_inset
+
+的有限个项, 故数列
+\begin_inset Formula $\{1/n\}$
+\end_inset
+
+不以
+\begin_inset Formula $1$
+\end_inset
+
+为极限.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{n\rightarrow\infty}(n^{-2}+(n+1)^{-2}+\cdots+(2n)^{-2})=\lim_{n\rightarrow\infty}n^{-2}+\lim_{n\rightarrow\infty}(n+1)^{-2}+\cdots+\lim_{n\rightarrow\infty}(2n)^{-2}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+有界数列必有极限.
+\end_layout
+
+\end_deeper
 \begin_layout Section
 正例
 \end_layout
@@ -2761,7 +2945,7 @@ status open
 \end_inset
 
 使得
-\begin_inset Formula $x>|M|$
+\begin_inset Formula $|x|>M$
 \end_inset
 
 , 就说
@@ -3707,6 +3891,10 @@ f(x_{1})-f(x_{2}) & =x_{1}+\sin x_{1}-(x_{2}+\sin x_{2})\\
 
 \end_layout
 
+\begin_layout Section
+数列极限
+\end_layout
+
 \begin_layout Exercise
 按
 \begin_inset Formula $\varepsilon$
@@ -3841,6 +4029,454 @@ N=\frac{2}{h^{2}\varepsilon}+1,
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Exercise
+试用定义
+\begin_inset Formula $1'$
+\end_inset
+
+证明:
+\end_layout
+
+\begin_layout Exercise
+(1) 数列
+\begin_inset Formula $\{1/n\}$
+\end_inset
+
+不以
+\begin_inset Formula $1$
+\end_inset
+
+为极限; (2) 数列
+\begin_inset Formula $\{n^{(-1)^{n}}\}$
+\end_inset
+
+发散.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex HINTAsInset
+status open
+
+\begin_layout Plain Layout
+不能单说“有无限多个项”, 要写清楚这“无限多个项”是哪些项.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+(1)
+\series default
+ 考虑
+\begin_inset Formula $1$
+\end_inset
+
+的邻域
+\begin_inset Formula $U(1,1/2)$
+\end_inset
+
+, 那么数列
+\begin_inset Formula $\{1/n\}$
+\end_inset
+
+中对应
+\begin_inset Formula $n>2$
+\end_inset
+
+的无限多个项都不在
+\begin_inset Formula $U(1,1/2)$
+\end_inset
+
+中, 故数列
+\begin_inset Formula $\{1/n\}$
+\end_inset
+
+不以
+\begin_inset Formula $1$
+\end_inset
+
+为极限.
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+(2)
+\series default
+ 这里有
+\begin_inset Formula 
+\[
+n^{(-1)^{n}}=\begin{cases}
+n, & \text{若}\,n\,\text{为偶数},\\
+\frac{1}{n}, & \text{若}\,n\,\text{为奇数}.
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+设
+\begin_inset Formula $a\in\mathbb{R}$
+\end_inset
+
+.
+ 考虑
+\begin_inset Formula $a$
+\end_inset
+
+的邻域
+\begin_inset Formula $U(a,1)$
+\end_inset
+
+, 那么数列
+\begin_inset Formula $\{n^{(-1)^{n}}\}$
+\end_inset
+
+中对应
+\begin_inset Formula $n$
+\end_inset
+
+为偶数且
+\begin_inset Formula $n>a+1$
+\end_inset
+
+的无限多个项都不在
+\begin_inset Formula $U(a,1)$
+\end_inset
+
+中, 故数列
+\begin_inset Formula $\{n^{(-1)^{n}}\}$
+\end_inset
+
+不以
+\begin_inset Formula $a$
+\end_inset
+
+为极限.
+ 由
+\begin_inset Formula $a$
+\end_inset
+
+的任意性可知数列
+\begin_inset Formula $\{n^{(-1)^{n}}\}$
+\end_inset
+
+发散.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+按
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+-
+\begin_inset Formula $N$
+\end_inset
+
+定义证明:
+\end_layout
+
+\begin_layout Exercise
+(1) 
+\begin_inset Formula $\lim_{n\rightarrow\infty}(\sqrt{n+1}-\sqrt{n})=0$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Exercise
+(2) 
+\begin_inset Formula $\lim_{n\rightarrow\infty}\frac{1+2+3+\cdots+n}{n^{3}}=0$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Exercise
+(3) 
+\begin_inset Formula $\lim_{n\rightarrow\infty}a_{n}=1$
+\end_inset
+
+, 其中
+\begin_inset Formula 
+\[
+a_{n}=\begin{cases}
+\frac{n-1}{n}, & n\,\text{为偶数},\\
+\frac{\sqrt{n^{2}+n}}{n}, & n\,\text{为奇数}.
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+设
+\begin_inset Formula $\lim_{n\rightarrow\infty}a_{n}=a$
+\end_inset
+
+, 
+\begin_inset Formula $\lim_{n\rightarrow\infty}b_{n}=b$
+\end_inset
+
+, 且
+\begin_inset Formula $a<b$
+\end_inset
+
+.
+ 证明: 存在正数
+\begin_inset Formula $N$
+\end_inset
+
+, 使得当
+\begin_inset Formula $n>N$
+\end_inset
+
+时, 有
+\begin_inset Formula $a_{n}<b_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+设
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+为无穷小数列, 
+\begin_inset Formula $\{b_{n}\}$
+\end_inset
+
+为有界数列, 证明: 
+\begin_inset Formula $\{a_{n}b_{n}\}$
+\end_inset
+
+为无穷小数列.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+求下列极限:
+\begin_inset Formula 
+\begin{align*}
+(1) & \lim_{n\rightarrow\infty}\left(\frac{1}{1\cdot2}+\frac{1}{2\cdot3}+\cdots+\frac{1}{n(n+1)}\right); & (2) & \lim_{n\rightarrow\infty}(\sqrt{2}\sqrt[4]{2}\sqrt[8]{2}\cdots\sqrt[2^{n}]{2});\\
+(3) & \lim_{n\rightarrow\infty}\left(\frac{1}{2}+\frac{3}{2^{2}}+\cdots+\frac{2n-1}{2^{n}}\right); & (4) & \lim_{n\rightarrow\infty}\sqrt[n]{1-\frac{1}{n}};\\
+(5) & \lim_{n\rightarrow\infty}\left(\frac{1}{n^{2}}+\frac{1}{(n+1)^{2}}+\cdots+\frac{1}{(2n)^{2}}\right); & \text{(6)} & \lim_{n\rightarrow\infty}\left(\frac{1}{\sqrt{n^{2}+1}}+\frac{1}{\sqrt{n^{2}+2}}+\cdots+\frac{1}{\sqrt{n^{2}+n}}\right).
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+解
+\end_layout
+
+\end_inset
+
+(1) 
+\begin_inset Formula 
+\begin{align*}
+\text{原式} & =\lim_{n\rightarrow\infty}\left(1-\frac{1}{2}+\frac{1}{2}-\frac{1}{3}+\cdots+\frac{1}{n}-\frac{1}{n+1}\right)\\
+ & =\lim_{n\rightarrow\infty}\left(1-\frac{1}{n+1}\right)=1.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(2)
+\begin_inset Formula 
+\[
+\text{原式}=\lim_{n\rightarrow\infty}2^{\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\cdots+\frac{1}{2^{n}}}=\lim_{n\rightarrow\infty}2^{1-\frac{1}{2^{n}}}=\frac{\lim_{n\rightarrow\infty}2}{\lim_{n\rightarrow\infty}\sqrt[n]{2}}=\frac{2}{1}=2.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(3) 记
+\begin_inset Formula 
+\[
+a_{n}=\frac{1}{2}+\frac{3}{2^{2}}+\cdots+\frac{2n-1}{2^{n}},
+\]
+
+\end_inset
+
+则当
+\begin_inset Formula $n\geqslant3$
+\end_inset
+
+的时候有
+\begin_inset Formula 
+\begin{align*}
+a_{n} & =2a_{n}-a_{n}=\left(1+\frac{3}{2}+\cdots+\frac{2n-1}{2^{n-1}}\right)-\left(\frac{1}{2}+\frac{3}{2^{2}}+\cdots+\frac{2n-1}{2^{n}}\right)\\
+ & =1+2\left(\frac{1}{2}+\frac{1}{2^{2}}+\cdots+\frac{1}{2^{n-1}}\right)-\frac{2n-1}{2^{n}}=1+2\left(1-\frac{1}{2^{n-1}}\right)+\frac{1-2n}{2^{n}}=3-\frac{3+2n}{2^{n}},
+\end{align*}
+
+\end_inset
+
+故
+\begin_inset Formula 
+\[
+\text{原式}=\lim_{n\rightarrow\infty}a_{n}=3-\lim_{n\rightarrow\infty}\frac{3+2n}{2^{n}}=3.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(4) 当
+\begin_inset Formula $n\geqslant2$
+\end_inset
+
+的时候, 有
+\begin_inset Formula 
+\[
+\sqrt[n]{\frac{1}{2}}\leqslant\sqrt[n]{1-\frac{1}{n}}\leqslant\sqrt[n]{1}=1.
+\]
+
+\end_inset
+
+再注意到
+\begin_inset Formula $\lim_{n\rightarrow\infty}\sqrt[n]{1/2}=1$
+\end_inset
+
+, 就可以由数列极限的迫敛性法则得知
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}\sqrt[n]{1-\frac{1}{n}}=1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(5)
+\end_layout
+
+\begin_layout Plain Layout
+(6)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark*
+有的同学做第(2)小题的时候写
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}2^{1-\frac{1}{2^{n}}}=2^{\lim_{n\rightarrow\infty}\left(1-\frac{1}{2^{n}}\right)}=2^{1}=2.
+\]
+
+\end_inset
+
+这样做本质上是对的, 也很直观.
+ 但是, 在第二章第2节的语境里, 因为还没有学到连续函数的概念, 所以上式第一个等号不能直接过去, 还是需要证明的.
+\end_layout
+
+\begin_layout Chapter
+直观
+\end_layout
+
+\begin_layout Standard
+在形成直观的过程中, 我们把数学概念想象成别的事物.
+ 一旦形成了直观, 我们就反过来把别的事物想象成数学概念.
+ 本章的内容介于知识与观点之间.
+\end_layout
+
+\begin_layout Example
+开学了, 下述公式小火了一把:
+\begin_inset Formula 
+\begin{align*}
+\lim_{\text{馅}\rightarrow0}\text{包子} & =\text{馒头},\\
+\lim_{\text{馅}\rightarrow+\infty}\text{包子} & =\text{丸子}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 
