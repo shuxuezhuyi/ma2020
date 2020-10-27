@@ -2385,7 +2385,7 @@ status collapsed
 \end_layout
 
 \begin_layout Exercise
-指出下述证明的
+指出下面两个证明的
 \color red
 错误
 \color inherit
@@ -2394,7 +2394,11 @@ status collapsed
 
 \begin_deeper
 \begin_layout Quotation
-试证
+
+\series bold
+(1)
+\series default
+ 试证
 \begin_inset Formula $\lim_{n\rightarrow\infty}\frac{n}{a^{n}}=0$
 \end_inset
 
@@ -2461,6 +2465,80 @@ n>\left[\frac{\varepsilon}{1-\varepsilon h}\right]+1,
 \end_inset
 
 .
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+
+\series bold
+(2)
+\series default
+ 按
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+-
+\begin_inset Formula $N$
+\end_inset
+
+定义证明
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}\frac{1+2+3+\cdots+n}{n^{3}}=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+注意到
+\begin_inset Formula 
+\[
+\left|\frac{1+2+3+\cdots+n}{n^{3}}-0\right|=\frac{1+2+3+\cdots+n}{n^{3}}=\frac{(n+1)n}{2n^{3}}=\frac{n+1}{2n^{2}}\leqslant\frac{n+1}{n},
+\]
+
+\end_inset
+
+可见对任意
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+而言, 为使
+\begin_inset Formula $\frac{n+1}{n}<\varepsilon$
+\end_inset
+
+, 只要
+\begin_inset Formula $n>\frac{1}{\varepsilon-1}$
+\end_inset
+
+即可.
+ 因此, 取
+\begin_inset Formula $N=\frac{1}{\varepsilon-1}$
+\end_inset
+
+, 则当
+\begin_inset Formula $n>N$
+\end_inset
+
+时有
+\begin_inset Formula 
+\[
+\left|\frac{1+2+3+\cdots+n}{n^{3}}-0\right|<\varepsilon.
+\]
+
+\end_inset
+
+证毕.
 \end_layout
 
 \end_inset
@@ -2713,6 +2791,93 @@ status open
 
 \begin_deeper
 \begin_layout Enumerate
+定义: 设
+\begin_inset Formula $S$
+\end_inset
+
+为非空数集.
+ 如果对任意实数
+\begin_inset Formula $M$
+\end_inset
+
+而言, 都存在
+\begin_inset Formula $x\in S$
+\end_inset
+
+使得
+\begin_inset Formula $x>|M|$
+\end_inset
+
+, 就说
+\begin_inset Formula $S$
+\end_inset
+
+无界.
+\end_layout
+
+\begin_layout Enumerate
+定义: 设
+\begin_inset Formula $S$
+\end_inset
+
+为非空数集.
+ 如果对任意
+\begin_inset Formula $M\in\mathbb{R}$
+\end_inset
+
+而言, 总存在
+\begin_inset Formula $x_{0}\in S$
+\end_inset
+
+使得
+\begin_inset Formula $x_{0}>M$
+\end_inset
+
+或
+\begin_inset Formula $x_{0}<M$
+\end_inset
+
+, 就说
+\begin_inset Formula $S$
+\end_inset
+
+无界.
+\end_layout
+
+\begin_layout Enumerate
+设
+\begin_inset Formula $f$
+\end_inset
+
+ 是定义在
+\begin_inset Formula $D$
+\end_inset
+
+上的有界函数.
+ 那么存在
+\begin_inset Formula $f(x_{0})$
+\end_inset
+
+, 其中
+\begin_inset Formula $x_{0}\in D$
+\end_inset
+
+, 使得对任意
+\begin_inset Formula $f(x)>\inf_{y\in D}f(y)$
+\end_inset
+
+而言(其中
+\begin_inset Formula $x\in D$
+\end_inset
+
+), 都有
+\begin_inset Formula $f(x_{0})<f(x)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
 对任意
 \begin_inset Formula $a\in\mathbb{R}$
 \end_inset
@@ -2762,6 +2927,210 @@ status open
 
 \begin_layout Enumerate
 有界数列必有极限.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+指出下述证明的
+\color red
+错误
+\color inherit
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Quotation
+试证明: 数列
+\begin_inset Formula $\{1/n\}$
+\end_inset
+
+不以
+\begin_inset Formula $1$
+\end_inset
+
+为极限.
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+对于任给的
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+.
+ 
+\begin_inset Formula $U(1,\varepsilon)$
+\end_inset
+
+.
+ 取
+\begin_inset Formula $\varepsilon=1/2$
+\end_inset
+
+, 都有
+\begin_inset Formula $N\in\mathbb{N}_{+}$
+\end_inset
+
+.
+ 存在
+\begin_inset Formula $n_{0}=N+1>N$
+\end_inset
+
+, 使得
+\begin_inset Formula 
+\[
+\left|\frac{1}{n_{0}}-1\right|=\left|\frac{N}{N+1}\right|\geqslant\frac{1}{2}.
+\]
+
+\end_inset
+
+即
+\begin_inset Formula $N\geqslant1$
+\end_inset
+
+时, 
+\begin_inset Formula $n=2,3,\cdots$
+\end_inset
+
+, 均有
+\begin_inset Formula 
+\[
+\left|\frac{1}{n}-1\right|>\varepsilon.
+\]
+
+\end_inset
+
+因此, 数列
+\begin_inset Formula $\{1/n\}$
+\end_inset
+
+不以
+\begin_inset Formula $1$
+\end_inset
+
+为极限.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+指出下述证明的
+\color red
+错误
+\color inherit
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Quotation
+设
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+为无穷小数列, 
+\begin_inset Formula $\{b_{n}\}$
+\end_inset
+
+为有界数列, 证明: 
+\begin_inset Formula $\{a_{n}b_{n}\}$
+\end_inset
+
+为无穷小数列.
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+因为
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+是无穷小数列, 所以
+\begin_inset Formula $\lim_{n\rightarrow\infty}a_{n}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+因为
+\begin_inset Formula $\{b_{n}\}$
+\end_inset
+
+是有界数列, 所以存在
+\begin_inset Formula $M>0$
+\end_inset
+
+使得
+\begin_inset Formula $|b_{n}|<M$
+\end_inset
+
+恒成立.
+\end_layout
+
+\begin_layout Plain Layout
+现在存在
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+使得
+\begin_inset Formula $0<|a_{n}|<M/\varepsilon$
+\end_inset
+
+恒成立.
+ 因此, 存在
+\begin_inset Formula $N>0$
+\end_inset
+
+, 使得当
+\begin_inset Formula $n>N$
+\end_inset
+
+时有
+\begin_inset Formula 
+\[
+|a_{n}|\cdot|b_{n}|=|a_{n}\cdot b_{n}-0|<\frac{M^{2}}{\varepsilon}.
+\]
+
+\end_inset
+
+由此可见
+\begin_inset Formula $\lim_{n\rightarrow\infty}a_{n}b_{n}=0$
+\end_inset
+
+, 故
+\begin_inset Formula $\{a_{n}b_{n}\}$
+\end_inset
+
+是无穷小数列.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -2865,6 +3234,30 @@ status open
 \end_inset
 
 一定是严格单调函数?
+\end_layout
+
+\begin_layout Example
+数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+是无穷小数列的充要条件是: 对任意
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+而言, 存在正整数
+\begin_inset Formula $N$
+\end_inset
+
+, 使得当
+\begin_inset Formula $n>N$
+\end_inset
+
+时总成立
+\begin_inset Formula $|a_{n}|<\frac{1}{\varepsilon}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Chapter
@@ -4473,10 +4866,6 @@ a_{n} & =2a_{n}-a_{n}=\left(1+\frac{3}{2}+\cdots+\frac{2n-1}{2^{n-1}}\right)-\le
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 
 \end_layout
 
