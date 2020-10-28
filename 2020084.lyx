@@ -199,7 +199,7 @@ LatexCommand tableofcontents
 
 \begin_layout Standard
 \begin_inset Tabular
-<lyxtabular version="3" rows="24" columns="2">
+<lyxtabular version="3" rows="27" columns="2">
 <features islongtable="true" longtabularalignment="left">
 <column alignment="left" valignment="top" width="0pt">
 <column alignment="left" valignment="top" width="0pt">
@@ -356,6 +356,83 @@ LatexCommand tableofcontents
 \end_inset
 
 的下确界
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\lg$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+以
+\begin_inset Formula $10$
+\end_inset
+
+为底的对数
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\ln$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(以
+\begin_inset Formula $e$
+\end_inset
+
+为底的)自然对数
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\log$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+对数
 \end_layout
 
 \end_inset
@@ -1842,7 +1919,7 @@ status collapsed
 \end_layout
 
 \begin_layout Standard
-本节标题本来叫“反例”; 后来想想, 本节收录的内容并不具有多少学术价值, 还是老老实实地叫“错误”好了.
+本节标题本来叫“反例”; 后来想想觉得太严肃啦, 还是老老实实地叫“错误”吧.
 \end_layout
 
 \begin_layout Exercise
@@ -2878,6 +2955,43 @@ status open
 \end_layout
 
 \begin_layout Enumerate
+定义: 设
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+是数列, 而
+\begin_inset Formula $a$
+\end_inset
+
+是实数.
+ 如果对任意正整数
+\begin_inset Formula $N$
+\end_inset
+
+而言, 都存在
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 使得当
+\begin_inset Formula $n>N$
+\end_inset
+
+时恒有
+\begin_inset Formula $|a_{n}-a|<\varepsilon$
+\end_inset
+
+, 就说
+\begin_inset Formula $a$
+\end_inset
+
+是数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+的极限.
+\end_layout
+
+\begin_layout Enumerate
 对任意
 \begin_inset Formula $a\in\mathbb{R}$
 \end_inset
@@ -3134,6 +3248,53 @@ status collapsed
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+(1) 试构造数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+, 使得
+\begin_inset Formula $\lim_{n\rightarrow\infty}\sqrt[n]{a_{n}}\neq\sqrt[n]{\lim_{n\rightarrow\infty}a_{n}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+(2) 分别为下列四种情形构造收敛数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+与发散数列
+\begin_inset Formula $\{b_{n}\}$
+\end_inset
+
+: (i) 数列
+\begin_inset Formula $\{a_{n}b_{n}\}$
+\end_inset
+
+收敛; (ii) 数列
+\begin_inset Formula $\{a_{n}b_{n}\}$
+\end_inset
+
+发散; (iii) 数列
+\begin_inset Formula $\{a_{n}/b_{n}\}$
+\end_inset
+
+收敛; (iv) 数列
+\begin_inset Formula $\{a_{n}/b_{n}\}$
+\end_inset
+
+发散.
+\end_layout
+
 \begin_layout Section
 正例
 \end_layout
@@ -3546,7 +3707,15 @@ status open
 
 \end_inset
 
-令
+例如取
+\begin_inset Formula 
+\[
+n_{0}=\log_{2}\frac{2}{1-\alpha},\quad\leftarrow\text{对应}\,\frac{1}{2^{n_{0}}}=\frac{1-\alpha}{2}
+\]
+
+\end_inset
+
+然后令
 \begin_inset Formula $x_{0}=1-\frac{1}{2^{n_{0}}}$
 \end_inset
 
@@ -4476,7 +4645,7 @@ status collapsed
 \end_inset
 
 的邻域
-\begin_inset Formula $U(1,1/2)$
+\begin_inset Formula $U(1;1/2)$
 \end_inset
 
 , 那么数列
@@ -4488,7 +4657,7 @@ status collapsed
 \end_inset
 
 的无限多个项都不在
-\begin_inset Formula $U(1,1/2)$
+\begin_inset Formula $U(1;1/2)$
 \end_inset
 
 中, 故数列
@@ -4532,7 +4701,7 @@ n, & \text{若}\,n\,\text{为偶数},\\
 \end_inset
 
 的邻域
-\begin_inset Formula $U(a,1)$
+\begin_inset Formula $U(a;1)$
 \end_inset
 
 , 那么数列
@@ -4548,7 +4717,7 @@ n, & \text{若}\,n\,\text{为偶数},\\
 \end_inset
 
 的无限多个项都不在
-\begin_inset Formula $U(a,1)$
+\begin_inset Formula $U(a;1)$
 \end_inset
 
 中, 故数列
@@ -4625,10 +4794,138 @@ a_{n}=\begin{cases}
 
 \begin_layout Standard
 \begin_inset Flex ProofAsInset
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
+\series bold
+(1)
+\series default
+ 因为
+\begin_inset Formula 
+\[
+|\sqrt{n+1}-\sqrt{n}-0|=\frac{1}{\sqrt{n+1}+\sqrt{n}}\leqslant\frac{1}{\sqrt{n}},
+\]
+
+\end_inset
+
+所以对任意
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+而言, 只要取
+\begin_inset Formula $N=1/\varepsilon^{2}$
+\end_inset
+
+, 则当
+\begin_inset Formula $n>N$
+\end_inset
+
+时恒有
+\begin_inset Formula 
+\[
+|\sqrt{n+1}-\sqrt{n}-0|<\frac{1}{\sqrt{N}}=\varepsilon,
+\]
+
+\end_inset
+
+这表明
+\begin_inset Formula $\lim_{n\rightarrow\infty}(\sqrt{n+1}-\sqrt{n})=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+(2)
+\series default
+ 因为
+\begin_inset Formula 
+\[
+\left|\frac{1+2+3+\cdots+n}{n^{3}}-0\right|=\frac{(1+n)n}{2n^{3}}=\frac{1+n}{2n^{2}}\leqslant\frac{2n}{2n^{2}}=\frac{1}{n},
+\]
+
+\end_inset
+
+所以对任意
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 只要取
+\begin_inset Formula $N=1/\varepsilon$
+\end_inset
+
+, 则当
+\begin_inset Formula $n>N$
+\end_inset
+
+时恒有
+\begin_inset Formula 
+\[
+\left|\frac{1+2+3+\cdots+n}{n^{3}}-0\right|<\frac{1}{N}=\varepsilon,
+\]
+
+\end_inset
+
+这表明原式成立.
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+(3)
+\series default
+ 因为当
+\begin_inset Formula $n$
+\end_inset
+
+为偶数时有
+\begin_inset Formula 
+\[
+|a_{n}-1|=\left|\frac{n-1}{n}-1\right|=\frac{1}{n},
+\]
+
+\end_inset
+
+且当
+\begin_inset Formula $n$
+\end_inset
+
+为奇数时有
+\begin_inset Formula 
+\[
+|a_{n}-1|=\left|\frac{\sqrt{n^{2}+n}}{n}-1\right|=\frac{\sqrt{n^{2}+n}-n}{n}\leqslant\frac{1}{n},
+\]
+
+\end_inset
+
+所以对任意
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 只要取
+\begin_inset Formula $N=1/\varepsilon$
+\end_inset
+
+, 则当
+\begin_inset Formula $n>N$
+\end_inset
+
+时恒有
+\begin_inset Formula 
+\[
+|a_{n}-1|<\frac{1}{N}=\varepsilon,
+\]
+
+\end_inset
+
+这表明
+\begin_inset Formula $\lim_{n\rightarrow\infty}a_{n}=1$
+\end_inset
+
+.
 \end_layout
 
 \end_inset
@@ -4667,10 +4964,10 @@ status open
 
 \begin_layout Standard
 \begin_inset Flex ProofAsInset
-status open
+status collapsed
 
 \begin_layout Plain Layout
-
+参见书上第27页.
 \end_layout
 
 \end_inset
@@ -4696,10 +4993,66 @@ status open
 
 \begin_layout Standard
 \begin_inset Flex ProofAsInset
-status open
+status collapsed
 
 \begin_layout Plain Layout
+由数列
+\begin_inset Formula $\{b_{n}\}$
+\end_inset
 
+有界可知, 存在
+\begin_inset Formula $M>0$
+\end_inset
+
+使得
+\begin_inset Formula $|b_{n}|<M$
+\end_inset
+
+恒成立.
+\end_layout
+
+\begin_layout Plain Layout
+对任意
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 由
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+为无穷小数列可知, 存在
+\begin_inset Formula $N\in\mathbb{N}_{+}$
+\end_inset
+
+, 使得当
+\begin_inset Formula $n>N$
+\end_inset
+
+时恒有
+\begin_inset Formula 
+\[
+|a_{n}-0|<\frac{\varepsilon}{M},
+\]
+
+\end_inset
+
+从而
+\begin_inset Formula 
+\[
+|a_{n}b_{n}-0|=|a_{n}|\cdot|b_{n}|<\frac{\varepsilon}{M}\cdot M=\varepsilon.
+\]
+
+\end_inset
+
+由此可见
+\begin_inset Formula $\lim_{n\rightarrow\infty}a_{n}b_{n}=0$
+\end_inset
+
+, 即
+\begin_inset Formula $\{a_{n}b_{n}\}$
+\end_inset
+
+为无穷小数列.
 \end_layout
 
 \end_inset
@@ -4723,7 +5076,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Flex ProofAsInset
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Argument 1
@@ -4735,7 +5088,11 @@ status open
 
 \end_inset
 
+
+\series bold
 (1) 
+\series default
+
 \begin_inset Formula 
 \begin{align*}
 \text{原式} & =\lim_{n\rightarrow\infty}\left(1-\frac{1}{2}+\frac{1}{2}-\frac{1}{3}+\cdots+\frac{1}{n}-\frac{1}{n+1}\right)\\
@@ -4748,7 +5105,11 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+
+\series bold
 (2)
+\series default
+
 \begin_inset Formula 
 \[
 \text{原式}=\lim_{n\rightarrow\infty}2^{\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\cdots+\frac{1}{2^{n}}}=\lim_{n\rightarrow\infty}2^{1-\frac{1}{2^{n}}}=\frac{\lim_{n\rightarrow\infty}2}{\lim_{n\rightarrow\infty}\sqrt[n]{2}}=\frac{2}{1}=2.
@@ -4760,7 +5121,11 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-(3) 记
+
+\series bold
+(3)
+\series default
+ 记
 \begin_inset Formula 
 \[
 a_{n}=\frac{1}{2}+\frac{3}{2^{2}}+\cdots+\frac{2n-1}{2^{n}},
@@ -4793,23 +5158,35 @@ a_{n} & =2a_{n}-a_{n}=\left(1+\frac{3}{2}+\cdots+\frac{2n-1}{2^{n-1}}\right)-\le
 \end_layout
 
 \begin_layout Plain Layout
-(4) 当
-\begin_inset Formula $n\geqslant2$
-\end_inset
 
-的时候, 有
+\series bold
+(4)
+\series default
+ 因为
 \begin_inset Formula 
 \[
-\sqrt[n]{\frac{1}{2}}\leqslant\sqrt[n]{1-\frac{1}{n}}\leqslant\sqrt[n]{1}=1.
+0\leqslant1-\frac{1}{n}<1,
+\]
+
+\end_inset
+
+所以
+\begin_inset Formula 
+\[
+1-\frac{1}{n}\leqslant\sqrt[n]{1-\frac{1}{n}}\leqslant\sqrt[n]{1}=1.
 \]
 
 \end_inset
 
 再注意到
-\begin_inset Formula $\lim_{n\rightarrow\infty}\sqrt[n]{1/2}=1$
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}\left(1-\frac{1}{n}\right)=1,
+\]
+
 \end_inset
 
-, 就可以由数列极限的迫敛性法则得知
+就可以由数列极限的迫敛性法则得知
 \begin_inset Formula 
 \[
 \lim_{n\rightarrow\infty}\sqrt[n]{1-\frac{1}{n}}=1.
@@ -4821,11 +5198,59 @@ a_{n} & =2a_{n}-a_{n}=\left(1+\frac{3}{2}+\cdots+\frac{2n-1}{2^{n-1}}\right)-\le
 \end_layout
 
 \begin_layout Plain Layout
+
+\series bold
 (5)
+\series default
+ 因为
+\begin_inset Formula 
+\[
+\text{原式}\leqslant\lim_{n\rightarrow\infty}\overset{n+1\,\text{项}}{\left(\overbrace{\frac{1}{n^{2}}+\cdots+\frac{1}{n^{2}}}\right)}=\lim_{n\rightarrow\infty}\frac{n+1}{n^{2}}=0,
+\]
+
+\end_inset
+
+并且
+\begin_inset Formula 
+\[
+\text{原式}\geqslant\lim_{n\rightarrow\infty}\overset{n+1\,\text{项}}{\left(\overbrace{\frac{1}{(2n)^{2}}+\cdots+\frac{1}{(2n)^{2}}}\right)}=\lim_{n\rightarrow\infty}\frac{n+1}{(2n)^{2}}=\lim_{n\rightarrow\infty}\frac{n+1}{4n^{2}}=0,
+\]
+
+\end_inset
+
+所以由数列极限的迫敛性法则可知原式
+\begin_inset Formula $=0$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Plain Layout
+
+\series bold
 (6)
+\series default
+ 因为
+\begin_inset Formula 
+\[
+\text{原式}\leqslant\lim_{n\rightarrow\infty}\overset{n\,\text{项}}{\left(\overbrace{\frac{1}{\sqrt{n^{2}+1}}+\cdots+\frac{1}{\sqrt{n^{2}+1}}}\right)}=\lim_{n\rightarrow\infty}\frac{n}{\sqrt{n^{2}+1}}\leqslant\lim_{n\rightarrow\infty}\frac{n}{\sqrt{n^{2}}}=\lim_{n\rightarrow\infty}1=1,
+\]
+
+\end_inset
+
+并且
+\begin_inset Formula 
+\[
+\text{原式}\geqslant\lim_{n\rightarrow\infty}\overset{n\,\text{项}}{\left(\overbrace{\frac{1}{\sqrt{n^{2}+n}}+\cdots+\frac{1}{\sqrt{n^{2}+n}}}\right)}=\lim_{n\rightarrow\infty}\frac{n}{\sqrt{n^{2}+n}}\geqslant\lim_{n\rightarrow\infty}\frac{n}{\sqrt{n^{2}+2n+1}}=\lim_{n\rightarrow\infty}\frac{n}{n+1}=1,
+\]
+
+\end_inset
+
+所以由数列极限的迫敛性法则可知原式
+\begin_inset Formula $=1$
+\end_inset
+
+.
 \end_layout
 
 \end_inset
