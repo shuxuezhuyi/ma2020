@@ -1695,6 +1695,72 @@ status open
 .
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+迫敛性
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left.\begin{array}{c}
+a_{n}\rightarrow a\leftarrow b_{n}\\
+a_{n}\leqslant c_{n}\leqslant b_{n}
+\end{array}\right\} \Rightarrow c_{n}\rightarrow a.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+四则运算法则
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left.\begin{array}{c}
+a_{n}\rightarrow a\\
+b_{n}\rightarrow b
+\end{array}\right\} \Rightarrow\begin{cases}
+(a_{n}\pm b_{n})\rightarrow(a+b)\\
+(a_{n}\cdot b_{n})\rightarrow(a\cdot b)\\
+\frac{a_{n}}{b_{n}}\rightarrow\frac{a}{b} & \text{此处}\,b_{n},b\,\text{皆须非零}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Example
 (1) 
 \begin_inset Formula $\lim_{n\rightarrow\infty}\sqrt[n]{n}=1$
@@ -1716,6 +1782,107 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+定义
+\series bold
+子列
+\series default
+.
+\end_layout
+
+\begin_layout Theorem
+数列收敛当且仅当其所有子列收敛.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+单调有界定理
+\end_layout
+
+\end_inset
+
+单调有界
+\size tiny
+实
+\size default
+数列必有极限.
+\end_layout
+
+\begin_layout Standard
+定义常数
+\begin_inset Formula $e$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+致密性定理, Bolzano-Weierstrass Lemma
+\end_layout
+
+\end_inset
+
+有界
+\size tiny
+实
+\size default
+数列必有收敛子列.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+柯西收敛准则, Cauchy's convergence criterion
+\end_layout
+
+\end_inset
+
+数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+收敛的充要条件是: 对任意
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 存在正整数
+\begin_inset Formula $N$
+\end_inset
+
+, 使得当
+\begin_inset Formula $n,m>N$
+\end_inset
+
+时, 有
+\begin_inset Formula $|a_{n}-a_{m}|<\varepsilon$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
@@ -1847,6 +2014,24 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Flex HINTAsInset
+status collapsed
+
+\begin_layout Plain Layout
+条件是说级数收敛, 于是后面无穷多项没有特别大的贡献.
+ 要求的极限相当于堆一个三角阵, 前面的项堆积总是有限, 除于趋于无穷的
+\begin_inset Formula $n$
+\end_inset
+
+会趋于零.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Flex ProofAsInset
 status collapsed
 
@@ -1874,7 +2059,8 @@ status collapsed
 此时
 \begin_inset Formula 
 \begin{align*}
-\left|\frac{a_{1}+2a_{2}+\cdots+na_{n}+(n+1)a_{n+1}+\cdots+ma_{m}}{m}-0\right| & \leqslant\left|\frac{a_{1}+2a_{2}+\cdots+(n-1)a_{n-1}}{m}\right|\\
+ & \quad\left|\frac{a_{1}+2a_{2}+\cdots+na_{n}+(n+1)a_{n+1}+\cdots+ma_{m}}{m}-0\right|\\
+ & \leqslant\left|\frac{a_{1}+2a_{2}+\cdots+(n-1)a_{n-1}}{m}\right|\\
  & \qquad+\frac{1}{m}((a_{n}+\cdots+a_{m})+(a_{n+1}+\cdots+a_{m})+\cdots+a_{m})\\
  & \leqslant\left|\frac{a_{1}+2a_{2}+\cdots+(n-1)a_{n-1}}{m}\right|+\frac{m-n+1}{m}\varepsilon\\
  & \leqslant\left|\frac{a_{1}+2a_{2}+\cdots+(n-1)a_{n-1}}{m}\right|+\varepsilon-\frac{n-1}{m}\varepsilon.
@@ -3419,6 +3605,26 @@ status collapsed
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Section
+反例
+\end_layout
+
+\begin_layout Standard
+本节难度较高.
+\end_layout
+
+\begin_layout Exercise
+试构造收敛级数
+\begin_inset Formula $\sum a_{n}$
+\end_inset
+
+, 使数列
+\begin_inset Formula $\{na_{n}\}$
+\end_inset
+
+发散.
 \end_layout
 
 \begin_layout Chapter
