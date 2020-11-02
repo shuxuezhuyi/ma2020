@@ -3447,10 +3447,14 @@ status collapsed
 \end_inset
 
 , 使得
-\begin_inset Formula $\lim_{n\rightarrow\infty}\sqrt[n]{a_{n}}\neq\sqrt[n]{\lim_{n\rightarrow\infty}a_{n}}$
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}\sqrt[n]{a_{n}}\neq\lim_{n\rightarrow\infty}\sqrt[n]{\lim_{m\rightarrow\infty}a_{m}}.
+\]
+
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Exercise
@@ -3479,6 +3483,156 @@ status collapsed
 \end_inset
 
 发散.
+\end_layout
+
+\begin_layout Example
+用数学归纳法证明: 若
+\begin_inset Formula $a_{1}=\sqrt{2}$
+\end_inset
+
+且
+\begin_inset Formula $a_{n+1}=\sqrt{2a_{n}}$
+\end_inset
+
+(其中
+\begin_inset Formula $n=1,2,\cdots$
+\end_inset
+
+), 则数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+单调递增.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+\color red
+错误的写法
+\end_layout
+
+\begin_layout Color Box Separator
+
+\end_layout
+
+\begin_layout Plain Layout
+假设
+\begin_inset Formula $a_{n}>a_{n-1}$
+\end_inset
+
+, 则有
+\begin_inset Formula $a_{n+1}=\sqrt{2a_{n}}>a_{n}=\sqrt{2a_{n-1}}$
+\end_inset
+
+.
+ 因此, 对一切
+\begin_inset Formula $n$
+\end_inset
+
+有
+\begin_inset Formula $a_{n}>a_{n-1}$
+\end_inset
+
+, 即
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+是递增的.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+合理的写法
+\end_layout
+
+\begin_layout Color Box Separator
+
+\end_layout
+
+\begin_layout Plain Layout
+为证数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+单调递增, 只需证
+\begin_inset Formula $a_{n}\leqslant a_{n+1}$
+\end_inset
+
+对一切
+\begin_inset Formula $n\in\mathbb{N}_{+}$
+\end_inset
+
+都成立.
+\end_layout
+
+\begin_layout Plain Layout
+(i) 当
+\begin_inset Formula $n=1$
+\end_inset
+
+时, 有
+\begin_inset Formula $a_{1}=\sqrt{2}\leqslant\sqrt{2\cdot\sqrt{2}}=a_{2}$
+\end_inset
+
+, 命题成立.
+\end_layout
+
+\begin_layout Plain Layout
+(ii) 假设当
+\begin_inset Formula $n=k$
+\end_inset
+
+时命题成立, 亦即有
+\begin_inset Formula $a_{k}\leqslant a_{k+1}$
+\end_inset
+
+.
+ 那么当
+\begin_inset Formula $n=k+1$
+\end_inset
+
+时有
+\begin_inset Formula 
+\[
+a_{k+1}=\sqrt{2a_{k}}\leqslant\sqrt{2a_{k+1}}=a_{k+2},
+\]
+
+\end_inset
+
+命题也成立.
+\end_layout
+
+\begin_layout Plain Layout
+综上所述, 由数学归纳法可知
+\begin_inset Formula $a_{n}\leqslant a_{n+1}$
+\end_inset
+
+对一切
+\begin_inset Formula $n\in\mathbb{N}_{+}$
+\end_inset
+
+都成立.
+ 证毕.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -5475,6 +5629,772 @@ a_{n} & =2a_{n}-a_{n}=\left(1+\frac{3}{2}+\cdots+\frac{2n-1}{2^{n-1}}\right)-\le
 
 这样做本质上是对的, 也很直观.
  但是, 在第二章第2节的语境里, 因为还没有学到连续函数的概念, 所以上式第一个等号不能直接过去, 还是需要证明的.
+\end_layout
+
+\begin_layout Exercise
+利用
+\begin_inset Formula $\lim_{n\rightarrow\infty}(1+1/n)^{n}=e$
+\end_inset
+
+求下列极限:
+\begin_inset Formula 
+\begin{align*}
+(1) & \lim_{n\rightarrow\infty}\left(1-\frac{1}{n}\right)^{n}; & (2) & \lim_{n\rightarrow\infty}\left(1+\frac{1}{n}\right)^{n+1}; & (3) & \lim_{n\rightarrow\infty}\left(1+\frac{1}{n+1}\right)^{n};\\
+(4) & \lim_{n\rightarrow\infty}\left(1+\frac{1}{2n}\right)^{n}; & (5) & \lim_{n\rightarrow\infty}\left(1+\frac{1}{n^{2}}\right)^{n}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+解
+\end_layout
+
+\end_inset
+
+(1) 
+\begin_inset Formula 
+\begin{align*}
+\text{原式} & =\lim_{n\rightarrow\infty}\left(\frac{n-1}{n}\right)^{n}=\left(\lim_{n\rightarrow\infty}\left(\frac{n}{n-1}\right)^{n}\right)^{-1}=\left(\lim_{k\rightarrow\infty}\left(\frac{k+1}{k}\right)^{k+1}\right)^{-1}\quad\leftarrow\text{令}\,k=n-1\\
+ & =\left(\lim_{k\rightarrow\infty}\left(1+\frac{1}{k}\right)^{k}\cdot\lim_{k\rightarrow\infty}\frac{k+1}{k}\right)^{-1}=\frac{1}{e}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(2) 
+\begin_inset Formula 
+\[
+\text{原式}=\lim_{n\rightarrow\infty}\left(1+\frac{1}{n}\right)^{n}\cdot\lim_{n\rightarrow\infty}\left(1+\frac{1}{n}\right)=e.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(3) 
+\begin_inset Formula 
+\begin{align*}
+\text{原式} & =\lim_{k\rightarrow\infty}\left(1+\frac{1}{k}\right)^{k-1}\quad\leftarrow\text{令}\,k=n+1\\
+ & =\lim_{k\rightarrow\infty}\left(1+\frac{1}{k}\right)^{k}\cdot\lim_{k\rightarrow\infty}\left(1+\frac{1}{k}\right)^{-1}=e.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(4) 
+\begin_inset Formula 
+\begin{align*}
+\text{原式} & =\lim_{k\rightarrow\infty}\left(1+\frac{1}{k}\right)^{k/2}\quad\leftarrow\text{令}\,k=2n\\
+ & =\sqrt{\lim_{k\rightarrow\infty}\left(1+\frac{1}{k}\right)^{k}}=\sqrt{e}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(5) 因为
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark*
+第(1)问的证明不能写
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}\left(1+\frac{1}{-n}\right)^{-n}=e,
+\]
+
+\end_inset
+
+因为书上正文仅证明了
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow+\infty}\left(1+\frac{1}{n}\right)^{n}=e,
+\]
+
+\end_inset
+
+而这第(1)问本质上正是要处理
+\begin_inset Formula $n\rightarrow-\infty$
+\end_inset
+
+的情形.
+\end_layout
+
+\begin_layout Remark*
+第(5)问注意不能把
+\begin_inset Formula $\lim$
+\end_inset
+
+塞进
+\begin_inset Formula $\sqrt[n]{\cdots}$
+\end_inset
+
+里面.
+\end_layout
+
+\begin_layout Exercise
+证明下列数列极限存在并求其值:
+\end_layout
+
+\begin_layout Exercise
+(1) 设
+\begin_inset Formula $a_{1}=\sqrt{2}$
+\end_inset
+
+, 
+\begin_inset Formula $a_{n+1}=\sqrt{2a_{n}}$
+\end_inset
+
+, 
+\begin_inset Formula $n=1,2,\cdots$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Exercise
+(2) 设
+\begin_inset Formula $a_{1}=\sqrt{c}$
+\end_inset
+
+ (
+\begin_inset Formula $c>0$
+\end_inset
+
+), 
+\begin_inset Formula $a_{n+1}=\sqrt{c+a_{n}}$
+\end_inset
+
+, 
+\begin_inset Formula $n=1,2,\cdots$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Exercise
+(3) 
+\begin_inset Formula $a_{n}=c^{n}/n!$
+\end_inset
+
+ (
+\begin_inset Formula $c>0$
+\end_inset
+
+), 
+\begin_inset Formula $n=1,2,\cdots$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+解
+\end_layout
+
+\end_inset
+
+
+\series bold
+(1)
+\series default
+ 先用数学归纳法证明
+\begin_inset Formula $a_{n}\leqslant2$
+\end_inset
+
+恒成立.
+\end_layout
+
+\begin_layout Plain Layout
+(i) 当
+\begin_inset Formula $n=1$
+\end_inset
+
+时, 有
+\begin_inset Formula $a_{1}=\sqrt{2}\leqslant2$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Plain Layout
+(ii) 假设当
+\begin_inset Formula $n=k$
+\end_inset
+
+时
+\begin_inset Formula $a_{k}\leqslant2$
+\end_inset
+
+, 那么
+\begin_inset Formula $a_{k+1}=\sqrt{2a_{k}}\leqslant\sqrt{2\cdot2}=2$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Plain Layout
+因此, 
+\begin_inset Formula $a_{n}\leqslant2$
+\end_inset
+
+恒成立, 亦即数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+有上界.
+ 又因为
+\begin_inset Formula $a_{n}>0$
+\end_inset
+
+恒成立, 所以数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+有界.
+\end_layout
+
+\begin_layout Plain Layout
+另一方面, 由
+\begin_inset Formula $a_{n}\leqslant2$
+\end_inset
+
+可知
+\begin_inset Formula $a_{n}=\sqrt{a_{n}\cdot a_{n}}\leqslant\sqrt{2a_{n}}=a_{n+1}$
+\end_inset
+
+, 故数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+单调递增.
+ 于是由单调有界定理可知
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+有极限.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+记
+\begin_inset Formula $a=\lim_{n\rightarrow\infty}a_{n}$
+\end_inset
+
+, 则由
+\begin_inset Formula $a_{n+1}=\sqrt{2a_{n}}$
+\end_inset
+
+可知
+\begin_inset Formula $\lim_{n\rightarrow\infty}a_{n+1}=\lim_{n\rightarrow\infty}\sqrt{2a_{n}}$
+\end_inset
+
+, 亦即
+\begin_inset Formula $a=\sqrt{2a}$
+\end_inset
+
+, 于是
+\begin_inset Formula $a=0$
+\end_inset
+
+或
+\begin_inset Formula $2$
+\end_inset
+
+.
+ 又因为数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+单调递增且
+\begin_inset Formula $a_{n}>0$
+\end_inset
+
+恒成立, 所以数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+的极限
+\begin_inset Formula $a$
+\end_inset
+
+只能是
+\begin_inset Formula $2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+(2)
+\series default
+ 假设数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+的极限存在且为
+\begin_inset Formula $a$
+\end_inset
+
+, 那么由
+\begin_inset Formula $\lim_{n\rightarrow\infty}a_{n+1}=\lim_{n\rightarrow\infty}\sqrt{c+a_{n}}$
+\end_inset
+
+可知
+\begin_inset Formula $a=\sqrt{c+a}$
+\end_inset
+
+, 亦即
+\begin_inset Formula $a^{2}-a-c=0$
+\end_inset
+
+.
+ 考察函数
+\begin_inset Formula $f(x)=x^{2}-x-c$
+\end_inset
+
+的图像可知
+\begin_inset Formula $a>1$
+\end_inset
+
+, 于是由
+\begin_inset Formula $a^{2}-a-c=0$
+\end_inset
+
+可知
+\begin_inset Formula 
+\[
+c=a^{2}-a>a^{2}-a-(a-1)=(a-1)^{2},
+\]
+
+\end_inset
+
+亦即
+\begin_inset Formula $a<1+\sqrt{c}$
+\end_inset
+
+.
+ 据此, 我们从头再来, 先证明
+\begin_inset Formula $a_{n}\leqslant1+\sqrt{c}$
+\end_inset
+
+恒成立.
+\end_layout
+
+\begin_layout Plain Layout
+用数学归纳法.
+ 当
+\begin_inset Formula $n=1$
+\end_inset
+
+时, 有
+\begin_inset Formula $a_{1}=\sqrt{c}\leqslant1+\sqrt{c}$
+\end_inset
+
+.
+ 假设当
+\begin_inset Formula $n=k$
+\end_inset
+
+时
+\begin_inset Formula $a_{k}\leqslant1+\sqrt{c}$
+\end_inset
+
+, 那么
+\begin_inset Formula 
+\[
+a_{k+1}=\sqrt{c+a_{k}}\leqslant\sqrt{c+1+\sqrt{c}}\leqslant\sqrt{\sqrt{c}^{2}+1+2\sqrt{c}}=\sqrt{(1+\sqrt{c})^{2}}=1+\sqrt{c}.
+\]
+
+\end_inset
+
+因此, 
+\begin_inset Formula $a_{n}\leqslant1+\sqrt{c}$
+\end_inset
+
+恒成立.
+ 结合
+\begin_inset Formula $a_{n}>0$
+\end_inset
+
+恒成立可知数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+有界.
+\end_layout
+
+\begin_layout Plain Layout
+接下来也用数学归纳法证明
+\begin_inset Formula $a_{n}\leqslant a_{n+1}$
+\end_inset
+
+恒成立.
+ 当
+\begin_inset Formula $n=1$
+\end_inset
+
+时, 有
+\begin_inset Formula $a_{1}=\sqrt{c}\leqslant\sqrt{c+\sqrt{c}}=a_{2}$
+\end_inset
+
+; 假设
+\begin_inset Formula $n=k$
+\end_inset
+
+时有
+\begin_inset Formula $a_{k}\leqslant a_{k+1}$
+\end_inset
+
+, 则当
+\begin_inset Formula $n=k+1$
+\end_inset
+
+时有
+\begin_inset Formula 
+\[
+a_{k+1}=\sqrt{c+a_{k}}\leqslant\sqrt{c+a_{k+1}}=a_{k+2}.
+\]
+
+\end_inset
+
+因此, 
+\begin_inset Formula $a_{n}\leqslant a_{n+1}$
+\end_inset
+
+恒成立, 亦即数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+单调递增.
+\end_layout
+
+\begin_layout Plain Layout
+由最开始的分析可知数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+的极限
+\begin_inset Formula $a$
+\end_inset
+
+是方程
+\begin_inset Formula $a^{2}-a-c=0$
+\end_inset
+
+的正数解, 亦即
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}a_{n}=a=\frac{1+\sqrt{1+4c}}{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+(3)
+\series default
+ 现有
+\begin_inset Formula $a_{n+1}=c^{n+1}/(n+1)!=a_{n}\cdot c/(n+1)$
+\end_inset
+
+.
+ 当
+\begin_inset Formula $n>c-1$
+\end_inset
+
+时, 恒有
+\begin_inset Formula $a_{n+1}<a_{n}$
+\end_inset
+
+; 因此, 从某一项开始, 数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+单调递减.
+ 另一方面, 数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+中的元素都是正数, 因而
+\begin_inset Formula $0$
+\end_inset
+
+是它的一个下界.
+ 于是由单调有界定理可知数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+有极限.
+\end_layout
+
+\begin_layout Plain Layout
+记
+\begin_inset Formula $a=\lim_{n\rightarrow\infty}a_{n}$
+\end_inset
+
+, 则由
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}a_{n+1}=\lim_{n\rightarrow\infty}\frac{a_{n}\cdot c}{n+1}=\lim_{n\rightarrow\infty}a_{n}\cdot\lim_{n\rightarrow\infty}\frac{c}{n+1}
+\]
+
+\end_inset
+
+可知
+\begin_inset Formula $a=a\cdot0=0$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+证明: 若单调数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+含有一个收敛子列, 则
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+收敛.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+设此收敛子列为
+\begin_inset Formula $\{a_{n_{k}}\}$
+\end_inset
+
+, 且其极限为
+\begin_inset Formula $a$
+\end_inset
+
+.
+ 那么对任意
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 存在正整数
+\begin_inset Formula $N$
+\end_inset
+
+, 使得当
+\begin_inset Formula $k>N$
+\end_inset
+
+时有
+\begin_inset Formula $|a_{n_{k}}-a|<\varepsilon$
+\end_inset
+
+.
+ 令
+\begin_inset Formula $N_{0}=n_{N+1}$
+\end_inset
+
+, 则由数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+单调可知, 当
+\begin_inset Formula $n>N_{0}$
+\end_inset
+
+时, 存在
+\begin_inset Formula $n_{k}>n$
+\end_inset
+
+, 使得
+\begin_inset Formula $a_{n}$
+\end_inset
+
+介于
+\begin_inset Formula $a_{n_{N}}$
+\end_inset
+
+与
+\begin_inset Formula $a_{n_{k}}$
+\end_inset
+
+之间; 于是由
+\begin_inset Formula $|a_{n_{N}}-a|<\varepsilon$
+\end_inset
+
+且
+\begin_inset Formula $|a_{n_{k}}-a|<\varepsilon$
+\end_inset
+
+可知
+\begin_inset Formula $|a_{n}-a|<\varepsilon$
+\end_inset
+
+.
+ 因此, 数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+收敛.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+证明: 若
+\begin_inset Formula $a_{n}>0$
+\end_inset
+
+, 且
+\begin_inset Formula $\lim_{n\rightarrow\infty}a_{n}/a_{n+1}=l>1$
+\end_inset
+
+, 则
+\begin_inset Formula $\lim_{n\rightarrow\infty}a_{n}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+设
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+为有界数列, 记
+\begin_inset Formula 
+\[
+\overline{a}_{n}=\sup\{a_{n},a_{n+1},\cdots\},\quad\underline{a}_{n}=\inf\{a_{n},a_{n+1},\cdots\}.
+\]
+
+\end_inset
+
+证明: (1) 对任意正整数
+\begin_inset Formula $n$
+\end_inset
+
+都有
+\begin_inset Formula $\overline{a}_{n}\geqslant\underline{a}_{n}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Exercise
+(2) 
+\begin_inset Formula $\{\overline{a}_{n}\}$
+\end_inset
+
+为递减有界数列, 
+\begin_inset Formula $\{\underline{a}_{n}\}$
+\end_inset
+
+为递增有界数列, 且对任意正整数
+\begin_inset Formula $n,m$
+\end_inset
+
+有
+\begin_inset Formula $\overline{a}_{n}\geqslant\underline{a}_{m}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+(3) 设
+\begin_inset Formula $\overline{a}$
+\end_inset
+
+和
+\begin_inset Formula $\underline{a}$
+\end_inset
+
+分别是
+\begin_inset Formula $\{\overline{a}_{n}\}$
+\end_inset
+
+和
+\begin_inset Formula $\{\underline{a}_{n}\}$
+\end_inset
+
+的极限, 则
+\begin_inset Formula $\overline{a}\geqslant\underline{a}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+(4) 
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+收敛的充要条件是
+\begin_inset Formula $\overline{a}=\underline{a}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Chapter
