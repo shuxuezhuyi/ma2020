@@ -3229,6 +3229,10 @@ status open
 有界数列必有极限.
 \end_layout
 
+\begin_layout Enumerate
+单调递减有上界的数列必有极限.
+\end_layout
+
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -3759,6 +3763,20 @@ a_{k+1}=\sqrt{2a_{k}}\leqslant\sqrt{2a_{k+1}}=a_{k+2},
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+习题: 阐述Stolz定理的直观.
+ 证明Stolz定理.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -5755,6 +5773,20 @@ status open
 \end_inset
 
 里面.
+ 倒不是这样做就一定不对; 恰恰相反, 在第(5)问这里正好是对的, 因为
+\begin_inset Formula $(1+1/n^{2})^{n^{2}}$
+\end_inset
+
+收敛到一个常数, 同时
+\begin_inset Formula $f(x)=\sqrt[n]{x}$
+\end_inset
+
+也是
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+上的连续函数.
+ 问题是这里还没有建立函数极限的概念, 更没有连续函数的概念, 因而不能直接过去.
 \end_layout
 
 \begin_layout Exercise
@@ -5884,7 +5916,11 @@ status open
 \begin_inset Formula $\{a_{n}\}$
 \end_inset
 
-有界.
+ 
+\series bold
+有界
+\series default
+.
 \end_layout
 
 \begin_layout Plain Layout
@@ -5900,7 +5936,11 @@ status open
 \begin_inset Formula $\{a_{n}\}$
 \end_inset
 
-单调递增.
+ 
+\series bold
+单调递增
+\series default
+.
  于是由单调有界定理可知
 \begin_inset Formula $\{a_{n}\}$
 \end_inset
@@ -6056,7 +6096,11 @@ a_{k+1}=\sqrt{c+a_{k}}\leqslant\sqrt{c+1+\sqrt{c}}\leqslant\sqrt{\sqrt{c}^{2}+1+
 \begin_inset Formula $\{a_{n}\}$
 \end_inset
 
-有界.
+ 
+\series bold
+有界
+\series default
+.
 \end_layout
 
 \begin_layout Plain Layout
@@ -6101,7 +6145,11 @@ a_{k+1}=\sqrt{c+a_{k}}\leqslant\sqrt{c+a_{k+1}}=a_{k+2}.
 \begin_inset Formula $\{a_{n}\}$
 \end_inset
 
-单调递增.
+ 
+\series bold
+单调递增
+\series default
+.
 \end_layout
 
 \begin_layout Plain Layout
@@ -6150,7 +6198,11 @@ a_{k+1}=\sqrt{c+a_{k}}\leqslant\sqrt{c+a_{k+1}}=a_{k+2}.
 \begin_inset Formula $\{a_{n}\}$
 \end_inset
 
-单调递减.
+ 
+\series bold
+单调递减
+\series default
+.
  另一方面, 数列
 \begin_inset Formula $\{a_{n}\}$
 \end_inset
@@ -6159,7 +6211,11 @@ a_{k+1}=\sqrt{c+a_{k}}\leqslant\sqrt{c+a_{k+1}}=a_{k+2}.
 \begin_inset Formula $0$
 \end_inset
 
-是它的一个下界.
+是它的一个
+\series bold
+下界
+\series default
+.
  于是由单调有界定理可知数列
 \begin_inset Formula $\{a_{n}\}$
 \end_inset
