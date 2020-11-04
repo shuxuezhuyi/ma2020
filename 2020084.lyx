@@ -5668,7 +5668,7 @@ a_{n} & =2a_{n}-a_{n}=\left(1+\frac{3}{2}+\cdots+\frac{2n-1}{2^{n-1}}\right)-\le
 
 \begin_layout Standard
 \begin_inset Flex ProofAsInset
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Argument 1
@@ -5680,7 +5680,11 @@ status open
 
 \end_inset
 
+
+\series bold
 (1) 
+\series default
+
 \begin_inset Formula 
 \begin{align*}
 \text{原式} & =\lim_{n\rightarrow\infty}\left(\frac{n-1}{n}\right)^{n}=\left(\lim_{n\rightarrow\infty}\left(\frac{n}{n-1}\right)^{n}\right)^{-1}=\left(\lim_{k\rightarrow\infty}\left(\frac{k+1}{k}\right)^{k+1}\right)^{-1}\quad\leftarrow\text{令}\,k=n-1\\
@@ -5693,7 +5697,11 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+
+\series bold
 (2) 
+\series default
+
 \begin_inset Formula 
 \[
 \text{原式}=\lim_{n\rightarrow\infty}\left(1+\frac{1}{n}\right)^{n}\cdot\lim_{n\rightarrow\infty}\left(1+\frac{1}{n}\right)=e.
@@ -5705,7 +5713,11 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-(3) 
+
+\series bold
+(3)
+\series default
+ 
 \begin_inset Formula 
 \begin{align*}
 \text{原式} & =\lim_{k\rightarrow\infty}\left(1+\frac{1}{k}\right)^{k-1}\quad\leftarrow\text{令}\,k=n+1\\
@@ -5718,7 +5730,11 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+
+\series bold
 (4) 
+\series default
+
 \begin_inset Formula 
 \begin{align*}
 \text{原式} & =\lim_{k\rightarrow\infty}\left(1+\frac{1}{k}\right)^{k/2}\quad\leftarrow\text{令}\,k=2n\\
@@ -5731,7 +5747,120 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-(5) 因为
+
+\series bold
+(5)
+\series default
+ 
+\emph on
+王少辰同学的方法
+\emph default
+:
+\end_layout
+
+\begin_layout Plain Layout
+首先有
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}\left(1+\frac{1}{n^{2}}\right)^{n}=\lim_{n\rightarrow\infty}\left(\left(1+\frac{1}{n^{2}}\right)^{n^{2}}\right)^{\frac{1}{n}},
+\]
+
+\end_inset
+
+并且
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}\left(1+\frac{1}{n^{2}}\right)^{n^{2}}=\lim_{n\rightarrow\infty}\left(1+\frac{1}{n}\right)^{n}=e.
+\]
+
+\end_inset
+
+对
+\begin_inset Formula $\varepsilon_{0}=e/2>0$
+\end_inset
+
+, 存在正整数
+\begin_inset Formula $N_{0}$
+\end_inset
+
+, 使得当
+\begin_inset Formula $n>N_{0}$
+\end_inset
+
+时有
+\begin_inset Formula 
+\[
+\left|\left(1+\frac{1}{n^{2}}\right)^{n^{2}}-e\right|<\varepsilon_{0}=\frac{e}{2},
+\]
+
+\end_inset
+
+亦即
+\begin_inset Formula 
+\[
+\frac{e}{2}<\left(1+\frac{1}{n^{2}}\right)^{n^{2}}<\frac{3}{2}e.
+\]
+
+\end_inset
+
+又因为
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}\sqrt[n]{\frac{e}{2}}=1,\quad\lim_{n\rightarrow\infty}\sqrt[n]{\frac{3}{2}e}=1,
+\]
+
+\end_inset
+
+所以由数列极限的迫敛性可知
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}\left(1+\frac{1}{n^{2}}\right)^{n}=1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\emph on
+陈庆傲同学的方法
+\emph default
+:
+\end_layout
+
+\begin_layout Plain Layout
+一方面有
+\begin_inset Formula $(1+1/n^{2})^{n}>1$
+\end_inset
+
+, 另一方面有
+\begin_inset Formula 
+\begin{align*}
+\left(1+\frac{1}{n^{2}}\right)^{n} & =\sum_{i=0}^{n}C_{n}^{i}\frac{1}{n^{2i}}=1+\sum_{i=1}^{n}\frac{n!}{i!(n-i)!n^{2i}}\\
+ & <1+\sum_{i=1}^{n}\frac{1}{n^{i}}=1+\frac{\frac{1}{n}\left(1-\frac{1}{n^{n}}\right)}{1-\frac{1}{n}}=1+\frac{1-\frac{1}{n^{n}}}{n-1},
+\end{align*}
+
+\end_inset
+
+再注意到
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}1=1,\quad\lim_{n\rightarrow\infty}\left(1+\frac{1-\frac{1}{n^{n}}}{n-1}\right)=1,
+\]
+
+\end_inset
+
+则由数列极限的迫敛性可知
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}\left(1+\frac{1}{n^{2}}\right)^{n}=1.
+\]
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -6248,6 +6377,51 @@ a_{k+1}=\sqrt{c+a_{k}}\leqslant\sqrt{c+a_{k+1}}=a_{k+2}.
 
 \end_layout
 
+\begin_layout Remark*
+在这道题里
+\series bold
+显然
+\series default
+总是有
+\begin_inset Formula $a_{n}\geqslant0$
+\end_inset
+
+, 也就是数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+有下界.
+ 因此, 有的同学只写了数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+有上界的证明, 然后就说数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+有界, 也不是绝对不行.
+ 但是, 有的同学只写了数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+有下界的证明, 却说数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+有界, 就不行了……因为数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+有上界并不是那么显然啊.
+ 当然, 在考试中, 任何时候都不能因为觉得“显然”就不写证明了; 真要觉得没什么好写的, 写个“由题意可得”或者“由数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+的定义可知”什么的都比写“显然”要好.
+ 等以后你们学到特别难的科目或者读到特别难的论文的时候, 你们就知道“显然(obvious, trivial, routine, easy to
+ see, left to the reader)”是多么拉仇恨的说法了.
+\end_layout
+
 \begin_layout Exercise
 证明: 若单调数列
 \begin_inset Formula $\{a_{n}\}$
@@ -6373,6 +6547,14 @@ status open
 
 \end_layout
 
+\begin_layout Remark*
+不能指望数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+直接就是单调递减.
+\end_layout
+
 \begin_layout Exercise
 设
 \begin_inset Formula $\{a_{n}\}$
@@ -6451,6 +6633,18 @@ status open
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Remark*
+不能指望数列
+\begin_inset Formula $\{\overline{a}_{n}\},\{\underline{a}_{n}\}$
+\end_inset
+
+是数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+的子列.
 \end_layout
 
 \begin_layout Chapter
