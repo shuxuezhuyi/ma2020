@@ -5650,6 +5650,76 @@ a_{n} & =2a_{n}-a_{n}=\left(1+\frac{3}{2}+\cdots+\frac{2n-1}{2^{n-1}}\right)-\le
 \end_layout
 
 \begin_layout Exercise
+求下列极限:
+\begin_inset Formula 
+\begin{align*}
+(1) & \lim_{n\rightarrow\infty}\frac{1}{2}\cdot\frac{3}{4}\cdot\cdots\cdot\frac{2n-1}{2n}; & (2) & \lim_{n\rightarrow\infty}\frac{\sum_{p=1}^{n}p!}{n!};\\
+(3) & \lim_{n\rightarrow\infty}((n+1)^{\alpha}-n^{\alpha}),0<\alpha<1; & (4) & \lim_{n\rightarrow\infty}(1+\alpha)(1+\alpha^{2})\cdots(1+\alpha^{2^{n}}),|\alpha|<1.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex HINTAsInset
+status collapsed
+
+\begin_layout Plain Layout
+(1) 利用
+\begin_inset Formula 
+\[
+\frac{1}{2}\cdot\frac{3}{4}\cdot\cdots\cdot\frac{2n-1}{2n}<\frac{2}{3}\cdot\frac{4}{5}\cdot\cdots\cdot\frac{2n}{2n+1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(2) 站在
+\begin_inset Formula $\sum_{p=1}^{n}p!$
+\end_inset
+
+里, 
+\begin_inset Formula $n!$
+\end_inset
+
+说``请不要误会, 我没有针对谁……'', 但是没说完就被路过的
+\begin_inset Formula $(n+1)!$
+\end_inset
+
+秒了.
+\end_layout
+
+\begin_layout Plain Layout
+(3) 观察
+\begin_inset Formula 
+\[
+(n+1)^{-1/2}-n^{-1/2}=\frac{1}{\sqrt{n+1}}-\frac{1}{\sqrt{n}}=\frac{1}{\sqrt{n}}\left(\sqrt{\frac{n}{n+1}}-1\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(4) 左乘一个
+\begin_inset Formula $(1-\alpha)$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
 利用
 \begin_inset Formula $\lim_{n\rightarrow\infty}(1+1/n)^{n}=e$
 \end_inset
@@ -5877,7 +5947,7 @@ status open
 
 \end_inset
 
-因为书上正文仅证明了
+因为书上正文到这一节仅证明了
 \begin_inset Formula 
 \[
 \lim_{n\rightarrow+\infty}\left(1+\frac{1}{n}\right)^{n}=e,
@@ -6439,75 +6509,54 @@ a_{k+1}=\sqrt{c+a_{k}}\leqslant\sqrt{c+a_{k+1}}=a_{k+2}.
 status collapsed
 
 \begin_layout Plain Layout
-设此收敛子列为
-\begin_inset Formula $\{a_{n_{k}}\}$
+不妨设数列
+\begin_inset Formula $\{a_{n}\}$
 \end_inset
 
-, 且其极限为
+单调递增, 并且它的一个子列
+\begin_inset Formula $\{a_{n_{k}}\}_{k=1}^{\infty}$
+\end_inset
+
+收敛到
 \begin_inset Formula $a$
 \end_inset
 
 .
- 那么对任意
-\begin_inset Formula $\varepsilon>0$
+\end_layout
+
+\begin_layout Plain Layout
+因为
+\begin_inset Formula $\{a_{n_{k}}\}_{k=1}^{\infty}$
 \end_inset
 
-, 存在正整数
-\begin_inset Formula $N$
+单调递增, 所以
+\begin_inset Formula $a_{n_{k}}\leqslant a$
 \end_inset
 
-, 使得当
-\begin_inset Formula $k>N$
-\end_inset
-
-时有
-\begin_inset Formula $|a_{n_{k}}-a|<\varepsilon$
-\end_inset
-
-.
- 令
-\begin_inset Formula $N_{0}=n_{N+1}$
-\end_inset
-
-, 则由数列
-\begin_inset Formula $\{a_{n}\}$
-\end_inset
-
-单调可知, 当
-\begin_inset Formula $n>N_{0}$
-\end_inset
-
-时, 存在
-\begin_inset Formula $n_{k}>n$
-\end_inset
-
-, 使得
+恒成立.
+ 对任意
 \begin_inset Formula $a_{n}$
 \end_inset
 
-介于
-\begin_inset Formula $a_{n_{N}}$
+而言, 因为总存在
+\begin_inset Formula $k$
 \end_inset
 
-与
-\begin_inset Formula $a_{n_{k}}$
+使得
+\begin_inset Formula $n\leqslant n_{k}$
 \end_inset
 
-之间; 于是由
-\begin_inset Formula $|a_{n_{N}}-a|<\varepsilon$
-\end_inset
-
-且
-\begin_inset Formula $|a_{n_{k}}-a|<\varepsilon$
-\end_inset
-
-可知
-\begin_inset Formula $|a_{n}-a|<\varepsilon$
+, 所以
+\begin_inset Formula $a_{n}\leqslant a_{n_{k}}\leqslant a$
 \end_inset
 
 .
- 因此, 数列
-\begin_inset Formula $\{a_{n}\}$
+ 这说明
+\begin_inset Formula $\{a_{n}\}_{n=1}^{\infty}$
+\end_inset
+
+单调递增有上界, 故
+\begin_inset Formula $\{a_{n}\}_{n=1}^{\infty}$
 \end_inset
 
 收敛.
@@ -6516,6 +6565,38 @@ status collapsed
 \end_inset
 
 
+\end_layout
+
+\begin_layout Remark*
+``不妨设''就是``without loss of generality'', 有时也缩写为``WLOG''.
+ 维基百科对这个短语的解释
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+参见 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://en.wikipedia.org/wiki/Without_loss_of_generality
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+是``The term is used to indicate the assumption that follows is chosen arbitraril
+y, narrowing the premise to a particular case, but does not affect the validity
+ of the proof in general.
+ The other cases are also proven by some symmetry — or another equivalence
+ or similarity.
+ As a result, once a proof is given for the particular case, it is trivial
+ to adapt it to prove the conclusion in all other cases.''
 \end_layout
 
 \begin_layout Exercise
@@ -6536,10 +6617,56 @@ status collapsed
 
 \begin_layout Standard
 \begin_inset Flex ProofAsInset
-status open
+status collapsed
 
 \begin_layout Plain Layout
+由数列极限的保号性可知, 存在正整数
+\begin_inset Formula $N$
+\end_inset
 
+, 使得当
+\begin_inset Formula $n>N$
+\end_inset
+
+时, 总有
+\begin_inset Formula $a_{n}/a_{n+1}>1$
+\end_inset
+
+, 亦即
+\begin_inset Formula $a_{n}>a_{n+1}$
+\end_inset
+
+.
+ 又因为
+\begin_inset Formula $a_{n}>0$
+\end_inset
+
+恒成立, 所以由单调有界定理可知数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+有极限.
+ 记
+\begin_inset Formula $a=\lim_{n\rightarrow\infty}a_{n}$
+\end_inset
+
+, 则有
+\begin_inset Formula 
+\[
+a\cdot l=\lim_{n\rightarrow\infty}a_{n+1}\cdot\lim_{n\rightarrow\infty}\frac{a_{n}}{a_{n+1}}=\lim_{n\rightarrow\infty}a_{n}=a.
+\]
+
+\end_inset
+
+于是由
+\begin_inset Formula $l>1$
+\end_inset
+
+可知
+\begin_inset Formula $a=0$
+\end_inset
+
+.
 \end_layout
 
 \end_inset
@@ -6635,16 +6762,184 @@ status open
 .
 \end_layout
 
-\begin_layout Remark*
-不能指望数列
-\begin_inset Formula $\{\overline{a}_{n}\},\{\underline{a}_{n}\}$
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+因为
+\begin_inset Formula 
+\[
+\{a_{n},a_{n+1},\cdots\}\supset\{a_{n+1},a_{n+2}\}\supset\cdots,
+\]
+
 \end_inset
 
-是数列
+所以由上下确界的定义可知数列
+\begin_inset Formula $\{\overline{a}_{n}\}$
+\end_inset
+
+单调递减, 数列
+\begin_inset Formula $\{\underline{a}_{n}\}$
+\end_inset
+
+单调递增, 并且对任意
+\begin_inset Formula $k\geqslant n$
+\end_inset
+
+都有
+\begin_inset Formula $\overline{a}_{n}\geqslant a_{k}\geqslant\underline{a}_{n}$
+\end_inset
+
+.
+ 特别地, 取
+\begin_inset Formula $k=n+m$
+\end_inset
+
+, 则有
+\begin_inset Formula $\overline{a}_{n}\geqslant a_{k}\geqslant\underline{a}_{m}$
+\end_inset
+
+.
+ 又因为数列
 \begin_inset Formula $\{a_{n}\}$
 \end_inset
 
-的子列.
+有界, 所以存在
+\begin_inset Formula $M$
+\end_inset
+
+使得
+\begin_inset Formula $-M\leqslant a_{n}\leqslant M$
+\end_inset
+
+对任意
+\begin_inset Formula $n$
+\end_inset
+
+都成立, 于是由定义可知
+\begin_inset Formula 
+\[
+-M\leqslant a_{n}\leqslant\overline{a}_{n}\leqslant\sup_{k\in\mathbb{N}_{+}}\{a_{k}\}\leqslant M,\quad-M\leqslant\inf_{k\in\mathbb{N}_{+}}\{a_{k}\}\leqslant\underline{a}_{n}\leqslant a_{n}\leqslant M,
+\]
+
+\end_inset
+
+故数列
+\begin_inset Formula $\{\overline{a}_{n}\}$
+\end_inset
+
+与
+\begin_inset Formula $\{\underline{a}_{n}\}$
+\end_inset
+
+都有界, 从而由单调有界定理可知数列
+\begin_inset Formula $\{\overline{a}_{n}\}$
+\end_inset
+
+与
+\begin_inset Formula $\{\underline{a}_{n}\}$
+\end_inset
+
+分别有极限
+\begin_inset Formula $\overline{a}$
+\end_inset
+
+与
+\begin_inset Formula $\underline{a}$
+\end_inset
+
+.
+ 再由数列极限的保号性可知
+\begin_inset Formula $\overline{a}\geqslant\underline{a}$
+\end_inset
+
+.
+ 这就证明了(1), (2)与(3).
+ 接下来证明(4).
+\end_layout
+
+\begin_layout Plain Layout
+充分性: 设
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+收敛到
+\begin_inset Formula $a$
+\end_inset
+
+.
+ 那么对任意
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 存在正整数
+\begin_inset Formula $N$
+\end_inset
+
+, 使得当
+\begin_inset Formula $n>N$
+\end_inset
+
+时有
+\begin_inset Formula $|a_{n}-a|<\varepsilon$
+\end_inset
+
+, 此时由定义可知
+\begin_inset Formula $|\overline{a}_{n}-a|\leqslant\varepsilon$
+\end_inset
+
+且
+\begin_inset Formula $|\underline{a}_{n}-a|\leqslant\varepsilon$
+\end_inset
+
+.
+ 由此可见
+\begin_inset Formula $\overline{a}=a=\underline{a}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+必要性: 因为
+\begin_inset Formula $\overline{a}=\underline{a}$
+\end_inset
+
+, 并且对任意
+\begin_inset Formula $n\in\mathbb{N}_{+}$
+\end_inset
+
+都有
+\begin_inset Formula $\overline{a}_{n}\geqslant a_{n}\geqslant\underline{a}_{n}$
+\end_inset
+
+, 所以由数列极限的迫敛性可知数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+收敛.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark*
+数列
+\begin_inset Formula $\{\overline{a}_{n}\},\{\underline{a}_{n}\}$
+\end_inset
+
+不见得是数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+的子列, 例如当
+\begin_inset Formula $a_{n}=1/n$
+\end_inset
+
+的时候.
 \end_layout
 
 \begin_layout Chapter
@@ -6668,6 +6963,47 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+从前
+\size tiny
+《JOJO的奇妙冒险》里
+\size default
+有这样一个段子：
+\end_layout
+
+\begin_layout Example
+Dio：“我从短暂的人生当中学到一件事……人越是工于心计，就越容易陷入意想不到的困境……人类的能力是有极限的啊。”
+\end_layout
+
+\begin_layout Example
+Jonathan：“你到底想说什么？”
+\end_layout
+
+\begin_layout Example
+（大雾弥漫）
+\end_layout
+
+\begin_layout Example
+在这里，数学家Jonathan感到非常困惑：所谓“人类的能力是有极限的”，究竟是什么意思呢？自古至今，人类个体的总数也只有有限个，根本不足以构成一个数列，如何谈
+论极限？他觉得Dio说的人类必然包括未来的人类，并且还要假设“人类会永远生存下去”。这样只要把人类按时间顺序排成一列，确实可以谈论极限了。但并不是每个数列都有极
+限；Dio何以知道人类的能力是有极限的呢？Jonathan认为，他自己至多只能知道自古至今所有人类的能力，但并不能知道未来的人类能力如何；而在一个数列当中，仅知
+道有限个项的信息，对了解这个数列的极限根本毫无帮助。因此，Dio势必掌握了人类能力发展趋势的某种信息。那会是什么信息呢？这时候Jonathan想起，金庸武侠小说
+里，年代越靠后，人物的武功越低，但是武功再怎么低也不可能低成负的，于是由单调有界定理可知金庸武侠小说里人类的武功是有极限的。可是Jonathan觉得现实世界绝非
+如此——虽然他觉得人类的能力应当是一个有界数列，因为专利局有个人跟他讲过，人类的移动速度永远都不能达到光速。于是由致密性定理可知，人类的移动速度一定有收敛子列。
+但这不能说明人类的移动速度会收敛。Jonathan确信人类的移动速度不可能单调递增或单调递减，但螺旋上升倒也不是不可能……
+\end_layout
+
+\begin_layout Example
+Dio充分利用Jonathan的弱点，使Jonathan陷入了沉思，从而一举偷袭击败了Jonathan。
 \end_layout
 
 \begin_layout Chapter
