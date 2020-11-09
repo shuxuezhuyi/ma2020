@@ -3639,6 +3639,268 @@ a_{k+1}=\sqrt{2a_{k}}\leqslant\sqrt{2a_{k+1}}=a_{k+2},
 
 \end_layout
 
+\begin_layout Exercise
+指出下列说法的
+\color red
+错误
+\color inherit
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+发散
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+对任意
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+与任意正整数
+\begin_inset Formula $N$
+\end_inset
+
+而言, 当
+\begin_inset Formula $m,n>N$
+\end_inset
+
+时, 一定有
+\begin_inset Formula $|a_{n}-a_{m}|>\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+发散
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+对任意正整数
+\begin_inset Formula $N$
+\end_inset
+
+, 存在正整数
+\begin_inset Formula $n_{1},n_{2},n_{3},n_{4}$
+\end_inset
+
+满足
+\begin_inset Formula $N<n_{1}<n_{2}\leqslant n_{3}<n_{4}$
+\end_inset
+
+, 使得
+\begin_inset Formula $|a_{n_{1}}-a_{n_{2}}|<|a_{n_{3}}-a_{n_{4}}|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+发散
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+存在
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 对任意正整数
+\begin_inset Formula $N$
+\end_inset
+
+, 使得当
+\begin_inset Formula $n>m>N$
+\end_inset
+
+时, 有
+\begin_inset Formula $|a_{n}-a_{m}|\geqslant\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+指出下述证明的
+\color red
+错误
+\color inherit
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Quotation
+设
+\begin_inset Formula $\lim_{n\rightarrow\infty}(a_{1}+a_{2}+\cdots+a_{n})/n=a$
+\end_inset
+
+.
+ 那么对任意
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 存在正整数
+\begin_inset Formula $N$
+\end_inset
+
+, 使得当
+\begin_inset Formula $n>N$
+\end_inset
+
+时有
+\begin_inset Formula 
+\[
+\left|\frac{a_{1}+a_{2}+\cdots+a_{n}}{n}-a\right|<\varepsilon,
+\]
+
+\end_inset
+
+亦即
+\begin_inset Formula 
+\[
+\left|\frac{(a_{1}-a)+(a_{2}-a)+\cdots+(a_{n}-a)}{n}\right|<\varepsilon,
+\]
+
+\end_inset
+
+由此可得
+\begin_inset Formula $|a_{n}-a|/n<\varepsilon$
+\end_inset
+
+, 即
+\begin_inset Formula $|a_{n}-a|<n\varepsilon$
+\end_inset
+
+.
+ 结合
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+的任意性可得
+\begin_inset Formula $\lim_{n\rightarrow\infty}a_{n}=a$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+指出下述证明的
+\color red
+错误
+\color inherit
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Quotation
+考虑
+\begin_inset Formula $a_{n}=\sin(n\pi/2)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Quotation
+存在
+\begin_inset Formula $\varepsilon_{0}>0$
+\end_inset
+
+, 对任意
+\begin_inset Formula $n>0$
+\end_inset
+
+, 总存在某个正整数
+\begin_inset Formula $N$
+\end_inset
+
+, 使得当
+\begin_inset Formula $n,m>N$
+\end_inset
+
+时有
+\begin_inset Formula 
+\[
+|a_{n}-a_{m}|=\left|\sin\frac{n\pi}{2}-\sin\frac{m\pi}{2}\right|=\left|2\sin\frac{\frac{n\pi}{2}-\frac{m\pi}{2}}{2}\cos\frac{\frac{n\pi}{2}+\frac{m\pi}{2}}{2}\right|<2\left|\sin\frac{(n-m)\pi}{4}\right|<\left|\frac{(n-m)\pi}{2}\right|.
+\]
+
+\end_inset
+
+又因为
+\begin_inset Formula $n,m\in\mathbb{N}_{+}$
+\end_inset
+
+且
+\begin_inset Formula $n\neq m$
+\end_inset
+
+, 所以
+\begin_inset Formula 
+\[
+\left|\frac{(n-m)\pi}{2}\right|\geqslant\frac{\pi}{2}.
+\]
+
+\end_inset
+
+取
+\begin_inset Formula $\varepsilon_{0}=\pi/2$
+\end_inset
+
+, 即
+\begin_inset Formula $|a_{n}-a_{m}|\geqslant\pi/2$
+\end_inset
+
+.
+ 故
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+为发散数列.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+指出下述证明的
+\color red
+错误
+\color inherit
+:
+\end_layout
+
 \begin_layout Section
 正例
 \end_layout
@@ -6940,6 +7202,252 @@ status collapsed
 \end_inset
 
 的时候.
+\end_layout
+
+\begin_layout Exercise
+设
+\begin_inset Formula $\lim_{n\rightarrow\infty}a_{n}=a$
+\end_inset
+
+, 证明:
+\end_layout
+
+\begin_layout Exercise
+(1) 
+\begin_inset Formula $\lim_{n\rightarrow\infty}(a_{1}+a_{2}+\cdots+a_{n})/n=a$
+\end_inset
+
+ (又问由此等式能否反过来推出
+\begin_inset Formula $\lim_{n\rightarrow\infty}a_{n}=a$
+\end_inset
+
+);
+\end_layout
+
+\begin_layout Exercise
+(2) 若
+\begin_inset Formula $a_{n}>0$
+\end_inset
+
+ (
+\begin_inset Formula $n=1,2,\cdots$
+\end_inset
+
+), 则
+\begin_inset Formula $\lim_{n\rightarrow\infty}\sqrt[n]{a_{1}a_{2}\cdots a_{n}}=a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status open
+
+\begin_layout Plain Layout
+(1)
+\end_layout
+
+\begin_layout Plain Layout
+(2) 当
+\begin_inset Formula $a=0$
+\end_inset
+
+时
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+设
+\begin_inset Formula $a_{1}>b_{1}>0$
+\end_inset
+
+, 记
+\begin_inset Formula 
+\[
+a_{n}=\frac{a_{n-1}+b_{n-1}}{2},\quad b_{n}=\frac{2a_{n-1}b_{n-1}}{a_{n-1}+b_{n-1}},\quad n=2,3,\cdots.
+\]
+
+\end_inset
+
+证明: 数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+ 与
+\begin_inset Formula $\{b_{n}\}$
+\end_inset
+
+ 的极限都存在且等于
+\begin_inset Formula $\sqrt{a_{1}b_{1}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+按柯西收敛准则叙述数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+发散的充要条件, 并用它证明下列数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+是发散的:
+\begin_inset Formula 
+\begin{align*}
+(1) & a_{n}=(-1)^{n}n; & (2) & a_{n}=\sin\frac{n\pi}{2}; & (3) & a_{n}=1+\frac{1}{2}+\cdots+\frac{1}{n}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+函数极限
+\end_layout
+
+\begin_layout Exercise
+设
+\begin_inset Formula $\lim_{x\rightarrow x_{0}}f(x)=A$
+\end_inset
+
+, 证明
+\begin_inset Formula $\lim_{h\rightarrow0}f(x_{0}+h)=A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+讨论下列函数在
+\begin_inset Formula $x\rightarrow0$
+\end_inset
+
+时的极限或左、右极限:
+\begin_inset Formula 
+\begin{align*}
+(1) & f(x)=\frac{|x|}{x}; & (2) & f(x)=[x]; & (3) & f(x)=\begin{cases}
+2^{x}, & x>0,\\
+0, & x=0,\\
+1+x^{2}, & x<0.
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+设
+\begin_inset Formula $\lim_{x\rightarrow+\infty}f(x)=A$
+\end_inset
+
+, 证明
+\begin_inset Formula $\lim_{x\rightarrow0^{+}}f(x^{-1})=A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+证明: 对Riemann函数
+\begin_inset Formula $R(x)$
+\end_inset
+
+有
+\begin_inset Formula $\lim_{x\rightarrow x_{0}}R(x)=0$
+\end_inset
+
+, 其中
+\begin_inset Formula $x_{0}\in[0,1]$
+\end_inset
+
+ (当
+\begin_inset Formula $x_{0}=0$
+\end_inset
+
+或
+\begin_inset Formula $1$
+\end_inset
+
+时, 考虑单侧极限).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+讨论Dirichlet函数的极限.
 \end_layout
 
 \begin_layout Chapter
