@@ -3901,6 +3901,257 @@ a_{k+1}=\sqrt{2a_{k}}\leqslant\sqrt{2a_{k+1}}=a_{k+2},
 :
 \end_layout
 
+\begin_deeper
+\begin_layout Quotation
+考虑
+\begin_inset Formula $a_{n}=1+2^{-1}+\cdots+n^{-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Quotation
+任取
+\begin_inset Formula $N\in\mathbb{N}_{+}$
+\end_inset
+
+.
+ 当
+\begin_inset Formula $m>n>N$
+\end_inset
+
+时有
+\begin_inset Formula 
+\[
+|a_{m}-a_{n}|=\left|\frac{1}{n+1}+\frac{1}{n+2}+\cdots+\frac{1}{m}\right|>\frac{1}{m}.
+\]
+
+\end_inset
+
+取
+\begin_inset Formula $\varepsilon=1/m>0$
+\end_inset
+
+, 则有
+\begin_inset Formula $|a_{m}-a_{n}|>\varepsilon$
+\end_inset
+
+.
+ 由此可见数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+发散.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+指出下述证明的
+\color red
+错误
+\color inherit
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Quotation
+考虑Riemann函数
+\begin_inset Formula $R(x)$
+\end_inset
+
+在
+\begin_inset Formula $0$
+\end_inset
+
+处的右极限.
+\end_layout
+
+\begin_layout Quotation
+若
+\begin_inset Formula $x$
+\end_inset
+
+为无理数, 则
+\begin_inset Formula $R(x)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Quotation
+若
+\begin_inset Formula $x$
+\end_inset
+
+为有理数, 则对任意
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 可以取
+\begin_inset Formula $\delta=\varepsilon p$
+\end_inset
+
+.
+ 此时当
+\begin_inset Formula $0<|x-0|<\delta$
+\end_inset
+
+时, 设
+\begin_inset Formula $x=p/q$
+\end_inset
+
+符合定义, 则
+\begin_inset Formula $p/q<\delta$
+\end_inset
+
+, 于是
+\begin_inset Formula 
+\[
+\left|\frac{1}{q}-0\right|=\frac{1}{q}<\frac{\delta}{p}=\varepsilon.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+综上所述, 可见
+\begin_inset Formula $\lim_{x\rightarrow0^{+}}R(x)=0$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+修正下述证明的
+\color red
+表达错误
+\color inherit
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Quotation
+考虑Dirichlet函数
+\begin_inset Formula $D(x)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Quotation
+对任何
+\begin_inset Formula $a\in\mathbb{R}$
+\end_inset
+
+, 取
+\begin_inset Formula $\varepsilon_{0}=1/3$
+\end_inset
+
+, 
+\begin_inset Formula $U(a;\varepsilon)=(a-1/3,a+1/3)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Quotation
+首先
+\begin_inset Formula $U(a;\varepsilon)$
+\end_inset
+
+的区间长度为
+\begin_inset Formula $2/3$
+\end_inset
+
+, 故
+\begin_inset Formula $0$
+\end_inset
+
+与
+\begin_inset Formula $1$
+\end_inset
+
+不可能同时属于
+\begin_inset Formula $U(a;\varepsilon)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Quotation
+(i) 倘若
+\begin_inset Formula $0\in(a-1/3,a+1/3)$
+\end_inset
+
+, 
+\begin_inset Formula $1\notin(a-1/3,a+1/3)$
+\end_inset
+
+, 则满足
+\begin_inset Formula $D(x)$
+\end_inset
+
+在
+\begin_inset Formula $U(a;\varepsilon)$
+\end_inset
+
+之外的
+\begin_inset Formula $x$
+\end_inset
+
+有无穷多个有理数;
+\end_layout
+
+\begin_layout Quotation
+(ii) 倘若
+\begin_inset Formula $1\in(a-1/3,a+1/3)$
+\end_inset
+
+, 
+\begin_inset Formula $0\notin(a-1/3,a+1/3)$
+\end_inset
+
+, 则满足
+\begin_inset Formula $D(x)$
+\end_inset
+
+在
+\begin_inset Formula $U(a;\varepsilon)$
+\end_inset
+
+之外的
+\begin_inset Formula $x$
+\end_inset
+
+有无穷多个无理数.
+\end_layout
+
+\begin_layout Quotation
+因此
+\begin_inset Formula $D(x)$
+\end_inset
+
+不以任何实数为极限.
+\end_layout
+
+\end_deeper
 \begin_layout Section
 正例
 \end_layout
@@ -4039,6 +4290,34 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Exercise
+试证明: 数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+发散
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+存在
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 使得对任意正整数
+\begin_inset Formula $n$
+\end_inset
+
+而言, 总存在正整数
+\begin_inset Formula $p$
+\end_inset
+
+满足
+\begin_inset Formula $|a_{n+p}-a_{n}|>\varepsilon$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
