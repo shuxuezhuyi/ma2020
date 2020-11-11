@@ -3657,6 +3657,34 @@ a_{k+1}=\sqrt{2a_{k}}\leqslant\sqrt{2a_{k+1}}=a_{k+2},
 \begin_inset Formula $\Leftrightarrow$
 \end_inset
 
+对任意正整数
+\begin_inset Formula $N$
+\end_inset
+
+, 存在
+\begin_inset Formula $m,n>N$
+\end_inset
+
+, 存在
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 使得
+\begin_inset Formula $|a_{m}-a_{n}|\geqslant\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+发散
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
 对任意
 \begin_inset Formula $\varepsilon>0$
 \end_inset
@@ -4028,6 +4056,206 @@ a_{k+1}=\sqrt{2a_{k}}\leqslant\sqrt{2a_{k+1}}=a_{k+2},
 \end_inset
 
 .
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+修正下述证明的
+\color red
+表达错误
+\color inherit
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Quotation
+已知
+\begin_inset Formula $\lim_{x\rightarrow+\infty}f(x)=A$
+\end_inset
+
+, 证明
+\begin_inset Formula $\lim_{x\rightarrow0^{+}}f(1/x)=A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Quotation
+对任意
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 存在正数
+\begin_inset Formula $M$
+\end_inset
+
+, 当
+\begin_inset Formula $x>M$
+\end_inset
+
+时
+\end_layout
+
+\begin_layout Quotation
+对
+\begin_inset Formula $|f(x)-A|<\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+故有
+\begin_inset Formula $|f(1/x)-A|<\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+故
+\begin_inset Formula $\delta=1/M$
+\end_inset
+
+, 有任意
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+有
+\begin_inset Formula $|1/x-0|<\delta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+有
+\begin_inset Formula $|f(1/x)-A|<\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+故
+\begin_inset Formula $\lim_{x\rightarrow0^{+}}f(1/x)=A$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+修正下述证明的
+\color red
+表达错误
+\color inherit
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Quotation
+考虑函数
+\begin_inset Formula 
+\[
+f(x)=\begin{cases}
+2^{x}, & x>0,\\
+0, & x=0,\\
+1+x^{2}, & x<0.
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Formula $x>0$
+\end_inset
+
+时
+\begin_inset Formula $|x-0|<\delta$
+\end_inset
+
+时, 取
+\begin_inset Formula $\varepsilon=2^{\delta}-1$
+\end_inset
+
+, 
+\begin_inset Formula $|2^{x}-1|<2^{\delta}-1=\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+所以
+\begin_inset Formula $f(0+0)=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Formula $x<0$
+\end_inset
+
+时
+\begin_inset Formula $|x-0|<\delta$
+\end_inset
+
+时, 取
+\begin_inset Formula $\varepsilon=\delta^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $|1+x^{2}-1|=|x^{2}|<\delta^{2}=\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+所以
+\begin_inset Formula $f(0-0)=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+所以
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $x\rightarrow0$
+\end_inset
+
+处极限是
+\begin_inset Formula $1$
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -7628,6 +7856,22 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Remark*
+有的同学这么写: 令
+\begin_inset Formula $h=x-x_{0}$
+\end_inset
+
+, 则有
+\begin_inset Formula 
+\[
+A=\lim_{x\rightarrow x_{0}}f(x)=\lim_{x-x_{0}\rightarrow0}f(x)=\lim_{x-x_{0}\rightarrow0}f(x_{0}+x-x_{0})=\lim_{h\rightarrow0}f(x_{0}+h).
+\]
+
+\end_inset
+
+也不是说就错了
 \end_layout
 
 \begin_layout Exercise
