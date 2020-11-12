@@ -1750,7 +1750,7 @@ status open
 a_{n}\rightarrow a\\
 b_{n}\rightarrow b
 \end{array}\right\} \Rightarrow\begin{cases}
-(a_{n}\pm b_{n})\rightarrow(a+b)\\
+(a_{n}\pm b_{n})\rightarrow(a\pm b)\\
 (a_{n}\cdot b_{n})\rightarrow(a\cdot b)\\
 \frac{a_{n}}{b_{n}}\rightarrow\frac{a}{b} & \text{此处}\,b_{n},b\,\text{皆须非零}
 \end{cases}
@@ -1880,6 +1880,292 @@ status open
 
 时, 有
 \begin_inset Formula $|a_{n}-a_{m}|<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+函数极限
+\end_layout
+
+\begin_layout Standard
+定义函数的
+\series bold
+极限
+\series default
+、
+\series bold
+左极限
+\series default
+、
+\series bold
+右极限
+\series default
+.
+ 引入下列记号:
+\begin_inset Formula 
+\begin{align*}
+ & \lim_{x\rightarrow+\infty}f(x)=A\\
+ & f(x)\rightarrow A\quad(x\rightarrow+\infty)\\
+ & \lim_{x\rightarrow x_{0}}f(x)=A\\
+ & \lim_{x\rightarrow x_{0}^{+}}f(x)=A\\
+ & f(x_{0}+0)\coloneqq\lim_{x\rightarrow x_{0}^{+}}f(x)
+\end{align*}
+
+\end_inset
+
+注意
+\begin_inset Formula $x\rightarrow\infty$
+\end_inset
+
+与
+\begin_inset Formula $x\rightarrow+\infty$
+\end_inset
+
+、
+\begin_inset Formula $x\rightarrow-\infty$
+\end_inset
+
+的区别与联系.
+\end_layout
+
+\begin_layout Theorem
+函数极限存在的充要条件是, 左右极限存在且相等.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+唯一性
+\end_layout
+
+\end_inset
+
+函数极限若存在则唯一.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+局部有界性
+\end_layout
+
+\end_inset
+
+函数若存在极限则最终有界.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+局部保号性
+\end_layout
+
+\end_inset
+
+函数若极限为正则最终恒正.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+保不等式性
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $f\leqslant g\Rightarrow\lim f\leqslant\lim g$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+迫敛性
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left.\begin{array}{c}
+\lim f=A=\lim g\\
+f\leqslant h\leqslant g
+\end{array}\right\} \Rightarrow\lim h=A.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+四则运算法则
+\end_layout
+
+\end_inset
+
+若
+\begin_inset Formula $\lim f$
+\end_inset
+
+与
+\begin_inset Formula $\lim g$
+\end_inset
+
+存在, 则有
+\begin_inset Formula 
+\begin{align*}
+\lim(f\pm g) & =\lim f\pm\lim g\\
+\lim(f\cdot g) & =\lim f\cdot\lim g\\
+\lim\frac{f}{g} & =\frac{\lim f}{\lim g},\qquad\text{要求}\,\lim g\neq0.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Heine定理， 归结原则
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lim_{E\ni x\rightarrow a}f(x)=A\Leftrightarrow\forall\{x_{n}\}_{n=1}^{\infty}\subset E\,(\text{若}\,x_{n}\rightarrow a\,\text{则}\,f(x_{n})\rightarrow A).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark*
+对于单侧极限, 上述归结原则中的数列
+\begin_inset Formula $\{x_{n}\}$
+\end_inset
+
+可以限制为相应的单调数列.
+\end_layout
+
+\begin_layout Theorem
+单侧单调有界则存在单侧极限.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+柯西准则
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\lim_{x\rightarrow x_{0}}f(x)$
+\end_inset
+
+存在的充要条件是, 对任意
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 存在
+\begin_inset Formula $\delta>0$
+\end_inset
+
+, 使得
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $U^{0}(x_{0};\delta)$
+\end_inset
+
+上的振幅
+\begin_inset Formula $<\varepsilon$
 \end_inset
 
 .
@@ -3446,7 +3732,7 @@ status collapsed
 \end_layout
 
 \begin_layout Exercise
-(1) 试构造数列
+(1) 试构造收敛数列
 \begin_inset Formula $\{a_{n}\}$
 \end_inset
 
@@ -6741,20 +7027,137 @@ status open
 \end_inset
 
 里面.
- 倒不是这样做就一定不对; 恰恰相反, 在第(5)问这里正好是对的, 因为
-\begin_inset Formula $(1+1/n^{2})^{n^{2}}$
+ 倒不是这样做就一定不对; 恰恰相反, 在第(5)问这里正好是对的: 
+\end_layout
+
+\begin_layout Remark*
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+设
+\begin_inset Formula $a_{n}=(1+1/n^{2})^{1/n^{2}}$
 \end_inset
 
-收敛到一个常数, 同时
-\begin_inset Formula $f(x)=\sqrt[n]{x}$
+, 而
+\begin_inset Formula $f_{n}(x)=\sqrt[n]{x}$
 \end_inset
 
-也是
-\begin_inset Formula $\mathbb{R}$
+.
+ 那么连续函数序列
+\begin_inset Formula $\{f_{n}\}_{n=1}^{\infty}$
 \end_inset
 
-上的连续函数.
- 问题是这里还没有建立函数极限的概念, 更没有连续函数的概念, 因而不能直接过去.
+在紧集
+\begin_inset Formula $[1,3]$
+\end_inset
+
+上单调收敛到连续函数
+\begin_inset Formula $f(x)\equiv1,$
+\end_inset
+
+于是由Dini定理可知
+\begin_inset Formula $\{f_{n}\}_{n=1}^{\infty}$
+\end_inset
+
+在
+\begin_inset Formula $[1,3]$
+\end_inset
+
+上一致收敛, 故
+\begin_inset Formula $\{f_{n}\}_{n=1}^{\infty}$
+\end_inset
+
+在
+\begin_inset Formula $[1,3]$
+\end_inset
+
+上等度连续(也可以直接验证出来).
+ 因此, 对任意
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 存在
+\begin_inset Formula $\delta>0$
+\end_inset
+
+, 使得当
+\begin_inset Formula $|x-e|<\delta$
+\end_inset
+
+时, 对任意正整数
+\begin_inset Formula $n$
+\end_inset
+
+都有
+\begin_inset Formula $|f_{n}(x)-f_{n}(e)|<\varepsilon$
+\end_inset
+
+.
+ 现在存在正整数
+\begin_inset Formula $N_{1}$
+\end_inset
+
+, 使得当
+\begin_inset Formula $n>N$
+\end_inset
+
+时
+\begin_inset Formula $|a_{n}-e|<\delta$
+\end_inset
+
+, 从而
+\begin_inset Formula $|f_{n}(a_{n})-f_{n}(e)|<\varepsilon$
+\end_inset
+
+.
+ 对于同一个
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+, 由
+\begin_inset Formula $\lim_{n\rightarrow\infty}f_{n}(e)=f(e)=1$
+\end_inset
+
+可知, 存在正整数
+\begin_inset Formula $N_{2}$
+\end_inset
+
+, 使得当
+\begin_inset Formula $n>N_{2}$
+\end_inset
+
+时有
+\begin_inset Formula $|f_{n}(e)-1|<\varepsilon$
+\end_inset
+
+.
+ 取
+\begin_inset Formula $N=\max\{N_{1},N_{2}\}$
+\end_inset
+
+, 则有
+\begin_inset Formula 
+\[
+|f_{n}(a_{n})-1|\leqslant|f_{n}(a_{n})-f_{n}(e)|+|f_{n}(e)-1|<2\varepsilon.
+\]
+
+\end_inset
+
+由此可见
+\begin_inset Formula $\lim_{n\rightarrow\infty}f_{n}(a_{n})=1$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark*
+上面这一段证明做的是什么呢? 无非是把简单的问题搞复杂罢了.
 \end_layout
 
 \begin_layout Exercise
@@ -7748,19 +8151,39 @@ status collapsed
 \end_layout
 
 \begin_layout Standard
-\begin_inset Flex ProofAsInset
-status open
+\begin_inset Flex HINTAsInset
+status collapsed
 
 \begin_layout Plain Layout
-(1)
+(1) 前面有限项对这个极限没有贡献.
 \end_layout
 
 \begin_layout Plain Layout
-(2) 当
+反例: 
+\begin_inset Formula $a_{n}=(-1)^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+(2) 分
 \begin_inset Formula $a=0$
 \end_inset
 
-时
+与
+\begin_inset Formula $a>0$
+\end_inset
+
+两种情况讨论, 利用均值不等式
+\begin_inset Formula 
+\[
+\frac{n}{\frac{1}{a_{1}}+\cdots+\frac{1}{a_{n}}}\leqslant\sqrt[n]{a_{1}\cdots a_{n}}\leqslant\frac{a_{1}+\cdots+a_{n}}{n}.
+\]
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -7797,11 +8220,47 @@ a_{n}=\frac{a_{n-1}+b_{n-1}}{2},\quad b_{n}=\frac{2a_{n-1}b_{n-1}}{a_{n-1}+b_{n-
 \end_layout
 
 \begin_layout Standard
-\begin_inset Flex ProofAsInset
-status open
+\begin_inset Flex HINTAsInset
+status collapsed
 
 \begin_layout Plain Layout
+(1) 证明
+\begin_inset Formula $a_{n}b_{n}=a_{1}b_{1}$
+\end_inset
 
+.
+\end_layout
+
+\begin_layout Plain Layout
+(2) 证明
+\begin_inset Formula $a_{n}\geqslant b_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+(3) 证明数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+单调递减有下界, 数列
+\begin_inset Formula $\{b_{n}\}$
+\end_inset
+
+单调递增有上界.
+\end_layout
+
+\begin_layout Plain Layout
+(4) 在
+\begin_inset Formula $a_{n}=(a_{n-1}+b_{n-1})/2$
+\end_inset
+
+中令
+\begin_inset Formula $n\rightarrow\infty$
+\end_inset
+
+以完成证明.
 \end_layout
 
 \end_inset
@@ -7829,12 +8288,49 @@ status open
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Flex HINTAsInset
+status collapsed
+
+\begin_layout Plain Layout
+数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+发散
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+存在
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 使得对任意正整数
+\begin_inset Formula $N$
+\end_inset
+
+, 总存在
+\begin_inset Formula $n,m>N$
+\end_inset
+
+满足
+\begin_inset Formula $|a_{n}-a_{m}|\geqslant\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 函数极限
 \end_layout
 
 \begin_layout Exercise
-设
+(1) 设
 \begin_inset Formula $\lim_{x\rightarrow x_{0}}f(x)=A$
 \end_inset
 
@@ -7845,12 +8341,122 @@ status open
 .
 \end_layout
 
+\begin_layout Exercise
+(2) 设
+\begin_inset Formula $\lim_{x\rightarrow+\infty}f(x)=A$
+\end_inset
+
+, 证明
+\begin_inset Formula $\lim_{x\rightarrow0^{+}}f(x^{-1})=A$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Flex ProofAsInset
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
+\series bold
+(1)
+\series default
+ 因为
+\begin_inset Formula $\lim_{x\rightarrow x_{0}}f(x)=A$
+\end_inset
+
+, 所以对任意
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 都存在
+\begin_inset Formula $\delta>0$
+\end_inset
+
+, 使得当
+\begin_inset Formula $0<|x-x_{0}|<\delta$
+\end_inset
+
+时恒有
+\begin_inset Formula $|f(x)-A|<\varepsilon$
+\end_inset
+
+.
+ 记
+\begin_inset Formula $h=x-x_{0}$
+\end_inset
+
+, 那么可见对任意
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 都存在
+\begin_inset Formula $\delta>0$
+\end_inset
+
+, 使得当
+\begin_inset Formula $0<|h|<\delta$
+\end_inset
+
+时恒有
+\begin_inset Formula $|f(x_{0}+h)-A|<\varepsilon$
+\end_inset
+
+, 此即
+\begin_inset Formula $\lim_{h\rightarrow0}f(x_{0}+h)=A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+(2)
+\series default
+ 对任意
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 由
+\begin_inset Formula $\lim_{x\rightarrow+\infty}f(x)=A$
+\end_inset
+
+可知, 存在
+\begin_inset Formula $M>0$
+\end_inset
+
+, 使得当
+\begin_inset Formula $x>M$
+\end_inset
+
+时恒有
+\begin_inset Formula $|f(x)-A|<\varepsilon$
+\end_inset
+
+; 也就是说, 记
+\begin_inset Formula $t=x^{-1}$
+\end_inset
+
+, 则存在
+\begin_inset Formula $\delta=1/M>0$
+\end_inset
+
+, 使得当
+\begin_inset Formula $0<t=1/x<1/M$
+\end_inset
+
+时恒有
+\begin_inset Formula $|f(t^{-1})-A|=|f(x)-A|<\varepsilon$
+\end_inset
+
+.
+ 由此可见
+\begin_inset Formula $\lim_{t\rightarrow0^{+}}f(t^{-1})=A$
+\end_inset
+
+.
 \end_layout
 
 \end_inset
@@ -7871,65 +8477,64 @@ A=\lim_{x\rightarrow x_{0}}f(x)=\lim_{x-x_{0}\rightarrow0}f(x)=\lim_{x-x_{0}\rig
 
 \end_inset
 
-也不是说就错了
+或者这么写: 因为当
+\begin_inset Formula $h\rightarrow0$
+\end_inset
+
+时
+\begin_inset Formula $x=x_{0}+h\rightarrow x_{0}$
+\end_inset
+
+, 并且当
+\begin_inset Formula $x\rightarrow x_{0}$
+\end_inset
+
+时
+\begin_inset Formula $f(x)\rightarrow A$
+\end_inset
+
+, 所以当
+\begin_inset Formula $h\rightarrow0$
+\end_inset
+
+时
+\begin_inset Formula $f(x_{0}+h)\rightarrow A$
+\end_inset
+
+.
+ 这两种写法虽然直观上没毛病, 但书写不够严谨, 因为书上并未证明复合函数极限定理.
 \end_layout
 
 \begin_layout Exercise
-讨论下列函数在
-\begin_inset Formula $x\rightarrow0$
-\end_inset
-
-时的极限或左、右极限:
+讨论函数
 \begin_inset Formula 
-\begin{align*}
-(1) & f(x)=\frac{|x|}{x}; & (2) & f(x)=[x]; & (3) & f(x)=\begin{cases}
+\[
+f(x)=\begin{cases}
 2^{x}, & x>0,\\
 0, & x=0,\\
 1+x^{2}, & x<0.
 \end{cases}
-\end{align*}
+\]
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex ProofAsInset
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
+在
+\begin_inset Formula $x\rightarrow0$
 \end_inset
 
-
+时的极限或左、右极限.
 \end_layout
 
-\begin_layout Exercise
-设
-\begin_inset Formula $\lim_{x\rightarrow+\infty}f(x)=A$
+\begin_layout Remark*
+虽然
+\begin_inset Formula $f(0)=0$
 \end_inset
 
-, 证明
-\begin_inset Formula $\lim_{x\rightarrow0^{+}}f(x^{-1})=A$
+, 但
+\begin_inset Formula $\lim_{x\rightarrow0}f(x)=1$
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex ProofAsInset
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Exercise
@@ -7958,10 +8563,298 @@ status open
 
 \begin_layout Standard
 \begin_inset Flex ProofAsInset
-status open
+status collapsed
 
 \begin_layout Plain Layout
+不妨设
+\begin_inset Formula $x_{0}\in(0,1)$
+\end_inset
 
+.
+ 任给
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 我们的目标是构造出相应的
+\begin_inset Formula $\delta=\delta(\varepsilon)$
+\end_inset
+
+, 使得当
+\begin_inset Formula $0<|x-x_{0}|<\delta$
+\end_inset
+
+时恒有
+\begin_inset Formula $|R(x)-0|<\varepsilon$
+\end_inset
+
+.
+ 又因为
+\begin_inset Formula $R(x)\geqslant0$
+\end_inset
+
+恒成立, 所以朝着
+\begin_inset Formula $R(x)<\varepsilon$
+\end_inset
+
+的目标前进即可.
+\end_layout
+
+\begin_layout Plain Layout
+因为
+\begin_inset Formula $\delta$
+\end_inset
+
+总可以取得更小一些, 所以不妨设
+\begin_inset Formula $(x_{0}-\delta,x_{0}+\delta)\subset(0,1)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+如果
+\begin_inset Formula $x$
+\end_inset
+
+是无理数, 那么
+\begin_inset Formula $R(x)=0$
+\end_inset
+
+, 自然就有
+\begin_inset Formula $R(x)<\varepsilon$
+\end_inset
+
+啦.
+ 因此, 我们只要盯着那些有理数
+\begin_inset Formula $x$
+\end_inset
+
+看就可以了.
+\end_layout
+
+\begin_layout Plain Layout
+设
+\begin_inset Formula $x$
+\end_inset
+
+是有理数, 并且
+\begin_inset Formula $x=p/q$
+\end_inset
+
+, 其中
+\begin_inset Formula $p/q$
+\end_inset
+
+是既约真分数.
+ 那么
+\begin_inset Formula $R(x)=1/q$
+\end_inset
+
+.
+ 为使
+\begin_inset Formula $R(x)<\varepsilon$
+\end_inset
+
+, 就要
+\begin_inset Formula $1/q<\varepsilon$
+\end_inset
+
+, 亦即
+\begin_inset Formula $q>1/\varepsilon$
+\end_inset
+
+.
+ 因此, 为了构造出我们想要的
+\begin_inset Formula $\delta$
+\end_inset
+
+, 就得把那些满足
+\begin_inset Formula $q\leqslant1/\varepsilon$
+\end_inset
+
+的有理数
+\begin_inset Formula $x=p/q$
+\end_inset
+
+全部排除到区间
+\begin_inset Formula $(x_{0}-\delta,x_{0}+\delta)$
+\end_inset
+
+外面去.
+ 那么……我们要排除哪些数呢?
+\end_layout
+
+\begin_layout Plain Layout
+为了方便思考, 就把我们要排除的那些数构成的集合记为
+\begin_inset Formula $A$
+\end_inset
+
+吧! 根据上面的分析, 这里有
+\begin_inset Formula 
+\[
+A=\left\{ x\in(0,1):x=\frac{p}{q},\text{其中}\,\frac{p}{q}\,\text{是既约真分数且}\,q\leqslant\frac{1}{\varepsilon}\right\} .
+\]
+
+\end_inset
+
+接下来, 我们要搞清楚
+\begin_inset Formula $A$
+\end_inset
+
+实际上由哪些元素构成.
+\end_layout
+
+\begin_layout Plain Layout
+先看
+\begin_inset Formula $q\leqslant1/\varepsilon$
+\end_inset
+
+, 由
+\begin_inset Formula $q$
+\end_inset
+
+是正整数可知
+\begin_inset Formula $q$
+\end_inset
+
+的选择只有有限个.
+ 精确地说, 令
+\begin_inset Formula $N$
+\end_inset
+
+为不大于
+\begin_inset Formula $1/\varepsilon$
+\end_inset
+
+的最大正整数, 亦即
+\begin_inset Formula $N=[1/\varepsilon]$
+\end_inset
+
+, 则
+\begin_inset Formula 
+\[
+\text{既约}\,\frac{p}{q}\in A\Rightarrow q\in\{1,\cdots,N\}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+再看
+\begin_inset Formula $p/q$
+\end_inset
+
+的分子
+\begin_inset Formula $p$
+\end_inset
+
+.
+ 由
+\begin_inset Formula $p$
+\end_inset
+
+是正整数且
+\begin_inset Formula $p/q<1$
+\end_inset
+
+可知
+\begin_inset Formula $p$
+\end_inset
+
+的选择不多于
+\begin_inset Formula $q$
+\end_inset
+
+的选择.
+\end_layout
+
+\begin_layout Plain Layout
+现在把
+\begin_inset Formula $p/q$
+\end_inset
+
+的分子
+\begin_inset Formula $p$
+\end_inset
+
+和分母
+\begin_inset Formula $q$
+\end_inset
+
+的所有可能性合起来看, 可见
+\begin_inset Formula $p/q$
+\end_inset
+
+的所有可能的选择不超过
+\begin_inset Formula $N^{2}$
+\end_inset
+
+个.
+ 事实上, 我们可以把
+\begin_inset Formula $A$
+\end_inset
+
+的所有元素穷举出来:
+\begin_inset Formula 
+\[
+A=\left\{ \frac{1}{2},\frac{1}{3},\frac{2}{3},\cdots,\frac{1}{N},\cdots,\frac{N-1}{N}\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+既然
+\begin_inset Formula $A$
+\end_inset
+
+只包含有限个元素, 那么
+\begin_inset Formula $\delta$
+\end_inset
+
+就容易找了.
+ 只要令
+\begin_inset Formula 
+\[
+\delta=\frac{\min\{|x_{0}-a|:a\in A\}}{2},
+\]
+
+\end_inset
+
+则当
+\begin_inset Formula $a\in A$
+\end_inset
+
+时, 都有
+\begin_inset Formula $|x_{0}-a|\geqslant2\delta>\delta$
+\end_inset
+
+.
+ 因此, 由
+\begin_inset Formula $A$
+\end_inset
+
+的构造方式可知, 当
+\begin_inset Formula $0<|x-x_{0}|<\delta$
+\end_inset
+
+时, 必有
+\begin_inset Formula $R(x)<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+这样我们就完成了最初的目标, 从而证明了
+\begin_inset Formula $\lim_{x\rightarrow x_{0}}R(x)=0$
+\end_inset
+
+.
 \end_layout
 
 \end_inset
@@ -7970,7 +8863,144 @@ status open
 \end_layout
 
 \begin_layout Exercise
-讨论Dirichlet函数的极限.
+讨论Dirichlet函数
+\begin_inset Formula $D(x)$
+\end_inset
+
+的极限.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+我们断言: 对任意
+\begin_inset Formula $x_{0}\in\mathbb{R}$
+\end_inset
+
+而言, 
+\begin_inset Formula $\lim_{x\rightarrow x_{0}}D(x)$
+\end_inset
+
+都不存在.
+\end_layout
+
+\begin_layout Plain Layout
+用反证法.
+ 假设上述断言不成立, 亦即存在
+\begin_inset Formula $a\in\mathbb{R}$
+\end_inset
+
+使得
+\begin_inset Formula $\lim_{x\rightarrow x_{0}}D(x)=a$
+\end_inset
+
+.
+ 那么对任意
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 存在
+\begin_inset Formula $\delta>0$
+\end_inset
+
+, 使得当
+\begin_inset Formula $0<|x-x_{0}|<\delta$
+\end_inset
+
+时恒有
+\begin_inset Formula $|D(x)-a|<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+我们取
+\begin_inset Formula $\varepsilon=1/3$
+\end_inset
+
+.
+ 由有理数在
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+中的稠密性可知, 存在有理数
+\begin_inset Formula $x_{1}$
+\end_inset
+
+满足
+\begin_inset Formula $0<|x_{1}-x_{0}|<\delta$
+\end_inset
+
+; 此时
+\begin_inset Formula $D(x_{1})=1$
+\end_inset
+
+, 故应有
+\begin_inset Formula 
+\[
+|1-a|=|D(x_{1})-a|<\varepsilon=\frac{1}{3}.
+\]
+
+\end_inset
+
+由无理数在
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+中的稠密性可知, 存在无理数
+\begin_inset Formula $x_{2}$
+\end_inset
+
+满足
+\begin_inset Formula $0<|x_{2}-x_{0}|<\delta$
+\end_inset
+
+; 此时
+\begin_inset Formula $D(x_{2})=0$
+\end_inset
+
+, 故应有
+\begin_inset Formula 
+\[
+|a|=|0-a|=|D(x_{0})-a|<\varepsilon=\frac{1}{3}.
+\]
+
+\end_inset
+
+于是
+\begin_inset Formula 
+\[
+1=|(1-a)+a|\leqslant|1-a|+|a|<\frac{1}{3}+\frac{1}{3}=\frac{2}{3},
+\]
+
+\end_inset
+
+矛盾! 故假设不成立.
+ 因此, 极限
+\begin_inset Formula $\lim_{x\rightarrow x_{0}}D(x)$
+\end_inset
+
+不存在.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark*
+有些同学构造有理数数列
+\begin_inset Formula $a_{n}\rightarrow x_{0}$
+\end_inset
+
+与无理数数列
+\begin_inset Formula $b_{n}\rightarrow x_{0}$
+\end_inset
+
+, 然后用Heine定理(归结原则)来证明, 也是可以的.
 \end_layout
 
 \begin_layout Chapter
