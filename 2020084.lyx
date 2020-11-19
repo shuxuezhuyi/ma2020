@@ -2171,6 +2171,123 @@ status open
 .
 \end_layout
 
+\begin_layout Example
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow0}\frac{\sin x}{x}=1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow\infty}\left(1+\frac{1}{x}\right)^{x}=e.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+定义
+\series bold
+无穷小量
+\series default
+、
+\series bold
+有界量
+\series default
+、
+\series bold
+无穷大量
+\series default
+.
+ 定义
+\series bold
+高阶
+\series default
+、
+\series bold
+低阶
+\series default
+、
+\series bold
+同阶
+\series default
+、
+\series bold
+等价
+\series default
+无穷小(大)量.
+ 引入记号
+\begin_inset Formula 
+\[
+o(g(x)),\quad o(1),\quad O(g(x)),\quad O(1),
+\]
+
+\end_inset
+
+以及
+\begin_inset Formula $f(x)\sim g(x)$
+\end_inset
+
+; 注意它们后面都得跟一个像
+\begin_inset Formula $x\rightarrow x_{0}$
+\end_inset
+
+这样的
+\emph on
+条件
+\emph default
+.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula 
+\[
+f(x)\sim g(x)\,(x\rightarrow x_{0})\Rightarrow\begin{cases}
+\lim_{x\rightarrow x_{0}}fh=A\Rightarrow\lim_{x\rightarrow x_{0}}gh=A\\
+\lim_{x\rightarrow x_{0}}\frac{h}{f}=B\Rightarrow\lim_{x\rightarrow x_{0}}\frac{h}{g}=B
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+若
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow+\infty}\frac{f(x)}{x}=k,\quad\lim_{x\rightarrow+\infty}(f(x)-kx)=b,
+\]
+
+\end_inset
+
+则曲线
+\begin_inset Formula $y=f(x)$
+\end_inset
+
+有斜渐近线
+\begin_inset Formula $y=kx+b$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Section
 函数的连续性
 \end_layout
@@ -4734,23 +4851,6 @@ f(x)=\begin{cases}
 \end_layout
 
 \begin_deeper
-\begin_layout Enumerate
-令
-\begin_inset Formula $t=\tan x$
-\end_inset
-
-.
- 因为
-\begin_inset Formula $x\rightarrow0$
-\end_inset
-
-, 则
-\begin_inset Formula $t=0$
-\end_inset
-
-.
-\end_layout
-
 \begin_layout Enumerate
 因为
 \begin_inset Formula $\sin2x=2\sin x\cos x$
@@ -9713,7 +9813,7 @@ status collapsed
 
 \begin_layout Standard
 \begin_inset Flex HINTAsInset
-status open
+status collapsed
 
 \begin_layout Plain Layout
 分
@@ -9865,11 +9965,11 @@ x_{1},y_{1},x_{2},y_{2},\cdots,x_{n},y_{n},\cdots.
 \end_layout
 
 \begin_layout Remark*
-这道题是已知“对任何数列……
+这道题是已知``对任何数列……
 \begin_inset Formula $\lim_{n\rightarrow\infty}f(x_{n})$
 \end_inset
 
-都存在”, 然后要证明“所有这些极限都相等”.
+都存在'', 然后要证明``所有这些极限都相等''.
 \end_layout
 
 \begin_layout Exercise
@@ -9883,17 +9983,13 @@ x_{1},y_{1},x_{2},y_{2},\cdots,x_{n},y_{n},\cdots.
 
 上的递增函数.
  证明: 
-\begin_inset Formula $f(x_{0}-0)$
-\end_inset
-
-和
 \begin_inset Formula $f(x_{0}+0)$
 \end_inset
 
-都存在, 且
+存在, 且
 \begin_inset Formula 
 \[
-f(x_{0}-0)=\sup_{x\in U_{-}^{\circ}(x_{0})}f(x),\quad f(x_{0}+0)=\inf_{x\in U_{+}^{\circ}(x_{0})}f(x).
+f(x_{0}+0)=\inf_{x\in U_{+}^{\circ}(x_{0})}f(x).
 \]
 
 \end_inset
@@ -9902,11 +9998,122 @@ f(x_{0}-0)=\sup_{x\in U_{-}^{\circ}(x_{0})}f(x),\quad f(x_{0}+0)=\inf_{x\in U_{+
 \end_layout
 
 \begin_layout Standard
-\begin_inset Flex HINTAsInset
-status open
+\begin_inset Flex ProofAsInset
+status collapsed
 
 \begin_layout Plain Layout
-需要先验证上(下)确界的存在性.
+取
+\begin_inset Formula $a\in U_{-}^{\circ}(x_{0})$
+\end_inset
+
+, 则由
+\begin_inset Formula $f$
+\end_inset
+
+是
+\begin_inset Formula $U^{\circ}(x_{0})$
+\end_inset
+
+上的递增函数可知, 对任意
+\begin_inset Formula $x\in U_{+}^{\circ}(x_{0})$
+\end_inset
+
+都有
+\begin_inset Formula $f(a)\leqslant f(x)$
+\end_inset
+
+, 亦即
+\begin_inset Formula $f(a)$
+\end_inset
+
+是
+\begin_inset Formula 
+\[
+\{f(x):x\in U_{+}^{\circ}(x_{0})\}
+\]
+
+\end_inset
+
+的一个下界.
+ 由确界原理可知下确界
+\begin_inset Formula $A\coloneqq\inf_{x\in U_{+}^{\circ}(x_{0})}f(x)$
+\end_inset
+
+存在.
+\end_layout
+
+\begin_layout Plain Layout
+由下确界的定义可知, 对任意
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 存在
+\begin_inset Formula $b\in U_{+}^{\circ}(x_{0})$
+\end_inset
+
+使得
+\begin_inset Formula $A\leqslant f(b)<A+\varepsilon$
+\end_inset
+
+.
+ 取
+\begin_inset Formula $\delta=b-x_{0}$
+\end_inset
+
+, 则当
+\begin_inset Formula $x_{0}<x<x_{0}+\delta$
+\end_inset
+
+时, 因
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $U^{\circ}(x_{0})$
+\end_inset
+
+上递增, 故有
+\begin_inset Formula $f(x)\leqslant f(x_{0}+\delta)=f(b)<A+\varepsilon$
+\end_inset
+
+; 同时由
+\begin_inset Formula $A$
+\end_inset
+
+的定义可知
+\begin_inset Formula $A\leqslant f(x)$
+\end_inset
+
+.
+ 因此, 对任意
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 存在
+\begin_inset Formula $\delta>0$
+\end_inset
+
+, 使得当
+\begin_inset Formula $x_{0}<x<x_{0}+\delta$
+\end_inset
+
+时都有
+\begin_inset Formula 
+\[
+A\leqslant f(x)<A+\varepsilon.
+\]
+
+\end_inset
+
+这表明
+\begin_inset Formula $f(x_{0}+0)$
+\end_inset
+
+存在, 并且
+\begin_inset Formula $f(x_{0}+0)=A$
+\end_inset
+
+.
 \end_layout
 
 \end_inset
@@ -9928,13 +10135,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset Flex HINTAsInset
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
+\begin_inset Separator plain
 \end_inset
 
 
@@ -9947,6 +10148,23 @@ status open
 (3) & \lim_{x\rightarrow0}(1+\tan x)^{\cot x}; & (4) & \lim_{x\rightarrow0}\left(\frac{1+x}{1-x}\right)^{1/x};\\
 (5) & \lim_{x\rightarrow+\infty}\left(\frac{3x+2}{3x-1}\right)^{2x-1}; & (6) & \lim_{x\rightarrow+\infty}\left(1+\frac{\alpha}{x}\right)^{\beta x}\quad\text{其中}\,\alpha,\beta\,\text{为给定实数}.
 \end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex HINTAsInset
+status collapsed
+
+\begin_layout Plain Layout
+利用
+\begin_inset Formula $e$
+\end_inset
+
+的定义.
+\end_layout
 
 \end_inset
 
