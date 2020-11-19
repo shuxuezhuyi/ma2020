@@ -4769,6 +4769,22 @@ f(x)=\begin{cases}
 
 \begin_layout Enumerate
 若
+\begin_inset Formula $f(x)<A+\varepsilon$
+\end_inset
+
+且
+\begin_inset Formula $g(x)<B+\varepsilon$
+\end_inset
+
+, 则
+\begin_inset Formula $f(x)\cdot g(x)<AB+(A+B)\varepsilon+\varepsilon^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+若
 \begin_inset Formula $\lim_{x\rightarrow a}f(x)=A$
 \end_inset
 
@@ -4797,6 +4813,27 @@ f(x)=\begin{cases}
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Enumerate
+设
+\begin_inset Formula $f$
+\end_inset
+
+的定义域为
+\begin_inset Formula $[a,+\infty)$
+\end_inset
+
+.
+ 若
+\begin_inset Formula $\lim_{x\rightarrow\infty}f(x)$
+\end_inset
+
+存在, 则
+\begin_inset Formula $f$
+\end_inset
+
+有界.
 \end_layout
 
 \begin_layout Enumerate
@@ -4974,11 +5011,7 @@ f(x)=\begin{cases}
 \begin_inset Formula $\lim_{x\rightarrow+\infty}(f(x)\cdot g(x))$
 \end_inset
 
-根本不存在, 连
-\begin_inset Formula $=+\infty,-\infty,\infty$
-\end_inset
-
-都不是.
+根本不存在.
 \end_layout
 
 \begin_layout Standard
@@ -5024,55 +5057,7 @@ f(x)=\begin{cases}
 
 \begin_layout Quotation
 \begin_inset Flex ProofAsInset
-status open
-
-\begin_layout Plain Layout
-冒出
-\begin_inset Formula $|f(x)|\leqslant M$
-\end_inset
-
-却没有
-\begin_inset Formula $M$
-\end_inset
-
-的定义
-\end_layout
-
-\begin_layout Plain Layout
-对
-\begin_inset Formula $\forall\varepsilon>0$
-\end_inset
-
-, 
-\begin_inset Formula $\exists x_{0}\in[a,+\infty)$
-\end_inset
-
-, 然后呢?
-\end_layout
-
-\begin_layout Plain Layout
-由上确界定义, 对任给
-\begin_inset Formula $\varepsilon>0$
-\end_inset
-
-, 有
-\begin_inset Formula $f(x)>M-\varepsilon$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Plain Layout
-对任意
-\begin_inset Formula $x_{0}\in[\alpha,M)$
-\end_inset
-
-有
-\begin_inset Formula $f(x_{0})<f(x)$
-\end_inset
-
-
-\end_layout
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -5152,15 +5137,62 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-充分性: 
+
+\series bold
+充分性:
+\series default
+ 因为
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,+\infty)$
+\end_inset
+
+上递增且有上界.
 \end_layout
 
 \begin_layout Plain Layout
-则
-\begin_inset Formula $\lim_{x\rightarrow x_{0}}f(x)=A$
+\begin_inset Formula $\exists$
 \end_inset
 
-.
+数列
+\begin_inset Formula $\{x_{n}\}\in[a,+\infty)$
+\end_inset
+
+, 
+\begin_inset Formula $x_{1}<x_{2}<\cdots<x_{n}$
+\end_inset
+
+且
+\begin_inset Formula $\lim_{n\rightarrow+\infty}x_{n}=+\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+所以
+\begin_inset Formula $\{x_{n}\}$
+\end_inset
+
+中也为递增数列, 有上界.
+\end_layout
+
+\begin_layout Plain Layout
+由单调有界定理知
+\begin_inset Formula $\lim_{n\rightarrow+\infty}f(x_{n})$
+\end_inset
+
+收敛(存在).
+\end_layout
+
+\begin_layout Plain Layout
+再由归结原则知
+\begin_inset Formula $\lim_{x\rightarrow\infty}f(x)$
+\end_inset
+
+存在.
 \end_layout
 
 \end_inset
@@ -9874,7 +9906,7 @@ f(x_{0}-0)=\sup_{x\in U_{-}^{\circ}(x_{0})}f(x),\quad f(x_{0}+0)=\inf_{x\in U_{+
 status open
 
 \begin_layout Plain Layout
-
+需要先验证上(下)确界的存在性.
 \end_layout
 
 \end_inset
