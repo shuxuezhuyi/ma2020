@@ -2298,6 +2298,53 @@ f(x)\sim g(x)\,(x\rightarrow x_{0})\Rightarrow\begin{cases}
 连续
 \series default
 .
+ 引入
+\series bold
+增量
+\series default
+ 
+\begin_inset Formula $\Delta x$
+\end_inset
+
+与
+\begin_inset Formula $\Delta y$
+\end_inset
+
+.
+ 定义
+\series bold
+左(右)连续
+\series default
+、(
+\series bold
+可去
+\series default
+、
+\series bold
+跳跃
+\series default
+、
+\series bold
+第一类
+\series default
+、
+\series bold
+第二类
+\series default
+)
+\series bold
+间断点
+\series default
+或
+\series bold
+不连续点
+\series default
+.
+ 定义
+\series bold
+分段连续
+\series default
+.
 \end_layout
 
 \begin_layout Example
@@ -2310,6 +2357,113 @@ f(x)\sim g(x)\,(x\rightarrow x_{0})\Rightarrow\begin{cases}
 \end_inset
 
 处都不连续.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Riemann函数在
+\begin_inset Formula $(0,1)$
+\end_inset
+
+上任何无理点都连续, 任何有理点都不连续.
+\end_layout
+
+\begin_layout Theorem
+若函数
+\begin_inset Formula $f$
+\end_inset
+
+在点
+\begin_inset Formula $x_{0}$
+\end_inset
+
+连续, 则:
+\end_layout
+
+\begin_layout Theorem
+(1) 局部有界性: 
+\begin_inset Formula $f$
+\end_inset
+
+在某
+\begin_inset Formula $U(x_{0})$
+\end_inset
+
+上有界;
+\end_layout
+
+\begin_layout Theorem
+(2) 局部保号性: 若
+\begin_inset Formula $f(x_{0})\neq0$
+\end_inset
+
+, 则在某
+\begin_inset Formula $U(x_{0})$
+\end_inset
+
+中
+\begin_inset Formula $f$
+\end_inset
+
+的一切值与
+\begin_inset Formula $f(x_{0})$
+\end_inset
+
+同时为正或同时为负;
+\end_layout
+
+\begin_layout Theorem
+(3) 四则运算法则: 若还有
+\begin_inset Formula $g$
+\end_inset
+
+在点
+\begin_inset Formula $x_{0}$
+\end_inset
+
+连续, 则
+\begin_inset Formula $f\pm g,f\cdot g,f/g$
+\end_inset
+
+(这里
+\begin_inset Formula $g(x_{0})\neq0$
+\end_inset
+
+)也都在点
+\begin_inset Formula $x_{0}$
+\end_inset
+
+连续.
+\end_layout
+
+\begin_layout Theorem
+(4) 若
+\begin_inset Formula $f(x_{0})=u_{0}$
+\end_inset
+
+, 并且
+\begin_inset Formula $g$
+\end_inset
+
+在点
+\begin_inset Formula $u_{0}$
+\end_inset
+
+连续, 则
+\begin_inset Formula $g\circ f$
+\end_inset
+
+在点
+\begin_inset Formula $x_{0}$
+\end_inset
+
+连续.
 \end_layout
 
 \begin_layout Section
