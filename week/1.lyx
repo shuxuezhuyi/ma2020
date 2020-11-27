@@ -1,0 +1,430 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties false
+\origin unavailable
+\textclass ctex-book
+\begin_preamble
+% 如果没有这一句命令，XeTeX会出错，原因参见
+% http://bbs.ctex.org/viewthread.php?tid=60547
+\DeclareRobustCommand\nobreakspace{\leavevmode\nobreak\ }
+
+%\usepackage[cm-default]{fontspec}
+\usepackage{fontspec}
+\emfontdeclare{\itshape,\upshape,\itshape}
+\setmainfont{CMU Serif}
+\setsansfont{CMU Sans Serif}
+\setmonofont{CMU Typewriter Text}
+\usepackage{xunicode}
+\usepackage{xeCJK}\setCJKmainfont[BoldFont={黑体},ItalicFont={楷体}]{宋体}
+\setCJKsansfont{黑体}
+\setCJKmonofont{仿宋} % 打印机字体, 一般用于 verbatim 之类的环境, 或者通过 \ttfamily 调用
+
+% 证明与提示
+\newenvironment{Proof}[1][证明]
+{\noindent\normalfont {\bfseries #1}\hphantom{空}}{\hfill\ensuremath{\square}}
+
+\newenvironment{HINT}[1][提示]{\noindent\normalfont {\bfseries #1}\hphantom{空}}{\hfill\ensuremath{\square}}
+
+% 允许行间公式跨页, 参数为 1,2,3,4 的一个, 越大则越可能跨页
+\allowdisplaybreaks[1]
+\end_preamble
+\options UTF8,oneside
+\use_default_options true
+\begin_modules
+theorems-ams
+tcolorbox
+theorems-chap
+\end_modules
+\maintain_unincluded_children false
+\begin_local_layout
+Format 66
+Provides stdinsets 1
+
+InsetLayout Flex:ProofAsInset
+   LyXType     custom
+   LatexName   proof
+   LatexType   Environment
+   Decoration  classic
+   Argument 1
+     LabelString         "Proof Name"
+   EndArgument
+   BgColor background
+   MultiPar    true
+   LabelString Proof
+	ResetsFont true
+End
+
+InsetLayout Flex:HINTAsInset
+   CopyStyle   Flex:ProofAsInset
+   LatexName   HINT
+   LabelString HINT
+End
+\end_local_layout
+\language chinese-simplified
+\language_package none
+\inputencoding utf8-plain
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics xetex
+\default_output_format pdf4
+\output_sync 0
+\bibtex_command biber -l zh__pinyin
+\index_command default
+\float_placement h
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine biblatex
+\cite_engine_type authoryear
+\biblio_style plain
+\biblio_options url=false
+\biblatex_bibstyle numeric
+\biblatex_citestyle numeric
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 2cm
+\rightmargin 2.5cm
+\bottommargin 2cm
+\secnumdepth 2
+\tocdepth 1
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\mathistOperatorsgn}{\operatorname{sgn}}
+{\,\mathrm{sgn}\,}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+2020年11月28日
+\end_layout
+
+\begin_layout Standard
+直接承认第6页的定理1.1(确界原理)成立.
+\end_layout
+
+\begin_layout Enumerate
+第31页的定理2.8: 
+\begin_inset Flex Color Box
+status open
+
+\begin_layout Plain Layout
+数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+收敛的充要条件是: 
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+的任何子列都收敛.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+第33页的定理2.9 (单调有界定理): 
+\begin_inset Flex Color Box
+status open
+
+\begin_layout Plain Layout
+在实数系中, 有界的单调数列必有极限.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+第34页的例3: 
+\begin_inset Flex Color Box
+status open
+
+\begin_layout Plain Layout
+设
+\begin_inset Formula $S$
+\end_inset
+
+为有界数集.
+ 证明: 若
+\begin_inset Formula $\sup S=a\notin S$
+\end_inset
+
+, 则存在严格递增数列
+\begin_inset Formula $\{x_{n}\}\subset S$
+\end_inset
+
+, 使得
+\begin_inset Formula $\lim_{n\rightarrow\infty}x_{n}=a$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+第35页的例5与定理2.10 (致密性定理): 
+\begin_inset Flex Color Box
+status open
+
+\begin_layout Plain Layout
+任何数列都存在单调子列.
+\end_layout
+
+\begin_layout Color Box Separator
+
+\end_layout
+
+\begin_layout Plain Layout
+任何有界数列必定有收敛的子列.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+第36页的定理2.11 (柯西收敛准则): 
+\begin_inset Flex Color Box
+status open
+
+\begin_layout Plain Layout
+数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+收敛的充要条件是: 对任给的
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 存在正整数
+\begin_inset Formula $N$
+\end_inset
+
+, 使得当
+\begin_inset Formula $n,m>N$
+\end_inset
+
+时, 有
+\begin_inset Formula 
+\[
+|a_{n}-a_{m}|<\varepsilon.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+第50页的定理3.8 (归结原则): 
+\begin_inset Flex Color Box
+status open
+
+\begin_layout Plain Layout
+设
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $U^{\circ}(x_{0};\delta')$
+\end_inset
+
+上有定义.
+ 
+\begin_inset Formula $\lim_{x\rightarrow x_{0}}f(x)$
+\end_inset
+
+存在的充要条件是: 对任何含于
+\begin_inset Formula $U^{\circ}(x_{0};\delta')$
+\end_inset
+
+且以
+\begin_inset Formula $x_{0}$
+\end_inset
+
+为极限的数列
+\begin_inset Formula $\{x_{n}\}$
+\end_inset
+
+, 极限
+\begin_inset Formula $\lim_{n\rightarrow\infty}f(x_{n})$
+\end_inset
+
+都存在且相等.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+第51页的定理3.9对应
+\begin_inset Formula $x\rightarrow+\infty$
+\end_inset
+
+的版本: 
+\begin_inset Flex Color Box
+status open
+
+\begin_layout Plain Layout
+设函数
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $(M,+\infty)$
+\end_inset
+
+上有定义.
+ 
+\begin_inset Formula $\lim_{x\rightarrow+\infty}f(x)=A$
+\end_inset
+
+的充要条件时: 对任何以
+\begin_inset Formula $+\infty$
+\end_inset
+
+为极限的递增数列
+\begin_inset Formula $\{x_{n}\}\subset(M,+\infty)$
+\end_inset
+
+, 有
+\begin_inset Formula $\lim_{n\rightarrow\infty}f(x_{n})=A$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+第52页的定理3.11 (柯西准则): 
+\begin_inset Flex Color Box
+status open
+
+\begin_layout Plain Layout
+设函数
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $U^{\circ}(x_{0};\delta')$
+\end_inset
+
+上有定义.
+ 
+\begin_inset Formula $\lim_{x\rightarrow x_{0}}f(x)$
+\end_inset
+
+存在的充要条件是: 任给
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 存在正数
+\begin_inset Formula $\delta$
+\end_inset
+
+ (
+\begin_inset Formula $<\delta'$
+\end_inset
+
+), 使得对任何
+\begin_inset Formula $x',x''\in U^{\circ}(x_{0};\delta)$
+\end_inset
+
+, 有
+\begin_inset Formula $|f(x')-f(x'')|<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
