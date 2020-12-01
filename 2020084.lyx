@@ -5902,6 +5902,13 @@ status collapsed
 
 \begin_deeper
 \begin_layout Enumerate
+\begin_inset Formula $\sin(2x)-2\sin x\sim-x^{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
 设
 \begin_inset Formula $f$
 \end_inset
@@ -5996,6 +6003,198 @@ status collapsed
 \end_inset
 
 是同阶无穷小量.
+\end_layout
+
+\begin_layout Enumerate
+设
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $[a,+\infty)$
+\end_inset
+
+上有定义, 并且
+\begin_inset Formula $\lim_{x\rightarrow+\infty}f(x)\neq+\infty$
+\end_inset
+
+.
+ 那么存在
+\begin_inset Formula $G_{0}>0$
+\end_inset
+
+, 使得对任意
+\begin_inset Formula $x\in U_{+}(a)$
+\end_inset
+
+有
+\begin_inset Formula $G_{0}\geqslant f(x)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+指出下述证明的
+\color red
+错误
+\color inherit
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Quotation
+证明: 若
+\begin_inset Formula $S$
+\end_inset
+
+为无上界数集, 则存在一递增数列
+\begin_inset Formula $\{x_{n}\}\subset S$
+\end_inset
+
+, 使得
+\begin_inset Formula $x_{n}\rightarrow+\infty$
+\end_inset
+
+ 
+\begin_inset Formula $(n\rightarrow\infty)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+因为
+\begin_inset Formula $S$
+\end_inset
+
+为无上界数集, 所以对于任意数
+\begin_inset Formula $M\in S$
+\end_inset
+
+, 存在
+\begin_inset Formula $x_{0}\in S$
+\end_inset
+
+使得
+\begin_inset Formula $x_{0}>M$
+\end_inset
+
+, 可令
+\begin_inset Formula $M>0$
+\end_inset
+
+, 
+\begin_inset Formula $M\in\mathbb{N}_{+}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+令
+\begin_inset Formula $M_{1}\in S$
+\end_inset
+
+, 存在
+\begin_inset Formula $x_{1}>M_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $M_{2}=x_{1}$
+\end_inset
+
+, 存在
+\begin_inset Formula $x_{2}>M_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $M_{3}=x_{2}$
+\end_inset
+
+, 存在
+\begin_inset Formula $x_{3}>M_{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+……
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $M_{n}=x_{n-1}$
+\end_inset
+
+, 存在
+\begin_inset Formula $x_{n}>M_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+……
+\end_layout
+
+\begin_layout Plain Layout
+由此可得一个数列
+\begin_inset Formula $\{x_{n}\}$
+\end_inset
+
+满足
+\begin_inset Formula $\{x_{n}\}$
+\end_inset
+
+满足
+\begin_inset Formula $x_{n}>M_{n}$
+\end_inset
+
+, 
+\begin_inset Formula $x_{n+1}>x_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+故存在
+\begin_inset Formula $\{x_{n}\}$
+\end_inset
+
+使得
+\begin_inset Formula $x_{n}\rightarrow+\infty$
+\end_inset
+
+ 
+\begin_inset Formula $(n\rightarrow\infty)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
