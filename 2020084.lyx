@@ -5893,6 +5893,249 @@ status collapsed
 \end_layout
 
 \begin_layout Exercise
+指出下列说法的
+\color red
+错误
+\color inherit
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+设
+\begin_inset Formula $f$
+\end_inset
+
+为
+\begin_inset Formula $U^{\circ}(x_{0};\delta)$
+\end_inset
+
+上的递减函数.
+ 因为对任意
+\begin_inset Formula $x\in U_{+}^{\circ}(x_{0};\delta)$
+\end_inset
+
+而言, 存在
+\begin_inset Formula $x'\in U_{-}^{\circ}(x_{0};\delta)$
+\end_inset
+
+, 使得
+\begin_inset Formula $f(x')>f(x)$
+\end_inset
+
+, 所以
+\begin_inset Formula $f(x),x\in U_{+}^{\circ}(x_{0};\delta)$
+\end_inset
+
+有上界.
+\end_layout
+
+\begin_layout Enumerate
+因为
+\begin_inset Formula $\lim_{x\rightarrow0}(\sin(2x)-2\sin x)=\lim_{x\rightarrow0}(-x^{3})$
+\end_inset
+
+, 所以当
+\begin_inset Formula $x\rightarrow0$
+\end_inset
+
+时
+\begin_inset Formula $\sin(2x)-2\sin x$
+\end_inset
+
+与
+\begin_inset Formula $x^{3}$
+\end_inset
+
+是同阶无穷小量.
+\end_layout
+
+\begin_layout Enumerate
+因为
+\begin_inset Formula $\sin(2x)-2\sin x=O(x^{3})$
+\end_inset
+
+ 
+\begin_inset Formula $(x\rightarrow0)$
+\end_inset
+
+, 所以当
+\begin_inset Formula $x\rightarrow0$
+\end_inset
+
+时
+\begin_inset Formula $\sin(2x)-2\sin x$
+\end_inset
+
+与
+\begin_inset Formula $x^{3}$
+\end_inset
+
+是同阶无穷小量.
+\end_layout
+
+\begin_layout Enumerate
+因为
+\begin_inset Formula $(1+x)^{-1}-(1-x)=o(x^{2})$
+\end_inset
+
+ 
+\begin_inset Formula $(x\rightarrow0)$
+\end_inset
+
+, 所以当
+\begin_inset Formula $x\rightarrow0$
+\end_inset
+
+时
+\begin_inset Formula $(1+x)^{-1}-(1-x)$
+\end_inset
+
+与
+\begin_inset Formula $x^{2}$
+\end_inset
+
+是同阶无穷小量.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+修正下述证明的
+\color red
+表达错误
+\color inherit
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Quotation
+证明: 若
+\begin_inset Formula $S$
+\end_inset
+
+为无上界数集, 则存在一递增数列
+\begin_inset Formula $\{x_{n}\}\subset S$
+\end_inset
+
+, 使得
+\begin_inset Formula $x_{n}\rightarrow+\infty$
+\end_inset
+
+ 
+\begin_inset Formula $(n\rightarrow\infty)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+因为
+\begin_inset Formula $S$
+\end_inset
+
+为无上界数集, 所以对任意
+\begin_inset Formula $n\in\mathbb{N}_{+}$
+\end_inset
+
+, 总有
+\begin_inset Formula $x_{n_{k}}\in S$
+\end_inset
+
+, 使得
+\begin_inset Formula $x_{n_{k}}>n$
+\end_inset
+
+.
+ 事实上, 取定
+\begin_inset Formula $1$
+\end_inset
+
+, 则存在
+\begin_inset Formula $x_{n_{1}}\in S$
+\end_inset
+
+, 使得
+\begin_inset Formula $x_{n_{1}}>1$
+\end_inset
+
+.
+ 再取
+\begin_inset Formula $\max\{x_{n_{1}},2\}$
+\end_inset
+
+, 则存在
+\begin_inset Formula $x_{n_{2}}\in S$
+\end_inset
+
+, 使得
+\begin_inset Formula $x_{n_{2}}>\max\{x_{n_{1}},2\}$
+\end_inset
+
+.
+ 依次进行下去, 则得到一列数列
+\begin_inset Formula $x_{n_{k}}$
+\end_inset
+
+, 对任意
+\begin_inset Formula $n\in\mathbb{N}_{+}$
+\end_inset
+
+, 总有
+\begin_inset Formula $x_{n_{k}}\in S$
+\end_inset
+
+, 使得
+\begin_inset Formula $x_{n_{k}}>k$
+\end_inset
+
+, 且由
+\begin_inset Formula $x_{n_{k}}$
+\end_inset
+
+取法知
+\begin_inset Formula $x_{n_{k}}$
+\end_inset
+
+为递增数列, 记
+\begin_inset Formula $n_{k}$
+\end_inset
+
+为
+\begin_inset Formula $n$
+\end_inset
+
+, 则
+\begin_inset Formula $\lim_{n\rightarrow\infty}x_{n}=+\infty$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
 指出下述证明的
 \color red
 错误
@@ -6078,6 +6321,182 @@ status collapsed
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+充分性:
+\series default
+ 设任何以
+\begin_inset Formula $+\infty$
+\end_inset
+
+为极限的数列
+\begin_inset Formula $\{x_{n}\}$
+\end_inset
+
+, 极限
+\begin_inset Formula $\lim_{x\rightarrow\infty}f(x_{n})=+\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+则对任给的
+\begin_inset Formula $G'>0$
+\end_inset
+
+, 存在正数
+\begin_inset Formula $N'$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+当
+\begin_inset Formula $x_{n}>N'$
+\end_inset
+
+时, 有
+\begin_inset Formula $f(x_{n})>G$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+则当
+\begin_inset Formula $x>x_{n}>N'$
+\end_inset
+
+时, 有
+\begin_inset Formula $f(x)>G$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+则
+\begin_inset Formula $\lim_{x\rightarrow+\infty}f(x)=+\infty$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+修正下述证明的
+\color red
+表达错误
+\color inherit
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Quotation
+设函数
+\begin_inset Formula $f$
+\end_inset
+
+只有可去间断点, 定义
+\begin_inset Formula 
+\[
+g(x)=\lim_{y\rightarrow x}f(y).
+\]
+
+\end_inset
+
+证明
+\begin_inset Formula $g$
+\end_inset
+
+为连续函数.
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+因为
+\begin_inset Formula $\lim_{y\rightarrow x}f(y)=g(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+所以当
+\begin_inset Formula $y\in U^{\circ}(x_{0};\delta)$
+\end_inset
+
+时有
+\begin_inset Formula $|f(y)-g(x_{0})|<\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+则
+\begin_inset Formula $g(x_{0})-\varepsilon<f(y)<g(x_{0})+\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+由保号性知: 当
+\begin_inset Formula $x\in U^{\circ}(x_{0};\delta)$
+\end_inset
+
+时
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $g(x_{0})-\varepsilon<g(x)<g(x_{0})+\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+则
+\begin_inset Formula $|g(x)-g(x_{0})|<\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+故
+\begin_inset Formula $\lim_{x\rightarrow x_{0}}g(x)=g(x_{0})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $g$
+\end_inset
+
+为连续函数
 \end_layout
 
 \end_inset
@@ -11076,13 +11495,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset Flex HINTAsInset
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
+\begin_inset Separator plain
 \end_inset
 
 
@@ -11094,19 +11507,6 @@ status open
 \end_inset
 
 的归结原则.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex HINTAsInset
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section
@@ -11545,17 +11945,13 @@ status collapsed
 的第一类间断点.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Flex HINTAsInset
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
+\begin_layout Remark*
+端点也要讨论.
+ 另外, 这里
+\begin_inset Formula $f(x_{0})$
 \end_inset
 
-
+是有定义的.
 \end_layout
 
 \begin_layout Exercise
@@ -11579,13 +11975,7 @@ g(x)=\lim_{y\rightarrow x}f(y).
 \end_layout
 
 \begin_layout Standard
-\begin_inset Flex HINTAsInset
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
+\begin_inset Separator plain
 \end_inset
 
 
