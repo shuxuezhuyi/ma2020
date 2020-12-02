@@ -2466,6 +2466,259 @@ Riemann函数在
 连续.
 \end_layout
 
+\begin_layout Standard
+定义
+\series bold
+最大(最小)值
+\series default
+.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+最大、最小值定理
+\end_layout
+
+\end_inset
+
+闭区间上的连续函数有最大值与最小值.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+介值定理
+\end_layout
+
+\end_inset
+
+闭区间
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上的连续函数
+\begin_inset Formula $f$
+\end_inset
+
+满足
+\begin_inset Formula $[f(a),f(b)]\subset f([a,b])$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+根的存在定理
+\end_layout
+
+\end_inset
+
+设
+\begin_inset Formula $f$
+\end_inset
+
+是闭区间
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上的连续函数.
+ 如果
+\begin_inset Formula $f(a)f(b)<0$
+\end_inset
+
+, 那么方程
+\begin_inset Formula $f(x)=0$
+\end_inset
+
+在
+\begin_inset Formula $(a,b)$
+\end_inset
+
+上有根.
+\end_layout
+
+\begin_layout Example
+连续函数
+\begin_inset Formula $f:[a,b]\rightarrow[a,b]$
+\end_inset
+
+有不动点.
+\end_layout
+
+\begin_layout Theorem
+设
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上严格单调并连续.
+ 那么反函数
+\begin_inset Formula $f^{-1}$
+\end_inset
+
+是
+\begin_inset Formula $[f(a),f(b)]$
+\end_inset
+
+或
+\begin_inset Formula $[f(b),f(a)]$
+\end_inset
+
+上的连续函数.
+\end_layout
+
+\begin_layout Standard
+定义
+\series bold
+一致连续
+\series default
+.
+\end_layout
+
+\begin_layout Example
+(1) 
+\begin_inset Formula $y=1/x$
+\end_inset
+
+在
+\begin_inset Formula $(0,1)$
+\end_inset
+
+上不一致连续.
+\end_layout
+
+\begin_layout Example
+(2) 
+\begin_inset Formula $y=\sin(1/x)$
+\end_inset
+
+在
+\begin_inset Formula $(0,1)$
+\end_inset
+
+上不一致连续.
+\end_layout
+
+\begin_layout Theorem
+设
+\begin_inset Formula $f$
+\end_inset
+
+是区间
+\begin_inset Formula $I$
+\end_inset
+
+上的函数.
+ 那么
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $I$
+\end_inset
+
+上一致连续的充要条件是: 对任意数列
+\begin_inset Formula $\{x_{n}'\},\{x_{n}''\}\subset I$
+\end_inset
+
+而言, 若
+\begin_inset Formula $\lim_{n\rightarrow\infty}(x_{n}'-x_{n}'')=0$
+\end_inset
+
+, 则有
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}(f(x_{n}')-f(x_{n}''))=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+一致连续性定理
+\end_layout
+
+\end_inset
+
+闭区间上的连续函数必定一致连续.
+\end_layout
+
+\begin_layout Example
+设
+\begin_inset Formula $I_{1},I_{2}$
+\end_inset
+
+是区间, 并且
+\begin_inset Formula $I_{1}\cap I_{2}=\{c\}$
+\end_inset
+
+是单点集.
+ 如果
+\begin_inset Formula $f$
+\end_inset
+
+分别在
+\begin_inset Formula $I_{1}$
+\end_inset
+
+和
+\begin_inset Formula $I_{2}$
+\end_inset
+
+上一致连续, 那么
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $I=I_{1}\cup I_{2}$
+\end_inset
+
+上也一致连续.
+\end_layout
+
+\begin_layout Theorem
+任何初等函数都是在其定义区间上的连续函数.
+\end_layout
+
 \begin_layout Section
 讨论
 \end_layout
@@ -6032,6 +6285,18 @@ status collapsed
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Enumerate
+若
+\begin_inset Formula $f$
+\end_inset
+
+的间断点都是可去间断点, 则
+\begin_inset Formula $f$
+\end_inset
+
+分段连续.
 \end_layout
 
 \end_deeper
