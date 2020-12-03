@@ -2431,11 +2431,11 @@ Riemann函数在
 \begin_inset Formula $f\pm g,f\cdot g,f/g$
 \end_inset
 
-(这里
+（这里
 \begin_inset Formula $g(x_{0})\neq0$
 \end_inset
 
-)也都在点
+）也都在点
 \begin_inset Formula $x_{0}$
 \end_inset
 
@@ -2512,11 +2512,19 @@ status open
 \begin_inset Formula $f$
 \end_inset
 
-满足
-\begin_inset Formula $[f(a),f(b)]\subset f([a,b])$
+在
+\begin_inset Formula $[a,b]$
 \end_inset
 
-.
+上取到介于
+\begin_inset Formula $f(a)$
+\end_inset
+
+与
+\begin_inset Formula $f(b)$
+\end_inset
+
+之间的所有值.
 \end_layout
 
 \begin_layout Standard
@@ -2725,105 +2733,6 @@ status open
 
 \begin_layout Standard
 作为一个反应迟钝的人, 我觉得答疑只是讨论问题的一种方式.
-\end_layout
-
-\begin_layout Example
-有同学问到第一章总练习题第17题.
- 假设
-\begin_inset Formula $x+\delta$
-\end_inset
-
-是有理数, 他要构造一个既约分数
-\begin_inset Formula 
-\[
-\frac{M}{M+1}(x+\delta).
-\]
-
-\end_inset
-
-我觉得
-\begin_inset Formula $M$
-\end_inset
-
-可以构造出来.
- 当我思考要怎么构造
-\begin_inset Formula $M$
-\end_inset
-
-的时候, 我的思路却歪到了另一个方向去, 突然想到可以用高射炮打蚊子:
-\end_layout
-
-\begin_layout Example
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status collapsed
-
-\begin_layout Plain Layout
-设
-\begin_inset Formula $x+\delta=p/q$
-\end_inset
-
-已经表成既约分数.
- 由张益唐的定理 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Zhang2014BoundedGB"
-literal "false"
-
-\end_inset
-
-可知, 总存在充分大的素数
-\begin_inset Formula $r$
-\end_inset
-
-与
-\begin_inset Formula $s$
-\end_inset
-
-, 使得
-\begin_inset Formula $0<s-r<70000000$
-\end_inset
-
-.
- 于是
-\begin_inset Formula $(rp)/(sq)$
-\end_inset
-
-就是要找的既约分数啦!
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Example
-注: 上述解法在考试中将会得零分.
-\end_layout
-
-\begin_layout Example
-另外, 对于这道题, 某本答案书上的答案并不完整.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
 \end_layout
 
 \begin_layout Example
@@ -4595,15 +4504,7 @@ a_{k+1}=\sqrt{2a_{k}}\leqslant\sqrt{2a_{k+1}}=a_{k+2},
 \end_layout
 
 \begin_layout Enumerate
-数列
-\begin_inset Formula $\{a_{n}\}$
-\end_inset
-
-发散
-\begin_inset Formula $\Leftrightarrow$
-\end_inset
-
-对任意正整数
+如果对任意正整数
 \begin_inset Formula $N$
 \end_inset
 
@@ -4619,7 +4520,11 @@ a_{k+1}=\sqrt{2a_{k}}\leqslant\sqrt{2a_{k+1}}=a_{k+2},
 \begin_inset Formula $|a_{n_{1}}-a_{n_{2}}|<|a_{n_{3}}-a_{n_{4}}|$
 \end_inset
 
-.
+, 那么数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+发散.
 \end_layout
 
 \end_deeper
@@ -11926,13 +11831,7 @@ status collapsed
 \end_layout
 
 \begin_layout Standard
-\begin_inset Flex HINTAsInset
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
+\begin_inset Separator plain
 \end_inset
 
 
@@ -12061,6 +11960,11 @@ status collapsed
 \end_inset
 
 .
+ 或令
+\begin_inset Formula $x=1+h$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Plain Layout
@@ -12136,6 +12040,121 @@ status collapsed
 \[
 \lim_{n\rightarrow\infty}\frac{a_{1}b_{n}+a_{2}b_{n-1}+\cdots+a_{n}b_{1}}{n}=ab.
 \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+(2) 此证法来自 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ChangGengZhe2012ShuXueFenXi1"
+literal "false"
+
+\end_inset
+
+ 第19页.
+\end_layout
+
+\begin_layout Plain Layout
+先考虑
+\begin_inset Formula $b=0$
+\end_inset
+
+的情形.
+ 此时由
+\begin_inset Formula $\lim_{n\rightarrow\infty}b_{n}=0$
+\end_inset
+
+可知
+\begin_inset Formula $\lim_{n\rightarrow\infty}|b_{n}|=0$
+\end_inset
+
+.
+ 由
+\begin_inset Formula $\lim_{n\rightarrow\infty}a_{n}=a$
+\end_inset
+
+可知数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+有界, 亦即存在
+\begin_inset Formula $M>0$
+\end_inset
+
+, 使得
+\begin_inset Formula $|a_{n}|<M$
+\end_inset
+
+恒成立.
+ 于是
+\begin_inset Formula 
+\[
+0\leqslant\left|\frac{a_{1}b_{n}+a_{2}b_{n-1}+\cdots+a_{n}b_{1}}{n}\right|\leqslant\frac{M(|b_{n}|+|b_{n-1}|+\cdots+|b_{1}|)}{n}.
+\]
+
+\end_inset
+
+由(1)的结论可知
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}\frac{M(|b_{n}|+|b_{n-1}|+\cdots+|b_{1}|)}{n}=0,
+\]
+
+\end_inset
+
+于是用迫敛性法则可得
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}\frac{a_{1}b_{n}+a_{2}b_{n-1}+\cdots+a_{n}b_{1}}{n}=0.
+\]
+
+\end_inset
+
+下面考虑
+\begin_inset Formula $b\neq0$
+\end_inset
+
+的情形.
+ 此时
+\begin_inset Formula 
+\begin{align*}
+ & \quad\left|\frac{a_{1}b_{n}+a_{2}b_{n-1}+\cdots+a_{n}b_{1}}{n}-ab\right|\\
+ & =\left|\frac{a_{1}(b_{n}-b)+a_{2}(b_{n-1}-b)+\cdots+a_{n}(b_{1}-b)}{n}+\frac{(a_{1}+a_{2}+\cdots+a_{n})b}{n}-ab\right|\\
+ & \leqslant\left|\frac{a_{1}(b_{n}-b)+a_{2}(b_{n-1}-b)+\cdots+a_{n}(b_{1}-b)}{n}\right|+\left|\left(\frac{a_{1}+a_{2}+\cdots+a_{n}}{n}-a\right)b\right|\eqqcolon A_{n}+B_{n},
+\end{align*}
+
+\end_inset
+
+由对
+\begin_inset Formula $b=0$
+\end_inset
+
+的情形的讨论可知
+\begin_inset Formula $\lim_{n\rightarrow\infty}A_{n}=0$
+\end_inset
+
+, 由(1)的结论可知
+\begin_inset Formula $\lim_{n\rightarrow\infty}B_{n}=0$
+\end_inset
+
+, 故
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}\frac{a_{1}b_{n}+a_{2}b_{n-1}+\cdots+a_{n}b_{1}}{n}=ab.
+\]
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -12360,7 +12379,7 @@ a_{1}=1,\quad a_{n+1}=1+\frac{1}{a_{n}},\,n=1,2,\cdots.
 status collapsed
 
 \begin_layout Plain Layout
-数列
+计算数列前几项, 可以猜到数列
 \begin_inset Formula $\{a_{2k}:k\in\mathbb{N}_{+}\}$
 \end_inset
 
@@ -12657,7 +12676,7 @@ http://blog.sciencenet.cn/home.php?mod=space&uid=200147&do=blog&id=261119
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-btprint "btPrintAll"
+btprint "btPrintCited"
 bibfiles "reference"
 options "bibtotoc"
 biblatexopts "title=参考文献"

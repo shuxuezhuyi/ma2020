@@ -4,7 +4,7 @@
 \begin_header
 \save_transient_properties false
 \origin unavailable
-\textclass ctex-book
+\textclass ctex-article
 \begin_preamble
 % 如果没有这一句命令，XeTeX会出错，原因参见
 % http://bbs.ctex.org/viewthread.php?tid=60547
@@ -29,6 +29,11 @@
 
 % 允许行间公式跨页, 参数为 1,2,3,4 的一个, 越大则越可能跨页
 \allowdisplaybreaks[1]
+
+\ctexset {
+section = { name = {第,节},
+number = \chinese{section},}
+}
 \end_preamble
 \options UTF8,oneside
 \use_default_options true
@@ -416,6 +421,322 @@ status open
 
 , 有
 \begin_inset Formula $|f(x')-f(x'')|<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+2020年12月6日
+\end_layout
+
+\begin_layout Enumerate
+第51页的定理3.10 (单调有界定理): 
+\begin_inset Flex Color Box
+status open
+
+\begin_layout Plain Layout
+若
+\begin_inset Formula $f$
+\end_inset
+
+为定义在
+\begin_inset Formula $U_{-}^{\circ}(x_{0},\delta)$
+\end_inset
+
+上的单调有界函数, 则左极限
+\begin_inset Formula $f(x_{0}-0)$
+\end_inset
+
+存在.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+第71页的定理4.6 (最大、最小值定理): 
+\begin_inset Flex Color Box
+status open
+
+\begin_layout Plain Layout
+引理: 若
+\begin_inset Formula $f$
+\end_inset
+
+是闭区间
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上的连续函数, 则
+\begin_inset Formula $f$
+\end_inset
+
+是
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上的有界函数.
+\end_layout
+
+\begin_layout Color Box Separator
+
+\end_layout
+
+\begin_layout Plain Layout
+若
+\begin_inset Formula $f$
+\end_inset
+
+是闭区间
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上的连续函数, 则
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上有最大值与最小值.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+第72页的定理4.7 (介值定理): 
+\begin_inset Flex Color Box
+status open
+
+\begin_layout Plain Layout
+闭区间
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上的连续函数
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上取到介于
+\begin_inset Formula $f(a)$
+\end_inset
+
+与
+\begin_inset Formula $f(b)$
+\end_inset
+
+之间的所有值.
+\end_layout
+
+\begin_layout Color Box Separator
+
+\end_layout
+
+\begin_layout Plain Layout
+推论: 连续函数
+\begin_inset Formula $f:[a,b]\rightarrow[a,b]$
+\end_inset
+
+有不动点.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+第73页的定理4.8: 
+\begin_inset Flex Color Box
+status open
+
+\begin_layout Plain Layout
+若函数
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上严格单调并连续, 则反函数
+\begin_inset Formula $f^{-1}$
+\end_inset
+
+在其定义域
+\begin_inset Formula $[f(a),f(b)]$
+\end_inset
+
+或
+\begin_inset Formula $[f(b),f(a)]$
+\end_inset
+
+上也连续.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+第75页的例10: 
+\begin_inset Flex Color Box
+status open
+
+\begin_layout Plain Layout
+设
+\begin_inset Formula $f$
+\end_inset
+
+是区间
+\begin_inset Formula $I$
+\end_inset
+
+上的函数.
+ 那么
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $I$
+\end_inset
+
+上一致连续的充要条件是: 对任意数列
+\begin_inset Formula $\{x_{n}'\},\{x_{n}''\}\subset I$
+\end_inset
+
+而言, 若
+\begin_inset Formula $\lim_{n\rightarrow\infty}(x_{n}'-x_{n}'')=0$
+\end_inset
+
+, 则有
+\begin_inset Formula $\lim_{n\rightarrow\infty}(f(x_{n}')-f(x_{n}''))=0.$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+第76页的定理4.9 (一致连续性定理): 
+\begin_inset Flex Color Box
+status open
+
+\begin_layout Plain Layout
+若
+\begin_inset Formula $f$
+\end_inset
+
+是闭区间
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上的连续函数, 则
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上必定一致连续.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+第77页的例12: 
+\begin_inset Flex Color Box
+status open
+
+\begin_layout Plain Layout
+设
+\begin_inset Formula $I_{1},I_{2}$
+\end_inset
+
+是区间, 并且
+\begin_inset Formula $I_{1}\cap I_{2}=\{c\}$
+\end_inset
+
+是单点集.
+ 如果
+\begin_inset Formula $f$
+\end_inset
+
+分别在
+\begin_inset Formula $I_{1}$
+\end_inset
+
+和
+\begin_inset Formula $I_{2}$
+\end_inset
+
+上一致连续, 那么
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $I=I_{1}\cup I_{2}$
+\end_inset
+
+上也一致连续.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+下述命题是否正确? 如果是, 请证明之; 如果不是, 请给出反例.
+ 
+\begin_inset Flex Color Box
+status open
+
+\begin_layout Plain Layout
+设数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+发散.
+ 那么对任意正整数
+\begin_inset Formula $N$
+\end_inset
+
+, 存在正整数
+\begin_inset Formula $n_{1},n_{2},n_{3},n_{4}$
+\end_inset
+
+满足
+\begin_inset Formula $N<n_{1}<n_{2}\leqslant n_{3}<n_{4}$
+\end_inset
+
+, 使得
+\begin_inset Formula $|a_{n_{1}}-a_{n_{2}}|<|a_{n_{3}}-a_{n_{4}}|$
 \end_inset
 
 .
