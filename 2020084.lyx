@@ -7049,6 +7049,193 @@ g(x_{0})=f(x_{0}+0)=\lim_{x\rightarrow x_{0}^{+}}f(x).
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+下列命题是否正确? 如果是, 请证明之; 如果不是, 请给出反例.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+若有界数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+满足
+\begin_inset Formula $\lim_{n\rightarrow\infty}(a_{n+1}-a_{n})=0$
+\end_inset
+
+, 则
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+收敛.
+\end_layout
+
+\begin_layout Enumerate
+若有界数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+满足
+\begin_inset Formula $\lim_{n\rightarrow\infty}(a_{n+1}/a_{n})=1$
+\end_inset
+
+, 则
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+收敛.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+指出下述证明的
+\color red
+错误
+\color inherit
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Quotation
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+已知
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,+\infty)$
+\end_inset
+
+上连续, 且
+\begin_inset Formula $\lim_{x\rightarrow+\infty}f(x)$
+\end_inset
+
+存在, 
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,+\infty)$
+\end_inset
+
+上有界.
+\end_layout
+
+\begin_layout Plain Layout
+由确界原理得: 存在上确界.
+ 设: 
+\begin_inset Formula 
+\[
+\sup_{x\in[a,+\infty)}f(x)=N,
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+则: 
+\begin_inset Formula $f(x)\leqslant N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+设
+\begin_inset Formula $f(x)\neq N$
+\end_inset
+
+, 则: 不妨设: 
+\begin_inset Formula $f(x)<N$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+令
+\begin_inset Formula $g(x)=N-f(x)$
+\end_inset
+
+.
+ 因为
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $[a,+\infty)$
+\end_inset
+
+连续且有界, 则
+\begin_inset Formula $g(x)$
+\end_inset
+
+在
+\begin_inset Formula $[a,+\infty)$
+\end_inset
+
+连续且有界.
+\end_layout
+
+\begin_layout Plain Layout
+设
+\begin_inset Formula $g(x)$
+\end_inset
+
+下界为
+\begin_inset Formula $P$
+\end_inset
+
+.
+ 则有: 
+\begin_inset Formula $g(x)=N-f(x)\geqslant P$
+\end_inset
+
+, 
+\begin_inset Formula $f(x)\leqslant N-P$
+\end_inset
+
+, 与
+\begin_inset Formula $N$
+\end_inset
+
+为上确界矛盾.
+\end_layout
+
+\begin_layout Plain Layout
+所以
+\begin_inset Formula $f(x)\leqslant N$
+\end_inset
+
+.
+ 故存在最大值, 同理可证, 存在最小值.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Section
 正例
 \end_layout
@@ -12490,6 +12677,197 @@ g(x)=f(x+0).
 \end_inset
 
 上每一点都右连续.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+设
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,+\infty)$
+\end_inset
+
+上连续, 且
+\begin_inset Formula $\lim_{x\rightarrow+\infty}f(x)$
+\end_inset
+
+存在.
+ 证明: 
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,+\infty)$
+\end_inset
+
+上有界.
+ 又问
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,+\infty)$
+\end_inset
+
+上必有最大值或最小值吗?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+若对任何充分小的
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a+\varepsilon,b-\varepsilon]$
+\end_inset
+
+上连续, 能否由此推出
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $(a,b)$
+\end_inset
+
+上连续?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+求极限:
+\begin_inset Formula 
+\begin{align*}
+(1) & \lim_{x\rightarrow\frac{\pi}{4}}(\pi-x)\tan x; & (2) & \lim_{x\rightarrow1^{+}}\frac{x\sqrt{1+2x}-\sqrt{x^{2}-1}}{x+1}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+设
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,+\infty)$
+\end_inset
+
+上连续, 且
+\begin_inset Formula $\lim_{x\rightarrow+\infty}f(x)$
+\end_inset
+
+存在.
+ 证明: 
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,+\infty)$
+\end_inset
+
+上一致连续.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+设
+\begin_inset Formula $f$
+\end_inset
+
+为
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上的增函数, 其值域为
+\begin_inset Formula $[f(a),f(b)]$
+\end_inset
+
+.
+ 证明
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上连续.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+设
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上连续, 
+\begin_inset Formula $x_{1},x_{2},\cdots,x_{n}\in[a,b]$
+\end_inset
+
+.
+ 证明: 存在
+\begin_inset Formula $\xi\in[a,b]$
+\end_inset
+
+, 使得
+\begin_inset Formula 
+\[
+f(\xi)=\frac{f(x_{1})+f(x_{2})+\cdots+f(x_{n})}{n}.
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Chapter
