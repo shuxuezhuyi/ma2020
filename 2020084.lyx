@@ -7102,6 +7102,145 @@ g(x_{0})=f(x_{0}+0)=\lim_{x\rightarrow x_{0}^{+}}f(x).
 \end_layout
 
 \begin_layout Exercise
+指出下列说法的
+\color red
+错误
+\color inherit
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+任取
+\begin_inset Formula $x',x''\in(M,+\infty)$
+\end_inset
+
+, 由于
+\begin_inset Formula $\lim_{x\rightarrow+\infty}f(x)=A$
+\end_inset
+
+, 
+\begin_inset Formula $\forall\varepsilon>0$
+\end_inset
+
+, 有
+\begin_inset Formula $|f(x')-A|<\varepsilon$
+\end_inset
+
+, 
+\begin_inset Formula $|f(x'')-A|<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+设
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上严格递增, 并且在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处不连续.
+ 那么
+\begin_inset Formula $f$
+\end_inset
+
+的值域为
+\begin_inset Formula $[f(a),f(x_{0}-0)]\cup[f(x_{0}+0),f(b)]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+设
+\begin_inset Formula $f$
+\end_inset
+
+的定义域为
+\begin_inset Formula $(a,b)$
+\end_inset
+
+, 并且
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处不连续.
+ 令
+\begin_inset Formula $\varepsilon=\min\{x_{0}-a,b-x_{0}\}$
+\end_inset
+
+, 则
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a+\varepsilon,b-\varepsilon]$
+\end_inset
+
+上不连续.
+\end_layout
+
+\begin_layout Enumerate
+由连续性可知
+\begin_inset Formula $\lim_{x\rightarrow+\infty}\sqrt{1+\frac{1}{x}}=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+若
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上不连续, 则存在
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 对任意
+\begin_inset Formula $\delta>0$
+\end_inset
+
+, 当
+\begin_inset Formula $|x-x_{0}|<\delta$
+\end_inset
+
+时, 其中
+\begin_inset Formula $x_{0}\in(a,b)$
+\end_inset
+
+, 有
+\begin_inset Formula $|f(x)-f(x_{0})|>\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
 指出下述证明的
 \color red
 错误
@@ -7111,11 +7250,7 @@ g(x_{0})=f(x_{0}+0)=\lim_{x\rightarrow x_{0}^{+}}f(x).
 
 \begin_deeper
 \begin_layout Quotation
-\begin_inset Flex ProofAsInset
-status collapsed
-
-\begin_layout Plain Layout
-已知
+设
 \begin_inset Formula $f$
 \end_inset
 
@@ -7127,8 +7262,111 @@ status collapsed
 \begin_inset Formula $\lim_{x\rightarrow+\infty}f(x)$
 \end_inset
 
-存在, 
+存在.
+ 证明: 
 \begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,+\infty)$
+\end_inset
+
+上有界.
+ 又问
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,+\infty)$
+\end_inset
+
+上必有最大值或最小值吗?
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+(1)
+\series default
+ 因为
+\begin_inset Formula $\lim_{x\rightarrow+\infty}f(x)$
+\end_inset
+
+存在, 所以不妨设
+\begin_inset Formula $\lim_{x\rightarrow+\infty}f(x)=A$
+\end_inset
+
+.
+ 那么对任意
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 存在
+\begin_inset Formula $N>0$
+\end_inset
+
+, 使得当
+\begin_inset Formula $x>N$
+\end_inset
+
+时有
+\begin_inset Formula $|f(x)-A|<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+因为
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,N+1]$
+\end_inset
+
+上连续, 所以
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,N+1]$
+\end_inset
+
+上存在最大值
+\begin_inset Formula $M$
+\end_inset
+
+与最小值
+\begin_inset Formula $M'$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+在
+\begin_inset Formula $[N+1,+\infty)$
+\end_inset
+
+上, 由保号性可知
+\begin_inset Formula $A/2<f(x)<2A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+因此, 
+\begin_inset Formula $\min\{A/2,M'\}\leqslant f(x)\leqslant\max\{2A,M\}$
+\end_inset
+
+, 即
+\begin_inset Formula $f(x)$
 \end_inset
 
 在
@@ -7139,7 +7377,11 @@ status collapsed
 \end_layout
 
 \begin_layout Plain Layout
-由确界原理得: 存在上确界.
+
+\series bold
+(2)
+\series default
+ 由确界原理得: 存在上确界.
  设: 
 \begin_inset Formula 
 \[
@@ -7148,10 +7390,6 @@ status collapsed
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 则: 
 \begin_inset Formula $f(x)\leqslant N$
 \end_inset
@@ -7228,6 +7466,175 @@ status collapsed
 
 .
  故存在最大值, 同理可证, 存在最小值.
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+(2)
+\series default
+ 
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,+\infty)$
+\end_inset
+
+上不一定有最大值或最小值.
+ 例如, 
+\begin_inset Formula $f(x)=x$
+\end_inset
+
+在
+\begin_inset Formula $[1,+\infty)$
+\end_inset
+
+上无最大值, 
+\begin_inset Formula $f(x)=-x$
+\end_inset
+
+在
+\begin_inset Formula $[1,+\infty)$
+\end_inset
+
+上无最小值.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+指出下述证明的
+\color red
+错误
+\color inherit
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Quotation
+设
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,+\infty)$
+\end_inset
+
+上连续, 且
+\begin_inset Formula $\lim_{x\rightarrow+\infty}f(x)$
+\end_inset
+
+存在.
+ 证明: 
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,+\infty)$
+\end_inset
+
+上一致连续.
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+记
+\begin_inset Formula $\lim_{x\rightarrow+\infty}f(x)=A$
+\end_inset
+
+.
+ 那么对任意
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 存在
+\begin_inset Formula $M>0$
+\end_inset
+
+, 使得当
+\begin_inset Formula $x>M$
+\end_inset
+
+时有
+\begin_inset Formula 
+\[
+|f(x)-A|<\frac{\varepsilon}{2}.
+\]
+
+\end_inset
+
+于是对任意
+\begin_inset Formula $x_{1},x_{2}>M$
+\end_inset
+
+有
+\begin_inset Formula 
+\[
+|f(x_{1})-f(x_{2})|\leqslant|f(x_{1})-A|+|f(x_{2})-A|=\frac{\varepsilon}{2}+\frac{\varepsilon}{2}=\varepsilon,
+\]
+
+\end_inset
+
+从而
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $(M,+\infty)$
+\end_inset
+
+上连续.
+\end_layout
+
+\begin_layout Plain Layout
+当
+\begin_inset Formula $x\in[a,M]$
+\end_inset
+
+时
+\begin_inset Formula $f(x)$
+\end_inset
+
+连续, 故由一致连续性定理可知
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $[a,M]$
+\end_inset
+
+上一致连续.
+\end_layout
+
+\begin_layout Plain Layout
+又因为
+\begin_inset Formula $[a,M]\cup[M,+\infty)=[a,+\infty)$
+\end_inset
+
+, 所以由书上第77页的例12的结论可知
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,+\infty)$
+\end_inset
+
+上一致连续.
 \end_layout
 
 \end_inset
@@ -12868,6 +13275,53 @@ f(\xi)=\frac{f(x_{1})+f(x_{2})+\cdots+f(x_{n})}{n}.
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+求下列极限:
+\begin_inset Formula 
+\begin{align*}
+(3) & \lim_{x\rightarrow0^{+}}\left(\sqrt{\frac{1}{x}+\sqrt{\frac{1}{x}+\sqrt{\frac{1}{x}}}}-\sqrt{\frac{1}{x}-\sqrt{\frac{1}{x}+\sqrt{\frac{1}{x}}}}\right); & (4) & \lim_{x\rightarrow+\infty}\frac{\sqrt{x+\sqrt{x+\sqrt{x}}}}{\sqrt{x+1}}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+设
+\begin_inset Formula $\lim_{n\rightarrow\infty}a_{n}=a>0$
+\end_inset
+
+, 
+\begin_inset Formula $\lim_{n\rightarrow\infty}b_{n}=b$
+\end_inset
+
+.
+ 利用
+\begin_inset Formula $a^{b}=e^{b\ln a}$
+\end_inset
+
+证明
+\begin_inset Formula $\lim_{n\rightarrow\infty}(a_{n})^{b_{n}}=a^{b}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Chapter
