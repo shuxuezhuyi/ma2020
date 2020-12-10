@@ -154,6 +154,15 @@ End
 
 \begin_layout Standard
 \begin_inset FormulaMacro
+\newcommand{\mathistOperatord}{\mathop{}\!\mathrm{d}}
+{\,\mathrm{d}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
 \newcommand{\mathistOperatorsgn}{\operatorname{sgn}}
 {\,\mathrm{sgn}\,}
 \end_inset
@@ -2420,11 +2429,11 @@ status collapsed
 \series bold
 上确界
 \series default
-与
+(least upper bound)与
 \series bold
 下确界
 \series default
-.
+(greatest lower bound).
 \end_layout
 
 \begin_layout Theorem
@@ -2482,19 +2491,19 @@ status collapsed
 \series bold
 函数
 \series default
-、
+(function)、
 \series bold
 定义域
 \series default
-、
+(domain of definition)、
 \series bold
 函数值
 \series default
-与
+(value)与
 \series bold
 值域
 \series default
-.
+(range).
 \end_layout
 
 \begin_layout Example
@@ -2662,7 +2671,7 @@ status collapsed
 \series bold
 数列
 \series default
-及其记号.
+(sequence)及其记号.
 \end_layout
 
 \begin_layout Standard
@@ -2670,11 +2679,11 @@ status collapsed
 \series bold
 收敛
 \series default
-与
+(convergence)与
 \series bold
 极限
 \series default
-.
+(limit).
 \end_layout
 
 \begin_layout Standard
@@ -2682,7 +2691,7 @@ status collapsed
 \series bold
 发散
 \series default
-数列.
+(divergent)数列.
 \end_layout
 
 \begin_layout Standard
@@ -3419,7 +3428,7 @@ f(x)\sim g(x)\,(x\rightarrow x_{0})\Rightarrow\begin{cases}
 \series bold
 连续
 \series default
-.
+(continuous).
  引入
 \series bold
 增量
@@ -3728,7 +3737,7 @@ status open
 \series bold
 一致连续
 \series default
-.
+(uniformly continuous).
 \end_layout
 
 \begin_layout Example
@@ -3847,6 +3856,883 @@ status open
 
 \begin_layout Theorem
 任何初等函数都是在其定义区间上的连续函数.
+\end_layout
+
+\begin_layout Section
+导数与微分
+\end_layout
+
+\begin_layout Standard
+定义
+\series bold
+可导
+\series default
+、(
+\series bold
+左
+\series default
+、
+\series bold
+右
+\series default
+、
+\series bold
+单侧
+\series default
+)
+\series bold
+导数
+\series default
+(derivative)、
+\series bold
+差商
+\series default
+、
+\series bold
+变化率
+\series default
+.
+ 引入记号
+\begin_inset Formula 
+\[
+f'(x_{0})\coloneqq\lim_{\Delta x\rightarrow0}\frac{\Delta y}{\Delta x}\coloneqq\lim_{\Delta x\rightarrow0}\frac{f(x_{0}+\Delta x)-f(x_{0})}{\Delta x}\coloneqq\lim_{x\rightarrow x_{0}}\frac{f(x)-f(x_{0})}{x-x_{0}},
+\]
+
+\end_inset
+
+并且称
+\begin_inset Formula 
+\[
+\Delta y=f'(x_{0})\Delta x+o(\Delta x),\quad\Delta x\rightarrow0
+\]
+
+\end_inset
+
+是
+\begin_inset Formula $f(x)$
+\end_inset
+
+在点
+\begin_inset Formula $x_{0}$
+\end_inset
+
+的
+\series bold
+有限增量公式
+\series default
+.
+ 也有记号
+\begin_inset Formula $f'_{-}(x_{0})$
+\end_inset
+
+与
+\begin_inset Formula $f'_{+}(x_{0})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+可导
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+连续.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $f(x)=x^{2}D(x)$
+\end_inset
+
+仅在点
+\begin_inset Formula $x_{0}=0$
+\end_inset
+
+可导.
+\end_layout
+
+\begin_layout Theorem
+可导
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+左右导数存在且相等.
+\end_layout
+
+\begin_layout Standard
+定义
+\series bold
+导函数
+\series default
+(简称为
+\series bold
+导数
+\series default
+).
+ 引入记号
+\begin_inset Formula 
+\[
+\left.y'\right|_{x=x_{0}},\quad\left.\frac{\mathistOperatord y}{\mathistOperatord x}\right|_{x=x_{0}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+定义
+\series bold
+切线
+\series default
+.
+ 定义
+\series bold
+极值
+\series default
+、
+\series bold
+极值点
+\series default
+、
+\series bold
+驻点
+\series default
+(
+\series bold
+稳定点
+\series default
+).
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $f'_{+}(x_{0})>0\Rightarrow$
+\end_inset
+
+右侧最终有
+\begin_inset Formula $f(x_{0})<f(x)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+费马定理, Fermat's Lemma
+\end_layout
+
+\end_inset
+
+极值点都是驻点.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Color Box
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+title={四则运算法则}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $(u\pm v)'=u'\pm v'$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $(uv)'=u'v+uv'$
+\end_inset
+
+; 若
+\begin_inset Formula $c$
+\end_inset
+
+为常数, 则
+\begin_inset Formula $(cu)'=cu'$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+当
+\begin_inset Formula $v\neq0$
+\end_inset
+
+时有
+\begin_inset Formula 
+\[
+\left(\frac{u}{v}\right)'=\frac{u'v-uv'}{v^{2}},\quad\left(\frac{1}{v}\right)'=-\frac{v'}{v^{2}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+(1) 
+\begin_inset Formula $(x/1)'=(1-0)/1^{2}=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+(2) 当
+\begin_inset Formula $x>0$
+\end_inset
+
+时, 
+\begin_inset Formula $1/x$
+\end_inset
+
+严格单调递减, 此时有
+\begin_inset Formula $(1/x)'=-1/x^{2}<0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula $\mathistOperatord y/\mathistOperatord x=(\mathistOperatord x/\mathistOperatord y)^{-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset Formula $f(x)$
+\end_inset
+
+在点
+\begin_inset Formula $x_{0}$
+\end_inset
+
+可导的充要条件是: 在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+的某邻域
+\begin_inset Formula $U(x_{0})$
+\end_inset
+
+上, 存在一个在点
+\begin_inset Formula $x_{0}$
+\end_inset
+
+连续的函数
+\begin_inset Formula $H(x)$
+\end_inset
+
+, 使得
+\begin_inset Formula 
+\[
+f(x)-f(x_{0})=H(x)\cdot(x-x_{0}).
+\]
+
+\end_inset
+
+特别地, 此时有
+\begin_inset Formula $f'(x_{0})=H(x_{0})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+链式法则, chain rule
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $(f\circ\varphi)'=f'(\varphi)\cdot\varphi'$
+\end_inset
+
+, 或写作
+\begin_inset Formula 
+\[
+\frac{\mathistOperatord y}{\mathistOperatord x}=\frac{\mathistOperatord y}{\mathistOperatord u}\cdot\frac{\mathistOperatord u}{\mathistOperatord x}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="13" columns="3">
+<features islongtable="true" longtabularalignment="center">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="0pt">
+<row interlinespace="0.2ex">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+函数
+\begin_inset Formula $f(x)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+导数
+\begin_inset Formula $f'(x)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+限制条件
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row interlinespace="0.2ex">
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $C$
+\end_inset
+
+ (常数)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row interlinespace="0.2ex">
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x^{\alpha}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha x^{\alpha-1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+当
+\begin_inset Formula $\alpha\in\mathbb{R}$
+\end_inset
+
+时
+\begin_inset Formula $x>0$
+\end_inset
+
+, 但
+\begin_inset Formula $\alpha\in\mathbb{N}$
+\end_inset
+
+时
+\begin_inset Formula $x\in\mathbb{R}$
+\end_inset
+
+即可
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row interlinespace="0.2ex">
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a^{x}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a^{x}\ln a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a>0$
+\end_inset
+
+且
+\begin_inset Formula $a\neq1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row interlinespace="0.2ex">
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\log_{a}|x|$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{x\ln a}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a>0$
+\end_inset
+
+且
+\begin_inset Formula $a\neq1$
+\end_inset
+
+, 同时
+\begin_inset Formula $x\neq0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row interlinespace="0.2ex">
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\sin x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\cos x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row interlinespace="0.2ex">
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\cos x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-\sin x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row interlinespace="0.2ex">
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tan x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{\cos^{2}x}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x\neq\frac{\pi}{2}+k\pi$
+\end_inset
+
+, 其中
+\begin_inset Formula $k\in\mathbb{Z}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row interlinespace="0.2ex">
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\cot x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-\frac{1}{\sin^{2}x}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x\neq k\pi$
+\end_inset
+
+, 其中
+\begin_inset Formula $k\in\mathbb{Z}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row interlinespace="0.2ex">
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\arcsin x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{\sqrt{1-x^{2}}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $|x|<1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row interlinespace="0.2ex">
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\arccos x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-\frac{1}{\sqrt{1-x^{2}}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $|x|<1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row interlinespace="0.2ex">
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\arctan x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{1+x^{2}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row interlinespace="0.2ex">
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\operatorname{arccot}x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-\frac{1}{1+x^{2}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+基本初等函数的导数
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -8750,81 +9636,79 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-记
+(此证法抄自《数学分析辅导及习题精解（上册）》（2020年4月第1版第1次印刷）第171页.)
+\end_layout
+
+\begin_layout Plain Layout
+设
 \begin_inset Formula $\lim_{x\rightarrow+\infty}f(x)=A$
 \end_inset
 
-.
- 那么对任意
+, 则对任意的
 \begin_inset Formula $\varepsilon>0$
 \end_inset
 
 , 存在
-\begin_inset Formula $M>0$
+\begin_inset Formula $M>a$
 \end_inset
 
 , 使得当
 \begin_inset Formula $x>M$
 \end_inset
 
-时有
+时, 有
+\begin_inset Formula $|f(x)-A|<\varepsilon$
+\end_inset
+
+.
+ 对任意的
+\begin_inset Formula $x',x''\in[M+1,+\infty)$
+\end_inset
+
+, 有
 \begin_inset Formula 
 \[
-|f(x)-A|<\frac{\varepsilon}{2}.
+|f(x')-A|<\varepsilon,\quad|f(x'')-A|<\varepsilon.
 \]
 
 \end_inset
 
-于是对任意
-\begin_inset Formula $x_{1},x_{2}>M$
-\end_inset
-
-有
+于是
 \begin_inset Formula 
-\[
-|f(x_{1})-f(x_{2})|\leqslant|f(x_{1})-A|+|f(x_{2})-A|=\frac{\varepsilon}{2}+\frac{\varepsilon}{2}=\varepsilon,
-\]
+\begin{align*}
+|f(x')-f(x'')| & =|f(x')-A+A-f(x'')|\\
+ & \leqslant|f(x')-A|+|f(x'')-A|<2\varepsilon,
+\end{align*}
 
 \end_inset
 
-从而
+故
 \begin_inset Formula $f(x)$
 \end_inset
 
 在
-\begin_inset Formula $(M,+\infty)$
+\begin_inset Formula $[M+1,+\infty)$
 \end_inset
 
-上连续.
-\end_layout
-
-\begin_layout Plain Layout
-当
-\begin_inset Formula $x\in[a,M]$
-\end_inset
-
-时
-\begin_inset Formula $f(x)$
-\end_inset
-
-连续, 故由一致连续性定理可知
+上一致连续, 由
 \begin_inset Formula $f(x)$
 \end_inset
 
 在
-\begin_inset Formula $[a,M]$
+\begin_inset Formula $[a,M+1]$
+\end_inset
+
+上连续, 可知
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $[a,M+1]$
 \end_inset
 
 上一致连续.
-\end_layout
-
-\begin_layout Plain Layout
-又因为
-\begin_inset Formula $[a,M]\cup[M,+\infty)=[a,+\infty)$
-\end_inset
-
-, 所以由书上第77页的例12的结论可知
-\begin_inset Formula $f$
+ 所以, 
+\begin_inset Formula $f(x)$
 \end_inset
 
 在
