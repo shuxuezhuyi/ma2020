@@ -1000,7 +1000,15 @@ LatexCommand tableofcontents
 \end_layout
 
 \begin_layout Standard
-本节内容来自卓里奇的《数学分析》.
+本节内容来自 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Zorich2019ShuXueFenXi1"
+literal "false"
+
+\end_inset
+
+ 第一章.
 \end_layout
 
 \begin_layout Standard
@@ -4189,7 +4197,7 @@ status open
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \noindent
@@ -4722,7 +4730,15 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-基本初等函数的导数
+基本初等函数的导数, 抄自 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Zorich2019ShuXueFenXi1"
+literal "false"
+
+\end_inset
+
+ 第170页.
 \end_layout
 
 \end_inset
@@ -15291,7 +15307,14 @@ g(x)=f(x+0).
 \end_layout
 
 \begin_layout Standard
-\begin_inset Separator plain
+\begin_inset Flex HINTAsInset
+status collapsed
+
+\begin_layout Plain Layout
+用反证法.
+ 利用书上第75页的例10.
+\end_layout
+
 \end_inset
 
 
@@ -15322,11 +15345,8 @@ g(x)=f(x+0).
 上连续.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
+\begin_layout Remark*
+注意端点.
 \end_layout
 
 \begin_layout Exercise
