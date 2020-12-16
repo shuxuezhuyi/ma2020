@@ -4751,6 +4751,67 @@ literal "false"
 
 \end_layout
 
+\begin_layout Example
+用极坐标
+\begin_inset Formula $r=r(\theta)$
+\end_inset
+
+表示的曲线
+\begin_inset Formula $C$
+\end_inset
+
+上的一点的向径与切线的夹角
+\begin_inset Formula $\varphi$
+\end_inset
+
+满足
+\begin_inset Formula $\tan\varphi=r(\theta)/r'(\theta)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+定义
+\series bold
+高阶导数
+\series default
+.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+莱布尼茨公式
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+(uv)^{(n)}=\sum_{k=0}^{n}C_{n}^{k}u^{(n-k)}v^{(k)}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+定义
+\series bold
+可微
+\series default
+与
+\series bold
+微分
+\series default
+.
+\end_layout
+
 \begin_layout Section
 讨论
 \end_layout
@@ -15423,6 +15484,389 @@ f(\xi)=\frac{f(x_{1})+f(x_{2})+\cdots+f(x_{n})}{n}.
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Section
+导数和微分
+\end_layout
+
+\begin_layout Exercise
+设
+\begin_inset Formula $m$
+\end_inset
+
+是正整数, 定义函数
+\begin_inset Formula 
+\[
+f(x)=\begin{cases}
+x^{m}\sin\frac{1}{x}, & x\neq0,\\
+0, & x=0.
+\end{cases}
+\]
+
+\end_inset
+
+试问: (1) 
+\begin_inset Formula $m$
+\end_inset
+
+等于何值时, 
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x=0$
+\end_inset
+
+连续; (2) 
+\begin_inset Formula $m$
+\end_inset
+
+等于何值时, 
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x=0$
+\end_inset
+
+可导.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+设函数
+\begin_inset Formula $f$
+\end_inset
+
+在点
+\begin_inset Formula $x_{0}$
+\end_inset
+
+存在左、右导数, 试证
+\begin_inset Formula $f$
+\end_inset
+
+在点
+\begin_inset Formula $x_{0}$
+\end_inset
+
+连续.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+设
+\begin_inset Formula $g(0)=g'(0)=0$
+\end_inset
+
+, 
+\begin_inset Formula 
+\[
+f(x)=\begin{cases}
+g(x)\sin\frac{1}{x}, & x\neq0,\\
+0, & x=0,
+\end{cases}
+\]
+
+\end_inset
+
+求
+\begin_inset Formula $f'(0)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+对下列各函数计算
+\begin_inset Formula $f'(x)$
+\end_inset
+
+, 
+\begin_inset Formula $f'(x+1)$
+\end_inset
+
+, 
+\begin_inset Formula $f'(x-1)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+(1) 
+\begin_inset Formula $f(x)=x^{3}$
+\end_inset
+
+; (2) 
+\begin_inset Formula $f(x+1)=x^{3}$
+\end_inset
+
+; (3) 
+\begin_inset Formula $f(x-1)=x^{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark*
+\begin_inset Formula $f'(x+1)$
+\end_inset
+
+是先计算出
+\begin_inset Formula $f'(x)$
+\end_inset
+
+, 然后把结果中的
+\begin_inset Formula $x$
+\end_inset
+
+换成
+\begin_inset Formula $x+1$
+\end_inset
+
+得到的; 并不是求
+\begin_inset Formula $f(x+1)$
+\end_inset
+
+关于
+\begin_inset Formula $x$
+\end_inset
+
+的导数, 虽然在这里恰好会算出正确的结果.
+\end_layout
+
+\begin_layout Exercise
+已知
+\begin_inset Formula $g$
+\end_inset
+
+为可导函数, 
+\begin_inset Formula $a$
+\end_inset
+
+为实数, 试求下列函数
+\begin_inset Formula $f$
+\end_inset
+
+的导数:
+\begin_inset Formula 
+\begin{align*}
+(1) & f(x)=g(x+g(a)); & (2) & f(x)=g(x+g(x));\\
+(3) & f(x)=g(x\cdot g(a)); & (4) & f(x)=g(x\cdot g(x)).
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+设
+\begin_inset Formula $f$
+\end_inset
+
+为可导函数, 证明: 若
+\begin_inset Formula $x=1$
+\end_inset
+
+时有
+\begin_inset Formula 
+\[
+\frac{\mathistOperatord}{\mathistOperatord x}f(x^{2})=\frac{\mathistOperatord}{\mathistOperatord x}f^{2}(x),
+\]
+
+\end_inset
+
+则必有
+\begin_inset Formula $f'(1)=0$
+\end_inset
+
+或
+\begin_inset Formula $f(1)=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+证明曲线
+\begin_inset Formula 
+\[
+\begin{cases}
+x=a(\cos t+t\sin t)\\
+y=a(\sin t-t\cos t)
+\end{cases}
+\]
+
+\end_inset
+
+上任一点的法线到原点的距离都等于
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+求心形线
+\begin_inset Formula $r=a(1+\cos\theta)$
+\end_inset
+
+的切线与切点向径之间的夹角.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+设函数
+\begin_inset Formula $y=f(x)$
+\end_inset
+
+在点
+\begin_inset Formula $x$
+\end_inset
+
+三阶可导, 且
+\begin_inset Formula $f'(x)\neq0$
+\end_inset
+
+.
+ 若
+\begin_inset Formula $f(x)$
+\end_inset
+
+存在反函数
+\begin_inset Formula $x=f^{-1}(y)$
+\end_inset
+
+, 试用
+\begin_inset Formula $f'(x)$
+\end_inset
+
+, 
+\begin_inset Formula $f''(x)$
+\end_inset
+
+与
+\begin_inset Formula $f'''(x)$
+\end_inset
+
+表示
+\begin_inset Formula $(f^{-1})'''(y)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark*
+这里是对
+\begin_inset Formula $y$
+\end_inset
+
+求导, 不要在中途被记号忽悠去对
+\begin_inset Formula $x$
+\end_inset
+
+求导了.
+\end_layout
+
+\begin_layout Exercise
+证明函数
+\begin_inset Formula 
+\[
+f(x)=\begin{cases}
+\exp\left(-\frac{1}{x^{2}}\right), & x\neq0,\\
+0, & x=0
+\end{cases}
+\]
+
+\end_inset
+
+在
+\begin_inset Formula $x=0$
+\end_inset
+
+处
+\begin_inset Formula $n$
+\end_inset
+
+阶可导且
+\begin_inset Formula $f^{(n)}(0)=0$
+\end_inset
+
+, 其中
+\begin_inset Formula $n$
+\end_inset
+
+为任意正整数.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex HINTAsInset
+status collapsed
+
+\begin_layout Plain Layout
+用数学归纳法证明
+\begin_inset Formula $f^{(n)}(x)=$
+\end_inset
+
+某有理函数乘以
+\begin_inset Formula $\exp(-1/x^{2})$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Chapter
