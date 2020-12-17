@@ -156,6 +156,15 @@ End
 
 \begin_layout Standard
 \begin_inset FormulaMacro
+\newcommand{\mathistOperatord}{\mathop{}\!\mathrm{d}}
+{\,\mathrm{d}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
 \newcommand{\mathistOperatorsgn}{\operatorname{sgn}}
 {\,\mathrm{sgn}\,}
 \end_inset
@@ -164,7 +173,133 @@ End
 \end_layout
 
 \begin_layout Section
-2020年11月28日
+默写
+\end_layout
+
+\begin_layout Enumerate
+非空数集
+\begin_inset Formula $S$
+\end_inset
+
+的
+\series bold
+上确界
+\series default
+的定义.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+数列
+\series default
+及其
+\series bold
+子列
+\series default
+的定义.
+\end_layout
+
+\begin_layout Enumerate
+数列
+\series bold
+收敛
+\series default
+和
+\series bold
+极限
+\series default
+的定义.
+\end_layout
+
+\begin_layout Enumerate
+自然对数底
+\begin_inset Formula $e$
+\end_inset
+
+的定义.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+右极限
+\series default
+ 
+\begin_inset Formula $f(x_{0}+0)$
+\end_inset
+
+的定义.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+无穷大量
+\series default
+的定义.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+连续函数
+\series default
+的定义.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+第一类
+\series default
+、
+\series bold
+第二类间断点
+\series default
+的定义.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+一致连续
+\series default
+的定义.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+可导
+\series default
+的定义.
+\end_layout
+
+\begin_layout Enumerate
+导数的四则运算法则.
+ 反函数的导数.
+ 复合函数的导数.
+\end_layout
+
+\begin_layout Enumerate
+函数
+\begin_inset Formula $f(x)=$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+x^{\alpha},a^{x},\log_{a}|x|,\sin x,\cos x,\tan x,\cot x,\arcsin x,\arccos x,\arctan x,\operatorname{arccot}x
+\]
+
+\end_inset
+
+的导数.
+\end_layout
+
+\begin_layout Section
+证明
 \end_layout
 
 \begin_layout Standard
@@ -431,10 +566,6 @@ status open
 
 \end_layout
 
-\begin_layout Section
-2020年12月6日
-\end_layout
-
 \begin_layout Enumerate
 第51页的定理3.10 (单调有界定理): 
 \begin_inset Flex Color Box
@@ -595,6 +726,53 @@ status open
 
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+下述命题是否正确? 如果是, 请证明之; 如果不是, 请给出反例.
+ 
+\begin_inset Flex Color Box
+status open
+
+\begin_layout Plain Layout
+设数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+发散.
+ 那么对任意正整数
+\begin_inset Formula $N$
+\end_inset
+
+, 存在正整数
+\begin_inset Formula $n_{1},n_{2},n_{3},n_{4}$
+\end_inset
+
+满足
+\begin_inset Formula $N<n_{1}<n_{2}\leqslant n_{3}<n_{4}$
+\end_inset
+
+, 使得
+\begin_inset Formula $|a_{n_{1}}-a_{n_{2}}|<|a_{n_{3}}-a_{n_{4}}|$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 第75页的例10: 
 \begin_inset Flex Color Box
@@ -712,34 +890,77 @@ status open
 \end_layout
 
 \begin_layout Enumerate
-下述命题是否正确? 如果是, 请证明之; 如果不是, 请给出反例.
- 
+证明第93页的引理, 并用它证明定理5.8 (链式法则): 
 \begin_inset Flex Color Box
 status open
 
 \begin_layout Plain Layout
-设数列
-\begin_inset Formula $\{a_{n}\}$
+\begin_inset Formula $f(x)$
 \end_inset
 
-发散.
- 那么对任意正整数
-\begin_inset Formula $N$
+在点
+\begin_inset Formula $x_{0}$
 \end_inset
 
-, 存在正整数
-\begin_inset Formula $n_{1},n_{2},n_{3},n_{4}$
+可导的充要条件是: 在
+\begin_inset Formula $x_{0}$
 \end_inset
 
-满足
-\begin_inset Formula $N<n_{1}<n_{2}\leqslant n_{3}<n_{4}$
+的某邻域
+\begin_inset Formula $U(x_{0})$
+\end_inset
+
+上, 存在一个在点
+\begin_inset Formula $x_{0}$
+\end_inset
+
+连续的函数
+\begin_inset Formula $H(x)$
 \end_inset
 
 , 使得
-\begin_inset Formula $|a_{n_{1}}-a_{n_{2}}|<|a_{n_{3}}-a_{n_{4}}|$
+\begin_inset Formula 
+\[
+f(x)-f(x_{0})=H(x)\cdot(x-x_{0}).
+\]
+
+\end_inset
+
+特别地, 此时有
+\begin_inset Formula $f'(x_{0})=H(x_{0})$
 \end_inset
 
 .
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+叙述导数与微分的定义, 并且证明第104页的定理5.9: 
+\begin_inset Flex Color Box
+status open
+
+\begin_layout Plain Layout
+函数
+\begin_inset Formula $f$
+\end_inset
+
+在点
+\begin_inset Formula $x_{0}$
+\end_inset
+
+可微的充要条件是
+\begin_inset Formula $f$
+\end_inset
+
+在点
+\begin_inset Formula $x_{0}$
+\end_inset
+
+可导.
 \end_layout
 
 \end_inset
