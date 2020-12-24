@@ -4029,7 +4029,7 @@ f'(x_{0})\coloneqq\lim_{\Delta x\rightarrow0}\frac{\Delta y}{\Delta x}\coloneqq\
 status open
 
 \begin_layout Plain Layout
-费马定理, Fermat's Lemma
+费马定理, Fermat's lemma
 \end_layout
 
 \end_inset
@@ -4810,6 +4810,220 @@ status open
 微分
 \series default
 .
+\end_layout
+
+\begin_layout Section
+微分中值定理及其应用
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+罗尔中值定理
+\series default
+, Rolle's theorem.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+拉格朗日中值定理, Lagrange's mean value theorem
+\end_layout
+
+\end_inset
+
+对于好的函数
+\begin_inset Formula $f$
+\end_inset
+
+, 存在
+\begin_inset Formula $\xi\in(a,b)$
+\end_inset
+
+, 使得
+\begin_inset Formula 
+\[
+f'(\xi)=\frac{f(b)-f(a)}{b-a}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Corollary
+\begin_inset Formula $f'\equiv0\Rightarrow f\equiv$
+\end_inset
+
+常数.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Corollary
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+导数极限定理
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\lim_{x\rightarrow x_{0}}f'$
+\end_inset
+
+存在
+\begin_inset Formula $\Rightarrow f'(x_{0})$
+\end_inset
+
+存在且等于
+\begin_inset Formula $\lim_{x\rightarrow x_{0}}f'$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula $f'\geqslant0\Leftrightarrow f$
+\end_inset
+
+单调递增.
+ 
+\begin_inset Formula $f'>0\Leftrightarrow f$
+\end_inset
+
+严格单调递增.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+达布定理, Darboux's theorem
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $f'$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上取遍介于
+\begin_inset Formula $f'(a)$
+\end_inset
+
+与
+\begin_inset Formula $f'(b)$
+\end_inset
+
+之间的所有值.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+柯西中值定理, Cauchy's mean value theorem
+\end_layout
+
+\end_inset
+
+对于好的函数
+\begin_inset Formula $f$
+\end_inset
+
+与
+\begin_inset Formula $g$
+\end_inset
+
+, 存在
+\begin_inset Formula $\xi\in(a,b)$
+\end_inset
+
+, 使得
+\begin_inset Formula 
+\[
+\frac{f'(\xi)}{g'(\xi)}=\frac{f(b)-f(a)}{b-a}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+设
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $(0,1]$
+\end_inset
+
+上可导, 并且
+\begin_inset Formula $\lim_{x\rightarrow0^{+}}\sqrt{x}f'(x)=A$
+\end_inset
+
+.
+ 那么
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $(0,1]$
+\end_inset
+
+上一致连续.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+洛必达法则, L'Hôpital's rule
+\end_layout
+
+\end_inset
+
+对于不定式极限, 有
+\begin_inset Formula 
+\[
+\lim\frac{f(x)}{g(x)}=\lim\frac{f'(x)}{g'(x)}.
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
