@@ -4972,7 +4972,7 @@ status open
 , 使得
 \begin_inset Formula 
 \[
-\frac{f'(\xi)}{g'(\xi)}=\frac{f(b)-f(a)}{b-a}.
+\frac{f'(\xi)}{g'(\xi)}=\frac{f(b)-f(a)}{g(b)-g(a)}.
 \]
 
 \end_inset
