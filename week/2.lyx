@@ -1,0 +1,513 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties false
+\origin unavailable
+\textclass ctex-article
+\begin_preamble
+% 如果没有这一句命令，XeTeX会出错，原因参见
+% http://bbs.ctex.org/viewthread.php?tid=60547
+\DeclareRobustCommand\nobreakspace{\leavevmode\nobreak\ }
+
+%\usepackage[cm-default]{fontspec}
+\usepackage{fontspec}
+\emfontdeclare{\itshape,\upshape,\itshape}
+\setmainfont{CMU Serif}
+\setsansfont{CMU Sans Serif}
+\setmonofont{CMU Typewriter Text}
+\usepackage{xunicode}
+\usepackage{xeCJK}\setCJKmainfont[BoldFont={黑体},ItalicFont={楷体}]{宋体}
+\setCJKsansfont{黑体}
+\setCJKmonofont{仿宋} % 打印机字体, 一般用于 verbatim 之类的环境, 或者通过 \ttfamily 调用
+
+% 证明与提示
+\newenvironment{Proof}[1][证明]
+{\noindent\normalfont {\bfseries #1}\hphantom{空}}{\hfill\ensuremath{\square}}
+
+\newenvironment{HINT}[1][提示]{\noindent\normalfont {\bfseries #1}\hphantom{空}}{\hfill\ensuremath{\square}}
+
+% 允许行间公式跨页, 参数为 1,2,3,4 的一个, 越大则越可能跨页
+\allowdisplaybreaks[1]
+
+\ctexset {
+section = { name = {第,节},
+number = \chinese{section},}
+}
+
+% 允许彩色文本框跨页
+%\tcbuselibrary{breakable}
+\end_preamble
+\options UTF8,oneside
+\use_default_options true
+\begin_modules
+theorems-ams
+tcolorbox
+theorems-chap
+\end_modules
+\maintain_unincluded_children false
+\begin_local_layout
+Format 66
+Provides stdinsets 1
+
+InsetLayout Flex:ProofAsInset
+   LyXType     custom
+   LatexName   proof
+   LatexType   Environment
+   Decoration  classic
+   Argument 1
+     LabelString         "Proof Name"
+   EndArgument
+   BgColor background
+   MultiPar    true
+   LabelString Proof
+	ResetsFont true
+End
+
+InsetLayout Flex:HINTAsInset
+   CopyStyle   Flex:ProofAsInset
+   LatexName   HINT
+   LabelString HINT
+End
+\end_local_layout
+\language chinese-simplified
+\language_package none
+\inputencoding utf8-plain
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics xetex
+\default_output_format pdf4
+\output_sync 0
+\bibtex_command biber -l zh__pinyin
+\index_command default
+\float_placement h
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine biblatex
+\cite_engine_type authoryear
+\biblio_style plain
+\biblio_options url=false
+\biblatex_bibstyle numeric
+\biblatex_citestyle numeric
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 2cm
+\rightmargin 2.5cm
+\bottommargin 2cm
+\secnumdepth 2
+\tocdepth 1
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\mathistOperatord}{\mathop{}\!\mathrm{d}}
+{\,\mathrm{d}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
+\newcommand{\mathistOperatorsgn}{\operatorname{sgn}}
+{\,\mathrm{sgn}\,}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+设
+\begin_inset Formula 
+\[
+f(x)=\begin{cases}
+q, & \text{当}\,x=\frac{p}{q}\,\text{为既约真分数且}\,x\in(0,1),\\
+0, & \text{当}\,x\,\text{为}\,(0,1)\,\text{内的无理数}.
+\end{cases}
+\]
+
+\end_inset
+
+试证明: 对任意
+\begin_inset Formula $x_{0}\in(0,1)$
+\end_inset
+
+与任意正数
+\begin_inset Formula $\delta$
+\end_inset
+
+, 若
+\begin_inset Formula $(x_{0}-\delta,x_{0}+\delta)\subset(0,1)$
+\end_inset
+
+, 则
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $(x_{0}-\delta,x_{0}+\delta)$
+\end_inset
+
+上无界.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+写出从区间
+\begin_inset Formula $(0,1]$
+\end_inset
+
+到
+\begin_inset Formula $(0,1)$
+\end_inset
+
+的一个双射.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+设有数组
+\begin_inset Formula $\{a_{1},a_{2},\cdots,a_{n}\}$
+\end_inset
+
+和
+\begin_inset Formula $\{b_{1},b_{2},\cdots,b_{n}\}$
+\end_inset
+
+, 其中
+\begin_inset Formula $b_{1},b_{2},\cdots,b_{n}$
+\end_inset
+
+都是正数.
+ 试证明:
+\begin_inset Formula 
+\[
+\min\left\{ \frac{a_{1}}{b_{1}},\frac{a_{2}}{b_{2}},\cdots,\frac{a_{n}}{b_{n}}\right\} \leqslant\frac{a_{1}+a_{2}+\cdots+a_{n}}{b_{1}+b_{2}+\cdots+b_{n}}\leqslant\max\left\{ \frac{a_{1}}{b_{1}},\frac{a_{2}}{b_{2}},\cdots,\frac{a_{n}}{b_{n}}\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+设
+\begin_inset Formula $f(x)$
+\end_inset
+
+是定义在
+\begin_inset Formula $(-\infty,+\infty)$
+\end_inset
+
+上的增函数, 并且对任意
+\begin_inset Formula $x\in(-\infty,+\infty)$
+\end_inset
+
+都有
+\begin_inset Formula $f(f(x))=x$
+\end_inset
+
+.
+ 试证明: 对任意
+\begin_inset Formula $x\in(-\infty,+\infty)$
+\end_inset
+
+都有
+\begin_inset Formula $f(x)=x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+试证明: 当
+\begin_inset Formula $n\rightarrow\infty$
+\end_inset
+
+时, 
+\begin_inset Formula 
+\[
+1+\frac{1}{2}+\cdots+\frac{1}{n}=\ln n+c+o(1),
+\]
+
+\end_inset
+
+其中
+\begin_inset Formula $c$
+\end_inset
+
+是常数 (
+\begin_inset Formula $c=0.57721\cdots$
+\end_inset
+
+称为欧拉常数).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Stolz定理
+\end_layout
+
+\end_inset
+
+设
+\begin_inset Formula $a_{1}<a_{2}<\cdots<a_{n}<\cdots$
+\end_inset
+
+, 并且
+\begin_inset Formula $\lim_{n\rightarrow\infty}a_{n}=+\infty$
+\end_inset
+
+.
+ 试证明: 如果
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}\frac{b_{n+1}-b_{n}}{a_{n+1}-a_{n}}=c,
+\]
+
+\end_inset
+
+其中
+\begin_inset Formula $c$
+\end_inset
+
+是实数或
+\begin_inset Formula $\pm\infty$
+\end_inset
+
+, 那么
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}\frac{b_{n}}{a_{n}}=c.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+设
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+是数列.
+ 请问下面的性质P是
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+发散的充分条件吗? 是
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+发散的必要条件吗? 如果是, 请证明之; 如果不是, 请给出反例.
+\end_layout
+
+\begin_layout Exercise
+
+\series bold
+性质P
+\series default
+: 对任意正整数
+\begin_inset Formula $N$
+\end_inset
+
+, 存在正整数
+\begin_inset Formula $n_{1},n_{2},n_{3},n_{4}$
+\end_inset
+
+满足
+\begin_inset Formula $N<n_{1}<n_{2}\leqslant n_{3}<n_{4}$
+\end_inset
+
+, 使得
+\begin_inset Formula $|a_{n_{1}}-a_{n_{2}}|<|a_{n_{3}}-a_{n_{4}}|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+设
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 而
+\begin_inset Formula $A\in\mathbb{R}$
+\end_inset
+
+.
+ 那么对任意
+\begin_inset Formula $a>0$
+\end_inset
+
+而言, 当
+\begin_inset Formula $x\rightarrow+\infty$
+\end_inset
+
+都有
+\begin_inset Formula 
+\begin{align*}
+x^{A} & =o((1+a)^{\varepsilon x}),\\
+(\ln x)^{A} & =o(x^{\varepsilon}),\\
+(f(x))^{A} & =o(e^{\varepsilon f(x)}),
+\end{align*}
+
+\end_inset
+
+其中
+\begin_inset Formula $f(x)$
+\end_inset
+
+是满足
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow+\infty}f(x)=+\infty
+\]
+
+\end_inset
+
+的单调递增函数.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+抄自 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "JieDeGuJi2015"
+literal "false"
+
+\end_inset
+
+ 的第6页.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintCited"
+bibfiles "../reference"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
