@@ -36,7 +36,8 @@ number = \chinese{section},}
 }
 
 % 允许彩色文本框跨页
-\tcbuselibrary{breakable}
+\tcbuselibrary{skins, breakable}
+\tcbset{skin = enhanced, breakable, colback = white, colframe = cyan}
 \end_preamble
 \options UTF8,oneside
 \use_default_options true
@@ -306,6 +307,99 @@ x^{\alpha},a^{x},\log_{a}|x|,\sin x,\cos x,\tan x,\cot x,\arcsin x,\arccos x,\ar
 \end_layout
 
 \begin_layout Section
+验证
+\end_layout
+
+\begin_layout Standard
+本节内容是第三节的预演.
+ 写第三节的证明的时候, 若卡住可以来这里找提示; 若与书上的证法不一样, 也可以用这里的例子去检查证明.
+\end_layout
+
+\begin_layout Enumerate
+设
+\begin_inset Formula $a_{n}=(-1)^{n}/n$
+\end_inset
+
+, 则
+\begin_inset Formula $\lim_{n\rightarrow\infty}a_{n}=0$
+\end_inset
+
+.
+ 证明: 数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+的任何子列都收敛.
+\end_layout
+
+\begin_layout Enumerate
+设
+\begin_inset Formula $a_{n}=1/n$
+\end_inset
+
+, 则数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+单调递减、有界、并且有极限.
+\end_layout
+
+\begin_layout Enumerate
+考虑
+\begin_inset Formula 
+\begin{align*}
+S_{1} & =\{(n-1)/n:n\in\mathbb{N}_{+}\},\\
+S_{2} & =\{\sin n:n\in\mathbb{N}_{+}\},\\
+S_{3} & =(0,1),\\
+S_{4} & =\{x\in(0,1):x\notin S_{1}\},
+\end{align*}
+
+\end_inset
+
+那么
+\begin_inset Formula $S_{1},S_{2},S_{3},S_{4}$
+\end_inset
+
+都是以
+\begin_inset Formula $a=1$
+\end_inset
+
+为上确界、但又不包含
+\begin_inset Formula $a$
+\end_inset
+
+的有界数集.
+ 证明: 存在严格递增数列
+\begin_inset Formula $\{x_{n}\}\subset S_{4}$
+\end_inset
+
+, 使得
+\begin_inset Formula $\lim_{n\rightarrow\infty}x_{n}=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+考虑
+\begin_inset Formula 
+\[
+a_{n}=\begin{cases}
+1/n, & \text{若}\,n\,\text{为奇数},\\
+n, & \text{若}\,n\,\text{为偶数}.
+\end{cases}
+\]
+
+\end_inset
+
+证明: 数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+存在单调子列.
+\end_layout
+
+\begin_layout Section
 证明
 \end_layout
 
@@ -383,7 +477,7 @@ status open
 \begin_layout Enumerate
 第35页的例5与定理2.10 (致密性定理): 
 \begin_inset Flex Color Box
-status open
+status collapsed
 
 \begin_layout Plain Layout
 任何数列都存在单调子列.
@@ -405,7 +499,7 @@ status open
 \begin_layout Enumerate
 第36页的定理2.11 (柯西收敛准则): 
 \begin_inset Flex Color Box
-status open
+status collapsed
 
 \begin_layout Plain Layout
 数列
@@ -443,7 +537,7 @@ status open
 \begin_layout Enumerate
 第50页的定理3.8 (归结原则): 
 \begin_inset Flex Color Box
-status open
+status collapsed
 
 \begin_layout Plain Layout
 设
@@ -490,7 +584,7 @@ status open
 
 的版本: 
 \begin_inset Flex Color Box
-status open
+status collapsed
 
 \begin_layout Plain Layout
 设函数
@@ -529,7 +623,7 @@ status open
 \begin_layout Enumerate
 第52页的定理3.11 (柯西准则): 
 \begin_inset Flex Color Box
-status open
+status collapsed
 
 \begin_layout Plain Layout
 设函数
@@ -602,7 +696,7 @@ status open
 \begin_layout Enumerate
 第71页的定理4.6 (最大、最小值定理): 
 \begin_inset Flex Color Box
-status open
+status collapsed
 
 \begin_layout Plain Layout
 引理: 若
@@ -656,7 +750,7 @@ status open
 \begin_layout Enumerate
 第72页的定理4.7 (介值定理): 
 \begin_inset Flex Color Box
-status open
+status collapsed
 
 \begin_layout Plain Layout
 闭区间
@@ -736,7 +830,7 @@ status open
 \begin_deeper
 \begin_layout Standard
 \begin_inset Note Comment
-status open
+status collapsed
 
 \begin_layout Plain Layout
 下述命题是否正确? 如果是, 请证明之; 如果不是, 请给出反例.
@@ -783,7 +877,7 @@ status open
 \begin_layout Enumerate
 第75页的例10: 
 \begin_inset Flex Color Box
-status open
+status collapsed
 
 \begin_layout Plain Layout
 设
@@ -856,7 +950,7 @@ status open
 \begin_layout Enumerate
 第77页的例12: 
 \begin_inset Flex Color Box
-status open
+status collapsed
 
 \begin_layout Plain Layout
 设
@@ -899,7 +993,7 @@ status open
 \begin_layout Enumerate
 证明第93页的引理, 并用它证明定理5.8 (链式法则): 
 \begin_inset Flex Color Box
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Formula $f(x)$
@@ -978,7 +1072,7 @@ status open
 \begin_layout Enumerate
 第88页的例8和定理5.3 (费马定理), 以及第115页的定理6.5 (达布定理, 导函数的介值定理): 
 \begin_inset Flex Color Box
-status open
+status collapsed
 
 \begin_layout Plain Layout
 若
@@ -1098,7 +1192,7 @@ height "1pt"
 \begin_layout Enumerate
 第111页的定理6.1 (罗尔中值定理): 
 \begin_inset Flex Color Box
-status open
+status collapsed
 
 \begin_layout Plain Layout
 设函数
@@ -1164,7 +1258,7 @@ status open
 \begin_layout Enumerate
 第112页的定理6.2 (拉格朗日中值定理)及其推论: 
 \begin_inset Flex Color Box
-status open
+status collapsed
 
 \begin_layout Plain Layout
 设函数
@@ -1467,7 +1561,7 @@ height "1pt"
 \begin_layout Enumerate
 第117页的定理6.6 (柯西中值定理)及其推论洛必达法则: 
 \begin_inset Flex Color Box
-status open
+status collapsed
 
 \begin_layout Plain Layout
 设函数
@@ -1627,7 +1721,7 @@ height "1pt"
 
 \begin_layout Plain Layout
 (i) 
-\begin_inset Formula $\lim_{x\rightarrow x_{0}^{+}}g(x)=\infty$
+\begin_inset Formula $\lim_{x\rightarrow x_{0}^{+}}g(x)=+\infty$
 \end_inset
 
 ;
