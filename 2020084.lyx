@@ -10043,6 +10043,17 @@ status collapsed
 
 \end_layout
 
+\begin_layout Enumerate
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow0}\frac{2x}{1+x^{2}}=\lim_{x\rightarrow0}\frac{2}{2x}=+\infty.
+\]
+
+\end_inset
+
+
+\end_layout
+
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -16238,7 +16249,6 @@ status collapsed
 \end_layout
 
 \begin_layout Plain Layout
-
 \begin_inset Box Boxed
 position "t"
 hor_pos "c"
@@ -16567,7 +16577,7 @@ status collapsed
 
 \end_inset
 
-
+即使用洛必达法则, 也可以中途运用等价无穷小量来简化计算.
 \end_layout
 
 \begin_layout Exercise
