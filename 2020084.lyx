@@ -10054,6 +10054,27 @@ status collapsed
 
 \end_layout
 
+\begin_layout Enumerate
+设
+\begin_inset Formula $f(x)=|x|$
+\end_inset
+
+.
+ 因为
+\begin_inset Formula $f(-1)=1=f(1)$
+\end_inset
+
+, 所以由罗尔中值定理可知, 存在
+\begin_inset Formula $\xi\in(-1,1)$
+\end_inset
+
+, 使得
+\begin_inset Formula $f'(\xi)=0$
+\end_inset
+
+.
+\end_layout
+
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -10118,6 +10139,150 @@ status collapsed
 \end_inset
 
 .
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+指出下述证明的
+\color red
+错误
+\color inherit
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Quotation
+设函数
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $(a,b)$
+\end_inset
+
+上可导, 并且
+\begin_inset Formula $f'$
+\end_inset
+
+单调.
+ 证明: 
+\begin_inset Formula $f'$
+\end_inset
+
+在
+\begin_inset Formula $(a,b)$
+\end_inset
+
+上连续.
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+不妨设
+\begin_inset Formula $f'(x)$
+\end_inset
+
+在
+\begin_inset Formula $(a,b)$
+\end_inset
+
+递增.
+ 设
+\begin_inset Formula $x_{0}\in(a,b)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $f'(x)$
+\end_inset
+
+在某个
+\begin_inset Formula $U_{-}(x_{0})$
+\end_inset
+
+内递增且以
+\begin_inset Formula $f'(x_{0})$
+\end_inset
+
+为上界, 在
+\xout on
+某个
+\xout default
+
+\begin_inset Formula $U_{+}(x_{0})$
+\end_inset
+
+内递增且以
+\begin_inset Formula $f'(x_{0})$
+\end_inset
+
+为下界.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\lim_{x\rightarrow x_{0}^{+}}f'(x)$
+\end_inset
+
+和
+\begin_inset Formula $\lim_{x\rightarrow x_{0}^{-}}f'(x)$
+\end_inset
+
+都存在且相等.
+ 故
+\begin_inset Formula $f(x_{0})$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+可导.
+\end_layout
+
+\begin_layout Plain Layout
+故
+\begin_inset Formula $f_{-}'(x_{0})=f_{+}'(x_{0})=f'(x_{0})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+故
+\begin_inset Formula $\lim_{x\rightarrow x_{0}}f'(x)=f'(x_{0})$
+\end_inset
+
+.
+ 由
+\begin_inset Formula $x_{0}$
+\end_inset
+
+任意性
+\begin_inset Formula $f'(x)$
+\end_inset
+
+在
+\begin_inset Formula $(a,b)$
+\end_inset
+
+连续.
 \end_layout
 
 \end_inset
@@ -16510,6 +16675,7 @@ status collapsed
 
 \begin_layout Plain Layout
 用导数极限定理或达布定理.
+ 还可以用反证法, 利用单调函数只有跳跃间断点.
 \end_layout
 
 \end_inset
