@@ -306,6 +306,43 @@ x^{\alpha},a^{x},\log_{a}|x|,\sin x,\cos x,\tan x,\cot x,\arcsin x,\arccos x,\ar
 高阶导数的莱布尼茨公式.
 \end_layout
 
+\begin_layout Enumerate
+
+\series bold
+极值
+\series default
+、
+\series bold
+极值点
+\series default
+与
+\series bold
+驻点
+\series default
+(
+\series bold
+稳定点
+\series default
+)的定义.
+\end_layout
+
+\begin_layout Enumerate
+函数
+\begin_inset Formula $f(x)=$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+e^{x},\sin x,\cos x,\ln(1+x),(1+x)^{\alpha},\frac{1}{1-x}
+\]
+
+\end_inset
+
+的(带Peano余项的)麦克劳林公式.
+ 要求写出前三项与通项公式.
+\end_layout
+
 \begin_layout Section
 验证
 \end_layout
@@ -349,7 +386,7 @@ x^{\alpha},a^{x},\log_{a}|x|,\sin x,\cos x,\tan x,\cot x,\arcsin x,\arccos x,\ar
 \begin_inset Formula 
 \begin{align*}
 S_{1} & =\{(n-1)/n:n\in\mathbb{N}_{+}\},\\
-S_{2} & =\{\sin n:n\in\mathbb{N}_{+}\},\\
+S_{2} & =\{\sin n:n\in\mathbb{Q}_{+}\},\\
 S_{3} & =(0,1),\\
 S_{4} & =\{x\in(0,1):x\notin S_{1}\},
 \end{align*}
@@ -397,6 +434,88 @@ n, & \text{若}\,n\,\text{为偶数}.
 \end_inset
 
 存在单调子列.
+\end_layout
+
+\begin_layout Enumerate
+任取数列
+\begin_inset Formula $\{b_{n}\}$
+\end_inset
+
+, 考虑
+\begin_inset Formula 
+\[
+a_{n}=\frac{\sin b_{n}}{n}.
+\]
+
+\end_inset
+
+证明: 数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+满足柯西收敛准则的条件, 亦即对任给的
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 存在正整数
+\begin_inset Formula $N$
+\end_inset
+
+, 使得当
+\begin_inset Formula $n,m>N$
+\end_inset
+
+时, 有
+\begin_inset Formula 
+\[
+|a_{n}-a_{m}|<\varepsilon.
+\]
+
+\end_inset
+
+现在你假装不知道数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+的极限是什么, 那么上述条件是如何保证
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+收敛的呢?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+(3) 设
+\begin_inset Formula 
+\[
+f(x)=\begin{cases}
+x^{2}\sin\frac{1}{x}, & x\neq0,\\
+0, & x=0.
+\end{cases}
+\]
+
+\end_inset
+
+计算
+\begin_inset Formula $f'(x)$
+\end_inset
+
+, 并且证明
+\begin_inset Formula $f'(x)$
+\end_inset
+
+不是连续函数.
+ 虽然如此, 达布定理仍然成立.
+ 为什么?
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -1756,6 +1875,159 @@ height "1pt"
 \begin_inset Formula 
 \[
 \lim_{x\rightarrow x_{0}^{+}}\frac{f(x)}{g(x)}=A.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+第6.3节的泰勒公式: 
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+设
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+附近有定义.
+ 如果满足
+\begin_inset Formula 
+\[
+f(x)=p_{n}(x)+o((x-x_{0})^{n})\quad(x\rightarrow x_{0})
+\]
+
+\end_inset
+
+的
+\begin_inset Formula $n$
+\end_inset
+
+次多项式
+\begin_inset Formula 
+\[
+p_{n}(x)=a_{0}+a_{1}(x-x_{0})+\cdots+a_{n}(x-x_{0})^{n}
+\]
+
+\end_inset
+
+存在, 则它是唯一的.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+设
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处有
+\begin_inset Formula $n$
+\end_inset
+
+阶导数.
+ 那么, 存在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+的一个邻域
+\begin_inset Formula $U(x_{0})$
+\end_inset
+
+, 使得对任意
+\begin_inset Formula $x\in U(x_{0})$
+\end_inset
+
+都有
+\begin_inset Formula 
+\[
+f(x)=f(x_{0})+\frac{f'(x_{0})}{1!}(x-x_{0})+\cdots+\frac{f^{(n)}(x_{0})}{n!}(x-x_{0})^{n}+r_{n}(x),
+\]
+
+\end_inset
+
+其中当
+\begin_inset Formula $x\rightarrow x_{0}$
+\end_inset
+
+时余项
+\begin_inset Formula $r_{n}(x)=o((x-x_{0})^{n})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+设
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上存在直至
+\begin_inset Formula $n$
+\end_inset
+
+阶的连续导函数, 且在
+\begin_inset Formula $(a,b)$
+\end_inset
+
+上存在
+\begin_inset Formula $(n+1)$
+\end_inset
+
+阶导函数.
+ 任意取定
+\begin_inset Formula $x_{0},x\in[a,b]$
+\end_inset
+
+, 则至少存在一点
+\begin_inset Formula $\xi\in(a,b)$
+\end_inset
+
+, 使得
+\begin_inset Formula 
+\[
+f(x)=f(x_{0})+\frac{f'(x_{0})}{1!}(x-x_{0})+\cdots+\frac{f^{(n)}(x_{0})}{n!}(x-x_{0})^{n}+\frac{f^{(n+1)}(\xi)}{(n+1)!}(x-x_{0})^{n+1}.
 \]
 
 \end_inset

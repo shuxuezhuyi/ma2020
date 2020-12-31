@@ -211,7 +211,7 @@ LatexCommand tableofcontents
 
 \begin_layout Standard
 \begin_inset Tabular
-<lyxtabular version="3" rows="27" columns="2">
+<lyxtabular version="3" rows="30" columns="2">
 <features islongtable="true" longtabularalignment="left">
 <column alignment="left" valignment="top" width="0pt">
 <column alignment="left" valignment="top" width="0pt">
@@ -318,6 +318,36 @@ LatexCommand tableofcontents
 \end_inset
 
 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f^{(n)}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+的
+\begin_inset Formula $n$
+\end_inset
+
+阶导数
 \end_layout
 
 \end_inset
@@ -587,6 +617,52 @@ LatexCommand tableofcontents
 \end_inset
 
 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+有理数集
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathbb{Q}_{+}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+正有理数集
 \end_layout
 
 \end_inset
@@ -5018,12 +5094,122 @@ status open
 对于不定式极限, 有
 \begin_inset Formula 
 \[
-\lim\frac{f(x)}{g(x)}=\lim\frac{f'(x)}{g'(x)}.
+\lim\frac{f'(x)}{g'(x)}\,\text{存在}\Rightarrow\lim\frac{f(x)}{g(x)}=\lim\frac{f'(x)}{g'(x)}.
 \]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+带有佩亚诺型余项的泰勒公式, Taylor's formula with the Peano form of the remainder
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f(x)=f(x_{0})+\frac{f'(x_{0})}{1!}(x-x_{0})+\cdots+\frac{f^{(n)}(x_{0})}{n!}(x-x_{0})^{n}+o((x-x_{0})^{n}),\quad x\rightarrow x_{0}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+带有拉格朗日型余项的泰勒公式, Taylor's formula with the Lagrange form of the remainder
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f(x)=f(x_{0})+\frac{f'(x_{0})}{1!}(x-x_{0})+\cdots+\frac{f^{(n)}(x_{0})}{n!}(x-x_{0})^{n}+\frac{f^{(n+1)}(\xi)}{(n+1)!}(x-x_{0})^{n+1},
+\]
+
+\end_inset
+
+其中
+\begin_inset Formula $\xi$
+\end_inset
+
+是介于
+\begin_inset Formula $x_{0}$
+\end_inset
+
+和
+\begin_inset Formula $x$
+\end_inset
+
+之间的点.
+\end_layout
+
+\begin_layout Example
+验证下列函数的Maclaurin公式:
+\begin_inset Formula 
+\begin{align*}
+(1) & e^{x}=1+x+\frac{x^{2}}{2!}+\cdots+\frac{x^{n}}{n!}+O(x^{n+1});\\
+(2) & \sin x=x-\frac{x^{3}}{3!}+\frac{x^{5}}{5!}-\cdots+(-1)^{m}\frac{x^{2m+1}}{(2m+1)!}+O(x^{2m+3});\\
+(3) & \cos x=1-\frac{x^{2}}{2!}+\frac{x^{4}}{4!}+\cdots+(-1)^{m}\frac{x^{2m}}{(2m)!}+O(x^{2m+2});\\
+(4) & \ln(1+x)=x-\frac{x^{2}}{2}+\frac{x^{3}}{3}-\cdots+(-1)^{n-1}\frac{x^{n}}{n}+O(x^{n+1});\\
+(5) & (1+x)^{\alpha}=1+\alpha x+\frac{\alpha(\alpha-1)}{2!}x^{2}+\cdots+\frac{\alpha(\alpha-1)\cdots(\alpha-n+1)}{n!}x^{n}+O(x^{n+1});\\
+(6) & \frac{1}{1-x}=1+x+x^{2}+\cdots+x^{n}+O(x^{n+1});\\
+(7) & \arctan x=x-\frac{x^{3}}{3}+\frac{x^{5}}{5}-\cdots+(-1)^{m}\frac{x^{2m+1}}{2m+1}+O(x^{2m+3});\\
+(8) & \arcsin x=x+\frac{x^{3}}{3!}+(3!!)^{2}\frac{x^{5}}{5!}+\cdots+[(2m-1)!!]^{2}\frac{x^{2m+1}}{(2m+1)!}+O(x^{2m+3});\\
+(9) & \sqrt{1+x}=1+\frac{1}{2}x-\frac{1}{2\cdot4}x^{2}+\cdots+(-1)^{m-1}\frac{(2m-3)!!}{(2m)!!}x^{m}+O(x^{m+1});\\
+(10) & \frac{1}{\sqrt{1+x}}=1-\frac{1}{2}x+\frac{1\cdot3}{2\cdot4}x^{2}-\cdots+(-1)^{m}\frac{(2m-1)!!}{(2m)!!}x^{m}+O(x^{m+1}),
+\end{align*}
+
+\end_inset
+
+其中
+\begin_inset Formula $(2n-1)!!\coloneqq1\cdot3\cdots(2n-1)$
+\end_inset
+
+, 
+\begin_inset Formula $(2n)!!\coloneqq2\cdot4\cdots(2n)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+极值的第一充分条件
+\end_layout
+
+\end_inset
+
+如果导数在跳过一个点时改变符号, 则函数在该点有极值.
 \end_layout
 
 \begin_layout Section
