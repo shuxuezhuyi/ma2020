@@ -5212,6 +5212,185 @@ status open
 如果导数在跳过一个点时改变符号, 则函数在该点有极值.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+极值的第三充分条件
+\end_layout
+
+\end_inset
+
+如果
+\begin_inset Formula $f'(x_{0})=\cdots=f^{(n-1)}(x_{0})=0$
+\end_inset
+
+且
+\begin_inset Formula $f^{(n)}(x_{0})\neq0$
+\end_inset
+
+, 那么:
+\end_layout
+
+\begin_layout Theorem
+(i) 当
+\begin_inset Formula $n$
+\end_inset
+
+为偶数时, 
+\begin_inset Formula $f^{(n)}(x_{0})<0$
+\end_inset
+
+时
+\begin_inset Formula $f(x_{0})$
+\end_inset
+
+极大, 
+\begin_inset Formula $f^{(n)}(x_{0})>0$
+\end_inset
+
+时
+\begin_inset Formula $f(x_{0})$
+\end_inset
+
+极小.
+\end_layout
+
+\begin_layout Theorem
+(ii) 当
+\begin_inset Formula $n$
+\end_inset
+
+为奇数时
+\begin_inset Formula $f(x_{0})$
+\end_inset
+
+不是极值.
+\end_layout
+
+\begin_layout Standard
+定义
+\series bold
+凸函数
+\series default
+(convex function)与
+\series bold
+凹函数
+\series default
+(concave function).
+\end_layout
+
+\begin_layout Theorem
+若
+\begin_inset Formula $f$
+\end_inset
+
+可导, 则下述论断等价:
+\end_layout
+
+\begin_layout Theorem
+(1) 
+\begin_inset Formula $f$
+\end_inset
+
+凸;
+\end_layout
+
+\begin_layout Theorem
+(2) 
+\begin_inset Formula $f'$
+\end_inset
+
+增;
+\end_layout
+
+\begin_layout Theorem
+(3) 对任意
+\begin_inset Formula $x_{1},x_{2}$
+\end_inset
+
+有
+\begin_inset Formula $f(x_{2})\geqslant f(x_{1})+f'(x_{1})(x_{2}-x_{1})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+若
+\begin_inset Formula $f$
+\end_inset
+
+二阶可导, 则
+\begin_inset Formula $f$
+\end_inset
+
+凸
+\begin_inset Formula $\Leftrightarrow f''\geqslant0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+凸函数的驻点就是极值点.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Jensen不等式
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left.\begin{array}{c}
+f\,\text{凸}\\
+\sum\lambda_{i}=1
+\end{array}\right\} \Rightarrow f\left(\sum\lambda_{i}x_{i}\right)\leqslant\sum\lambda f(x_{i}).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+凸函数总有单侧导数.
+\end_layout
+
+\begin_layout Standard
+定义
+\series bold
+拐点
+\series default
+(inflection point).
+\end_layout
+
+\begin_layout Theorem
+拐点处二阶导数为零.
+\end_layout
+
 \begin_layout Section
 讨论
 \end_layout
@@ -10469,6 +10648,109 @@ status collapsed
 \end_inset
 
 连续.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+指出下述计算的
+\color red
+错误
+\color inherit
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Quotation
+(1) 求
+\begin_inset Formula $\lim_{x\rightarrow0}(e^{x}\sin x-x(1+x))/x^{3}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Quotation
+(2) 求
+\begin_inset Formula $\lim_{x\rightarrow\infty}(x-x^{2}\ln(1+x^{-1}))$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+解
+\end_layout
+
+\end_inset
+
+(1) 用麦克劳林公式表示极限的分子:
+\begin_inset Formula 
+\[
+e^{x}\sin x=\left(1+x+\frac{x^{2}}{2}+o(x^{2})\right)(x+o(x))=x+x^{2}+\frac{x^{3}}{2}+o(x^{3}),
+\]
+
+\end_inset
+
+那么
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow0}\frac{e^{x}\sin x-x-x^{2}}{x^{3}}=\frac{1}{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(2) 令
+\begin_inset Formula 
+\[
+f(x)=x^{2}\ln\left(1+\frac{1}{x}\right),
+\]
+
+\end_inset
+
+则
+\begin_inset Formula 
+\[
+f'(x)=2x\ln\left(1+\frac{1}{x}\right)+\frac{-1}{1+\frac{1}{x}}.
+\]
+
+\end_inset
+
+于是
+\begin_inset Formula $f(x)=f(0)+f'(0)x+o(x)=-x+o(x)$
+\end_inset
+
+, 故
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow\infty}\left(x-x^{2}\ln\left(1+\frac{1}{x}\right)\right)=\lim_{x\rightarrow\infty}x-x+o(x)=0.
+\]
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -17072,6 +17354,93 @@ status collapsed
 \end_inset
 
 
+\end_layout
+
+\begin_layout Exercise
+求下列函数带佩亚诺型余项的麦克劳林公式:
+\end_layout
+
+\begin_layout Exercise
+(1) 
+\begin_inset Formula $f(x)=1/\sqrt{1+x}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Exercise
+(2) 
+\begin_inset Formula $f(x)=\arctan x$
+\end_inset
+
+到含
+\begin_inset Formula $x^{5}$
+\end_inset
+
+的项;
+\end_layout
+
+\begin_layout Exercise
+(3) 
+\begin_inset Formula $f(x)=\tan x$
+\end_inset
+
+到含
+\begin_inset Formula $x^{5}$
+\end_inset
+
+的项.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+按书上第128页例4的方法求下列极限:
+\begin_inset Formula 
+\begin{align*}
+(1) & \lim_{x\rightarrow0}\frac{e^{x}\sin x-x(1+x)}{x^{3}}; & (2) & \lim_{x\rightarrow\infty}\left(x-x^{2}\ln\left(1+\frac{1}{x}\right)\right);\\
+(3) & \lim_{x\rightarrow0}\frac{1}{x}\left(\frac{1}{x}-\frac{1}{\tan x}\right).
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+求下列函数在指定点处带拉格朗日余项的泰勒公式:
+\end_layout
+
+\begin_layout Exercise
+(1) 
+\begin_inset Formula $f(x)=x^{3}+4x^{2}+5$
+\end_inset
+
+, 在
+\begin_inset Formula $x=1$
+\end_inset
+
+处; (2) 
+\begin_inset Formula $f(x)=1/(1+x)$
+\end_inset
+
+, 在
+\begin_inset Formula $x=0$
+\end_inset
+
+处.
 \end_layout
 
 \begin_layout Chapter
