@@ -343,6 +343,22 @@ e^{x},\sin x,\cos x,\ln(1+x),(1+x)^{\alpha},\frac{1}{1-x}
  要求写出前三项与通项公式.
 \end_layout
 
+\begin_layout Enumerate
+
+\series bold
+凸函数
+\series default
+、
+\series bold
+凹函数
+\series default
+与
+\series bold
+拐点
+\series default
+的定义.
+\end_layout
+
 \begin_layout Section
 验证
 \end_layout
@@ -484,11 +500,534 @@ a_{n}=\frac{\sin b_{n}}{n}.
 收敛的呢?
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Comment
-status open
+\begin_layout Enumerate
+(1) 考虑多项式
+\begin_inset Formula $f(x)=a_{0}+a_{1}x+\cdots+a_{m}x^{m}$
+\end_inset
 
-\begin_layout Plain Layout
+与数列
+\begin_inset Formula $b_{n}=1/n$
+\end_inset
+
+.
+ 因为
+\begin_inset Formula $f$
+\end_inset
+
+连续, 所以
+\begin_inset Formula $\lim_{x\rightarrow0}f(x)=a_{0}$
+\end_inset
+
+.
+ 证明: 
+\begin_inset Formula $\lim_{n\rightarrow\infty}f(b_{n})=a_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+(2) 考虑
+\begin_inset Formula $f(x)=\sin(1/x)$
+\end_inset
+
+.
+ 观察
+\begin_inset Formula $f$
+\end_inset
+
+的图像, 可见
+\begin_inset Formula $\lim_{x\rightarrow0}f(x)$
+\end_inset
+
+不存在.
+ 请构造数列
+\begin_inset Formula $\{b_{n}\}$
+\end_inset
+
+与
+\begin_inset Formula $\{c_{n}\}$
+\end_inset
+
+, 使得
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}b_{n}=\lim_{n\rightarrow\infty}c_{n}=0,
+\]
+
+\end_inset
+
+但
+\begin_inset Formula $\lim_{n\rightarrow\infty}f(b_{n})$
+\end_inset
+
+不存在, 而
+\begin_inset Formula $\lim_{n\rightarrow\infty}f(c_{n})$
+\end_inset
+
+存在.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+(1) 考虑
+\begin_inset Formula $f(x)=\arctan x$
+\end_inset
+
+与数列
+\begin_inset Formula $a_{n}=n$
+\end_inset
+
+.
+ 证明: 
+\begin_inset Formula $\lim_{n\rightarrow\infty}f(a_{n})=\pi/2$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+(2) 考虑
+\begin_inset Formula $f(x)=\cos x$
+\end_inset
+
+.
+ 请构造单调递增发散于正无穷大的数列
+\begin_inset Formula $\{b_{n}\}$
+\end_inset
+
+与
+\begin_inset Formula $\{c_{n}\}$
+\end_inset
+
+, 使得
+\begin_inset Formula $\lim_{n\rightarrow\infty}f(b_{n})$
+\end_inset
+
+不存在但
+\begin_inset Formula $\lim_{n\rightarrow\infty}f(c_{n})$
+\end_inset
+
+存在.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+(1) 考虑
+\begin_inset Formula $f(x)=A\cos x+B\sin x$
+\end_inset
+
+.
+ 那么对任意
+\begin_inset Formula $x_{0}$
+\end_inset
+
+都有
+\begin_inset Formula $\lim_{x\rightarrow x_{0}}f(x)=f(x_{0})$
+\end_inset
+
+.
+ 证明: 任给
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 存在正数
+\begin_inset Formula $\delta$
+\end_inset
+
+, 使得对任何
+\begin_inset Formula $x',x''\in U^{\circ}(x_{0};\delta)$
+\end_inset
+
+, 有
+\begin_inset Formula $|f(x')-f(x'')|<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+(2) 考虑定义在
+\begin_inset Formula $(0,+\infty)$
+\end_inset
+
+上的函数
+\begin_inset Formula 
+\[
+f(x)=\frac{\lceil\sin x\rceil}{\lceil x\rceil},
+\]
+
+\end_inset
+
+其中
+\begin_inset Formula $\lceil t\rceil$
+\end_inset
+
+表示满足
+\begin_inset Formula $n-1<t\leqslant n$
+\end_inset
+
+的整数
+\begin_inset Formula $n$
+\end_inset
+
+.
+ 证明: 任给
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 存在正数
+\begin_inset Formula $M$
+\end_inset
+
+, 使得对任何
+\begin_inset Formula $x',x''>M$
+\end_inset
+
+, 有
+\begin_inset Formula $|f(x')-f(x'')|<\varepsilon$
+\end_inset
+
+.
+ 反过来, 你如何基于这个条件去证明
+\begin_inset Formula $\lim_{x\rightarrow+\infty}f(x)$
+\end_inset
+
+存在呢?
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+设
+\begin_inset Formula $f(x)=1-2^{\lceil1/x\rceil}$
+\end_inset
+
+, 
+\begin_inset Formula $x\in(-1/2,0)$
+\end_inset
+
+.
+ 证明: 
+\begin_inset Formula $f(0-0)$
+\end_inset
+
+存在.
+\end_layout
+
+\begin_layout Enumerate
+设
+\begin_inset Formula 
+\[
+f(x)=\begin{cases}
+\frac{\sin x^{2}}{x}, & x\neq0,\\
+0, & x=0.
+\end{cases}
+\]
+
+\end_inset
+
+证明: 
+\begin_inset Formula $f$
+\end_inset
+
+是
+\begin_inset Formula $[0,1]$
+\end_inset
+
+上的连续函数、有界函数.
+\end_layout
+
+\begin_layout Enumerate
+已知
+\begin_inset Formula $f(x)=x\sin(1/x)$
+\end_inset
+
+在
+\begin_inset Formula $[0,1]$
+\end_inset
+
+上连续.
+ 证明: 
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[0,1]$
+\end_inset
+
+上取到介于
+\begin_inset Formula $0$
+\end_inset
+
+与
+\begin_inset Formula $\sin1$
+\end_inset
+
+之间的所有值.
+\end_layout
+
+\begin_layout Enumerate
+考虑定义在
+\begin_inset Formula $[0,1]$
+\end_inset
+
+上的函数
+\begin_inset Formula $f(x)=x^{2}$
+\end_inset
+
+.
+ 证明: 
+\begin_inset Formula $f$
+\end_inset
+
+的反函数
+\begin_inset Formula $f^{-1}$
+\end_inset
+
+在
+\begin_inset Formula $[0,1]$
+\end_inset
+
+上严格递增并连续.
+\end_layout
+
+\begin_layout Enumerate
+(1) 已知
+\begin_inset Formula $f(x)=\sin x$
+\end_inset
+
+在
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+上一致连续.
+ 设
+\begin_inset Formula 
+\[
+x_{n}'=\frac{1}{\sin n},\quad x_{n}''=\frac{1}{\sin n}+\frac{1}{n}.
+\]
+
+\end_inset
+
+证明:
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}(x_{n}'-x_{n}'')=0\quad\text{且}\quad\lim_{n\rightarrow\infty}(f(x_{n}')-f(x_{n}''))=0.
+\]
+
+\end_inset
+
+想象一下数列
+\begin_inset Formula $\{x_{n}'\}$
+\end_inset
+
+是如何变化的.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+(2) 已知
+\begin_inset Formula $f(x)=\sin x^{2}$
+\end_inset
+
+在
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+上并不是一致连续的.
+ 请构造数列
+\begin_inset Formula $\{x_{n}'\}$
+\end_inset
+
+与
+\begin_inset Formula $\{x_{n}''\}$
+\end_inset
+
+, 使得
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}(x_{n}'-x_{n}'')=0\quad\text{但}\quad\lim_{n\rightarrow\infty}(f(x_{n}')-f(x_{n}''))\neq0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+已知
+\begin_inset Formula $f(x)=\sin x$
+\end_inset
+
+在闭区间
+\begin_inset Formula $[0,70]$
+\end_inset
+
+上连续.
+ 设
+\begin_inset Formula $a_{n}$
+\end_inset
+
+是圆周率
+\begin_inset Formula $\pi=3.1415926\cdots$
+\end_inset
+
+小数点后第
+\begin_inset Formula $n$
+\end_inset
+
+位的数字.
+ 令
+\begin_inset Formula 
+\[
+x_{n}'=2\pi a_{n}+\frac{1}{n},\quad x_{n}''=2\pi a_{n}+\frac{2}{n}.
+\]
+
+\end_inset
+
+证明:
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}(x_{n}'-x_{n}'')=0\quad\text{且}\quad\lim_{n\rightarrow\infty}(f(x_{n}')-f(x_{n}''))=0.
+\]
+
+\end_inset
+
+想象一下数列
+\begin_inset Formula $\{x_{n}'\}$
+\end_inset
+
+是如何变化的.
+\end_layout
+
+\begin_layout Enumerate
+设
+\begin_inset Formula 
+\[
+f(x)=\begin{cases}
+e^{x-1}, & x\leqslant1,\\
+1/x, & x>1.
+\end{cases}
+\]
+
+\end_inset
+
+证明: 
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+上一致连续.
+\end_layout
+
+\begin_layout Enumerate
+设
+\begin_inset Formula $f(x)=x^{2}D(x)$
+\end_inset
+
+.
+ 令
+\begin_inset Formula 
+\[
+H(x)=\frac{f(x)-f(0)}{x-0}.
+\]
+
+\end_inset
+
+请计算
+\begin_inset Formula $H(0)$
+\end_inset
+
+并证明
+\begin_inset Formula $H$
+\end_inset
+
+在原点连续.
+ 进一步地, 考虑函数
+\begin_inset Formula $g(u)=e^{u}$
+\end_inset
+
+, 令
+\begin_inset Formula 
+\[
+\Phi(x)=\frac{g(f(x))-g(f(0))}{x-0}.
+\]
+
+\end_inset
+
+请计算
+\begin_inset Formula $\Phi(0)$
+\end_inset
+
+.
+ 它与
+\begin_inset Formula $H(0)$
+\end_inset
+
+有什么关系?
+\end_layout
+
+\begin_layout Enumerate
+略.
+\end_layout
+
+\begin_layout Enumerate
+(1) 设
+\begin_inset Formula $f(x)=x+x^{2}D(x)$
+\end_inset
+
+.
+ 那么
+\begin_inset Formula $f'(0)>0$
+\end_inset
+
+.
+ 证明: 存在
+\begin_inset Formula $\delta>0$
+\end_inset
+
+, 使得对任意
+\begin_inset Formula $x\in(x_{0},x_{0}+\delta)$
+\end_inset
+
+, 都有
+\begin_inset Formula $f(x_{0})<f(x)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+(2) 设
+\begin_inset Formula $f(x)=x^{2}D(x)$
+\end_inset
+
+.
+ 那么
+\begin_inset Formula $f(x)\geqslant0$
+\end_inset
+
+, 并且
+\begin_inset Formula $f$
+\end_inset
+
+在原点可导.
+ 证明: 
+\begin_inset Formula $f'(0)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 (3) 设
 \begin_inset Formula 
 \[
@@ -510,14 +1049,18 @@ x^{2}\sin\frac{1}{x}, & x\neq0,\\
 
 不是连续函数.
  虽然如此, 达布定理仍然成立.
- 为什么?
-\end_layout
-
+ 为什么这样的
+\begin_inset Formula $f(x)$
 \end_inset
 
+能够与性质极好的
+\begin_inset Formula $g(x)=x^{2}$
+\end_inset
 
+同样实现达布定理的结论?
 \end_layout
 
+\end_deeper
 \begin_layout Section
 证明
 \end_layout
@@ -2028,6 +2571,303 @@ height "1pt"
 \begin_inset Formula 
 \[
 f(x)=f(x_{0})+\frac{f'(x_{0})}{1!}(x-x_{0})+\cdots+\frac{f^{(n)}(x_{0})}{n!}(x-x_{0})^{n}+\frac{f^{(n+1)}(\xi)}{(n+1)!}(x-x_{0})^{n+1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+第133页的定理6.13 (极值的第三充分条件): 
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+设函数
+\begin_inset Formula $f:U(x_{0})\rightarrow\mathbb{R}$
+\end_inset
+
+满足
+\begin_inset Formula $f'(x_{0})=\cdots=f^{(n-1)}(x_{0})=0$
+\end_inset
+
+且
+\begin_inset Formula $f^{(n)}(x_{0})\neq0$
+\end_inset
+
+.
+ 那么:
+\end_layout
+
+\begin_layout Plain Layout
+(i) 当
+\begin_inset Formula $n$
+\end_inset
+
+为偶数时, 
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+取得极值, 并且当
+\begin_inset Formula $f^{(n)}(x_{0})<0$
+\end_inset
+
+时取严格极大值, 当
+\begin_inset Formula $f^{(n)}(x_{0})>0$
+\end_inset
+
+时取严格极小值.
+\end_layout
+
+\begin_layout Plain Layout
+(ii) 当
+\begin_inset Formula $n$
+\end_inset
+
+为奇数时, 
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处不取极值.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+第6.5节凸函数的性质: 
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+为区间
+\begin_inset Formula $I$
+\end_inset
+
+上的凸函数的充要条件是: 对于
+\begin_inset Formula $I$
+\end_inset
+
+上的任意三点
+\begin_inset Formula $x_{1}<x_{2}<x_{3}$
+\end_inset
+
+, 总有
+\begin_inset Formula 
+\[
+\frac{f(x_{2})-f(x_{1})}{x_{2}-x_{1}}\leqslant\frac{f(x_{3})-f(x_{2})}{x_{3}-x_{2}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+设
+\begin_inset Formula $f$
+\end_inset
+
+为区间
+\begin_inset Formula $I$
+\end_inset
+
+上的可导函数.
+ 那么下面三个论断互相等价:
+\end_layout
+
+\begin_layout Plain Layout
+(i) 
+\begin_inset Formula $f$
+\end_inset
+
+为
+\begin_inset Formula $I$
+\end_inset
+
+上的凸函数;
+\end_layout
+
+\begin_layout Plain Layout
+(ii) 
+\begin_inset Formula $f'$
+\end_inset
+
+为
+\begin_inset Formula $I$
+\end_inset
+
+上的增函数;
+\end_layout
+
+\begin_layout Plain Layout
+(iii) 对
+\begin_inset Formula $I$
+\end_inset
+
+上的任意两点
+\begin_inset Formula $x_{1},x_{2}$
+\end_inset
+
+都有
+\begin_inset Formula 
+\[
+f(x_{2})\geqslant f(x_{1})+f'(x_{1})\cdot(x_{2}-x_{1}).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+设
+\begin_inset Formula $f$
+\end_inset
+
+为区间
+\begin_inset Formula $I$
+\end_inset
+
+上的二阶可导函数.
+ 那么
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $I$
+\end_inset
+
+上为凸函数的充要条件是对任意
+\begin_inset Formula $x\in I$
+\end_inset
+
+都有
+\begin_inset Formula $f''(x)\geqslant0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+设
+\begin_inset Formula $f$
+\end_inset
+
+为开区间
+\begin_inset Formula $I$
+\end_inset
+
+上的凸函数.
+ 那么
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $I$
+\end_inset
+
+上任一点
+\begin_inset Formula $x_{0}$
+\end_inset
+
+都存在左、右导数.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+第140页的例5 (Jensen不等式): 
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+若
+\begin_inset Formula $f$
+\end_inset
+
+为
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上的凸函数, 则对任意
+\begin_inset Formula $x_{i}\in[a,b]$
+\end_inset
+
+与满足
+\begin_inset Formula $\sum_{i=1}^{n}\lambda_{i}=1$
+\end_inset
+
+的
+\begin_inset Formula $n$
+\end_inset
+
+个正数
+\begin_inset Formula $\lambda_{1},\cdots,\lambda_{n}$
+\end_inset
+
+而言, 都有
+\begin_inset Formula 
+\[
+f\left(\sum_{i=1}^{n}\lambda_{i}x_{i}\right)\leqslant\sum_{i=1}^{n}\lambda_{i}f(x_{i}).
 \]
 
 \end_inset
