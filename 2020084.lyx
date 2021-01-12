@@ -2242,6 +2242,10 @@ status open
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Comment
+status collapsed
+
+\begin_layout Plain Layout
 \begin_inset Flex Color Box
 status collapsed
 
@@ -2291,11 +2295,11 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 基于上述记法, 书中(重新)定义了两个实数之间的大小关系.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 用小数表示实数之后, 在各种证明中 
 \series bold
 
@@ -2316,7 +2320,7 @@ status collapsed
  但这两个术语不是通用的; 如果写论文用到它们, 最好还是介绍一下定义.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Flex Color Box
 status collapsed
 
@@ -2520,7 +2524,7 @@ status collapsed
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Separator plain
 \end_inset
 
@@ -2541,6 +2545,11 @@ status collapsed
 \end_inset
 
 .
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2577,6 +2586,10 @@ status open
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Comment
+status collapsed
+
+\begin_layout Plain Layout
 \begin_inset Flex HINTAsInset
 status collapsed
 
@@ -2584,6 +2597,11 @@ status collapsed
 上确界就是一个数; 可以把区间越来越精细地十等分, 从而逐位地确定这个数的小数表示.
  然后只需要根据上确界的定义说明构造出来的这个数真的是上确界.
  注意看看此证明为何不适用于只有有理数的世界.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2719,6 +2737,10 @@ R(x)=\begin{cases}
 .
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Comment
+status collapsed
+
 \begin_layout Example
 设
 \begin_inset Formula $a>0$
@@ -2732,12 +2754,17 @@ R(x)=\begin{cases}
 有唯一的正数解.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Flex HINTAsInset
 status collapsed
 
 \begin_layout Plain Layout
 做成某个数集的上确界.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -5402,7 +5429,7 @@ Jensen不等式
 \left.\begin{array}{c}
 f\,\text{凸}\\
 \sum\lambda_{i}=1
-\end{array}\right\} \Rightarrow f\left(\sum\lambda_{i}x_{i}\right)\leqslant\sum\lambda f(x_{i}).
+\end{array}\right\} \Rightarrow f\left(\sum\lambda_{i}x_{i}\right)\leqslant\sum\lambda_{i}f(x_{i}).
 \]
 
 \end_inset
@@ -10015,7 +10042,7 @@ g(x_{0})=f(x_{0}+0)=\lim_{x\rightarrow x_{0}^{+}}f(x).
 \end_layout
 
 \begin_layout Exercise
-指出下述证明的
+指出下述(1) 证明的
 \color red
 错误
 \color inherit
@@ -10794,6 +10821,328 @@ f'(x)=2x\ln\left(1+\frac{1}{x}\right)+\frac{-1}{1+\frac{1}{x}}.
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+指出下述证明的
+\color red
+错误
+\color inherit
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Quotation
+证明: 若函数
+\begin_inset Formula $f$
+\end_inset
+
+在点
+\begin_inset Formula $x_{0}$
+\end_inset
+
+有
+\begin_inset Formula $f'_{+}(x_{0})<0$
+\end_inset
+
+且
+\begin_inset Formula $f'_{-}(x_{0})>0$
+\end_inset
+
+, 则
+\begin_inset Formula $x_{0}$
+\end_inset
+
+为
+\begin_inset Formula $f$
+\end_inset
+
+的极大值点.
+ 
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+由导数极限定理
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $f'_{+}(x_{0})=\lim_{x\rightarrow x_{0}^{+}}f'(x)<0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+由保号性, 对于
+\begin_inset Formula $\forall x\in U_{+}^{\circ}(x_{0},\delta)$
+\end_inset
+
+都有
+\begin_inset Formula $f'(x)<0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $f'_{-}(x_{0})=\lim_{x\rightarrow x_{0}^{-}}f'(x)>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+对于
+\begin_inset Formula $\forall x\in U_{-}^{\circ}(x_{0},\delta)$
+\end_inset
+
+, 都有
+\begin_inset Formula $f'(x)>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+由极值第一充分条件, 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+为
+\begin_inset Formula $f$
+\end_inset
+
+的极大值点.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+修正下述证明的
+\color red
+错误
+\color inherit
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Quotation
+设
+\begin_inset Formula $f$
+\end_inset
+
+为区间
+\begin_inset Formula $I$
+\end_inset
+
+上的严格凸函数.
+ 证明: 若
+\begin_inset Formula $x_{0}\in I$
+\end_inset
+
+为
+\begin_inset Formula $f$
+\end_inset
+
+的极小值点, 则
+\begin_inset Formula $x_{0}$
+\end_inset
+
+为
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $I$
+\end_inset
+
+上唯一的极小值点.
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+假设
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $I$
+\end_inset
+
+上还有一极小值点
+\begin_inset Formula $x_{1}$
+\end_inset
+
+
+\begin_inset Phantom HPhantom
+status open
+
+\begin_layout Plain Layout
+没什么
+\end_layout
+
+\end_inset
+
+不妨设
+\begin_inset Formula $x_{0}<x_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+因为
+\begin_inset Formula $f$
+\end_inset
+
+为曲间
+\begin_inset Formula $I$
+\end_inset
+
+上严格凸函数
+\end_layout
+
+\begin_layout Plain Layout
+所以任取
+\begin_inset Formula $\lambda$
+\end_inset
+
+ 
+\begin_inset Formula $(\lambda\in(0,1))$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f(\lambda x_{0}+(1-\lambda)x_{1})<\lambda f(x_{0})+(1-\lambda)f(x_{1}).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+当
+\begin_inset Formula $\lambda\rightarrow0$
+\end_inset
+
+时, 令
+\begin_inset Formula $x=\lambda x_{0}+(1-\lambda)x_{1}$
+\end_inset
+
+, 存在
+\begin_inset Formula $\delta>0$
+\end_inset
+
+, st 
+\begin_inset Formula $x\in U^{\circ}(x_{0}\,\delta)$
+\end_inset
+
+ 且 
+\begin_inset Formula $f(x)<f(x_{1})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+这与
+\begin_inset Formula $x_{1}$
+\end_inset
+
+为极小值点不符
+\end_layout
+
+\begin_layout Plain Layout
+所以若
+\begin_inset Formula $x_{0}\in I$
+\end_inset
+
+为
+\begin_inset Formula $f$
+\end_inset
+
+极小值点, 则
+\begin_inset Formula $x_{0}$
+\end_inset
+
+为
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $I$
+\end_inset
+
+上唯一极小值点.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Exercise
+指出下述证明的
+\color red
+错误
+\color inherit
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Quotation
+证明
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Flex ProofAsInset
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 正例
 \end_layout
@@ -17476,6 +17825,254 @@ status collapsed
 \end_inset
 
 处.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+设
+\begin_inset Formula 
+\[
+f(x)=\begin{cases}
+x^{4}\sin^{2}\frac{1}{x}, & x\neq0,\\
+0, & x=0.
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+(1) 证明: 
+\begin_inset Formula $x=0$
+\end_inset
+
+是极小值点;
+\end_layout
+
+\begin_layout Exercise
+(2) 说明
+\begin_inset Formula $f$
+\end_inset
+
+在极小值点
+\begin_inset Formula $x=0$
+\end_inset
+
+是否满足极值的第一充分条件或第二充分条件.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+证明: (1) 若函数
+\begin_inset Formula $f$
+\end_inset
+
+在点
+\begin_inset Formula $x_{0}$
+\end_inset
+
+有
+\begin_inset Formula $f'_{+}(x_{0})<0$
+\end_inset
+
+且
+\begin_inset Formula $f'_{-}(x_{0})>0$
+\end_inset
+
+, 则
+\begin_inset Formula $x_{0}$
+\end_inset
+
+为
+\begin_inset Formula $f$
+\end_inset
+
+的极大值点.
+ 
+\end_layout
+
+\begin_layout Exercise
+(2) 若函数
+\begin_inset Formula $f$
+\end_inset
+
+在点
+\begin_inset Formula $x_{0}$
+\end_inset
+
+有
+\begin_inset Formula $f'_{+}(x_{0})>0$
+\end_inset
+
+且
+\begin_inset Formula $f'_{-}(x_{0})<0$
+\end_inset
+
+, 则
+\begin_inset Formula $x_{0}$
+\end_inset
+
+为
+\begin_inset Formula $f$
+\end_inset
+
+的极小值点.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+设
+\begin_inset Formula $f(x)$
+\end_inset
+
+在区间
+\begin_inset Formula $I$
+\end_inset
+
+上连续, 并且在
+\begin_inset Formula $I$
+\end_inset
+
+上仅有唯一的极值点
+\begin_inset Formula $x_{0}$
+\end_inset
+
+.
+ 证明: 若
+\begin_inset Formula $x_{0}$
+\end_inset
+
+是
+\begin_inset Formula $f$
+\end_inset
+
+的极大(小)值点, 则
+\begin_inset Formula $x_{0}$
+\end_inset
+
+必是
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $I$
+\end_inset
+
+上的最大(小)值点.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+设
+\begin_inset Formula $f$
+\end_inset
+
+为区间
+\begin_inset Formula $I$
+\end_inset
+
+上的严格凸函数.
+ 证明: 若
+\begin_inset Formula $x_{0}\in I$
+\end_inset
+
+为
+\begin_inset Formula $f$
+\end_inset
+
+的极小值点, 则
+\begin_inset Formula $x_{0}$
+\end_inset
+
+为
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $I$
+\end_inset
+
+上唯一的极小值点.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+应用凸函数的概念证明下列不等式:
+\end_layout
+
+\begin_layout Exercise
+(1) 对任意实数
+\begin_inset Formula $a,b$
+\end_inset
+
+有
+\begin_inset Formula 
+\[
+e^{\frac{a+b}{2}}\leqslant\frac{1}{2}(e^{a}+e^{b});
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+(2) 对任何非负实数
+\begin_inset Formula $a,b$
+\end_inset
+
+有
+\begin_inset Formula 
+\[
+2\arctan\frac{a+b}{2}\geqslant\arctan a+\arctan b.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+凸函数一定是连续函数吗?
 \end_layout
 
 \begin_layout Chapter
