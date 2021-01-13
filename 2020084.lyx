@@ -11108,6 +11108,94 @@ f(\lambda x_{0}+(1-\lambda)x_{1})<\lambda f(x_{0})+(1-\lambda)f(x_{1}).
 
 \end_deeper
 \begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+指出下列说法的
+\color red
+错误
+\color inherit
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+设
+\begin_inset Formula $f$
+\end_inset
+
+为区间
+\begin_inset Formula $I$
+\end_inset
+
+上的连续函数.
+ 那么
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $I$
+\end_inset
+
+上有最大值.
+\end_layout
+
+\begin_layout Enumerate
+设
+\begin_inset Formula $f$
+\end_inset
+
+为区间
+\begin_inset Formula $I$
+\end_inset
+
+上的连续函数, 而
+\begin_inset Formula $x_{0}\in I$
+\end_inset
+
+是
+\begin_inset Formula $f$
+\end_inset
+
+的极值点.
+ 那么
+\begin_inset Formula $f'(x_{0})=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+设
+\begin_inset Formula $f$
+\end_inset
+
+为区间
+\begin_inset Formula $I$
+\end_inset
+
+上的严格凸函数, 而
+\begin_inset Formula $x_{0}\in I$
+\end_inset
+
+是
+\begin_inset Formula $f$
+\end_inset
+
+的极值点.
+ 那么
+\begin_inset Formula $f'(x_{0})=0$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
@@ -18073,6 +18161,28 @@ e^{\frac{a+b}{2}}\leqslant\frac{1}{2}(e^{a}+e^{b});
 
 \begin_layout Exercise
 凸函数一定是连续函数吗?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex HINTAsInset
+status collapsed
+
+\begin_layout Plain Layout
+在
+\series bold
+开
+\series default
+区间上必定连续.
+ 但如果定义域不是
+\series bold
+开
+\series default
+区间, 则不一定连续.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Chapter
