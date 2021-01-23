@@ -18282,6 +18282,83 @@ status open
 
 \end_inset
 
+
+\begin_inset Formula 
+\[
+\left|\sqrt{\frac{7}{16x^{2}-9}}-1\right|=\left|\frac{\frac{-16x^{2}}{16x^{2}-9}}{\sqrt{\frac{7}{16x^{2}-9}}+1}\right|<\left|\frac{16x^{2}}{16x^{2}-9}\right|
+\]
+
+\end_inset
+
+令
+\begin_inset Formula $\delta<\frac{1}{4}$
+\end_inset
+
+, 则
+\begin_inset Formula $16x^{2}-9>0$
+\end_inset
+
+, 原式
+\begin_inset Formula $=\frac{16x^{2}}{16x^{2}-9}$
+\end_inset
+
+ 令
+\begin_inset Formula $\frac{16x^{2}}{16x^{2}-9}=\frac{1}{1-\frac{9}{16x^{2}}}<\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+可取
+\begin_inset Formula $\delta=\frac{9\varepsilon}{16(\varepsilon-1)}$
+\end_inset
+
+.
+ 对任意给定
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+, 令
+\begin_inset Formula $\delta=\min\left\{ \frac{1}{4},\frac{9\varepsilon}{16(\varepsilon-1)}\right\} $
+\end_inset
+
+ 则有
+\begin_inset Formula $\left|\sqrt{\frac{7}{16x^{2}-9}}-1\right|<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+即
+\begin_inset Formula $\lim_{x\rightarrow1}\sqrt{\frac{7}{16x^{2}-9}}=1$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\color red
+错误证明
+\end_layout
+
+\end_inset
+
 因为
 \begin_inset Formula 
 \[
@@ -18318,6 +18395,316 @@ status open
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+第(3)问:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\color red
+错误证明
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $x=\frac{t-1}{t}\cos t=\left(1-\frac{1}{t}\right)\cos t$
+\end_inset
+
+.
+ 因为
+\begin_inset Formula $t>0$
+\end_inset
+
+所以
+\begin_inset Formula 
+\[
+\left(1-\frac{1}{t}\right)\cos t<\left(1-\frac{1}{t}\right)|\cos t|<|\cos t|<1.
+\]
+
+\end_inset
+
+其中
+\begin_inset Formula $\cos t$
+\end_inset
+
+是有界的, 
+\begin_inset Formula $-1\leqslant\cos t\leqslant1$
+\end_inset
+
+.
+ 
+\begin_inset Formula $(t>0)$
+\end_inset
+
+.
+ 所以对一切
+\begin_inset Formula $x$
+\end_inset
+
+都有
+\begin_inset Formula $x<1$
+\end_inset
+
+.
+ 故
+\begin_inset Formula $1$
+\end_inset
+
+是
+\begin_inset Formula $x$
+\end_inset
+
+ (
+\begin_inset Formula $x=\frac{t-1}{t}\cos t$
+\end_inset
+
+, 
+\begin_inset Formula $t>0$
+\end_inset
+
+) 的上界.
+ 下证
+\begin_inset Formula $1$
+\end_inset
+
+是其上确界.
+ 对于任意给定
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 只须取
+\begin_inset Formula $t=\frac{1}{2-\varepsilon}$
+\end_inset
+
+, 便有
+\begin_inset Formula 
+\[
+x=\left(1-\frac{1}{t}\right)\cos t>\left(1-\frac{1}{t}\right)(-1)=\frac{1}{t}-1>2-\varepsilon-1=1-\varepsilon.
+\]
+
+\end_inset
+
+故
+\begin_inset Formula $\sup\{x|x=\frac{t-1}{t}\cos t,t>0\}=1$
+\end_inset
+
+得证.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+讨论
+\begin_inset Formula 
+\[
+f(x)=\begin{cases}
+\frac{x}{2}+x^{2}\sin\frac{1}{x}, & x\neq0\\
+0, & x=0
+\end{cases}
+\]
+
+\end_inset
+
+在
+\begin_inset Formula $x=0$
+\end_inset
+
+处的可导性.
+ 进一步地, 是否存在
+\begin_inset Formula $x=0$
+\end_inset
+
+的一个邻域, 使
+\begin_inset Formula $f$
+\end_inset
+
+在该邻域上单调?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\color red
+错误解法
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow0}\frac{f(x)-f(0)}{x-0}=\lim_{x\rightarrow0}\left(\frac{1}{2}+x\sin\frac{1}{x}\right)=\frac{1}{2}+\lim_{x\rightarrow0}x\sin\frac{1}{x}=\frac{3}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+从而
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $x=0$
+\end_inset
+
+处可导.
+\end_layout
+
+\begin_layout Plain Layout
+不存在
+\begin_inset Formula $x=0$
+\end_inset
+
+的一个邻域, 使
+\begin_inset Formula $f$
+\end_inset
+
+在该邻域上单调.
+\end_layout
+
+\begin_layout Plain Layout
+令
+\begin_inset Formula $\frac{1}{x_{1}}=\frac{\pi}{4}+2k\pi$
+\end_inset
+
+ (
+\begin_inset Formula $k\in\mathbb{Z}'$
+\end_inset
+
+且
+\begin_inset Formula $k\rightarrow+\infty$
+\end_inset
+
+) 则
+\begin_inset Formula $x_{1}\rightarrow0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $f'(x)=\frac{1}{2}+2x\sin\frac{1}{x}-\cos\frac{1}{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $f'(x_{1})=\frac{1}{2}+\frac{\sqrt{2}}{2}(2x_{1}-1)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $x_{1}\rightarrow0$
+\end_inset
+
+则
+\begin_inset Formula $f(x_{1})\rightarrow\frac{1-\sqrt{2}}{2}$
+\end_inset
+
+ 从而
+\begin_inset Formula $f(x_{1})<0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+令
+\begin_inset Formula $\frac{1}{x_{2}}=\pi+2k\pi$
+\end_inset
+
+ (
+\begin_inset Formula $k\in\mathbb{Z}$
+\end_inset
+
+且
+\begin_inset Formula $k\rightarrow+\infty$
+\end_inset
+
+), 则
+\begin_inset Formula $x_{2}\rightarrow0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $f'(x_{2})=\frac{1}{2}+1=\frac{3}{2}>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+从而在
+\begin_inset Formula $x=0$
+\end_inset
+
+的一个邻域内
+\begin_inset Formula $U(0;\delta)$
+\end_inset
+
+不论
+\begin_inset Formula $\delta$
+\end_inset
+
+取多小, 都无法使
+\begin_inset Formula $f'(x)$
+\end_inset
+
+恒不小于
+\begin_inset Formula $0$
+\end_inset
+
+或恒不大于
+\begin_inset Formula $0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+从而不存在
+\begin_inset Formula $x=0$
+\end_inset
+
+的一个邻域, 使
+\begin_inset Formula $f$
+\end_inset
+
+在该邻域上单调.
 \end_layout
 
 \end_inset
@@ -18535,6 +18922,87 @@ status open
 
 \end_inset
 
+反证法: 假设
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上无界.
+\end_layout
+
+\begin_layout Plain Layout
+则必
+\begin_inset Formula $\exists x_{0}\in[a,b]$
+\end_inset
+
+, 有
+\begin_inset Formula $\lim_{x\rightarrow x_{0}}f(x)=\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+即
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $x=x_{0}$
+\end_inset
+
+处极限不存在.
+ 所以存在第二类间断点.
+\end_layout
+
+\begin_layout Plain Layout
+而这与
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上只有第一类间断点, 矛盾.
+\end_layout
+
+\begin_layout Plain Layout
+所以得
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上有界.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\color red
+错误证明
+\end_layout
+
+\end_inset
+
 设
 \begin_inset Formula $f(x)$
 \end_inset
@@ -18585,6 +19053,357 @@ status open
 \end_inset
 
 为第二类间段点, 矛盾.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+叙述并证明
+\begin_inset Formula $\lim_{x\rightarrow x_{0}}f(x)=A$
+\end_inset
+
+的归结原则.
+\end_layout
+
+\begin_layout Standard
+叙述:
+\end_layout
+
+\begin_layout Standard
+必要性:
+\end_layout
+
+\begin_layout Standard
+充分性:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\color red
+错误证明
+\end_layout
+
+\end_inset
+
+反证法, 不妨设
+\begin_inset Formula $\lim_{x\rightarrow x_{0}}f(x)\neq A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+则
+\begin_inset Formula $\exists\varepsilon_{0}>0$
+\end_inset
+
+, 
+\begin_inset Formula $\forall\delta$
+\end_inset
+
+, 当
+\begin_inset Formula $|x-x_{0}|<\delta$
+\end_inset
+
+时, 有
+\begin_inset Formula $|f(x)-A|\geqslant\varepsilon_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+特别地, 取
+\begin_inset Formula $\delta_{1}=1$
+\end_inset
+
+, 当
+\begin_inset Formula $|x_{1}-x_{0}|<1$
+\end_inset
+
+时, 有
+\begin_inset Formula $|f(x)-A|\geqslant\varepsilon_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+取
+\begin_inset Formula $\delta_{2}=2$
+\end_inset
+
+, 当
+\begin_inset Formula $|x_{2}-x_{0}|<2$
+\end_inset
+
+时, 有
+\begin_inset Formula $|f(x_{2})-A|\geqslant\varepsilon_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\cdots$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+取
+\begin_inset Formula $\delta_{n}=n$
+\end_inset
+
+, 当
+\begin_inset Formula $|x_{n}-x_{0}|<n$
+\end_inset
+
+时, 有
+\begin_inset Formula $|f(x_{n})-A|\geqslant\varepsilon_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+而这与条件
+\begin_inset Formula $\lim_{n\rightarrow\infty}f(x_{n})=A$
+\end_inset
+
+矛盾.
+\end_layout
+
+\begin_layout Plain Layout
+所以得
+\begin_inset Formula $\lim_{x\rightarrow x_{0}}f(x)=A$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+函数
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $[0,+\infty)$
+\end_inset
+
+上连续, 且
+\begin_inset Formula $\lim_{x\rightarrow+\infty}(f(x)-ax-b)=0$
+\end_inset
+
+.
+ 证明: 
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $[0,+\infty)$
+\end_inset
+
+上一致连续.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\color red
+错误证明
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\lim_{x\rightarrow+\infty}(f(x)-ax-b)=0$
+\end_inset
+
+.
+ 即
+\begin_inset Formula $y=ax+b$
+\end_inset
+
+是
+\begin_inset Formula $f(x)$
+\end_inset
+
+的一条渐近线.
+ 当
+\begin_inset Formula $x\rightarrow+\infty$
+\end_inset
+
+时.
+ 
+\begin_inset Formula $f(x)$
+\end_inset
+
+与
+\begin_inset Formula $y=ax+b$
+\end_inset
+
+的值趋于相同.
+\end_layout
+
+\begin_layout Plain Layout
+即对
+\begin_inset Formula $\forall\varepsilon>0$
+\end_inset
+
+, 
+\begin_inset Formula $\exists M>0$
+\end_inset
+
+, 当
+\begin_inset Formula $x>M$
+\end_inset
+
+时.
+ 
+\begin_inset Formula $|f(x)-ax-b|<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+对上述的
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\exists\delta=\varepsilon/|a|$
+\end_inset
+
+, 当
+\begin_inset Formula $|x_{1}-x_{2}|<\delta$
+\end_inset
+
+时
+\begin_inset Formula $|f(x_{1})-f(x_{2})|<|a|x_{1}-x_{2}||<\varepsilon$
+\end_inset
+
+.
+ 故
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $[M,+\infty)$
+\end_inset
+
+上一致连续.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $[0,M]$
+\end_inset
+
+上连续.
+ 故
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $[0,M]$
+\end_inset
+
+上一致连续.
+\end_layout
+
+\begin_layout Plain Layout
+所以
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $[0,+\infty)$
+\end_inset
+
+上一致连续.
+ 得证.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+设函数
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上二阶可导, 
+\begin_inset Formula $f'\left(\frac{a+b}{2}\right)=0$
+\end_inset
+
+, 证明: 存在一点
+\begin_inset Formula $\xi\in(a,b)$
+\end_inset
+
+, 使得
+\begin_inset Formula 
+\[
+|f'(\xi)|\geqslant\frac{4}{(b-a)^{2}}(f(b)-f(a)).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\color red
+错误证明
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
