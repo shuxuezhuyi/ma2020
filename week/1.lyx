@@ -2441,10 +2441,10 @@ status collapsed
 \end_inset
 
 在
-\begin_inset Formula $x_{0}$
+\begin_inset Formula $U^{\circ}(x_{0};\delta)$
 \end_inset
 
-附近有定义.
+上有定义.
  如果满足
 \begin_inset Formula 
 \[
