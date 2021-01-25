@@ -10829,6 +10829,94 @@ f'(x)=2x\ln\left(1+\frac{1}{x}\right)+\frac{-1}{1+\frac{1}{x}}.
 \end_layout
 
 \begin_layout Exercise
+指出下列说法的
+\color red
+错误
+\color inherit
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+设
+\begin_inset Formula $f$
+\end_inset
+
+为区间
+\begin_inset Formula $I$
+\end_inset
+
+上的连续函数.
+ 那么
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $I$
+\end_inset
+
+上有最大值.
+\end_layout
+
+\begin_layout Enumerate
+设
+\begin_inset Formula $f$
+\end_inset
+
+为区间
+\begin_inset Formula $I$
+\end_inset
+
+上的连续函数, 而
+\begin_inset Formula $x_{0}\in I$
+\end_inset
+
+是
+\begin_inset Formula $f$
+\end_inset
+
+的极值点.
+ 那么
+\begin_inset Formula $f'(x_{0})=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+设
+\begin_inset Formula $f$
+\end_inset
+
+为区间
+\begin_inset Formula $I$
+\end_inset
+
+上的严格凸函数, 而
+\begin_inset Formula $x_{0}\in I$
+\end_inset
+
+是
+\begin_inset Formula $f$
+\end_inset
+
+的极值点.
+ 那么
+\begin_inset Formula $f'(x_{0})=0$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
 指出下述证明的
 \color red
 错误
@@ -11104,94 +11192,6 @@ f(\lambda x_{0}+(1-\lambda)x_{1})<\lambda f(x_{0})+(1-\lambda)f(x_{1}).
 \end_inset
 
 
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Exercise
-指出下列说法的
-\color red
-错误
-\color inherit
-:
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-设
-\begin_inset Formula $f$
-\end_inset
-
-为区间
-\begin_inset Formula $I$
-\end_inset
-
-上的连续函数.
- 那么
-\begin_inset Formula $f$
-\end_inset
-
-在
-\begin_inset Formula $I$
-\end_inset
-
-上有最大值.
-\end_layout
-
-\begin_layout Enumerate
-设
-\begin_inset Formula $f$
-\end_inset
-
-为区间
-\begin_inset Formula $I$
-\end_inset
-
-上的连续函数, 而
-\begin_inset Formula $x_{0}\in I$
-\end_inset
-
-是
-\begin_inset Formula $f$
-\end_inset
-
-的极值点.
- 那么
-\begin_inset Formula $f'(x_{0})=0$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Enumerate
-设
-\begin_inset Formula $f$
-\end_inset
-
-为区间
-\begin_inset Formula $I$
-\end_inset
-
-上的严格凸函数, 而
-\begin_inset Formula $x_{0}\in I$
-\end_inset
-
-是
-\begin_inset Formula $f$
-\end_inset
-
-的极值点.
- 那么
-\begin_inset Formula $f'(x_{0})=0$
-\end_inset
-
-.
 \end_layout
 
 \end_deeper
