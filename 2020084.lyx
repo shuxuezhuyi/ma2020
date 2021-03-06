@@ -18194,8 +18194,8 @@ status collapsed
 
 \begin_layout Standard
 这里每一道题下面都会列举若干个错误做法; 越是靠前, 大致就是错得越多、越严重.
- 参考答案放在这些错误做法之后.
  我建议同学们从前往后阅读, 看自己能不能读出每个错误做法都有哪些错误.
+ 本章最后一节有第六、第八、第九题的参考答案.
 \end_layout
 
 \begin_layout Standard
@@ -18936,11 +18936,11 @@ status open
 \begin_inset Formula $f(x)$
 \end_inset
 
-在
+定义在
 \begin_inset Formula $[a,b]$
 \end_inset
 
-上只有第一类间断点.
+上且只有第一类间断点.
  证明: 
 \begin_inset Formula $f(x)$
 \end_inset
@@ -22640,6 +22640,579 @@ f(b)=f\left(\frac{a+b}{2}\right)+f'\left(\frac{a+b}{2}\right)\frac{b-a}{2}+\frac
 
 .
  命题证毕.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+第六、第八、第九题参考答案
+\end_layout
+
+\begin_layout Standard
+考虑到考试时间有限, 本节给出的参考答案在不会造成混淆的情况下有所省略.
+\end_layout
+
+\begin_layout Subsection
+第六题
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+证法一
+\end_layout
+
+\end_inset
+
+设
+\begin_inset Formula $x\in[a,b]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+若
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x$
+\end_inset
+
+处连续, 则由连续函数的局部有界性可知, 存在
+\begin_inset Formula $\delta(x)>0$
+\end_inset
+
+与
+\begin_inset Formula $M(x)>0$
+\end_inset
+
+, 使得当
+\begin_inset Formula $y\in U(x;\delta(x))$
+\end_inset
+
+时有
+\begin_inset Formula 
+\[
+|f(y)|\leqslant M(x).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+若
+\begin_inset Formula $x$
+\end_inset
+
+是
+\begin_inset Formula $f$
+\end_inset
+
+的第一类间断点, 则
+\begin_inset Formula $f(x-0)$
+\end_inset
+
+与
+\begin_inset Formula $f(x+0)$
+\end_inset
+
+都存在.
+ 于是由函数极限的局部有界性可知, 存在
+\begin_inset Formula $\delta(x)>0$
+\end_inset
+
+与
+\begin_inset Formula $M_{1}(x)>0$
+\end_inset
+
+, 使得当
+\begin_inset Formula $y\in U^{\circ}(x;\delta(x))$
+\end_inset
+
+时有
+\begin_inset Formula $|f(y)|\leqslant M_{1}(x)$
+\end_inset
+
+.
+ 令
+\begin_inset Formula $M(x)=M_{1}(x)+|f(x)|$
+\end_inset
+
+, 则当
+\begin_inset Formula $y\in U(x;\delta(x))$
+\end_inset
+
+时有
+\begin_inset Formula 
+\[
+|f(y)|\leqslant M(x).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+现在考虑开区间族
+\begin_inset Formula 
+\[
+H=\{(x-\delta(x),x+\delta(x)):x\in[a,b]\},
+\]
+
+\end_inset
+
+则
+\begin_inset Formula $H$
+\end_inset
+
+是
+\begin_inset Formula $[a,b]$
+\end_inset
+
+的一个开覆盖.
+ 于是由
+\series bold
+\color red
+有限覆盖定理
+\series default
+\color inherit
+可知, 存在有限个点
+\begin_inset Formula $x_{1},x_{2},\cdots,x_{n}\in[a,b]$
+\end_inset
+
+, 使得
+\begin_inset Formula 
+\[
+[a,b]\subset\bigcup_{i=1}^{n}(x_{i}-\delta(x_{i}),x_{i}+\delta(x_{i})).
+\]
+
+\end_inset
+
+令
+\begin_inset Formula $M=\max\{M(x_{1}),M(x_{2}),\cdots,M(x_{n})\}$
+\end_inset
+
+.
+ 那么由
+\begin_inset Formula $\delta(x)$
+\end_inset
+
+与
+\begin_inset Formula $M(x)$
+\end_inset
+
+的构造方式可知, 对任意
+\begin_inset Formula $y\in[a,b]$
+\end_inset
+
+都有
+\begin_inset Formula 
+\[
+|f(y)|\leqslant M.
+\]
+
+\end_inset
+
+故
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上有界.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Flex ProofAsInset
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+证法二
+\end_layout
+
+\end_inset
+
+用反证法.
+ 假设
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上无界, 则对任意
+\begin_inset Formula $M>0$
+\end_inset
+
+, 都存在
+\begin_inset Formula $x\in[a,b]$
+\end_inset
+
+, 使得
+\begin_inset Formula $|f(x)|>M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+因此, 取
+\begin_inset Formula $M=1,2,3,\cdots$
+\end_inset
+
+, 则相应地存在
+\begin_inset Formula $x_{1},x_{2},x_{3},\cdots$
+\end_inset
+
+, 使得
+\begin_inset Formula $|f(x_{n})|>n$
+\end_inset
+
+恒成立.
+\end_layout
+
+\begin_layout Plain Layout
+因为
+\begin_inset Formula $a\leqslant x_{n}\leqslant b$
+\end_inset
+
+恒成立, 所以由致密性定理可知数列
+\begin_inset Formula $\{x_{n}\}$
+\end_inset
+
+有收敛子列
+\begin_inset Formula $\{x_{n_{k}}\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+记
+\begin_inset Formula $x_{0}=\lim_{k\rightarrow\infty}x_{n_{k}}$
+\end_inset
+
+, 则由
+\begin_inset Formula $\lim_{k\rightarrow\infty}f(x_{n_{k}})=\infty$
+\end_inset
+
+可知
+\begin_inset Formula $x_{0}$
+\end_inset
+
+是
+\begin_inset Formula $f$
+\end_inset
+
+的第二类间断点, 矛盾!
+\end_layout
+
+\begin_layout Plain Layout
+故假设不成立, 原命题得证.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+第八题
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Flex ProofAsInset
+status open
+
+\begin_layout Plain Layout
+任意取定
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+由
+\begin_inset Formula $\lim_{x\rightarrow+\infty}(f(x)-ax-b)=0$
+\end_inset
+
+可知, 存在
+\begin_inset Formula $M>0$
+\end_inset
+
+, 使得当
+\begin_inset Formula $x>M$
+\end_inset
+
+时有
+\begin_inset Formula $|f(x)-ax-b|<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+取
+\begin_inset Formula $\delta_{1}=\varepsilon$
+\end_inset
+
+, 则当
+\begin_inset Formula $x_{1},x_{2}\in[M,+\infty)$
+\end_inset
+
+且
+\begin_inset Formula $|x_{1}-x_{2}|<\delta_{1}$
+\end_inset
+
+时, 有
+\begin_inset Formula 
+\begin{align*}
+|f(x_{1})-f(x_{2})| & =|(f(x_{1})-ax_{1}-b)+(ax_{1}-ax_{2})-(f(x_{2})-ax_{2}-b)|\\
+ & \leqslant|f(x_{1})-ax_{1}-b|+|a|\cdot|x_{1}-x_{2}|+|f(x_{2})-ax_{2}-b|\\
+ & \leqslant(2+|a|)\varepsilon.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+因为
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[0,M+1]$
+\end_inset
+
+上连续, 所以
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[0,M+1]$
+\end_inset
+
+上一致连续, 于是存在
+\begin_inset Formula $\delta_{2}>0$
+\end_inset
+
+, 使得当
+\begin_inset Formula $x_{1},x_{2}\in[0,M+1]$
+\end_inset
+
+且
+\begin_inset Formula $|x_{1}-x_{2}|<\delta_{2}$
+\end_inset
+
+时, 有
+\begin_inset Formula 
+\[
+|f(x_{1})-f(x_{2})|<\varepsilon<(2+|a|)\varepsilon.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+综上所述, 对
+\begin_inset Formula $\varepsilon_{0}=(2+|a|)\varepsilon>0$
+\end_inset
+
+而言, 存在
+\begin_inset Formula $\delta=\min\{\delta_{1},\delta_{2},1\}>0$
+\end_inset
+
+, 使得当
+\begin_inset Formula $x_{1},x_{2}\in[0,+\infty)$
+\end_inset
+
+且
+\begin_inset Formula $|x_{1}-x_{2}|<\delta$
+\end_inset
+
+时, 有
+\begin_inset Formula 
+\[
+|f(x_{1})-f(x_{2})|<\varepsilon_{0}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+因此, 由
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+的任意性可知
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[0,+\infty)$
+\end_inset
+
+上一致连续.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+第九题
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Flex ProofAsInset
+status open
+
+\begin_layout Plain Layout
+因为
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上二阶可导, 所以对任意
+\begin_inset Formula $x,x_{0}\in[a,b]$
+\end_inset
+
+有
+\begin_inset Formula 
+\[
+f(x)=f(x_{0})+f'(x_{0})(x-x_{0})+\frac{f''(\xi)}{2}(x-x_{0})^{2},
+\]
+
+\end_inset
+
+其中
+\begin_inset Formula $\xi$
+\end_inset
+
+是介于
+\begin_inset Formula $x$
+\end_inset
+
+与
+\begin_inset Formula $x_{0}$
+\end_inset
+
+之间的点.
+\end_layout
+
+\begin_layout Plain Layout
+特别地, 当
+\begin_inset Formula $x_{0}=\frac{a+b}{2}$
+\end_inset
+
+时有
+\begin_inset Formula 
+\[
+f(x)=f\left(\frac{a+b}{2}\right)+\frac{f''(\xi)}{2}\left(x-\frac{a+b}{2}\right)^{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+由此可见, 存在
+\begin_inset Formula $\xi_{1}\in(a,\frac{a+b}{2})$
+\end_inset
+
+, 使得
+\begin_inset Formula $f(a)=f(\frac{a+b}{2})+\frac{f''(\xi_{1})}{2}(a-\frac{a+b}{2})^{2}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Plain Layout
+同时存在
+\begin_inset Formula $\xi_{2}\in(\frac{a+b}{2},b)$
+\end_inset
+
+, 使得
+\begin_inset Formula $f(b)=f(\frac{a+b}{2})+\frac{f''(\xi_{2})}{2}(b-\frac{a+b}{2})^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+两式相减得: 
+\begin_inset Formula $f(b)-f(a)=[\frac{f''(\xi_{2})}{2}-\frac{f''(\xi_{1})}{2}]\frac{(a-b)^{2}}{4}$
+\end_inset
+
+.
+ 于是
+\begin_inset Formula 
+\begin{align*}
+\frac{4}{(b-a)^{2}}[f(b)-f(a)] & =\frac{f''(\xi_{2})-f''(\xi_{1})}{2}\\
+ & \leqslant\frac{|f''(\xi_{2})|+|f''(\xi_{1})|}{2}\\
+ & \leqslant\max\{|f''(\xi_{1})|,|f''(\xi_{2})|\},
+\end{align*}
+
+\end_inset
+
+这表明存在
+\begin_inset Formula $\xi\in\{\xi_{1},\xi_{2}\}$
+\end_inset
+
+、从而
+\begin_inset Formula $\xi\in(a,b)$
+\end_inset
+
+, 使得
+\begin_inset Formula 
+\[
+|f''(\xi)|\geqslant\frac{4}{(b-a)^{2}}(f(b)-f(a)).
+\]
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
