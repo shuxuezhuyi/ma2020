@@ -5457,6 +5457,79 @@ f\,\text{凸}\\
 \end_layout
 
 \begin_layout Section
+实数的完备性
+\end_layout
+
+\begin_layout Standard
+定义
+\series bold
+闭区间套
+\series default
+、
+\series bold
+聚点
+\series default
+、
+\series bold
+开覆盖
+\series default
+.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+区间套定理
+\end_layout
+
+\end_inset
+
+闭区间套收缩到唯一一点.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Weierstrass聚点定理
+\end_layout
+
+\end_inset
+
+有界无限点集必有聚点.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Heine-Borel有限覆盖定理
+\end_layout
+
+\end_inset
+
+有界闭区间的开覆盖必有有限子覆盖.
+\end_layout
+
+\begin_layout Section
 讨论
 \end_layout
 
@@ -11206,47 +11279,6 @@ f(\lambda x_{0}+(1-\lambda)x_{1})<\lambda f(x_{0})+(1-\lambda)f(x_{1}).
 \end_layout
 
 \begin_layout Exercise
-指出下列说法的
-\color red
-错误
-\color inherit
-:
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-若存在
-\begin_inset Formula $\delta>0$
-\end_inset
-
-, 使得
-\begin_inset Formula $U(a;\delta)$
-\end_inset
-
-外有数集
-\begin_inset Formula $S$
-\end_inset
-
-中无限个点, 则
-\begin_inset Formula $a$
-\end_inset
-
-不是
-\begin_inset Formula $S$
-\end_inset
-
-的聚点.
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Exercise
 指出下列证明的
 \color red
 错误
@@ -11256,7 +11288,27 @@ f(\lambda x_{0}+(1-\lambda)x_{1})<\lambda f(x_{0})+(1-\lambda)f(x_{1}).
 
 \begin_deeper
 \begin_layout Quotation
-用有限覆盖定理证明根的存在性定理:
+用有限覆盖定理证明根的存在性定理: 若
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上连续且
+\begin_inset Formula $f(a)f(b)<0$
+\end_inset
+
+, 则存在
+\begin_inset Formula $x_{0}\in(a,b)$
+\end_inset
+
+使得
+\begin_inset Formula $f(x_{0})=0$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Quotation
@@ -11632,7 +11684,23 @@ status open
 
 \begin_deeper
 \begin_layout Quotation
-用有限覆盖定理证明连续函数的一致连续性定理:
+用有限覆盖定理证明连续函数的一致连续性定理: 若
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上连续, 则
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上一致连续.
 \end_layout
 
 \begin_layout Quotation
@@ -11783,6 +11851,47 @@ status open
 \end_inset
 
 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+指出下列说法的
+\color red
+错误
+\color inherit
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+若存在
+\begin_inset Formula $\delta>0$
+\end_inset
+
+, 使得
+\begin_inset Formula $U(a;\delta)$
+\end_inset
+
+外有数集
+\begin_inset Formula $S$
+\end_inset
+
+中无限个点, 则
+\begin_inset Formula $a$
+\end_inset
+
+不是
+\begin_inset Formula $S$
+\end_inset
+
+的聚点.
 \end_layout
 
 \end_deeper
