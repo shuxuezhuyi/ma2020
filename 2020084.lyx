@@ -157,6 +157,15 @@ End
 
 \begin_layout Standard
 \begin_inset FormulaMacro
+\newcommand{\mathistOperatorarccot}{\operatorname{arccot}}
+{\,\mathrm{arccot}\,}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FormulaMacro
 \newcommand{\mathistOperatord}{\mathop{}\!\mathrm{d}}
 {\,\mathrm{d}}
 \end_inset
@@ -5469,7 +5478,7 @@ f\,\text{凸}\\
 \series bold
 聚点
 \series default
-、
+(limit point, cluster point或point of accumulation)、
 \series bold
 开覆盖
 \series default
@@ -5481,7 +5490,7 @@ f\,\text{凸}\\
 status open
 
 \begin_layout Plain Layout
-区间套定理
+区间套定理, The nested interval theorem
 \end_layout
 
 \end_inset
@@ -5501,12 +5510,12 @@ status open
 status open
 
 \begin_layout Plain Layout
-Weierstrass聚点定理
+Weierstrass聚点定理, The limit point theorem
 \end_layout
 
 \end_inset
 
-有界无限点集必有聚点.
+有界无穷数集必有聚点.
 \end_layout
 
 \begin_layout Standard
@@ -5521,12 +5530,131 @@ Weierstrass聚点定理
 status open
 
 \begin_layout Plain Layout
-Heine-Borel有限覆盖定理
+Heine-Borel有限覆盖定理, The finite covering theorem
 \end_layout
 
 \end_inset
 
 有界闭区间的开覆盖必有有限子覆盖.
+\end_layout
+
+\begin_layout Standard
+定义
+\series bold
+上极限
+\series default
+(upper limit或superior limit)与
+\series bold
+下极限
+\series default
+(lower limit或inferior limit).
+\end_layout
+
+\begin_layout Theorem
+(1) 
+\begin_inset Formula $\varliminf x_{n}\leqslant\varlimsup x_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+(2) 
+\begin_inset Formula $\lim x_{n}=A\Leftrightarrow\varlimsup x_{n}=\varliminf x_{n}=A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+(3) 最终
+\begin_inset Formula $a_{n}\leqslant b_{n}\Rightarrow\begin{cases}
+\varlimsup a_{n}\leqslant\varlimsup b_{n}\\
+\varliminf a_{n}\leqslant\varliminf b_{n}
+\end{cases}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+(4) 
+\begin_inset Formula $\varlimsup(a_{n}+b_{n})\leqslant\varlimsup a_{n}+\varlimsup b_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+(5) 
+\begin_inset Formula $\varlimsup x_{n}=\lim_{n\rightarrow\infty}\sup_{k\geqslant n}\{x_{k}\}$
+\end_inset
+
+, 
+\begin_inset Formula $\varliminf x_{n}=\lim_{n\rightarrow\infty}\inf_{k\geqslant n}\{x_{k}\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+不定积分
+\end_layout
+
+\begin_layout Standard
+定义
+\series bold
+原函数
+\series default
+(primitive)、
+\series bold
+不定积分
+\series default
+(indefinite integral)、
+\series bold
+积分曲线
+\series default
+、
+\series bold
+初始条件
+\series default
+.
+ 引入被积函数(integrand)、被积表达式(
+\series bold
+微分形式
+\series default
+, differential form)、积分变量、积分常数等说法.
+\end_layout
+
+\begin_layout Standard
+基本积分表:
+\begin_inset Formula 
+\begin{align*}
+\int0\mathistOperatord x & =C,\\
+\int1\mathistOperatord x & =x+C,\\
+\int x^{\alpha}\mathistOperatord x & =\frac{1}{\alpha+1}x^{\alpha+1}+C\quad(\alpha\neq-1),\\
+\int\frac{1}{x}\mathistOperatord x & =\ln|x|+C,\\
+\int e^{x}\mathistOperatord x & =e^{x}+C,\\
+\int a^{x}\mathistOperatord x & =\frac{1}{\ln a}a^{x}+C\quad(0<a\neq1),\\
+\int\sin x\mathistOperatord x & =-\cos x+C,\\
+\int\cos x\mathistOperatord x & =\sin x+C,\\
+\int\frac{1}{\cos^{2}x}\mathistOperatord x & =\tan x+C,\\
+\int\frac{1}{\sin^{2}x}\mathistOperatord x & =-\cot x+C,\\
+\int\frac{1}{\sqrt{1-x^{2}}}\mathistOperatord x & =\begin{cases}
+\arcsin x+C,\\
+-\arccos x+C,
+\end{cases}\\
+\int\frac{1}{1+x^{2}}\mathistOperatord x & =\begin{cases}
+\arctan x+C,\\
+-\mathistOperatorarccot x+C,
+\end{cases}\\
+\int\frac{1}{\sqrt{x^{2}\pm1}}\mathistOperatord x & =\ln|x+\sqrt{x^{2}\pm1}|+C,\\
+\int\frac{1}{1-x^{2}}\mathistOperatord x & =\frac{1}{2}\ln\left|\frac{1+x}{1-x}\right|+C.
+\end{align*}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -5630,6 +5758,261 @@ status collapsed
 \end_inset
 
 的任意性可知命题成立.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+设
+\begin_inset Formula $f$
+\end_inset
+
+是可积函数, 使得
+\begin_inset Formula $|f(x)|\leqslant1$
+\end_inset
+
+恒成立且
+\begin_inset Formula $\int_{1}^{3}f(x)\mathistOperatord x=0$
+\end_inset
+
+.
+ 遍历所有这样的
+\begin_inset Formula $f$
+\end_inset
+
+, 求
+\begin_inset Formula $\max\int_{1}^{3}\frac{f(x)}{x}\mathistOperatord x$
+\end_inset
+
+.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+题目来自 https://www.zhihu.com/question/442468972
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+考虑函数空间
+\begin_inset Formula $A=\{$
+\end_inset
+
+定义在
+\begin_inset Formula $[1,3]$
+\end_inset
+
+上的可积函数
+\begin_inset Formula $f:$
+\end_inset
+
+ 对任意
+\begin_inset Formula $x\in[1,3]$
+\end_inset
+
+都有
+\begin_inset Formula $|f(x)|\leqslant1$
+\end_inset
+
+, 并且
+\begin_inset Formula $\int_{1}^{3}f(x)\mathistOperatord x=0\}$
+\end_inset
+
+.
+ 考虑
+\begin_inset Formula $A$
+\end_inset
+
+上的泛函
+\begin_inset Formula 
+\[
+\Lambda:A\rightarrow\mathbb{R},\quad f\mapsto\int_{1}^{3}\frac{f(x)}{x}\mathistOperatord x.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+设
+\begin_inset Formula $f_{0}\in A$
+\end_inset
+
+是内点.
+ 取函数
+\begin_inset Formula $g$
+\end_inset
+
+使得
+\begin_inset Formula $f_{0}\pm g\in A$
+\end_inset
+
+, 那么
+\begin_inset Formula $\Lambda$
+\end_inset
+
+沿着
+\begin_inset Formula $g$
+\end_inset
+
+的方向导数为
+\begin_inset Formula 
+\[
+\left.\frac{\partial\Lambda}{\partial g}\right|_{f=f_{0}}=\lim_{t\rightarrow0}\frac{\Lambda(f+tg)-\Lambda(f)}{t}=\lim_{t\rightarrow0}\frac{1}{t}\int_{1}^{3}\frac{tg(x)}{x}\mathistOperatord x=\int_{1}^{3}\frac{g(x)}{x}\mathistOperatord x,
+\]
+
+\end_inset
+
+与
+\begin_inset Formula $f_{0}$
+\end_inset
+
+无关, 并且随着
+\begin_inset Formula $g$
+\end_inset
+
+的改变也会改变符号.
+ 因此, 由费马引理可知
+\begin_inset Formula $f_{0}$
+\end_inset
+
+不可能是
+\begin_inset Formula $\Lambda$
+\end_inset
+
+的极值点.
+\end_layout
+
+\begin_layout Plain Layout
+极值点只能出现在
+\begin_inset Formula $A$
+\end_inset
+
+的边界
+\begin_inset Formula $\partial A=\{$
+\end_inset
+
+定义在
+\begin_inset Formula $[1,3]$
+\end_inset
+
+上的可积函数
+\begin_inset Formula $f:$
+\end_inset
+
+ 对任意
+\begin_inset Formula $x\in[1,3]$
+\end_inset
+
+都有
+\begin_inset Formula $|f(x)|=1$
+\end_inset
+
+, 并且
+\begin_inset Formula $\int_{1}^{3}f(x)\mathistOperatord x=0\}$
+\end_inset
+
+上.
+\end_layout
+
+\begin_layout Plain Layout
+对于
+\begin_inset Formula $f\in\partial A$
+\end_inset
+
+, 由
+\begin_inset Formula $\int_{1}^{3}f(x)\mathistOperatord x=0$
+\end_inset
+
+可见, 存在集合
+\begin_inset Formula $U_{1},U_{2}$
+\end_inset
+
+使得
+\begin_inset Formula $[1,3]$
+\end_inset
+
+是
+\begin_inset Formula $U_{1}$
+\end_inset
+
+与
+\begin_inset Formula $U_{2}$
+\end_inset
+
+的不交并, 同时
+\begin_inset Formula $f|_{U_{1}}\equiv1$
+\end_inset
+
+, 
+\begin_inset Formula $f|_{U_{2}}\equiv-1$
+\end_inset
+
+, 并且
+\begin_inset Formula $U_{1}$
+\end_inset
+
+与
+\begin_inset Formula $U_{2}$
+\end_inset
+
+的长度都是
+\begin_inset Formula $1$
+\end_inset
+
+, 亦即
+\begin_inset Formula 
+\[
+\int_{U_{1}}1\mathistOperatord x=1=\int_{U_{2}}1\mathistOperatord x.
+\]
+
+\end_inset
+
+于是由函数
+\begin_inset Formula $y=1/x$
+\end_inset
+
+的图像可见
+\begin_inset Formula 
+\[
+\int_{1}^{3}\frac{f(x)}{x}\mathistOperatord x=\int_{U_{1}}\frac{\mathistOperatord x}{x}-\int_{U_{2}}\frac{\mathistOperatord x}{x}\leqslant\int_{1}^{2}\frac{\mathistOperatord x}{x}-\int_{2}^{3}\frac{\mathistOperatord x}{x}=\ln2-\ln3+\ln2=\ln\frac{4}{3},
+\]
+
+\end_inset
+
+并且(在允许函数定义相差一个零测集的意义下)
+\begin_inset Formula 
+\[
+f_{1}(x)=\begin{cases}
+1, & 1\leqslant x\leqslant2\\
+-1, & 2\leqslant x\leqslant3
+\end{cases}
+\]
+
+\end_inset
+
+是
+\begin_inset Formula $\Lambda$
+\end_inset
+
+在
+\begin_inset Formula $A$
+\end_inset
+
+中唯一的极大值点.
 \end_layout
 
 \end_inset
@@ -18885,8 +19268,105 @@ status collapsed
 
 \end_layout
 
+\begin_layout Section
+实数的完备性
+\end_layout
+
+\begin_layout Exercise
+证明数集
+\begin_inset Formula $\{(-1)^{n}+1/n\}$
+\end_inset
+
+有且只有两个聚点
+\begin_inset Formula $\xi_{1}=-1$
+\end_inset
+
+和
+\begin_inset Formula $\xi_{2}=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+证明: 任何有限数集都没有聚点.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+设
+\begin_inset Formula $H=\{(1/(n+2),1/n):n=1,2,\cdots\}$
+\end_inset
+
+.
+ 问:
+\end_layout
+
+\begin_layout Exercise
+(1) 
+\begin_inset Formula $H$
+\end_inset
+
+能否覆盖
+\begin_inset Formula $(0,1)$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Exercise
+(2) 能否从
+\begin_inset Formula $H$
+\end_inset
+
+中选出有限个开区间覆盖 (i) 
+\begin_inset Formula $(0,1/2)$
+\end_inset
+
+, (ii) 
+\begin_inset Formula $(1/100,1)$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+用有限覆盖定理证明根的存在性定理.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+用有限覆盖定理证明连续函数的一致连续性定理.
+\end_layout
+
 \begin_layout Chapter
-期末考试
+第一学期期末考试
 \end_layout
 
 \begin_layout Standard
@@ -19660,7 +20140,8 @@ status open
 \begin_layout Plain Layout
 
 \color red
-错漏严重
+1.
+ 错漏严重
 \end_layout
 
 \end_inset
@@ -19838,7 +20319,8 @@ status open
 \begin_layout Plain Layout
 
 \color red
-错漏严重
+2.
+ 错漏严重
 \end_layout
 
 \end_inset
@@ -19934,7 +20416,8 @@ status open
 \begin_layout Plain Layout
 
 \color red
-错漏严重
+3.
+ 错漏严重
 \end_layout
 
 \end_inset
@@ -20058,7 +20541,8 @@ status open
 \begin_layout Plain Layout
 
 \color red
-典型错误
+4.
+ 典型错误
 \end_layout
 
 \end_inset
@@ -20195,7 +20679,8 @@ status open
 \begin_layout Plain Layout
 
 \color red
-漏失严重
+5.
+ 漏失严重
 \end_layout
 
 \end_inset
@@ -20276,7 +20761,8 @@ status open
 \begin_layout Plain Layout
 
 \color red
-逻辑混乱
+6.
+ 逻辑混乱
 \end_layout
 
 \end_inset
@@ -20387,7 +20873,8 @@ status open
 \begin_layout Plain Layout
 
 \color red
-错漏较多
+7.
+ 错漏较多
 \end_layout
 
 \end_inset
@@ -20460,7 +20947,8 @@ status open
 \begin_layout Plain Layout
 
 \color red
-缺失较多
+8.
+ 缺失较多
 \end_layout
 
 \end_inset
@@ -20557,7 +21045,8 @@ status open
 \begin_layout Plain Layout
 
 \color red
-自毁长城
+9.
+ 自毁长城
 \end_layout
 
 \end_inset
@@ -21333,7 +21822,8 @@ status open
 \begin_layout Plain Layout
 
 \color red
-沾边而已
+1.
+ 沾边而已
 \end_layout
 
 \end_inset
@@ -21410,7 +21900,8 @@ status open
 \begin_layout Plain Layout
 
 \color red
-强词夺理
+2.
+ 强词夺理
 \end_layout
 
 \end_inset
@@ -21558,7 +22049,8 @@ status open
 \begin_layout Plain Layout
 
 \color red
-自毁长城
+3.
+ 自毁长城
 \end_layout
 
 \end_inset
@@ -21674,7 +22166,8 @@ status open
 \begin_layout Plain Layout
 
 \color red
-错上加错
+4.
+ 错上加错
 \end_layout
 
 \end_inset
@@ -21847,7 +22340,8 @@ status open
 \begin_layout Plain Layout
 
 \color red
-典型错误
+5.
+ 典型错误
 \end_layout
 
 \end_inset
@@ -21982,7 +22476,8 @@ status open
 \begin_layout Plain Layout
 
 \color red
-典型错误
+6.
+ 典型错误
 \end_layout
 
 \end_inset
@@ -22120,7 +22615,8 @@ status open
 \begin_layout Plain Layout
 
 \color red
-似是而非
+7.
+ 似是而非
 \end_layout
 
 \end_inset
@@ -22359,7 +22855,8 @@ status open
 \begin_layout Plain Layout
 
 \color red
-猝不及妨
+8.
+ 猝不及妨
 \end_layout
 
 \end_inset
@@ -22523,7 +23020,8 @@ status open
 \begin_layout Plain Layout
 
 \color red
-仍有错漏
+9.
+ 仍有错漏
 \end_layout
 
 \end_inset
@@ -22692,7 +23190,8 @@ status open
 \begin_layout Plain Layout
 
 \color red
-仍有错漏
+10.
+ 仍有错漏
 \end_layout
 
 \end_inset
