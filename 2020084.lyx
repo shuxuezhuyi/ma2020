@@ -11199,6 +11199,594 @@ f(\lambda x_{0}+(1-\lambda)x_{1})<\lambda f(x_{0})+(1-\lambda)f(x_{1}).
 
 \end_deeper
 \begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+指出下列说法的
+\color red
+错误
+\color inherit
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+若存在
+\begin_inset Formula $\delta>0$
+\end_inset
+
+, 使得
+\begin_inset Formula $U(a;\delta)$
+\end_inset
+
+外有数集
+\begin_inset Formula $S$
+\end_inset
+
+中无限个点, 则
+\begin_inset Formula $a$
+\end_inset
+
+不是
+\begin_inset Formula $S$
+\end_inset
+
+的聚点.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+指出下列证明的
+\color red
+错误
+\color inherit
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Quotation
+用有限覆盖定理证明根的存在性定理:
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+证明一
+\end_layout
+
+\end_inset
+
+反证.
+ 假设对于任意
+\begin_inset Formula $x\in[a,b]$
+\end_inset
+
+, 
+\begin_inset Formula $f(x)\neq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+由
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上连续知对任意
+\begin_inset Formula $f(x')>0$
+\end_inset
+
+, 存在
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 使
+\begin_inset Formula $x\in U^{\circ}(x';\varepsilon)$
+\end_inset
+
+时, 
+\begin_inset Formula $f(x)>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+不妨设
+\begin_inset Formula $f(a)>0$
+\end_inset
+
+, 则存在
+\begin_inset Formula $\varepsilon_{1}>0$
+\end_inset
+
+, 当
+\begin_inset Formula $x\in[a,a+\varepsilon_{1})$
+\end_inset
+
+时, 
+\begin_inset Formula $f(x)>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+同理在区间
+\begin_inset Formula $[a,a+\varepsilon_{1})$
+\end_inset
+
+中任一点
+\begin_inset Formula $x$
+\end_inset
+
+, 存在
+\begin_inset Formula $\varepsilon_{2}>0$
+\end_inset
+
+, 使
+\begin_inset Formula $f(x)>0$
+\end_inset
+
+在
+\begin_inset Formula $(x-\varepsilon_{2},x+\varepsilon_{2})$
+\end_inset
+
+中恒成立
+\end_layout
+
+\begin_layout Plain Layout
+依此类推, 可得到
+\begin_inset Formula $[a,b]$
+\end_inset
+
+的一个开覆盖
+\begin_inset Formula $H$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+由有限覆盖定理知, 可从
+\begin_inset Formula $H$
+\end_inset
+
+中选出有限个开区间覆盖
+\begin_inset Formula $[a,b]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+则在每个上述开区间均有
+\begin_inset Formula $f(x)>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+又
+\begin_inset Formula $\because$
+\end_inset
+
+这些开区间覆盖
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ 
+\begin_inset Formula $\therefore f(b)>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+与
+\begin_inset Formula $f(b)<0$
+\end_inset
+
+矛盾
+\end_layout
+
+\begin_layout Plain Layout
+故假设不成立
+\end_layout
+
+\begin_layout Plain Layout
+即证明根的存在性定理.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+证明二
+\end_layout
+
+\end_inset
+
+设
+\begin_inset Formula $f(x)$
+\end_inset
+
+为
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上的连续函数且
+\begin_inset Formula $f(a)f(b)<0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+应用反证法.
+\end_layout
+
+\begin_layout Plain Layout
+若对
+\begin_inset Formula $\forall x\in[a,b]\quad f(x)\neq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+对
+\begin_inset Formula $\forall x\in[a,b]\quad\exists$
+\end_inset
+
+一个邻域
+\begin_inset Formula $U(x;\delta_{x})\quad\delta_{x}>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+令
+\begin_inset Formula $H=\{U(x;\delta_{x})|x\in[a,b],\delta_{x}>0\}\quad H$
+\end_inset
+
+对
+\begin_inset Formula $[a,b]$
+\end_inset
+
+开覆盖.
+\end_layout
+
+\begin_layout Plain Layout
+由有限覆盖定理有.
+ 
+\begin_inset Formula $H$
+\end_inset
+
+中有限个开区间覆盖
+\begin_inset Formula $[a,b]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上连续.
+\end_layout
+
+\begin_layout Plain Layout
+由连续函数的保号性知
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+空格
+\end_layout
+
+\end_inset
+
+对一切
+\begin_inset Formula $x_{1}\in U(x;\delta_{x})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(x_{1})$
+\end_inset
+
+与
+\begin_inset Formula $f(x)$
+\end_inset
+
+同号
+\end_layout
+
+\begin_layout Plain Layout
+由上开覆盖可知
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+空格
+\end_layout
+
+\end_inset
+
+令
+\begin_inset Formula $a\in U(x_{1};\delta_{1})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $x_{1}+\delta_{1}\in U(x_{2};\delta_{2})$
+\end_inset
+
+……
+\begin_inset Formula $b\in U(x_{n};\delta_{n})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+则由保号性推知
+\begin_inset Formula $f(a)$
+\end_inset
+
+与
+\begin_inset Formula $f(b)$
+\end_inset
+
+同号.
+ 与题设
+\begin_inset Formula $f(a)f(b)<0$
+\end_inset
+
+矛盾.
+\end_layout
+
+\begin_layout Plain Layout
+故假设不成立.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\exists$
+\end_inset
+
+一点
+\begin_inset Formula $\xi\in(a,b)$
+\end_inset
+
+, 使得
+\begin_inset Formula $f(\xi)=0$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+指出下述证明的
+\color red
+错误
+\color inherit
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Quotation
+用有限覆盖定理证明连续函数的一致连续性定理:
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+由
+\begin_inset Formula $f(x)$
+\end_inset
+
+连续, 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上任意
+\begin_inset Formula $x$
+\end_inset
+
+, 
+\begin_inset Formula $\forall\varepsilon>0\quad\exists\delta_{x}>0\quad$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $x\in U(x',\delta_{x'})$
+\end_inset
+
+时有
+\begin_inset Formula $|f(x)-f(x')|<\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+所有这样的开区间组成的集合
+\begin_inset Formula $\bigcup_{x'\in[a,b]}U(x';\delta_{x'})$
+\end_inset
+
+构成
+\begin_inset Formula $[a,b]$
+\end_inset
+
+的开覆盖
+\end_layout
+
+\begin_layout Plain Layout
+根据有限覆盖定理
+\end_layout
+
+\begin_layout Plain Layout
+可从中选出有限个开区间覆盖
+\begin_inset Formula $[a,b]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+设分别为
+\begin_inset Formula $(x_{1}-\delta_{x_{1}},x_{1}+\delta_{x_{1}})\cdots(x_{t}-\delta_{x_{t}},x+\delta_{x_{t}})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+取
+\begin_inset Formula $\delta=\min\{\delta_{x_{1}},\delta_{x_{2}},\cdots\delta_{x_{t}}\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(1) 若
+\begin_inset Formula $x',x''$
+\end_inset
+
+取自同一开区间
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+空格
+\end_layout
+
+\end_inset
+
+当
+\begin_inset Formula $|x_{1}'-x''|<\delta$
+\end_inset
+
+时
+\begin_inset Formula 
+\[
+|f(x')-f(x)''|<|f(x')-f(x)|+|f(x)-f(x'')|=2\varepsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(2) 
+\begin_inset Formula $x',x''$
+\end_inset
+
+取自不同开区间时
+\begin_inset Phantom Phantom
+status open
+
+\begin_layout Plain Layout
+空格
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $|x'-x''|<\delta$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+|f(x')-f(x'')|<|f(x)-f(x')|+|f(x)-f(x'')|<2\varepsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+故
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上一致连续.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
