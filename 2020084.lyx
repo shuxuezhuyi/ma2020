@@ -19365,6 +19365,321 @@ status collapsed
 用有限覆盖定理证明连续函数的一致连续性定理.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+设
+\begin_inset Formula $\{a_{n}\},\{b_{n}\}$
+\end_inset
+
+为有界数列, 证明:
+\end_layout
+
+\begin_layout Exercise
+(3) 若
+\begin_inset Formula $a_{n}>0$
+\end_inset
+
+, 
+\begin_inset Formula $b_{n}>0$
+\end_inset
+
+对任意正整数
+\begin_inset Formula $n$
+\end_inset
+
+都成立, 则
+\begin_inset Formula 
+\begin{align*}
+\varliminf_{n\rightarrow\infty}a_{n}\varliminf_{n\rightarrow\infty}b_{n} & \leqslant\varliminf_{n\rightarrow\infty}a_{n}b_{n},\\
+\varlimsup_{n\rightarrow\infty}a_{n}\varlimsup_{n\rightarrow\infty}b_{n} & \geqslant\varlimsup_{n\rightarrow\infty}a_{n}b_{n}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+(4) 若
+\begin_inset Formula $a_{n}>0$
+\end_inset
+
+, 
+\begin_inset Formula $\varliminf_{n\rightarrow\infty}a_{n}>0$
+\end_inset
+
+, 则
+\begin_inset Formula 
+\[
+\varlimsup_{n\rightarrow\infty}\frac{1}{a_{n}}=\frac{1}{\varliminf_{n\rightarrow\infty}a_{n}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+证明: 若
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+为递增数列, 则
+\begin_inset Formula 
+\[
+\varlimsup_{n\rightarrow\infty}a_{n}=\lim_{n\rightarrow\infty}a_{n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+设
+\begin_inset Formula $\{x_{n}\}$
+\end_inset
+
+为有界数列, 证明:
+\end_layout
+
+\begin_layout Exercise
+(1) 
+\begin_inset Formula $\overline{A}$
+\end_inset
+
+为
+\begin_inset Formula $\{x_{n}\}$
+\end_inset
+
+上极限的充要条件是
+\begin_inset Formula 
+\[
+\overline{A}=\lim_{n\rightarrow\infty}\sup_{k\geqslant n}\{x_{k}\};
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+(2) 
+\begin_inset Formula $\underline{A}$
+\end_inset
+
+为
+\begin_inset Formula $\{x_{n}\}$
+\end_inset
+
+下极限的充要条件是
+\begin_inset Formula 
+\[
+\underline{A}=\lim_{n\rightarrow\infty}\inf_{k\geqslant n}\{x_{k}\}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+不定积分
+\end_layout
+
+\begin_layout Exercise
+证明: 每一个含有第一类间断点的函数都没有原函数.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+书上第166页第5题的偶数小问.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+举例说明含有第二类间断点的函数可能有原函数, 也可能没有原函数.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+书上第175页第3题.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+证明:
+\end_layout
+
+\begin_layout Exercise
+(1) 若
+\begin_inset Formula $I_{n}=\int\tan^{n}x\mathistOperatord x$
+\end_inset
+
+, 
+\begin_inset Formula $n=2,3,\cdots$
+\end_inset
+
+, 则
+\begin_inset Formula 
+\[
+I_{n}=\frac{1}{n-1}\tan^{n-1}x-I_{n-2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+(2) 若
+\begin_inset Formula $I(m,n)=\int\cos^{m}x\sin^{n}x\mathistOperatord x$
+\end_inset
+
+, 则当
+\begin_inset Formula $m+n\neq0$
+\end_inset
+
+时有
+\begin_inset Formula 
+\begin{align*}
+I(m,n) & =\frac{\cos^{m-1}x\sin^{n+1}x}{m+n}+\frac{m-1}{m+n}I(m-2,n)\\
+ & =-\frac{\cos^{m+1}x\sin^{n-1}x}{m+n}+\frac{n-1}{m+n}I(m,n-2),\quad n,m=2,3,\cdots.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+导出下列不定积分对于正整数
+\begin_inset Formula $n$
+\end_inset
+
+的递推公式:
+\begin_inset Formula 
+\begin{align*}
+(1) & I_{n}=\int x^{n}e^{kx}\mathistOperatord x; & (2) & I_{n}=\int(\ln x)^{n}\mathistOperatord x.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+求下列不定积分:
+\begin_inset Formula 
+\begin{align*}
+(2) & \int\frac{x^{9}}{(x^{10}+2x^{5}+2)^{2}}\mathistOperatord x; & (4) & \int\frac{\cos^{3}x}{\cos x+\sin x}\mathistOperatord x.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+求下列不定积分:
+\begin_inset Formula 
+\begin{align*}
+(2) & \int\frac{\mathistOperatord x}{\sqrt[4]{1+x^{4}}}; & (4) & \int\frac{1+x^{4}}{(1-x^{4})^{3/2}}\mathistOperatord x.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+导出下列不定积分对于正整数
+\begin_inset Formula $n$
+\end_inset
+
+的递推公式:
+\begin_inset Formula 
+\begin{align*}
+(1) & \int\frac{\mathistOperatord x}{\cos^{n}x}; & (2) & \int\frac{\sin(nx)}{\sin x}\mathistOperatord x.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 第一学期期末考试
 \end_layout
