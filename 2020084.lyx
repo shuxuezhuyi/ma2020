@@ -5766,6 +5766,44 @@ status collapsed
 \end_layout
 
 \begin_layout Example
+求函数
+\begin_inset Formula $f(x)=\sin(1/x)$
+\end_inset
+
+的原函数.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+解
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int\sin\frac{1}{x}\mathistOperatord x=x\sin\frac{1}{x}+\int_{1/x}^{\infty}\frac{\cos t}{t}\mathistOperatord t+C.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
 设
 \begin_inset Formula $f$
 \end_inset
@@ -12275,6 +12313,299 @@ status open
 \end_inset
 
 的聚点.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+指出下述解法的
+\color red
+错误
+\color inherit
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Quotation
+求积分
+\begin_inset Formula 
+\[
+\int|\sin x|\mathistOperatord x.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+解
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\int|\sin x|\mathistOperatord x & =\begin{cases}
+\sin x\mathistOperatord x, & x\in[2k\pi,\pi+2k\pi]\\
+-\sin x\mathistOperatord x, & x\in(\pi+2k\pi,2\pi+2k\pi)
+\end{cases}\\
+ & =\begin{cases}
+-\cos x, & x\in[2k\pi,\pi+2k\pi]\\
+\cos x+C_{1}, & x\in(\pi+2k\pi,2\pi+2k\pi)
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+由
+\begin_inset Formula $\int|\sin x|\mathistOperatord x$
+\end_inset
+
+的连续性可知
+\begin_inset Formula $-\cos\pi=\cos\pi+C_{1}\Rightarrow C_{1}=2$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow\int|\sin x|\mathistOperatord x=\begin{cases}
+-\cos x, & x\in[2k\pi,\pi+2k\pi]\\
+\cos x+2, & x\in(\pi+2k\pi,2\pi+2k\pi)
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+指出下述证明的
+\color red
+错误
+\color inherit
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Quotation
+证明: 每一个含有第一类间断点的函数都没有原函数.
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+设
+\begin_inset Formula $f(x)$
+\end_inset
+
+是含有第一类间断点
+\begin_inset Formula $x_{0}$
+\end_inset
+
+的函数.
+ 用反证法, 假设
+\begin_inset Formula $f(x)$
+\end_inset
+
+存在原函数
+\begin_inset Formula $F(x)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+1) 若
+\begin_inset Formula $x_{0}$
+\end_inset
+
+是可去间断点
+\end_layout
+
+\begin_layout Plain Layout
+取
+\begin_inset Formula $c>x_{0}$
+\end_inset
+
+, 使
+\begin_inset Formula $f(x_{0})\neq f(c)$
+\end_inset
+
+, 即
+\begin_inset Formula $F'(x_{0})\neq f(c)$
+\end_inset
+
+.
+ 对于
+\begin_inset Formula $[x_{0},c]$
+\end_inset
+
+, 由于
+\begin_inset Formula $x_{0}$
+\end_inset
+
+是可去间断点, 与达布定理矛盾.
+\end_layout
+
+\begin_layout Plain Layout
+2) 若
+\begin_inset Formula $x_{0}$
+\end_inset
+
+是跳跃间断点
+\end_layout
+
+\begin_layout Plain Layout
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+的两边一定存在
+\begin_inset Formula $a,b$
+\end_inset
+
+ (其中
+\begin_inset Formula $a<b$
+\end_inset
+
+), 使
+\begin_inset Formula $f(a)\neq f(b)$
+\end_inset
+
+, 即
+\begin_inset Formula $F'(a)\neq F'(b)$
+\end_inset
+
+.
+ 对于
+\begin_inset Formula $[a,b]$
+\end_inset
+
+, 由于
+\begin_inset Formula $x_{0}$
+\end_inset
+
+是跳跃间断点, 与达布定理矛盾.
+\end_layout
+
+\begin_layout Plain Layout
+故含有第一类间断点的函数不存在原函数.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+指出下述解法的
+\color red
+错误
+\color inherit
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Quotation
+举例说明含有第二类间断点的函数可能有原函数, 也可能没有原函数.
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+解
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+黎曼函数每一点都是第二类间断点, 但其没有原函数.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f(x)=F'(x)=\begin{cases}
+\sin\frac{1}{x}-\frac{\cos(1/x)}{x}, & x\neq0\\
+0, & x=0
+\end{cases}$
+\end_inset
+
+存在原函数
+\begin_inset Formula $F(x)=\begin{cases}
+x\sin\frac{1}{x}, & x\neq0\\
+0, & x=0
+\end{cases}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $1/x$
+\end_inset
+
+原函数为
+\begin_inset Formula $\ln|x|+C$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -19520,6 +19851,25 @@ status collapsed
 
 \begin_layout Exercise
 书上第166页第5题的偶数小问.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+求不定积分
+\begin_inset Formula 
+\[
+\int|\sin x|\mathistOperatord x.
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
