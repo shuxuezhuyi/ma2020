@@ -12315,6 +12315,380 @@ status open
 的聚点.
 \end_layout
 
+\begin_layout Enumerate
+若
+\begin_inset Formula $M$
+\end_inset
+
+是非空数集
+\begin_inset Formula $S$
+\end_inset
+
+的上界, 则对任意
+\begin_inset Formula $x\in S$
+\end_inset
+
+都有
+\begin_inset Formula $x<M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+设
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+是数列.
+ 若存在
+\begin_inset Formula $\delta>0$
+\end_inset
+
+, 使得当
+\begin_inset Formula $|n-n_{0}|<\delta$
+\end_inset
+
+时有
+\begin_inset Formula $|a_{n}-a_{n_{0}}|<\varepsilon$
+\end_inset
+
+, 则称
+\begin_inset Formula $a_{n_{0}}$
+\end_inset
+
+为
+\begin_inset Formula $n\rightarrow n_{0}$
+\end_inset
+
+时的极限.
+\end_layout
+
+\begin_layout Enumerate
+右极限
+\begin_inset Formula $f(x_{0}+0)$
+\end_inset
+
+的定义: 存在
+\begin_inset Formula $\delta<0$
+\end_inset
+
+, 当
+\begin_inset Formula $x\in U_{+}^{\circ}(x_{0},\delta)$
+\end_inset
+
+时, 对任意
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 当
+\begin_inset Formula $x\in U_{+}^{\circ}(x_{0},\delta)$
+\end_inset
+
+时, 有
+\begin_inset Formula $|f(x)-f(x_{0})|<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+无穷大量的定义: 对任意
+\begin_inset Formula $M>0$
+\end_inset
+
+, 总存在
+\begin_inset Formula $N>M$
+\end_inset
+
+, 则
+\begin_inset Formula $N$
+\end_inset
+
+为无穷大量.
+\end_layout
+
+\begin_layout Enumerate
+若对任意
+\begin_inset Formula $x',x''\in f$
+\end_inset
+
+的定义域, 与任意
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 都存在
+\begin_inset Formula $\delta>0$
+\end_inset
+
+, 使得
+\begin_inset Formula $|x'-x''|<\delta$
+\end_inset
+
+, 有
+\begin_inset Formula $|f(x')-f(x'')|<\varepsilon$
+\end_inset
+
+, 则称
+\begin_inset Formula $f(x)$
+\end_inset
+
+一致连续.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+修正下述证明的
+\color red
+错误
+\color inherit
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Quotation
+设
+\begin_inset Formula $f$
+\end_inset
+
+是区间
+\begin_inset Formula $I$
+\end_inset
+
+上的函数, 那么
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $I$
+\end_inset
+
+上一致连续的充要条件是: 对任意数列
+\begin_inset Formula $\{x_{n}'\},\{x_{n}''\}\subset I$
+\end_inset
+
+而言, 若
+\begin_inset Formula $\lim_{n\rightarrow\infty}(x_{n}'-x_{n}'')=0$
+\end_inset
+
+, 则有
+\begin_inset Formula $\lim_{n\rightarrow\infty}(f(x_{n}')-f(x_{n}''))=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+
+\series bold
+充分性:
+\series default
+ 因为
+\begin_inset Formula $\lim_{n\rightarrow\infty}(x_{n}'-x_{n}'')=0$
+\end_inset
+
+, 所以对任意
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 存在
+\begin_inset Formula $N>0$
+\end_inset
+
+, 
+\begin_inset Formula $n>N$
+\end_inset
+
+时, 有
+\begin_inset Formula $|x_{n}'-x_{n}''|<\varepsilon$
+\end_inset
+
+.
+ 若
+\begin_inset Formula $\lim\neq0$
+\end_inset
+
+, 所以
+\begin_inset Formula $|f(x_{n}')-f(x_{n}'')|>\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+若
+\begin_inset Formula $f(x)$
+\end_inset
+
+在
+\begin_inset Formula $I$
+\end_inset
+
+一致连续, 对任意
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 存在
+\begin_inset Formula $\delta(\varepsilon)>0$
+\end_inset
+
+, 对任意
+\begin_inset Formula $x',x''\in I$
+\end_inset
+
+, 
+\begin_inset Formula $|x'-x''|<\delta$
+\end_inset
+
+, 设
+\begin_inset Formula $I$
+\end_inset
+
+上两个数列
+\begin_inset Formula $\{x_{n}'\}$
+\end_inset
+
+, 
+\begin_inset Formula $\{x_{n}''\}$
+\end_inset
+
+, 满足
+\begin_inset Formula $\lim_{n\rightarrow\infty}(x_{n}'-x_{n}'')=0$
+\end_inset
+
+.
+ 因此, 对上述
+\begin_inset Formula $\delta>0$
+\end_inset
+
+, 存在
+\begin_inset Formula $N>0$
+\end_inset
+
+, 对任意
+\begin_inset Formula $n>N$
+\end_inset
+
+, 
+\begin_inset Formula $|x_{n}'-x_{n}''|<\delta$
+\end_inset
+
+, 有
+\begin_inset Formula $|f(x_{n}')-f(x_{n}'')|<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+必要性:
+\series default
+ 若
+\begin_inset Formula $f(x)$
+\end_inset
+
+不一致连续, 则存在
+\begin_inset Formula $\delta_{0}>0$
+\end_inset
+
+, 对任意
+\begin_inset Formula $\delta>0$
+\end_inset
+
+, 存在
+\begin_inset Formula $x',x''$
+\end_inset
+
+, 满足
+\begin_inset Formula $|x'-x''|<\delta$
+\end_inset
+
+, 但有
+\begin_inset Formula $|f(x')-f(x'')|\geqslant\varepsilon_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+取
+\begin_inset Formula $\delta_{1}=1$
+\end_inset
+
+, 存在
+\begin_inset Formula $x_{1}',x_{1}''\in I$
+\end_inset
+
+, 
+\begin_inset Formula $|x_{1}'-x_{1}''|<1$
+\end_inset
+
+, 有
+\begin_inset Formula $|f(x_{1}')-f(x_{1}'')|\geqslant\varepsilon_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\vdots$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $\delta_{n}=n$
+\end_inset
+
+, 存在
+\begin_inset Formula $x_{n}',x_{n}''\in I$
+\end_inset
+
+, 
+\begin_inset Formula $|x_{n}'-x_{n}''|<1/n$
+\end_inset
+
+, 有
+\begin_inset Formula $|f(x_{n}')-f(x_{n}'')|\geqslant\varepsilon_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+因此, 有
+\begin_inset Formula $\lim_{n\rightarrow\infty}(x_{n}'-x_{n}'')=0$
+\end_inset
+
+, 与
+\begin_inset Formula $\lim_{n\rightarrow\infty}(f(x_{n}')-f(x_{n}''))=0$
+\end_inset
+
+矛盾.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -20030,6 +20404,179 @@ I(m,n) & =\frac{\cos^{m-1}x\sin^{n+1}x}{m+n}+\frac{m-1}{m+n}I(m-2,n)\\
 
 \end_layout
 
+\begin_layout Section
+定积分
+\end_layout
+
+\begin_layout Exercise
+叙述
+\emph on
+定积分不存在
+\emph default
+的定义.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+通过对积分区间作等分分割, 并取适当的点集
+\begin_inset Formula $\{\xi_{i}\}$
+\end_inset
+
+, 把定积分看作是对应的积分和的极限, 来计算下列定积分:
+\begin_inset Formula 
+\begin{align*}
+(1) & \int_{0}^{1}x^{3}\mathistOperatord x; & (4) & \int_{a}^{b}\frac{\mathistOperatord x}{x^{2}},\,\text{其中\ensuremath{b>a>0}}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex HINTAsInset
+status open
+
+\begin_layout Plain Layout
+(1) 
+\begin_inset Formula $\sum_{i=1}^{n}i^{3}=n^{2}(n+1)^{2}/4$
+\end_inset
+
+; (4) 取
+\begin_inset Formula $\xi_{i}=\sqrt{x_{i-1}x_{i}}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+书上第192页第1题的偶数小问.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+利用定积分求极限:
+\begin_inset Formula 
+\begin{align*}
+(3) & \lim_{n\rightarrow\infty}n\left(\frac{1}{n^{2}+1}+\frac{1}{n^{2}+2^{2}}+\cdots+\frac{1}{2n^{2}}\right);\\
+(4) & \lim_{n\rightarrow\infty}\frac{1}{n}\left(\sin\frac{\pi}{n}+\sin\frac{2\pi}{n}+\cdots+\sin\frac{(n-1)\pi}{n}\right).
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+证明: 若
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上可积, 
+\begin_inset Formula $F$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上连续, 且除有限个点外有
+\begin_inset Formula $F'(x)=f(x)$
+\end_inset
+
+, 则有
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)\mathistOperatord x=F(b)-F(a).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+证明: 若
+\begin_inset Formula $T'$
+\end_inset
+
+是
+\begin_inset Formula $T$
+\end_inset
+
+增加若干个分点后所得的分割, 则
+\begin_inset Formula 
+\[
+\sum_{T'}\omega_{i}'\Delta x_{i}'\leqslant\sum_{T}\omega_{i}\Delta x_{i}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+证明: 若
+\begin_inset Formula $f$
+\end_inset
+
+在区间
+\begin_inset Formula $\Delta$
+\end_inset
+
+上有界, 则
+\begin_inset Formula 
+\[
+\sup_{x\in\Delta}f(x)-\inf_{x\in\Delta}f(x)=\sup_{x',x''\in\Delta}|f(x')-f(x'')|.
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 第一学期期末考试
 \end_layout
@@ -21906,6 +22453,71 @@ status open
 
 \series bold
 充分性:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\color red
+逻辑断裂
+\end_layout
+
+\end_inset
+
+因为有
+\begin_inset Formula $|x_{n}-x_{0}|<\delta$
+\end_inset
+
+, 
+\begin_inset Formula $|f(x_{n})-A|<\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+所以取
+\begin_inset Formula 
+\[
+\begin{array}{cc}
+|x_{1}-x_{0}|<1, & |f(x_{1})-A|<\varepsilon\\
+\vdots\\
+|x_{n}-x_{0}|<\frac{1}{n}, & |f(x_{n})-A|<\varepsilon
+\end{array}
+\]
+
+\end_inset
+
+所以若
+\begin_inset Formula $\lim_{x\rightarrow x_{0}}f(x)$
+\end_inset
+
+不存在, 则
+\begin_inset Formula $|f(x)-A|>\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+所以与题设矛盾.
+ 因此, 
+\begin_inset Formula $\lim_{x\rightarrow x_{0}}f(x)=A$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
