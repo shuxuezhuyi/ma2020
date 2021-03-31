@@ -5657,6 +5657,523 @@ Heine-Borel有限覆盖定理, The finite covering theorem
 
 \end_layout
 
+\begin_layout Theorem
+(1) 线性运算法则:
+\begin_inset Formula 
+\[
+\int[k_{1}f(x)+k_{2}g(x)]\mathistOperatord x=k_{1}\int f(x)\mathistOperatord x+k_{2}\int g(x)\mathistOperatord x.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+(2) 凑微分法, 第一换元积分法:
+\begin_inset Formula 
+\[
+\int f(x)\mathistOperatord x=F(x)+C\Rightarrow\int f(\varphi(t))\varphi'(t)\mathistOperatord t=F(\varphi(t))+C.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+(3) 代入换元法, 第二换元积分法:
+\begin_inset Formula 
+\[
+\int f(\varphi(t))\varphi'(t)\mathistOperatord t=G(t)+C\Rightarrow\int f(x)\mathistOperatord x=G(\varphi^{-1}(x))+C.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+(4) 分部积分法:
+\begin_inset Formula 
+\[
+\int u(x)v'(x)\mathistOperatord x=u(x)v(x)-\int u'(x)v(x)\mathistOperatord x.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+定义
+\series bold
+有理函数
+\series default
+(rational function), 介绍计算有理函数的不定积分的标准步骤.
+\end_layout
+
+\begin_layout Standard
+设
+\begin_inset Formula $R(\sin x,\cos x)$
+\end_inset
+
+是三角函数有理式.
+ 那么
+\begin_inset Formula 
+\[
+\int R(\sin x,\cos x)\mathistOperatord x=\int R\left(\frac{2t}{1+t^{2}},\frac{1-t^{2}}{1+t^{2}}\right)\frac{2}{1+t^{2}}\mathistOperatord t.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+对于
+\begin_inset Formula 
+\[
+\int R\left(x,\sqrt[n]{\frac{ax+b}{cx+d}}\right)\mathistOperatord x,
+\]
+
+\end_inset
+
+令
+\begin_inset Formula $t=\sqrt[n]{(ax+b)/(cx+d)}$
+\end_inset
+
+, 即可化为有理函数的积分.
+\end_layout
+
+\begin_layout Standard
+对于
+\begin_inset Formula $\int R(x,\sqrt{ax^{2}+bx+c})\mathistOperatord x$
+\end_inset
+
+, 若
+\begin_inset Formula $a>0$
+\end_inset
+
+则可令
+\begin_inset Formula 
+\[
+\sqrt{ax^{2}+bc+c}=\sqrt{a}x\pm t,
+\]
+
+\end_inset
+
+若
+\begin_inset Formula $c>0$
+\end_inset
+
+则可令
+\begin_inset Formula 
+\[
+\sqrt{ax^{2}+bx+c}=xt\pm\sqrt{c},
+\]
+
+\end_inset
+
+这类变换称为欧拉变换.
+\end_layout
+
+\begin_layout Section
+定积分
+\end_layout
+
+\begin_layout Standard
+定义闭区间的
+\emph on
+分割
+\emph default
+(partition)及其
+\emph on
+模
+\emph default
+(norm).
+ 定义闭区间上的
+\series bold
+黎曼可积
+\series default
+(Riemann integrable)、
+\series bold
+黎曼积分
+\series default
+(Riemann integral)、
+\series bold
+定积分
+\series default
+(definite integral).
+ 引入积分区间、积分的下限和上限(lower and upper limits of integration)等说法.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+牛顿-莱布尼茨公式, Newton–Leibniz formula, 或称微积分基本定理, fundamental theorem of calculus
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+F'(x)=f(x)\Rightarrow\int_{a}^{b}f(x)\mathistOperatord x=F(b)-F(a)=\left.F(x)\right|_{a}^{b}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+可积必有界.
+\end_layout
+
+\begin_layout Standard
+定义分割
+\begin_inset Formula $T$
+\end_inset
+
+的
+\emph on
+达布上和
+\emph default
+ 
+\begin_inset Formula $S(T)$
+\end_inset
+
+与
+\emph on
+达布下和
+\emph default
+ 
+\begin_inset Formula $s(T)$
+\end_inset
+
+ (upper and lower Darboux sums corresponding to the partition).
+ 定义函数
+\begin_inset Formula $f$
+\end_inset
+
+的
+\series bold
+振幅
+\series default
+(oscillation) 
+\begin_inset Formula $\omega^{f}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+可积准则
+\end_layout
+
+\end_inset
+
+
+\emph on
+第一种表述:
+\emph default
+ 
+\begin_inset Formula $f$
+\end_inset
+
+可积
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+任给
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 存在
+\begin_inset Formula $T$
+\end_inset
+
+使得
+\begin_inset Formula $S(T)-s(T)<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+
+\emph on
+第二种表述:
+\emph default
+ 
+\begin_inset Formula $f$
+\end_inset
+
+可积
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+任给
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 存在
+\begin_inset Formula $T$
+\end_inset
+
+使得
+\begin_inset Formula 
+\[
+\sum_{T}\omega_{i}\Delta x_{i}<\varepsilon.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+连续必可积.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+闭区间上只有有限个间断点的有界函数必定可积.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+单调必可积.
+\end_layout
+
+\begin_layout Example
+黎曼函数
+\begin_inset Formula $R(x)$
+\end_inset
+
+在
+\begin_inset Formula $[0,1]$
+\end_inset
+
+上可积, 并且
+\begin_inset Formula $\int_{0}^{1}R(x)\mathistOperatord x=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+如果
+\begin_inset Formula $f,g$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上可积, 那么
+\end_layout
+
+\begin_layout Theorem
+(1) 
+\begin_inset Formula $\int_{a}^{b}kf(x)\mathistOperatord x=k\int_{a}^{b}f(x)\mathistOperatord x$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Theorem
+(2) 
+\begin_inset Formula $\int_{a}^{b}[f(x)\pm g(x)]\mathistOperatord x=\int_{a}^{b}f(x)\mathistOperatord x\pm\int_{a}^{b}g(x)\mathistOperatord x.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+(3) 
+\begin_inset Formula $f\cdot g$
+\end_inset
+
+可积;
+\end_layout
+
+\begin_layout Theorem
+(4) 若
+\begin_inset Formula $[c,d]\subset[a,b]$
+\end_inset
+
+, 则
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[c,d]$
+\end_inset
+
+上可积, 且有
+\begin_inset Formula $\int_{a}^{b}f(x)\mathistOperatord x=$
+\end_inset
+
+
+\begin_inset Formula $\int_{a}^{c}f(x)\mathistOperatord x+\int_{c}^{b}f(x)\mathistOperatord x$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Theorem
+(5) 
+\begin_inset Formula $|f|$
+\end_inset
+
+可积.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+(1) 
+\begin_inset Formula $f\geqslant0\Rightarrow\int_{a}^{b}f(x)\mathistOperatord x\geqslant0$
+\end_inset
+
+.
+ (2) 
+\begin_inset Formula $f\leqslant g\Rightarrow\int_{a}^{b}f(x)\mathistOperatord x\leqslant\int_{a}^{b}g(x)\mathistOperatord x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula 
+\[
+\left|\int_{a}^{b}f(x)\mathistOperatord x\right|\leqslant\int_{a}^{b}|f(x)|\mathistOperatord x.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+积分第一中值定理, first mean-value theorem for the integral
+\end_layout
+
+\end_inset
+
+若
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上连续, 则存在
+\begin_inset Formula $\xi\in[a,b]$
+\end_inset
+
+使得
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)\mathistOperatord x=f(\xi)(b-a).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Corollary
+设
+\begin_inset Formula $f,g$
+\end_inset
+
+都在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上连续, 并且
+\begin_inset Formula $g$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上不变号.
+ 那么存在
+\begin_inset Formula $\xi\in[a,b]$
+\end_inset
+
+使得
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)g(x)\mathistOperatord x=f(\xi)\int_{a}^{b}g(x)\mathistOperatord x.
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 讨论
 \end_layout
@@ -12984,6 +13501,288 @@ x\sin\frac{1}{x}, & x\neq0\\
 
 \end_deeper
 \begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+指出下列说法的
+\color red
+错误
+\color inherit
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\emph on
+定积分不存在
+\emph default
+的定义: 
+\begin_inset Formula $f(x)$
+\end_inset
+
+为定义在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上的函数.
+ 
+\begin_inset Formula $T$
+\end_inset
+
+为
+\begin_inset Formula $[a,b]$
+\end_inset
+
+的任何分割.
+ 
+\begin_inset Formula $\{\xi_{i}\}$
+\end_inset
+
+为其上任意选取的点集.
+ 即使
+\begin_inset Formula $\Vert T\Vert<\delta$
+\end_inset
+
+, 都有
+\begin_inset Formula 
+\[
+\left|\sum_{i=1}^{n}f(\xi_{i})\Delta x_{i}-J\right|\geqslant\varepsilon.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+定积分不存在
+\emph default
+的定义: 设
+\begin_inset Formula $f$
+\end_inset
+
+是定义在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上的一个函数, 
+\begin_inset Formula $J$
+\end_inset
+
+是一个确定的实数, 若存在正数
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+, 对任何正数
+\begin_inset Formula $\delta$
+\end_inset
+
+, 使得
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上的任何分割
+\begin_inset Formula $T$
+\end_inset
+
+, 以及在其上任意选取的点集
+\begin_inset Formula $\{\xi_{i}\}$
+\end_inset
+
+, 只要
+\begin_inset Formula $\Vert T\Vert<\delta$
+\end_inset
+
+, 有
+\begin_inset Formula 
+\[
+\left|\sum_{i=1}^{n}f(\xi_{i})\Delta x_{i}-J\right|\geqslant\varepsilon.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+设
+\begin_inset Formula $f$
+\end_inset
+
+是定义在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上的一个函数, 
+\begin_inset Formula $J$
+\end_inset
+
+为任意的实数.
+ 若存在
+\begin_inset Formula $\varepsilon_{0}>0$
+\end_inset
+
+, 对任意的
+\begin_inset Formula $\delta>0$
+\end_inset
+
+, 使得对任何分割
+\begin_inset Formula $T',T''$
+\end_inset
+
+以及在其上任意选取的点集
+\begin_inset Formula $\{\xi_{i}'\},\{\xi_{i}''\}$
+\end_inset
+
+, 虽然有
+\begin_inset Formula $\Vert T'\Vert<\delta$
+\end_inset
+
+, 
+\begin_inset Formula $\Vert T''\Vert<\delta$
+\end_inset
+
+, 但
+\begin_inset Formula 
+\[
+\left|\sum_{i=1}^{n}f(\xi_{i}')\Delta x_{i}'-\sum_{i=1}^{n}f(\xi_{i}'')\Delta x_{i}''\right|\geqslant\varepsilon_{0}.
+\]
+
+\end_inset
+
+则
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上的定积分不存在.
+\end_layout
+
+\begin_layout Enumerate
+若定义在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上的
+\begin_inset Formula $f$
+\end_inset
+
+有原函数, 则
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上一致连续.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+修正下述证明的
+\color red
+表达错误
+\color inherit
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Quotation
+证明: 若
+\begin_inset Formula $T'$
+\end_inset
+
+是
+\begin_inset Formula $T$
+\end_inset
+
+增加若干个分点后所得的分割, 则
+\begin_inset Formula 
+\[
+\sum_{T'}\omega_{i}'\Delta x_{i}'\leqslant\sum_{T}\omega_{i}\Delta x_{i}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+由于
+\begin_inset Formula $T'$
+\end_inset
+
+是
+\begin_inset Formula $T$
+\end_inset
+
+增加若干个分点所得的分割.
+ 则有
+\begin_inset Formula 
+\begin{align*}
+\sup_{x\in\Delta x_{i}'}f(x) & \leqslant\sup_{x\in\Delta x_{i}}f(x)\\
+\inf_{x\in\Delta x_{i}'}f(x) & \geqslant\inf_{x\in\Delta x_{i}}f(x)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow\sup_{x\in\Delta x_{i}'}f(x)-\inf_{x\in\Delta x_{i}'}f(x)\leqslant\sup_{x\in\Delta x_{i}}f(x)-\inf_{x\in\Delta x_{i}}f(x),
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+且有
+\begin_inset Formula $\Delta x_{i}'\leqslant\Delta x_{i}$
+\end_inset
+
+.
+ 即可得到
+\begin_inset Formula 
+\[
+\sum_{T'}\omega_{i}'\Delta x_{i}'\leqslant\sum_{T}\omega_{i}\Delta x_{i}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
@@ -13208,13 +14007,11 @@ status open
 \end_layout
 
 \begin_layout Chapter
-作业参考答案
+作业
 \end_layout
 
 \begin_layout Standard
-本章答案并不是什么标准答案.
- 有的地方可能写得太琐碎, 有的地方可能写得太简略.
- 仅供参考.
+偶尔有写参考答案或提示, 但仅供参考.
 \end_layout
 
 \begin_layout Section
