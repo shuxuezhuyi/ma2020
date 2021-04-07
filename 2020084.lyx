@@ -13942,11 +13942,11 @@ status collapsed
 \end_layout
 
 \begin_layout Exercise
-指出证法一的
+指出前三种证法的
 \color red
 错误
 \color inherit
-, 修正证法二的
+, 修正证法四的
 \color red
 错误
 \color inherit
@@ -14004,7 +14004,102 @@ status collapsed
 status open
 
 \begin_layout Plain Layout
-证法一
+证法一（的局部）
+\end_layout
+
+\end_inset
+
+因为
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上可积, 则存在分割
+\begin_inset Formula 
+\[
+T=a=x_{0}<\cdots<x_{n}=b,
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\xi_{i}$
+\end_inset
+
+任取于
+\begin_inset Formula $[x_{k-1},x_{k}]$
+\end_inset
+
+.
+ 对
+\begin_inset Formula $\forall\varepsilon>0$
+\end_inset
+
+, 有
+\begin_inset Formula 
+\[
+\sum_{k=1}^{n}f(\xi_{i})\Delta x_{i}<\varepsilon.
+\]
+
+\end_inset
+
+不妨设有限个
+\begin_inset Formula $f(x)\neq g(x)$
+\end_inset
+
+的点为
+\begin_inset Formula $\{x_{r1},\cdots,x_{rn}\}$
+\end_inset
+
+ 
+\begin_inset Formula $n$
+\end_inset
+
+个点, 则
+\begin_inset Formula $\xi_{i}\neq x_{ri}$
+\end_inset
+
+ 
+\begin_inset Formula $(i=1,\cdots,n)$
+\end_inset
+
+时有
+\begin_inset Formula 
+\[
+\sum_{k=1}^{n}g(\xi_{i})\Delta x_{i}<\varepsilon,
+\]
+
+\end_inset
+
+则
+\begin_inset Formula $g$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上可积.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+证法二
 \end_layout
 
 \end_inset
@@ -14071,7 +14166,98 @@ status collapsed
 status open
 
 \begin_layout Plain Layout
-证法二
+证法三
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上可积, 故对
+\begin_inset Formula $\forall\varepsilon$
+\end_inset
+
+, 
+\begin_inset Formula $\exists T$
+\end_inset
+
+, s.t.
+ 
+\begin_inset Formula $\sum_{T}\omega_{i}\Delta x_{i}<\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+将有限个
+\begin_inset Formula $f(x)\neq g(x)$
+\end_inset
+
+的点加入
+\begin_inset Formula $T$
+\end_inset
+
+作为分割
+\begin_inset Formula $T'$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(由书上第197页习题1的结论可知) 
+\begin_inset Formula $\sum_{T'}\omega_{i}'\Delta x_{i}'<\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+故
+\begin_inset Formula $g(x)$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上亦可积
+\end_layout
+
+\begin_layout Plain Layout
+又
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)\mathistOperatord x=\lim_{n\rightarrow\infty}\sum_{i=1}^{n}\Delta x_{i}f(\xi_{i})=\lim_{n\rightarrow\infty}\sum_{i'=1}^{n}\Delta x_{i'}f(\xi_{i'})=\int_{a}^{b}g(x)\mathistOperatord x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+证法四
 \end_layout
 
 \end_inset
