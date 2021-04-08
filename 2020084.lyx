@@ -200,6 +200,21 @@ End
 \end_layout
 
 \begin_layout Standard
+本文档源代码托管于 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://gitee.com/mathist/math2020084
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
 
@@ -5813,7 +5828,7 @@ Heine-Borel有限覆盖定理, The finite covering theorem
 status open
 
 \begin_layout Plain Layout
-牛顿-莱布尼茨公式, Newton–Leibniz formula, 或称微积分基本定理, fundamental theorem of calculus
+牛顿-莱布尼茨公式, Newton–Leibniz formula
 \end_layout
 
 \end_inset
@@ -5882,7 +5897,7 @@ F'(x)=f(x)\Rightarrow\int_{a}^{b}f(x)\mathistOperatord x=F(b)-F(a)=\left.F(x)\ri
 status open
 
 \begin_layout Plain Layout
-可积准则
+可积准则, 可积的第二充要条件
 \end_layout
 
 \end_inset
@@ -6167,6 +6182,337 @@ status open
 \begin_inset Formula 
 \[
 \int_{a}^{b}f(x)g(x)\mathistOperatord x=f(\xi)\int_{a}^{b}g(x)\mathistOperatord x.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+定义
+\series bold
+变上限积分
+\series default
+(integral with variable upper limit).
+\end_layout
+
+\begin_layout Theorem
+变上限积分是连续函数.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+微积分基本定理, fundamental theorem of calculus
+\end_layout
+
+\end_inset
+
+连续函数的变上限积分是原函数.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+积分第二中值定理, second mean-value theorem for the integral
+\end_layout
+
+\end_inset
+
+设
+\begin_inset Formula $f$
+\end_inset
+
+可积.
+\end_layout
+
+\begin_layout Theorem
+(1) 若
+\begin_inset Formula $g\downarrow0$
+\end_inset
+
+, 则存在
+\begin_inset Formula $\xi\in[a,b]$
+\end_inset
+
+, 使得
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)g(x)\mathistOperatord x=g(a)\int_{a}^{\xi}f(x)\mathistOperatord x;
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+(2) 若
+\begin_inset Formula $g$
+\end_inset
+
+非负且单调递增, 则存在
+\begin_inset Formula $\eta\in[a,b]$
+\end_inset
+
+, 使得
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)g(x)\mathistOperatord x=g(b)\int_{\eta}^{b}f(x)\mathistOperatord x.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Corollary
+若
+\begin_inset Formula $f$
+\end_inset
+
+可积且
+\begin_inset Formula $g$
+\end_inset
+
+单调, 则存在
+\begin_inset Formula $\xi\in[a,b]$
+\end_inset
+
+, 使得
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)g(x)\mathistOperatord x=g(a)\int_{a}^{\xi}f(x)\mathistOperatord x+g(b)\int_{\xi}^{b}f(x)\mathistOperatord x.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+换元积分法, formula for change of variable
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left.\begin{array}{c}
+f\,\text{连续}\\
+\varphi'\,\text{可积}\\
+\varphi([\alpha,\beta])\subset[a,b]=[\varphi(\alpha),\varphi(\beta)]
+\end{array}\right\} \Rightarrow\int_{a=\varphi(\alpha)}^{b=\varphi(\beta)}f(x)\mathistOperatord x=\int_{\alpha}^{\beta}f(\varphi(t))\varphi'(t)\mathistOperatord t.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+分部积分法, formula for integration by parts
+\end_layout
+
+\end_inset
+
+若
+\begin_inset Formula $u',v'$
+\end_inset
+
+可积, 则
+\begin_inset Formula 
+\[
+\int_{a}^{b}u(x)v'(x)\mathistOperatord x=\left.u(x)v(x)\right|_{a}^{b}-\int_{a}^{b}u'(x)v(x)\mathistOperatord x.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Corollary
+若
+\begin_inset Formula $u,v$
+\end_inset
+
+有
+\begin_inset Formula $n+1$
+\end_inset
+
+阶连续导函数, 则
+\begin_inset Formula 
+\begin{align*}
+\int_{a}^{b}u(x)v^{(n+1)}(x)\mathistOperatord x & =\left.[u(x)v^{(n)}(x)-u'(x)v^{(n-1)}(x)+\cdots+(-1)^{n}u^{(n)}(x)v(x)]\right|_{a}^{b}\\
+ & \qquad+(-1)^{n+1}\int_{a}^{b}u^{(n+1)}(x)v(x)\mathistOperatord x.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+带有积分型余项的泰勒公式, Taylor's formula with the integral form of the remainder
+\end_layout
+
+\end_inset
+
+若函数
+\begin_inset Formula $t\mapsto f(t)$
+\end_inset
+
+在以
+\begin_inset Formula $a$
+\end_inset
+
+和
+\begin_inset Formula $x$
+\end_inset
+
+为端点的闭区间上有
+\begin_inset Formula $n+1$
+\end_inset
+
+阶连续导函数, 则
+\begin_inset Formula 
+\[
+f(x)=f(a)+\frac{1}{1!}f'(a)\cdot(x-a)+\cdots+\frac{1}{n!}f^{(n)}(a)\cdot(x-a)^{n}+R_{n}(x),
+\]
+
+\end_inset
+
+其中
+\begin_inset Formula 
+\[
+R_{n}(x)=\frac{1}{n!}\int_{a}^{x}f^{(n+1)}(t)\cdot(x-t)^{n}\mathistOperatord t.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+达布定理, theorem of Darboux
+\end_layout
+
+\end_inset
+
+上积分与下积分分别是上和与下和的极限.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+可积的第一充要条件
+\end_layout
+
+\end_inset
+
+可积
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+上积分等于下积分.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+可积的第三充要条件
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $f$
+\end_inset
+
+可积
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+任给正数
+\begin_inset Formula $\varepsilon,\eta$
+\end_inset
+
+, 总存在分割
+\begin_inset Formula $T$
+\end_inset
+
+, 使得
+\begin_inset Formula 
+\[
+\sum_{\omega_{k}\geqslant\varepsilon}\Delta x_{k}<\eta.
 \]
 
 \end_inset
