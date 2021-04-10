@@ -139,7 +139,7 @@ End
 \rightmargin 2.5cm
 \bottommargin 2cm
 \secnumdepth 2
-\tocdepth 1
+\tocdepth 2
 \paragraph_separation indent
 \paragraph_indentation default
 \is_math_indent 0
@@ -357,6 +357,82 @@ e^{x},\sin x,\cos x,\ln(1+x),(1+x)^{\alpha},\frac{1}{1-x}
 拐点
 \series default
 的定义.
+\end_layout
+
+\begin_layout Enumerate
+点集(数集)
+\series bold
+聚点
+\series default
+的定义.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+开覆盖
+\series default
+的定义.
+\end_layout
+
+\begin_layout Enumerate
+点列(数列)的
+\emph on
+聚点
+\emph default
+、
+\series bold
+上极限
+\series default
+与
+\series bold
+下极限
+\series default
+的定义.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+原函数
+\series default
+与
+\series bold
+不定积分
+\series default
+的定义.
+\end_layout
+
+\begin_layout Enumerate
+函数
+\begin_inset Formula $f(x)=$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+0,1,x^{\alpha},\frac{1}{x},e^{x},a^{x},\sin x,\cos x,\frac{1}{\sin^{2}x},\frac{1}{\cos^{2}x},\frac{1}{\sqrt{1-x^{2}}},\frac{1}{1+x^{2}}
+\]
+
+\end_inset
+
+的原函数.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+黎曼可积
+\series default
+的定义.
+\end_layout
+
+\begin_layout Enumerate
+牛顿-莱布尼茨公式.
+\end_layout
+
+\begin_layout Enumerate
+定积分的换元积分公式与分部积分公式.
 \end_layout
 
 \begin_layout Section
@@ -1069,10 +1145,14 @@ x^{2}\sin\frac{1}{x}, & x\neq0,\\
 直接承认第6页的定理1.1(确界原理)成立.
 \end_layout
 
+\begin_layout Subsection
+极限
+\end_layout
+
 \begin_layout Enumerate
 第31页的定理2.8: 
 \begin_inset Flex Color Box
-status open
+status collapsed
 
 \begin_layout Plain Layout
 数列
@@ -1094,7 +1174,7 @@ status open
 \begin_layout Enumerate
 第33页的定理2.9 (单调有界定理): 
 \begin_inset Flex Color Box
-status open
+status collapsed
 
 \begin_layout Plain Layout
 在实数系中, 有界的单调数列必有极限.
@@ -1108,7 +1188,7 @@ status open
 \begin_layout Enumerate
 第34页的例3: 
 \begin_inset Flex Color Box
-status open
+status collapsed
 
 \begin_layout Plain Layout
 设
@@ -1332,7 +1412,7 @@ status collapsed
 \begin_layout Enumerate
 第51页的定理3.10 (单调有界定理): 
 \begin_inset Flex Color Box
-status open
+status collapsed
 
 \begin_layout Plain Layout
 若
@@ -1355,6 +1435,12 @@ status open
 
 \end_layout
 
+\begin_deeper
+\begin_layout Subsection
+连续函数
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 第71页的定理4.6 (最大、最小值定理): 
 \begin_inset Flex Color Box
@@ -1458,7 +1544,7 @@ status collapsed
 \begin_layout Enumerate
 第73页的定理4.8: 
 \begin_inset Flex Color Box
-status open
+status collapsed
 
 \begin_layout Plain Layout
 若函数
@@ -1582,7 +1668,7 @@ status collapsed
 \begin_layout Enumerate
 第76页的定理4.9 (一致连续性定理): 
 \begin_inset Flex Color Box
-status open
+status collapsed
 
 \begin_layout Plain Layout
 若
@@ -1652,6 +1738,12 @@ status collapsed
 
 \end_layout
 
+\begin_deeper
+\begin_layout Subsection
+微分学
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 证明第93页的引理, 并用它证明定理5.8 (链式法则): 
 \begin_inset Flex Color Box
@@ -1704,7 +1796,7 @@ f(x)-f(x_{0})=H(x)\cdot(x-x_{0}).
 \begin_layout Enumerate
 叙述导数与微分的定义, 并且证明第104页的定理5.9: 
 \begin_inset Flex Color Box
-status open
+status collapsed
 
 \begin_layout Plain Layout
 函数
@@ -2868,6 +2960,485 @@ status collapsed
 \begin_inset Formula 
 \[
 f\left(\sum_{i=1}^{n}\lambda_{i}x_{i}\right)\leqslant\sum_{i=1}^{n}\lambda_{i}f(x_{i}).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Subsection
+实数的完备性
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+用数列极限的单调有界定理证明第150页的定理7.1 (区间套定理): 
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+若
+\begin_inset Formula $\{[a_{n},b_{n}]\}$
+\end_inset
+
+是一个区间套, 则存在唯一的实数
+\begin_inset Formula $\xi$
+\end_inset
+
+, 使得
+\begin_inset Formula $\xi\in[a_{n},b_{n}]$
+\end_inset
+
+对每个
+\begin_inset Formula $n$
+\end_inset
+
+都成立.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+用区间套定理证明第153页的定理7.3 (有限覆盖定理): 
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+设
+\begin_inset Formula $H$
+\end_inset
+
+为
+\begin_inset Formula $[a,b]$
+\end_inset
+
+的无限开覆盖, 则从
+\begin_inset Formula $H$
+\end_inset
+
+中可选出有限个开区间来覆盖
+\begin_inset Formula $[a,b]$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+用有限覆盖定理证明第152页的定理7.2 (聚点定理): 
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+实轴上的任一有界无限点集
+\begin_inset Formula $S$
+\end_inset
+
+至少有一个聚点.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+用聚点定理证明第36页的定理2.11 (柯西收敛准则): 
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+数列
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+收敛的充要条件是: 对任给的
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 存在正整数
+\begin_inset Formula $N$
+\end_inset
+
+, 使得当
+\begin_inset Formula $n,m>N$
+\end_inset
+
+时, 有
+\begin_inset Formula 
+\[
+|a_{n}-a_{m}|<\varepsilon.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+用柯西收敛准则证明第6页的定理1.1 (确界原理): 
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+设
+\begin_inset Formula $S$
+\end_inset
+
+为非空数集.
+ 若
+\begin_inset Formula $S$
+\end_inset
+
+有上界, 则
+\begin_inset Formula $S$
+\end_inset
+
+必有上确界; 若
+\begin_inset Formula $S$
+\end_inset
+
+有下界, 则
+\begin_inset Formula $S$
+\end_inset
+
+必有下确界.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+分别用区间套定理和有限覆盖定理证明第72页的连续函数根的存在性定理: 
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+若
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上连续, 且
+\begin_inset Formula $f(a)f(b)<0$
+\end_inset
+
+, 则至少存在一点
+\begin_inset Formula $\xi\in(a,b)$
+\end_inset
+
+, 使得
+\begin_inset Formula $f(\xi)=0$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+用有限覆盖定理证明第76页的定理4.9 (连续函数的一致连续性定理): 
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+若
+\begin_inset Formula $f$
+\end_inset
+
+是闭区间
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上的连续函数, 则
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上必定一致连续.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+第156页的定理7.4: 
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+有界点列(数列) 
+\begin_inset Formula $\{x_{n}\}$
+\end_inset
+
+至少有一个聚点, 并且存在最大聚点与最小聚点.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Subsection
+定积分
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+叙述定积分(黎曼积分)的定义, 并且证明第193页的定理9.2: 
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+若
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上可积, 则
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上必定有界.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+叙述积分和、上和
+\begin_inset Formula $S(T)$
+\end_inset
+
+、下和
+\begin_inset Formula $s(T)$
+\end_inset
+
+、上积分
+\begin_inset Formula $S$
+\end_inset
+
+、下积分
+\begin_inset Formula $s$
+\end_inset
+
+的定义, 并且一步步证明第217页的达布定理: 
+\begin_inset Flex Color Box
+status open
+
+\begin_layout Plain Layout
+固定分割
+\begin_inset Formula $T$
+\end_inset
+
+, 遍历所有标记点
+\begin_inset Formula $\{\xi_{i}\}$
+\end_inset
+
+, 则上和是所有积分和的上确界, 下和是所有积分和的下确界.
+ 即
+\begin_inset Formula 
+\[
+S(T)=\sup_{\{\xi_{i}\}}\sum_{i=1}^{n}f(\xi_{i})\Delta x_{i},\quad s(T)=\inf_{\{\xi_{i}\}}\sum_{i=1}^{n}f(\xi_{i})\Delta x_{i}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+设
+\begin_inset Formula $T'$
+\end_inset
+
+是分割
+\begin_inset Formula $T$
+\end_inset
+
+添加
+\begin_inset Formula $p$
+\end_inset
+
+个新分点之后得到的分割, 则有
+\begin_inset Formula 
+\begin{align*}
+S(T) & \geqslant S(T')\geqslant S(T)-(M-m)p\Vert T\Vert,\\
+s(T) & \leqslant s(T')\leqslant s(T)+(M-m)p\Vert T\Vert.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+设
+\begin_inset Formula $T'$
+\end_inset
+
+与
+\begin_inset Formula $T''$
+\end_inset
+
+是两个分割, 而
+\begin_inset Formula $T=T'+T''$
+\end_inset
+
+表示把
+\begin_inset Formula $T'$
+\end_inset
+
+与
+\begin_inset Formula $T''$
+\end_inset
+
+的所有分点合并得到的分割(重复分点只取一次), 则
+\begin_inset Formula 
+\begin{align*}
+S(T) & \leqslant S(T'), & s(T) & \geqslant s(T'),\\
+S(T) & \leqslant S(T''), & s(T) & \geqslant s(T'').
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+对任意两个分割
+\begin_inset Formula $T'$
+\end_inset
+
+与
+\begin_inset Formula $T''$
+\end_inset
+
+, 总有
+\begin_inset Formula $s(T')\leqslant S(T'')$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $(b-a)\cdot\inf f\leqslant s\leqslant S\leqslant(b-a)\cdot\sup f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+上积分与下积分分别是上和与下和当
+\begin_inset Formula $\Vert T\Vert\rightarrow0$
+\end_inset
+
+时的极限, 即
+\begin_inset Formula 
+\[
+\lim_{\Vert T\Vert\rightarrow0}S(T)=S,\qquad\lim_{\Vert T\Vert\rightarrow0}s(T)=s.
 \]
 
 \end_inset
