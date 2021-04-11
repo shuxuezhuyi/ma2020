@@ -3266,7 +3266,7 @@ status collapsed
 
 的定义, 并且一步步证明第217页的达布定理: 
 \begin_inset Flex Color Box
-status open
+status collapsed
 
 \begin_layout Plain Layout
 固定分割
@@ -3303,11 +3303,11 @@ height "1pt"
 
 \begin_layout Plain Layout
 设
-\begin_inset Formula $T'$
+\begin_inset Formula $T$
 \end_inset
 
 是分割
-\begin_inset Formula $T$
+\begin_inset Formula $T'$
 \end_inset
 
 添加
@@ -3317,8 +3317,8 @@ height "1pt"
 个新分点之后得到的分割, 则有
 \begin_inset Formula 
 \begin{align*}
-S(T) & \geqslant S(T')\geqslant S(T)-(M-m)p\Vert T\Vert,\\
-s(T) & \leqslant s(T')\leqslant s(T)+(M-m)p\Vert T\Vert.
+S(T') & \geqslant S(T)\geqslant S(T')-(\sup f-\inf f)p\Vert T'\Vert,\\
+s(T') & \leqslant s(T)\leqslant s(T')+(\sup f-\inf f)p\Vert T'\Vert.
 \end{align*}
 
 \end_inset
@@ -3439,6 +3439,594 @@ height "1pt"
 \begin_inset Formula 
 \[
 \lim_{\Vert T\Vert\rightarrow0}S(T)=S,\qquad\lim_{\Vert T\Vert\rightarrow0}s(T)=s.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+定理9.14至定理9.16 (可积的三个充要条件): 
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上可积的充要条件是: 
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上的上积分与下积分相等, 即
+\begin_inset Formula $S=s$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上可积的充要条件是: 任给
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 总存在分割
+\begin_inset Formula $T$
+\end_inset
+
+, 使得
+\begin_inset Formula 
+\[
+S(T)-s(T)<\varepsilon.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+设
+\begin_inset Formula $f$
+\end_inset
+
+是
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上的有界函数.
+ 那么
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上可积的充要条件是: 任给
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+与
+\begin_inset Formula $\sigma>0$
+\end_inset
+
+, 总存在分割
+\begin_inset Formula $T$
+\end_inset
+
+, 使得属于
+\begin_inset Formula $T$
+\end_inset
+
+的所有小区间中, 对应于振幅
+\begin_inset Formula $\omega_{k'}\geqslant\varepsilon$
+\end_inset
+
+的那些小区间
+\begin_inset Formula $\Delta_{k'}$
+\end_inset
+
+的总长度
+\begin_inset Formula $\sum_{k'}\Delta x_{k'}<\sigma$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+第194页的定理9.4: 
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+若
+\begin_inset Formula $f$
+\end_inset
+
+是
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上的连续函数, 则
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上可积.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+第195页的定理9.5: 
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+若
+\begin_inset Formula $f$
+\end_inset
+
+是定义在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上的、只有有限个间断点的有界函数, 则
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上可积.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+第195页的定理9.6: 
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+若
+\begin_inset Formula $f$
+\end_inset
+
+是
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上的单调函数, 则
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上可积.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+接下来假设教材9.4节的第一部分(定积分的基本性质)都已得到证明.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+第203页的定理9.8 (积分第一中值定理): 
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+若
+\begin_inset Formula $f$
+\end_inset
+
+与
+\begin_inset Formula $g$
+\end_inset
+
+都在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上连续, 并且
+\begin_inset Formula $g$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上不变号, 则存在
+\begin_inset Formula $\xi\in[a,b]$
+\end_inset
+
+, 使得
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)g(x)\mathistOperatord x=f(\xi)\int_{a}^{b}g(x)\mathistOperatord x.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+第205页的定理9.9: 
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+若
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上可积, 则函数
+\begin_inset Formula 
+\[
+\Phi(x)=\int_{a}^{x}f(t)\mathistOperatord t
+\]
+
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上连续.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+第206页的定理9.10 (原函数存在定理): 
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+若
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上连续, 则函数
+\begin_inset Formula 
+\[
+\Phi(x)=\int_{a}^{x}f(t)\mathistOperatord t
+\]
+
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上可导, 并且
+\begin_inset Formula $\Phi'(x)=f(x)$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+第190页的定理9.1 (牛顿-莱布尼茨公式): 
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+设
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上连续, 而
+\begin_inset Formula $F$
+\end_inset
+
+是其原函数, 则
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)\mathistOperatord x=F(b)-F(a).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+第212页的泰勒公式: 
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+若函数
+\begin_inset Formula $t\mapsto f(t)$
+\end_inset
+
+在以
+\begin_inset Formula $a$
+\end_inset
+
+和
+\begin_inset Formula $x$
+\end_inset
+
+为端点的闭区间上有
+\begin_inset Formula $n+1$
+\end_inset
+
+阶连续导函数, 则
+\begin_inset Formula 
+\[
+f(x)=f(a)+\frac{1}{1!}f'(a)\cdot(x-a)+\cdots+\frac{1}{n!}f^{(n)}(a)\cdot(x-a)^{n}+R_{n}(x),
+\]
+
+\end_inset
+
+其中
+\begin_inset Formula 
+\[
+R_{n}(x)=\frac{1}{n!}\int_{a}^{x}f^{(n+1)}(t)\cdot(x-t)^{n}\mathistOperatord t.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+第214页的第16题(积分第二中值定理): 
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+设
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上连续, 
+\begin_inset Formula $g$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上单调且
+\begin_inset Formula $g'$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上连续, 则存在
+\begin_inset Formula $\xi\in[a,b]$
+\end_inset
+
+, 使得
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)g(x)\mathistOperatord x=g(a)\int_{a}^{\xi}f(x)\mathistOperatord x+g(b)\int_{\xi}^{b}f(x)\mathistOperatord x.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+第207页的定理9.11 (积分第二中值定理): 
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+设
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上可积.
+\end_layout
+
+\begin_layout Plain Layout
+(1) 若
+\begin_inset Formula $g$
+\end_inset
+
+非负, 且在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上单调递减, 则存在
+\begin_inset Formula $\xi\in[a,b]$
+\end_inset
+
+, 使得
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)g(x)\mathistOperatord x=g(a)\int_{a}^{\xi}f(x)\mathistOperatord x;
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(2) 若
+\begin_inset Formula $g$
+\end_inset
+
+非负, 且在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上单调递增, 则存在
+\begin_inset Formula $\eta\in[a,b]$
+\end_inset
+
+, 使得
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)g(x)\mathistOperatord x=g(b)\int_{\eta}^{b}f(x)\mathistOperatord x.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+推论: 设
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上可积, 且
+\begin_inset Formula $g$
+\end_inset
+
+是单调函数.
+ 那么存在
+\begin_inset Formula $\xi\in[a,b]$
+\end_inset
+
+, 使得
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)g(x)\mathistOperatord x=g(a)\int_{a}^{\xi}f(x)\mathistOperatord x+g(b)\int_{\xi}^{b}f(x)\mathistOperatord x.
 \]
 
 \end_inset

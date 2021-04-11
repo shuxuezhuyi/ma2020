@@ -6116,11 +6116,20 @@ status open
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Separator plain
+\begin_layout Example
+若
+\begin_inset Formula $f$
 \end_inset
 
+连续非负, 且
+\begin_inset Formula $\int_{a}^{b}f(x)=0$
+\end_inset
 
+, 则
+\begin_inset Formula $f\equiv0$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Theorem
@@ -6493,7 +6502,12 @@ status open
 
 \end_inset
 
+设
+\begin_inset Formula $f$
+\end_inset
 
+有界.
+ 那么
 \begin_inset Formula $f$
 \end_inset
 
@@ -6512,12 +6526,12 @@ status open
 , 使得
 \begin_inset Formula 
 \[
-\sum_{\omega_{k}\geqslant\varepsilon}\Delta x_{k}<\eta.
+\sum_{\omega_{k}\geqslant\varepsilon}\Delta x_{k}<\eta,
 \]
 
 \end_inset
 
-
+亦即振幅不能任意小的那些小区间的长度之和可以任意小.
 \end_layout
 
 \begin_layout Section
