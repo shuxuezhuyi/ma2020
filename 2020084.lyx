@@ -14735,6 +14735,35 @@ status open
 
 \end_deeper
 \begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+指出下列说法的
+\color red
+错误
+\color inherit
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+若
+\begin_inset Formula $\int_{a}^{b}f(x)\mathistOperatord x\leqslant\int_{a}^{b}g(x)\mathistOperatord x$
+\end_inset
+
+, 则
+\begin_inset Formula $f\leqslant g$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
@@ -22521,6 +22550,327 @@ status open
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+设
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上二阶可导且
+\begin_inset Formula $f''>0$
+\end_inset
+
+.
+ 证明:
+\end_layout
+
+\begin_layout Exercise
+(1) 
+\begin_inset Formula 
+\[
+f\left(\frac{a+b}{2}\right)\leqslant\frac{1}{b-a}\int_{a}^{b}f(x)\mathistOperatord x;
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+(2) 又若
+\begin_inset Formula $f\leqslant0$
+\end_inset
+
+, 则又有
+\begin_inset Formula 
+\[
+f(x)\geqslant\frac{2}{b-a}\int_{a}^{b}f(x)\mathistOperatord x,\quad x\in[a,b].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+设
+\begin_inset Formula $f$
+\end_inset
+
+为连续函数, 而
+\begin_inset Formula $u,v$
+\end_inset
+
+均可导, 且可进行复合
+\begin_inset Formula $f\circ u$
+\end_inset
+
+与
+\begin_inset Formula $f\circ v$
+\end_inset
+
+.
+ 证明:
+\begin_inset Formula 
+\[
+\frac{\mathistOperatord}{\mathistOperatord x}\int_{u(x)}^{v(x)}f(t)\mathistOperatord t=f(v(x))v'(x)-f(u(x))u'(x).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+设
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上连续, 定义
+\begin_inset Formula $F(x)=\int_{a}^{x}f(t)(x-t)\mathistOperatord t$
+\end_inset
+
+.
+ 证明: 当
+\begin_inset Formula $x\in[a,b]$
+\end_inset
+
+时有
+\begin_inset Formula $F''(x)=f(x)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+求下列极限:
+\begin_inset Formula 
+\begin{align*}
+(1) & \lim_{x\rightarrow0}\frac{1}{x}\int_{0}^{x}\cos t^{2}\mathistOperatord t; & (2) & \lim_{x\rightarrow\infty}\frac{\left(\int_{0}^{x}e^{t^{2}}\mathistOperatord t\right)^{2}}{\int_{0}^{x}e^{2t^{2}}\mathistOperatord t}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+书上第213页第4题的偶数小问.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+设
+\begin_inset Formula $f$
+\end_inset
+
+连续.
+ 证明:
+\begin_inset Formula 
+\begin{align*}
+(1) & \int_{0}^{\pi/2}f(\sin x)\mathistOperatord x=\int_{0}^{\pi/2}f(\cos x)\mathistOperatord x; & (2) & \int_{0}^{\pi}xf(\sin x)\mathistOperatord x=\frac{\pi}{2}\int_{0}^{\pi}f(\sin x)\mathistOperatord x.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+设
+\begin_inset Formula $J(m,n)=\int_{0}^{\pi/2}\sin^{m}x\cos^{n}x\mathistOperatord x$
+\end_inset
+
+, 其中
+\begin_inset Formula $m,n$
+\end_inset
+
+为正整数.
+ 证明:
+\begin_inset Formula 
+\[
+J(m,n)=\frac{n-1}{m+n}J(m,n-2)=\frac{m-1}{m+n}J(m-2,n),
+\]
+
+\end_inset
+
+并求
+\begin_inset Formula $J(2m,2n)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+证明: 设
+\begin_inset Formula $\varphi$
+\end_inset
+
+在
+\begin_inset Formula $[0,a]$
+\end_inset
+
+上连续, 
+\begin_inset Formula $f$
+\end_inset
+
+二阶可导, 且
+\begin_inset Formula $f''\geqslant0$
+\end_inset
+
+.
+ 那么
+\begin_inset Formula 
+\[
+\frac{1}{a}\int_{0}^{a}f(\varphi(t))\mathistOperatord t\geqslant f\left(\frac{1}{a}\int_{0}^{a}\varphi(t)\mathistOperatord t\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+证明下列命题:
+\end_layout
+
+\begin_layout Exercise
+(1) 若
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上连续增, 而
+\begin_inset Formula 
+\[
+F(x)=\begin{cases}
+\frac{1}{x-a}\int_{a}^{x}f(t)\mathistOperatord t, & x\in(a,b],\\
+f(a), & x=a,
+\end{cases}
+\]
+
+\end_inset
+
+则
+\begin_inset Formula $F$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上单调递增.
+\end_layout
+
+\begin_layout Exercise
+(2) 若
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[0,+\infty)$
+\end_inset
+
+上连续且恒正, 则
+\begin_inset Formula 
+\[
+\varphi(x)=\left.\int_{0}^{x}tf(t)\mathistOperatord t\right/\int_{0}^{x}f(t)\mathistOperatord t
+\]
+
+\end_inset
+
+在
+\begin_inset Formula $(0,+\infty)$
+\end_inset
+
+上严格单调递增.
+ 如果要使
+\begin_inset Formula $\varphi$
+\end_inset
+
+在
+\begin_inset Formula $[0,+\infty)$
+\end_inset
+
+上严格单调递增, 试问应补充定义
+\begin_inset Formula $\varphi(0)=$
+\end_inset
+
+ 多少呢?
 \end_layout
 
 \begin_layout Chapter
