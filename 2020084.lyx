@@ -14188,7 +14188,7 @@ status collapsed
 \end_layout
 
 \begin_layout Exercise
-修正下述证明的
+修正下列证明的
 \color red
 错误
 \color inherit
@@ -14293,6 +14293,104 @@ status collapsed
 
 \end_layout
 
+\begin_layout Quotation
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+反证法: 若
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[\alpha,\beta]$
+\end_inset
+
+上不可积, 将
+\begin_inset Formula $[\alpha,\beta]$
+\end_inset
+
+分割为
+\begin_inset Formula $\alpha=x_{s}<x_{s+1}<\cdots<x_{t}=\beta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+无论
+\begin_inset Formula $\Vert T''\Vert$
+\end_inset
+
+有多小, 
+\begin_inset Formula $\exists\varepsilon_{0}>0$
+\end_inset
+
+, 
+\begin_inset Formula $\sum_{k=s}^{t}\omega_{k}\Delta x_{k}\geqslant\varepsilon_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+对
+\begin_inset Formula $[a,b]$
+\end_inset
+
+做分割.
+ 因为
+\begin_inset Formula $[\alpha,\beta]\subset[a,b]$
+\end_inset
+
+, 
+\begin_inset Formula $T$
+\end_inset
+
+内
+\begin_inset Formula $[\alpha,\beta]$
+\end_inset
+
+的分割按上述分割法进行.
+\begin_inset Formula 
+\[
+\sum_{k=1}^{n}\omega_{k}\Delta x_{k}=\sum_{k=1}^{s}\omega_{k}\Delta x_{k}+\sum_{k=s}^{t}\omega_{k}\Delta x_{k}+\sum_{k=t}^{n}\omega_{k}\Delta x_{k}>\varepsilon_{0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+所以
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上不可积, 矛盾.
+\end_layout
+
+\begin_layout Plain Layout
+故
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[\alpha,\beta]$
+\end_inset
+
+上也可积.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -14306,7 +14404,7 @@ status collapsed
 \color red
 错误
 \color inherit
-, 修正证法四的
+, 修正证法四与证法五的
 \color red
 错误
 \color inherit
@@ -14622,6 +14720,131 @@ status open
 
 \end_inset
 
+因为
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上可积, 且仅在有限个点处有
+\begin_inset Formula $f(x)\neq g(x)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+这些点可逐个在
+\begin_inset Formula $f$
+\end_inset
+
+原有基础上变为
+\begin_inset Formula $g(x)$
+\end_inset
+
+.
+ 即只需证出只有一个点不同的情形.
+\end_layout
+
+\begin_layout Plain Layout
+假设此点位于
+\begin_inset Formula $x=a$
+\end_inset
+
+处.
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)\mathistOperatord x=\lim_{\Vert T\Vert\rightarrow0}\sum_{i=1}^{n}f(\xi_{i})\Delta x_{i},\quad\xi_{i}\in\Delta_{i}=f(\xi_{1})\Delta x_{1}+\sum_{i=2}^{n}f(\xi_{i})\Delta x_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+因为
+\begin_inset Formula $g(x)$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上有界, 所以存在, 且在
+\begin_inset Formula $x=a$
+\end_inset
+
+处有
+\begin_inset Formula $f(x)=g(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+所以
+\begin_inset Formula $g(x)$
+\end_inset
+
+在
+\begin_inset Formula $\Delta_{1}$
+\end_inset
+
+处的
+\begin_inset Formula $g(\xi_{1})\Delta x_{1}$
+\end_inset
+
+存在, 从而
+\begin_inset Formula $\int_{a}^{b}g(x)\mathistOperatord x=g(\xi_{1})\Delta x_{1}+\sum_{i=2}^{n}f(\xi_{i})\Delta x_{i}$
+\end_inset
+
+存在
+\end_layout
+
+\begin_layout Plain Layout
+又因为
+\begin_inset Formula 
+\begin{align*}
+\int_{a}^{b}g(x)\mathistOperatord x & =\lim_{\Vert T\Vert\rightarrow0}\left[g(\xi_{1})\Delta x_{1}+\sum_{i=2}^{n}f(\xi_{i})\Delta x_{i}\right]\\
+ & =\underbrace{\lim_{\Delta x_{1}\rightarrow0}g(\xi_{1})\Delta x_{1}}_{\rightarrow0}+\lim_{\Vert T\Vert\rightarrow0}\sum_{i=2}^{n}f(\xi_{i})\Delta x_{i}\\
+ & =\underbrace{\lim_{\Delta x_{1}\rightarrow0}f(\xi_{1})\Delta x_{1}}_{\rightarrow0}+\lim_{\Vert T\Vert\rightarrow0}\sum_{i=2}^{n}f(\xi_{i})\Delta x_{i}=\int_{a}^{b}f(x)\mathistOperatord x
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+所以
+\begin_inset Formula $\int_{a}^{b}f(x)\mathistOperatord x=\int_{a}^{b}g(x)\mathistOperatord x$
+\end_inset
+
+, 其余点可逐个加上再积分, 结果同上.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+证法五
+\end_layout
+
+\end_inset
+
 假设这有限个点为
 \begin_inset Formula $r_{1},r_{2},\cdots,r_{k}$
 \end_inset
@@ -14742,24 +14965,19 @@ status open
 \end_layout
 
 \begin_layout Exercise
-指出下列说法的
-\color red
-错误
-\color inherit
-:
+举例:
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
-若
 \begin_inset Formula $\int_{a}^{b}f(x)\mathistOperatord x\leqslant\int_{a}^{b}g(x)\mathistOperatord x$
 \end_inset
 
-, 则
+, 但
 \begin_inset Formula $f\leqslant g$
 \end_inset
 
-.
+不成立.
 \end_layout
 
 \end_deeper
