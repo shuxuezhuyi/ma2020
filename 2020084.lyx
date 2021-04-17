@@ -15282,7 +15282,7 @@ A-\varepsilon\leqslant\frac{\int_{0}^{x}f(t)\mathistOperatord t}{x}\leqslant A+\
 \end_layout
 
 \begin_layout Exercise
-指出下述证明的
+指出下列证明的
 \color red
 错误
 \color inherit
@@ -15446,6 +15446,58 @@ noprefix "false"
 \begin_inset Formula 
 \[
 \lim_{x\rightarrow+\infty}\frac{1}{x}\int_{0}^{x}f(t)\mathistOperatord t=\frac{1}{p}\int_{0}^{p}f(t)\mathistOperatord t.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+令
+\begin_inset Formula $x=np$
+\end_inset
+
+.
+ 当
+\begin_inset Formula $x\rightarrow+\infty$
+\end_inset
+
+时有
+\begin_inset Formula $n\rightarrow+\infty$
+\end_inset
+
+.
+ 于是
+\begin_inset Formula 
+\begin{align*}
+\lim_{x\rightarrow+\infty}\frac{1}{x}\int_{0}^{x}f(t)\mathistOperatord t & =\lim_{n\rightarrow\infty}\frac{1}{np}\int_{0}^{np}f(t)\mathistOperatord t\\
+ & =\lim_{n\rightarrow\infty}\frac{1}{np}\left[\int_{0}^{p}f(t)\mathistOperatord t+\int_{p}^{2p}f(t)\mathistOperatord t+\cdots+\int_{(n-1)p}^{np}f(t)\mathistOperatord t\right].
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+又由积分第一中值定理可知
+\begin_inset Formula $\int_{0}^{p}f(t)\mathistOperatord t=\cdots=\int_{(n-1)p}^{np}f(t)\mathistOperatord t$
+\end_inset
+
+, 因而
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow+\infty}\frac{1}{x}\int_{0}^{x}f(t)\mathistOperatord t=\lim_{n\rightarrow\infty}\frac{1}{np}\cdot n\int_{0}^{p}f(t)\mathistOperatord t=\frac{1}{p}\int_{0}^{p}f(t)\mathistOperatord t.
 \]
 
 \end_inset
@@ -23751,6 +23803,165 @@ a_{n}=\sum_{k=1}^{n}f(k)-\int_{1}^{n}f(x)\mathistOperatord x.
 \end_inset
 
 收敛.
+\end_layout
+
+\begin_layout Section
+定积分的应用
+\end_layout
+
+\begin_layout Exercise
+验证心形线
+\begin_inset Formula $r=a\cdot(1+\cos\theta)$
+\end_inset
+
+所围图形的面积为
+\begin_inset Formula $3\pi a^{2}/2$
+\end_inset
+
+, 其中
+\begin_inset Formula $a>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+验证三叶线曲线
+\begin_inset Formula $r=a\sin(3\theta)$
+\end_inset
+
+所围图形的面积为
+\begin_inset Formula $\pi a^{2}/4$
+\end_inset
+
+, 其中
+\begin_inset Formula $a>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+验证曲线
+\begin_inset Formula $r=\sin\theta$
+\end_inset
+
+与曲线
+\begin_inset Formula $r=\sqrt{3}\cos\theta$
+\end_inset
+
+所围公共部分的面积为
+\begin_inset Formula $5\pi/24-\sqrt{3}/4$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+验证下列平面曲线绕轴旋转所围成立体的体积:
+\end_layout
+
+\begin_layout Exercise
+(3) 
+\begin_inset Formula $r=a\cdot(1+\cos\theta)$
+\end_inset
+
+ (其中
+\begin_inset Formula $a>0$
+\end_inset
+
+), 绕极轴, 体积为
+\begin_inset Formula $8\pi a^{3}/3$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Exercise
+(4) 
+\begin_inset Formula $x^{2}/a^{2}+y^{2}/b^{2}=1$
+\end_inset
+
+, 绕
+\begin_inset Formula $y$
+\end_inset
+
+轴, 体积为
+\begin_inset Formula $4\pi a^{2}b/3$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+已知球半径为
+\begin_inset Formula $r$
+\end_inset
+
+, 验证高为
+\begin_inset Formula $h$
+\end_inset
+
+的球缺体积
+\begin_inset Formula $V=\pi h^{2}(r-h/3)$
+\end_inset
+
+, 其中
+\begin_inset Formula $h\leqslant r$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+验证曲线
+\begin_inset Formula $x=a\cos^{3}t,y=a\sin^{3}t$
+\end_inset
+
+所围平面图形(书上第225页图10-8)绕
+\begin_inset Formula $x$
+\end_inset
+
+轴旋转所得立体的体积为
+\begin_inset Formula $32\pi a^{3}/105$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Chapter
