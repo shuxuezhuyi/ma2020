@@ -15113,6 +15113,128 @@ s(T')\leqslant s(T)\leqslant s(T_{0})+|M-m|\cdot p\cdot\Vert T\Vert,
 \end_layout
 
 \begin_layout Exercise
+指出下述解法的
+\color red
+错误
+\color inherit
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Quotation
+设
+\begin_inset Formula 
+\[
+f(x)=\begin{cases}
+x, & x\,\text{为有理数},\\
+0, & x\,\text{为无理数}.
+\end{cases}
+\]
+
+\end_inset
+
+试求
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[0,1]$
+\end_inset
+
+上的上积分和下积分; 并由此判断
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[0,1]$
+\end_inset
+
+上是否可积.
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+解
+\end_layout
+
+\end_inset
+
+遍历分割
+\begin_inset Formula $T$
+\end_inset
+
+, 有
+\begin_inset Formula 
+\[
+s=\lim_{\Vert T\Vert\rightarrow0}s(T)=0,\quad S=\lim_{\Vert T\Vert\rightarrow0}\sum_{i=1}^{n}M_{i}\Delta x_{i}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+当
+\begin_inset Formula $\Vert T\Vert\rightarrow0$
+\end_inset
+
+时, 
+\begin_inset Formula $M_{i}$
+\end_inset
+
+有界, 同时
+\begin_inset Formula $\Delta x_{i}$
+\end_inset
+
+是无穷小量, 故
+\begin_inset Formula 
+\[
+\lim_{\Vert T\Vert\rightarrow0}\sum_{i=1}^{n}M_{i}\Delta x_{i}=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+由
+\begin_inset Formula $S=s$
+\end_inset
+
+可知
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[0,1]$
+\end_inset
+
+上可积.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
 举例:
 \end_layout
 
@@ -15165,6 +15287,133 @@ s(T')\leqslant s(T)\leqslant s(T_{0})+|M-m|\cdot p\cdot\Vert T\Vert,
 \end_inset
 
 在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上连续增, 而
+\begin_inset Formula 
+\[
+F(x)=\frac{1}{x-a}\int_{a}^{x}f(t)\mathistOperatord t,\quad x\in(a,b).
+\]
+
+\end_inset
+
+证明: 
+\begin_inset Formula $F$
+\end_inset
+
+在
+\begin_inset Formula $(a,b)$
+\end_inset
+
+上单调递增.
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+注意到
+\begin_inset Formula 
+\[
+F'(x)=\frac{f(x)(x-a)-\int_{0}^{x}f(t)\mathistOperatord t+\int_{0}^{a}f(t)\mathistOperatord t}{(x-a)^{2}},
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+我们记
+\begin_inset Formula $g(x)=f(x)(x-a)-\int_{0}^{x}f(t)\mathistOperatord t+\int_{0}^{a}f(t)\mathistOperatord t$
+\end_inset
+
+, 则有
+\begin_inset Formula 
+\[
+g'(x)=f'(x)(x-a)+f(x)-f(x)=f'(x)(x-a).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+由
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上连续增可知
+\begin_inset Formula $f'\geqslant0$
+\end_inset
+
+, 故
+\begin_inset Formula $g'\geqslant0$
+\end_inset
+
+.
+ 于是
+\begin_inset Formula $g$
+\end_inset
+
+单调递增, 从而
+\begin_inset Formula $g(x)\geqslant g(a)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+因此, 
+\begin_inset Formula $F'\geqslant0$
+\end_inset
+
+, 故
+\begin_inset Formula $F$
+\end_inset
+
+在
+\begin_inset Formula $(a,b)$
+\end_inset
+
+上单调递增.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+指出下述证明的
+\color red
+错误
+\color inherit
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Quotation
+设
+\begin_inset Formula $f$
+\end_inset
+
+在
 \begin_inset Formula $[0,+\infty)$
 \end_inset
 
@@ -15178,6 +15427,44 @@ s(T')\leqslant s(T)\leqslant s(T_{0})+|M-m|\cdot p\cdot\Vert T\Vert,
 \[
 \lim_{x\rightarrow+\infty}\frac{1}{x}\int_{0}^{x}f(t)\mathistOperatord t=A.
 \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+由积分第一中值定理可知, 存在
+\begin_inset Formula $\xi\in[0,x]$
+\end_inset
+
+, 使得
+\begin_inset Formula $\int_{0}^{x}f(t)\mathistOperatord t=f(\xi)\cdot x$
+\end_inset
+
+.
+ 又因为当
+\begin_inset Formula $x\rightarrow+\infty$
+\end_inset
+
+时有
+\begin_inset Formula $\xi\rightarrow+\infty$
+\end_inset
+
+, 所以
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow+\infty}\frac{1}{x}\int_{0}^{x}f(t)\mathistOperatord t=\lim_{x\rightarrow+\infty}\frac{1}{x}f(\xi)\cdot x=\lim_{x\rightarrow+\infty}f(\xi)=A.
+\]
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -15309,6 +15596,95 @@ A-\varepsilon\leqslant\frac{\int_{0}^{x}f(t)\mathistOperatord t}{x}\leqslant A+\
 \[
 \lim_{x\rightarrow+\infty}\frac{1}{x}\int_{0}^{x}f(t)\mathistOperatord t=\frac{1}{p}\int_{0}^{p}f(t)\mathistOperatord t.
 \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+记
+\begin_inset Formula $x=p\lambda$
+\end_inset
+
+, 则当
+\begin_inset Formula $x\rightarrow+\infty$
+\end_inset
+
+时有
+\begin_inset Formula $\lambda\rightarrow+\infty$
+\end_inset
+
+, 并且
+\begin_inset Formula 
+\[
+\frac{1}{x}\int_{0}^{x}f(t)\mathistOperatord t=\frac{1}{p\lambda}\int_{0}^{p\lambda}f(t)\mathistOperatord t.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+令
+\begin_inset Formula $y=t/\lambda$
+\end_inset
+
+, 则
+\begin_inset Formula 
+\[
+\frac{1}{p\lambda}\int_{0}^{p\lambda}f(t)\mathistOperatord t=\frac{1}{p}\int_{0}^{p}f(y)\mathistOperatord y=\frac{1}{p}\int_{0}^{p}f(\lambda t)\mathistOperatord t.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+设
+\begin_inset Formula $n$
+\end_inset
+
+为正整数, 则
+\begin_inset Formula $f(t)=f(t+np)$
+\end_inset
+
+, 并且当
+\begin_inset Formula $n\rightarrow+\infty$
+\end_inset
+
+时有
+\begin_inset Formula $\lim_{n\rightarrow\infty}f(t+np)=\lim_{n\rightarrow\infty}f(t\lambda)$
+\end_inset
+
+, 于是
+\begin_inset Formula 
+\[
+\lim_{\lambda\rightarrow+\infty}\int_{0}^{p}f(\lambda t)\mathistOperatord t=\int_{0}^{p}f(t)\mathistOperatord t,
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+从而
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow+\infty}\frac{1}{x}\int_{0}^{x}f(t)\mathistOperatord t=\frac{1}{p}\int_{0}^{p}f(t)\mathistOperatord t.
+\]
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
