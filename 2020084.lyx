@@ -4977,6 +4977,26 @@ status open
 .
 \end_layout
 
+\begin_layout Remark
+说函数
+\begin_inset Formula $f$
+\end_inset
+
+
+\emph on
+ 连续可微
+\emph default
+, 就是说它的导数连续, 可以记为
+\begin_inset Formula $f\in C^{1}$
+\end_inset
+
+或
+\begin_inset Formula $f\in C^{(1)}$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Section
 微分中值定理及其应用
 \end_layout
@@ -6532,6 +6552,365 @@ status open
 \end_inset
 
 亦即振幅不能任意小的那些小区间的长度之和可以任意小.
+\end_layout
+
+\begin_layout Section
+定积分的应用
+\end_layout
+
+\begin_layout Example
+(1) 
+\begin_inset Formula $x=a$
+\end_inset
+
+在左, 
+\begin_inset Formula $x=b$
+\end_inset
+
+在右, 
+\begin_inset Formula $y=f(x)$
+\end_inset
+
+与
+\begin_inset Formula $x$
+\end_inset
+
+轴所围面积是
+\begin_inset Formula 
+\[
+A=\int_{a}^{b}|f(x)|\mathistOperatord x=\int_{a}^{b}|y|\mathistOperatord x.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+(2) 
+\begin_inset Formula $y=f_{2}(x)$
+\end_inset
+
+在上, 
+\begin_inset Formula $y=f_{1}(x)$
+\end_inset
+
+在下, 
+\begin_inset Formula $x=a$
+\end_inset
+
+在左, 
+\begin_inset Formula $x=b$
+\end_inset
+
+在右, 所围面积是
+\begin_inset Formula 
+\[
+A=\int_{a}^{b}[f_{2}(x)-f_{1}(x)]\mathistOperatord x.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+(3) 曲线
+\begin_inset Formula 
+\[
+x=x(t),\quad y=y(t),\quad t\in[\alpha,\beta]
+\]
+
+\end_inset
+
+在上, 
+\begin_inset Formula $x$
+\end_inset
+
+轴在下, 
+\begin_inset Formula $x=a$
+\end_inset
+
+在左, 
+\begin_inset Formula $x=b$
+\end_inset
+
+在右, 所围面积是
+\begin_inset Formula 
+\[
+A=\int_{\alpha}^{\beta}|y(t)x'(t)|\mathistOperatord t.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+(4) 不自交的闭曲线
+\begin_inset Formula 
+\[
+x=x(t),\quad y=y(t),\quad t\in[\alpha,\beta],\quad x(\alpha)=x(\beta),\quad y(\alpha)=y(\beta)
+\]
+
+\end_inset
+
+所围面积是
+\begin_inset Formula 
+\[
+A=\left|\int_{\alpha}^{\beta}y(t)x'(t)\mathistOperatord t\right|=\left|\int_{\alpha}^{\beta}x(t)y'(t)\mathistOperatord t\right|.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+在极坐标中, 曲线
+\begin_inset Formula 
+\[
+r=r(\theta),\quad\theta\in[\alpha,\beta]
+\]
+
+\end_inset
+
+与射线
+\begin_inset Formula $\theta=\alpha$
+\end_inset
+
+, 
+\begin_inset Formula $\theta=\beta$
+\end_inset
+
+所围面积是
+\begin_inset Formula 
+\[
+A=\frac{1}{2}\int_{\alpha}^{\beta}r^{2}(\theta)\mathistOperatord\theta.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+(1) 对任意
+\begin_inset Formula $c$
+\end_inset
+
+, 记平面
+\begin_inset Formula $x=c$
+\end_inset
+
+截得立体
+\begin_inset Formula $\Omega$
+\end_inset
+
+的截面面积为
+\begin_inset Formula $A(c)$
+\end_inset
+
+.
+ 那么立体
+\begin_inset Formula $\Omega$
+\end_inset
+
+的体积为
+\begin_inset Formula 
+\[
+V=\int_{a}^{b}A(x)\mathistOperatord x.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+(2) 
+\begin_inset Formula $y=f(x)$
+\end_inset
+
+绕
+\begin_inset Formula $x$
+\end_inset
+
+轴旋转一周所得旋转体的体积为
+\begin_inset Formula 
+\[
+V=\pi\int_{a}^{b}[f(x)]^{2}\mathistOperatord x.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+定义曲线的
+\series bold
+弧长
+\series default
+(arc length)与
+\series bold
+可求长
+\series default
+(rectifiable).
+\end_layout
+
+\begin_layout Theorem
+光滑曲线
+\begin_inset Formula 
+\[
+x=x(t),\quad y=y(t),\quad t\in[\alpha,\beta]
+\]
+
+\end_inset
+
+可求长且弧长为
+\begin_inset Formula 
+\[
+s=\int_{\alpha}^{\beta}|(x'(t),y'(t))|\mathistOperatord t=\int_{\alpha}^{\beta}\sqrt{[x'(t)]^{2}+[y'(t)]^{2}}\mathistOperatord t.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+(1) 曲线
+\begin_inset Formula 
+\[
+y=f(x),\quad x\in[a,b]
+\]
+
+\end_inset
+
+的弧长为
+\begin_inset Formula 
+\[
+s=\int_{a}^{b}\sqrt{1+[f'(x)]^{2}}\mathistOperatord x.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+(2) 在极坐标中, 曲线
+\begin_inset Formula 
+\[
+r=r(\theta),\quad\theta\in[\alpha,\beta]
+\]
+
+\end_inset
+
+的弧长为
+\begin_inset Formula 
+\[
+s=\int_{\alpha}^{\beta}\sqrt{r^{2}(\theta)+[r'(\theta)]^{2}}\mathistOperatord\theta.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+用转角除以弧长的方法定义
+\series bold
+曲率
+\series default
+(curvature).
+\end_layout
+
+\begin_layout Example
+(1) 光滑曲线
+\begin_inset Formula $t\mapsto(x(t),y(t))$
+\end_inset
+
+的曲率为
+\begin_inset Formula 
+\[
+K=\frac{|x'y''-x''y'|}{((x')^{2}+(y')^{2})^{3/2}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+(2) 曲线
+\begin_inset Formula $y=f(x)$
+\end_inset
+
+的曲率为
+\begin_inset Formula 
+\[
+K=\frac{|y''|}{(1+(y')^{2})^{3/2}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+(3) 半径为
+\begin_inset Formula $R$
+\end_inset
+
+的圆在每一点处的曲率都是
+\begin_inset Formula $1/R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+定义密切圆(曲率圆)、曲率半径和曲率中心.
+\end_layout
+
+\begin_layout Example
+光滑曲线
+\begin_inset Formula 
+\[
+x=x(t),\quad y=y(t),\quad t\in[\alpha,\beta]
+\]
+
+\end_inset
+
+绕
+\begin_inset Formula $x$
+\end_inset
+
+轴旋转所得旋转曲面的面积为
+\begin_inset Formula 
+\[
+S=2\pi\int_{\alpha}^{\beta}|y(t)|\cdot\sqrt{(x'(t))^{2}+(y'(t))^{2}}\mathistOperatord t.
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -15400,7 +15779,7 @@ g'(x)=f'(x)(x-a)+f(x)-f(x)=f'(x)(x-a).
 \end_layout
 
 \begin_layout Exercise
-指出下述证明的
+指出下列证明的
 \color red
 错误
 \color inherit
@@ -15548,6 +15927,31 @@ A-\varepsilon\leqslant\frac{\int_{0}^{x}f(t)\mathistOperatord t}{x}\leqslant A+\
 \begin_inset Formula 
 \[
 \lim_{x\rightarrow+\infty}\frac{1}{x}\int_{0}^{x}f(t)\mathistOperatord t=A.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+由
+\begin_inset Formula $\frac{\infty}{\infty}$
+\end_inset
+
+型极限的洛必达法则可知
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow+\infty}\frac{\int_{0}^{x}f(t)\mathistOperatord t}{x}=\lim_{x\rightarrow+\infty}\frac{f(x)}{1}=A.
 \]
 
 \end_inset
