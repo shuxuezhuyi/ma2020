@@ -18535,11 +18535,7 @@ status open
 \series bold
 (5)
 \series default
- 
-\emph on
-王少辰同学的方法
-\emph default
-:
+ 证法一:
 \end_layout
 
 \begin_layout Plain Layout
@@ -18607,11 +18603,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-
-\emph on
-陈庆傲同学的方法
-\emph default
-:
+证法二:
 \end_layout
 
 \begin_layout Plain Layout
@@ -24821,7 +24813,7 @@ f(x)=\begin{cases}
 
 \begin_layout Standard
 \begin_inset Flex ProofAsInset
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Argument 1
@@ -24949,7 +24941,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Flex ProofAsInset
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Argument 1
@@ -25040,7 +25032,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Flex ProofAsInset
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Argument 1
@@ -25091,7 +25083,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Flex ProofAsInset
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Argument 1
@@ -25226,7 +25218,7 @@ f'(x)=\begin{cases}
 
 \begin_layout Standard
 \begin_inset Flex ProofAsInset
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Argument 1
@@ -25396,7 +25388,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Flex ProofAsInset
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Argument 1
@@ -25510,7 +25502,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Flex ProofAsInset
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Argument 1
@@ -25689,7 +25681,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Flex ProofAsInset
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Argument 1
@@ -25786,7 +25778,7 @@ f(x), & x\neq x_{1},x_{2},\cdots,x_{n}\\
 
 \begin_layout Standard
 \begin_inset Flex ProofAsInset
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Argument 1
@@ -25911,7 +25903,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Flex ProofAsInset
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Argument 1
@@ -26049,7 +26041,7 @@ x\in U_{-}^{\circ}(x_{i}).\quad|f(x)|<M_{i}
 
 \begin_layout Standard
 \begin_inset Flex ProofAsInset
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Argument 1
@@ -26131,7 +26123,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Flex ProofAsInset
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Argument 1
@@ -26243,7 +26235,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Flex ProofAsInset
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Argument 1
@@ -26317,7 +26309,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Flex ProofAsInset
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Argument 1
@@ -26415,7 +26407,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Flex ProofAsInset
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Argument 1
@@ -26558,7 +26550,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Flex ProofAsInset
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Argument 1
@@ -26624,7 +26616,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Flex ProofAsInset
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Argument 1
@@ -26689,7 +26681,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Flex ProofAsInset
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Argument 1
@@ -26850,7 +26842,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Flex ProofAsInset
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Argument 1
@@ -26980,7 +26972,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Flex ProofAsInset
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Argument 1
@@ -27109,7 +27101,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Flex ProofAsInset
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Argument 1
@@ -27257,7 +27249,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Flex ProofAsInset
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Argument 1
@@ -27335,7 +27327,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Flex ProofAsInset
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Argument 1
@@ -27484,7 +27476,7 @@ a|x_{1}-x_{2}|-2\varepsilon<|f(x_{1})-f(x_{2})|<a|x_{1}-x_{2}|+2\varepsilon
 
 \begin_layout Standard
 \begin_inset Flex ProofAsInset
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Argument 1
@@ -27601,7 +27593,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Flex ProofAsInset
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Argument 1
@@ -27775,7 +27767,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Flex ProofAsInset
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Argument 1
@@ -27911,7 +27903,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Flex ProofAsInset
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Argument 1
@@ -28050,7 +28042,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Flex ProofAsInset
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Argument 1
@@ -28290,7 +28282,7 @@ s.t.
 
 \begin_layout Standard
 \begin_inset Flex ProofAsInset
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Argument 1
@@ -28455,7 +28447,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Flex ProofAsInset
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Argument 1
@@ -28625,7 +28617,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Flex ProofAsInset
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Argument 1
@@ -28802,7 +28794,7 @@ ax_{2}+b-\varepsilon<f(x_{2})<ax_{2}+b+\varepsilon
 
 \begin_layout Standard
 \begin_inset Flex ProofAsInset
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Argument 1
@@ -28893,7 +28885,7 @@ f''(\xi)=\frac{f'(\xi_{1})}{\xi_{1}-\frac{a+b}{2}}\geqslant\frac{4(f(b)-f(a))}{(
 
 \begin_layout Standard
 \begin_inset Flex ProofAsInset
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Argument 1
@@ -29030,7 +29022,7 @@ f''(\xi)=\frac{8(f(a)-f(\frac{a+b}{2}))}{(b-a)^{2}}\qquad(2)
 
 \begin_layout Standard
 \begin_inset Flex ProofAsInset
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Argument 1
@@ -29145,7 +29137,7 @@ status open
 
 \begin_layout Standard
 \begin_inset Flex ProofAsInset
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Argument 1
@@ -29301,7 +29293,7 @@ f(b)=f\left(\frac{a+b}{2}\right)+f'\left(\frac{a+b}{2}\right)\frac{b-a}{2}+\frac
 
 \begin_layout Standard
 \begin_inset Flex ProofAsInset
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Argument 1
@@ -29486,7 +29478,7 @@ H=\{(x-\delta(x),x+\delta(x)):x\in[a,b]\},
 \begin_layout Standard
 \noindent
 \begin_inset Flex ProofAsInset
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Argument 1
@@ -29590,7 +29582,7 @@ status open
 \begin_layout Standard
 \noindent
 \begin_inset Flex ProofAsInset
-status open
+status collapsed
 
 \begin_layout Plain Layout
 任意取定
@@ -29742,7 +29734,7 @@ status open
 \begin_layout Standard
 \noindent
 \begin_inset Flex ProofAsInset
-status open
+status collapsed
 
 \begin_layout Plain Layout
 因为
@@ -29853,6 +29845,717 @@ f(x)=f\left(\frac{a+b}{2}\right)+\frac{f''(\xi)}{2}\left(x-\frac{a+b}{2}\right)^
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+第二学期期中考试
+\end_layout
+
+\begin_layout Section
+考试中出现的错误
+\end_layout
+
+\begin_layout Subsection
+第六题
+\end_layout
+
+\begin_layout Exercise
+设
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上可积, 并且
+\begin_inset Formula $\int_{a}^{b}f(x)\mathistOperatord x>0$
+\end_inset
+
+.
+ 证明: 存在
+\begin_inset Formula $[\alpha,\beta]\subset[a,b]$
+\end_inset
+
+, 使得对任意
+\begin_inset Formula $x\in[\alpha,\beta]$
+\end_inset
+
+都有
+\begin_inset Formula $f(x)>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+用反证法.
+ 假设对任意
+\begin_inset Formula $x\in[a,b]$
+\end_inset
+
+都有
+\begin_inset Formula $f(x)\leqslant0$
+\end_inset
+
+.
+ 那么
+\begin_inset Formula $\int_{a}^{b}f(x)\mathistOperatord x\leqslant0$
+\end_inset
+
+, 矛盾! 故假设不成立, 原命题得证.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+将区间
+\begin_inset Formula $[a,b]$
+\end_inset
+
+二等分.
+ 记
+\begin_inset Formula $c_{1}=(a+b)/2$
+\end_inset
+
+.
+ 由
+\begin_inset Formula 
+\[
+0<\int_{a}^{b}f(x)\mathistOperatord x=\int_{a}^{c_{1}}f(x)\mathistOperatord x+\int_{c_{1}}^{b}f(x)\mathistOperatord x
+\]
+
+\end_inset
+
+可知
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,c_{1}]$
+\end_inset
+
+或
+\begin_inset Formula $[c_{1},b]$
+\end_inset
+
+上的积分大于零.
+ 记
+\begin_inset Formula $[a,c_{1}]$
+\end_inset
+
+与
+\begin_inset Formula $[c_{1},b]$
+\end_inset
+
+中使得
+\begin_inset Formula $f$
+\end_inset
+
+的积分大于零的一个区间为
+\begin_inset Formula $[a_{1},b_{1}]$
+\end_inset
+
+.
+ 记
+\begin_inset Formula $c_{2}=(a_{1}+b_{1})/2$
+\end_inset
+
+, 重复上述操作又可得到区间
+\begin_inset Formula $[a_{2},b_{2}]\subset[a_{1},b_{1}]$
+\end_inset
+
+, 使得
+\begin_inset Formula $\int_{a_{2}}^{b_{2}}f(x)\mathistOperatord x>0$
+\end_inset
+
+.
+ 不断重复上述步骤, 可以得到闭区间套
+\begin_inset Formula $\{[a_{n},b_{n}]:n\in\mathbb{N}_{+}\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+由此可见, 对任意
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 总存在
+\begin_inset Formula $c\in[a,b]$
+\end_inset
+
+, 使得
+\begin_inset Formula $\int_{c}^{c+\varepsilon}f(x)\mathistOperatord x>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+下面用反证法.
+ 假设结论不成立, 那么对于上述
+\begin_inset Formula $c$
+\end_inset
+
+而言, 
+\begin_inset Formula $[c,c+\varepsilon]$
+\end_inset
+
+中总存在
+\begin_inset Formula $x_{1},x_{2}$
+\end_inset
+
+, 使得
+\begin_inset Formula $f(x_{1})<0$
+\end_inset
+
+且
+\begin_inset Formula $f(x_{2})>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+对
+\begin_inset Formula $[c,c+\varepsilon]$
+\end_inset
+
+上任一分割
+\begin_inset Formula $T$
+\end_inset
+
+, 在
+\begin_inset Formula 
+\[
+\int_{c}^{c+\varepsilon}f(x)\mathistOperatord x=\lim_{\Vert T\Vert\rightarrow0}\sum_{i=1}^{n}f(\xi_{i})\Delta x_{i}
+\]
+
+\end_inset
+
+中, 既可以取所有
+\begin_inset Formula $f(\xi_{i})<0$
+\end_inset
+
+, 也可以取所有
+\begin_inset Formula $f(\xi_{i})>0$
+\end_inset
+
+.
+ 由此可见
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[c,c+\varepsilon]$
+\end_inset
+
+上不可积, 矛盾!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+第八题
+\end_layout
+
+\begin_layout Exercise
+设
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上可积, 并且对任意
+\begin_inset Formula $x\in[a,b]$
+\end_inset
+
+都有
+\begin_inset Formula $f(x)>0$
+\end_inset
+
+.
+ 证明: 
+\begin_inset Formula $\int_{a}^{b}f(x)\mathistOperatord x>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+参考答案
+\end_layout
+
+\begin_layout Subsection
+第六题
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+证法一
+\end_layout
+
+\end_inset
+
+用反证法.
+ 假设对任意
+\begin_inset Formula $[\alpha,\beta]\subset[a,b]$
+\end_inset
+
+而言, 总存在
+\begin_inset Formula $x\in[\alpha,\beta]$
+\end_inset
+
+使得
+\begin_inset Formula $f(x)\leqslant0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+考虑
+\begin_inset Formula $n$
+\end_inset
+
+等分
+\begin_inset Formula $[a,b]$
+\end_inset
+
+的分割
+\begin_inset Formula $T_{n}=\{\Delta_{1},\cdots,\Delta_{n}\}$
+\end_inset
+
+.
+ 由
+\begin_inset Formula $f$
+\end_inset
+
+可积可知
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)\mathistOperatord x=\lim_{n\rightarrow\infty}\sum_{i=1}^{n}f(\xi_{i})\Delta x_{i}=\lim_{n\rightarrow\infty}\sum_{i=1}^{n}\frac{f(\xi_{i})}{n},
+\]
+
+\end_inset
+
+其中
+\begin_inset Formula $\xi_{i}\in\Delta_{i}$
+\end_inset
+
+.
+ 由假设知, 对每个
+\begin_inset Formula $i$
+\end_inset
+
+都可以选取
+\begin_inset Formula $\xi_{i}\in\Delta_{i}$
+\end_inset
+
+使得
+\begin_inset Formula $f(\xi_{i})\leqslant0$
+\end_inset
+
+, 于是
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)\mathistOperatord x=\lim_{n\rightarrow\infty}\sum_{i=1}^{n}\frac{f(\xi_{i})}{n}\leqslant0,
+\]
+
+\end_inset
+
+矛盾! 故假设不成立, 原命题得证.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+第八题
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+证法一
+\end_layout
+
+\end_inset
+
+由书上习题9.6第7题的结论可知, 存在
+\begin_inset Formula $x_{0}\in(a,b)$
+\end_inset
+
+, 使得
+\begin_inset Formula $f$
+\end_inset
+
+在点
+\begin_inset Formula $x_{0}$
+\end_inset
+
+连续.
+ 于是由
+\begin_inset Formula $f(x_{0})>0$
+\end_inset
+
+可知, 存在
+\begin_inset Formula $\delta>0$
+\end_inset
+
+, 使得当
+\begin_inset Formula $x_{0}-\delta<x<x_{0}+\delta$
+\end_inset
+
+时, 都有
+\begin_inset Formula $f(x)>f(x_{0})/2$
+\end_inset
+
+.
+ 又因为
+\begin_inset Formula $f>0$
+\end_inset
+
+, 所以
+\begin_inset Formula 
+\begin{align*}
+\int_{a}^{b}f(x)\mathistOperatord x & =\int_{a}^{x_{0}-\delta}f(x)\mathistOperatord x+\int_{x_{0}-\delta}^{x_{0}+\delta}f(x)\mathistOperatord x+\int_{x_{0}+\delta}^{b}f(x)\mathistOperatord x\\
+ & \geqslant0+\int_{x_{0}-\delta}^{x_{0}+\delta}\frac{f(x_{0})}{2}\mathistOperatord x+0=\delta\cdot f(x_{0})>0.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+证法二
+\end_layout
+
+\end_inset
+
+因为对任意
+\begin_inset Formula $x\in[a,b]$
+\end_inset
+
+都有
+\begin_inset Formula $f(x)>0$
+\end_inset
+
+, 所以
+\begin_inset Formula $\int_{a}^{b}f(x)\mathistOperatord x\geqslant0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+下面用反证法.
+ 假设
+\begin_inset Formula $\int_{a}^{b}f(x)\mathistOperatord x=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+此时对任意
+\begin_inset Formula $c\in[a,b]$
+\end_inset
+
+都有
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)\mathistOperatord x=\int_{a}^{c}f(x)\mathistOperatord x+\int_{c}^{b}f(x)\mathistOperatord x=0,
+\]
+
+\end_inset
+
+又由
+\begin_inset Formula $f\geqslant0$
+\end_inset
+
+可知
+\begin_inset Formula $\int_{a}^{c}f(x)\mathistOperatord x\geqslant0$
+\end_inset
+
+且
+\begin_inset Formula $\int_{c}^{b}f(x)\mathistOperatord x\geqslant0$
+\end_inset
+
+, 故必有
+\begin_inset Formula $\int_{a}^{c}f(x)\mathistOperatord x+\int_{c}^{b}f(x)\mathistOperatord x=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+由此可见, 对任意
+\begin_inset Formula $x_{1},x_{2}\in[a,b]$
+\end_inset
+
+, 都有
+\begin_inset Formula $\int_{x_{1}}^{x_{2}}f(x)\mathistOperatord x=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+令
+\begin_inset Formula $F(x)=\int_{a}^{x}f(t)\mathistOperatord t$
+\end_inset
+
+.
+ 那么对任意
+\begin_inset Formula $x_{1},x_{2}\in[a,b]$
+\end_inset
+
+都有
+\begin_inset Formula 
+\[
+F(x_{2})-F(x_{1})=\int_{x_{1}}^{x_{2}}f(x)\mathistOperatord x=0,
+\]
+
+\end_inset
+
+故
+\begin_inset Formula $F$
+\end_inset
+
+是
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上的常值函数, 从而
+\begin_inset Formula $F'\equiv0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+由书上习题9.6第7题的结论可知, 存在
+\begin_inset Formula $x_{0}\in[a,b]$
+\end_inset
+
+, 使得
+\begin_inset Formula $f$
+\end_inset
+
+在点
+\begin_inset Formula $x_{0}$
+\end_inset
+
+连续.
+ 由书上定理9.10 (原函数存在定理)的证明可知
+\begin_inset Formula $f(x_{0})=F'(x_{0})=0$
+\end_inset
+
+.
+ 矛盾! 故假设不成立, 原命题得证.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+证法三
+\end_layout
+
+\end_inset
+
+因为
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上可积且
+\begin_inset Formula $f>0$
+\end_inset
+
+, 所以
+\begin_inset Formula $f$
+\end_inset
+
+在任意
+\begin_inset Formula $[c,d]\subset[a,b]$
+\end_inset
+
+上的积分都非负.
+ 因此, 只需证明: 存在
+\begin_inset Formula $[c,d]\subset[a,b]$
+\end_inset
+
+, 使得
+\begin_inset Formula $\int_{c}^{d}f(x)\mathistOperatord x>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+用反证法.
+ 假设对任意
+\begin_inset Formula $[c,d]\subset[a,b]$
+\end_inset
+
+而言, 都有
+\begin_inset Formula $\int_{c}^{d}f(x)\mathistOperatord x=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+记
+\begin_inset Formula $[a_{1},b_{1}]=[a,b]$
+\end_inset
+
+.
+ 因为
+\begin_inset Formula 
+\[
+\int_{a_{1}}^{b_{1}}(1-f(x))\mathistOperatord x=b_{1}-a_{1}>0,
+\]
+
+\end_inset
+
+所以由第六题结论可知, 存在
+\begin_inset Formula $[a_{2},b_{2}]\subset[a_{1},b_{1}]$
+\end_inset
+
+, 使得对任意
+\begin_inset Formula $x\in[a_{2},b_{2}]$
+\end_inset
+
+都有
+\begin_inset Formula $1-f(x)>0$
+\end_inset
+
+, 亦即
+\begin_inset Formula $f(x)<1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+不断重复上述步骤, 对
+\begin_inset Formula $[a_{n},b_{n}]$
+\end_inset
+
+考察函数
+\begin_inset Formula $y=n^{-1}-f(x)$
+\end_inset
+
+, 可得
+\begin_inset Formula $[a_{n+1},b_{n+1}]\subset[a_{n},b_{n}]$
+\end_inset
+
+, 使得对任意
+\begin_inset Formula $x\in[a_{n+1},b_{n+1}]$
+\end_inset
+
+都有
+\begin_inset Formula $f(x)<n^{-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+由区间套定理可知, 存在
+\begin_inset Formula $\xi\in[a,b]$
+\end_inset
+
+, 使得
+\begin_inset Formula $\xi\in[a_{n+1},b_{n+1}]$
+\end_inset
+
+对每个
+\begin_inset Formula $n$
+\end_inset
+
+都成立, 从而
+\begin_inset Formula $f(\xi)<n^{-1}$
+\end_inset
+
+对每个
+\begin_inset Formula $n$
+\end_inset
+
+都成立, 故必有
+\begin_inset Formula $f(\xi)\leqslant0$
+\end_inset
+
+.
+ 矛盾! 故假设不成立, 原命题得证.
 \end_layout
 
 \end_inset
