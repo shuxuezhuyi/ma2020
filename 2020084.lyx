@@ -29898,6 +29898,104 @@ f(x)=f\left(\frac{a+b}{2}\right)+\frac{f''(\xi)}{2}\left(x-\frac{a+b}{2}\right)^
 status collapsed
 
 \begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\color red
+错误证法
+\end_layout
+
+\end_inset
+
+用反证法.
+ 假设对任意
+\begin_inset Formula $[\alpha,\beta]\subset[a,b]$
+\end_inset
+
+而言, 任意
+\begin_inset Formula $x\in[\alpha,\beta]$
+\end_inset
+
+都满足
+\begin_inset Formula $f(x)\leqslant0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+考虑
+\begin_inset Formula $n$
+\end_inset
+
+等分
+\begin_inset Formula $[a,b]$
+\end_inset
+
+的分割
+\begin_inset Formula $T_{n}=\{\Delta_{1},\cdots,\Delta_{n}\}$
+\end_inset
+
+.
+ 由
+\begin_inset Formula $f$
+\end_inset
+
+可积可知
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)\mathistOperatord x=\lim_{n\rightarrow\infty}\sum_{i=1}^{n}f(\xi_{i})\Delta x_{i}=\lim_{n\rightarrow\infty}\sum_{i=1}^{n}\frac{f(\xi_{i})}{n},
+\]
+
+\end_inset
+
+其中
+\begin_inset Formula $\xi_{i}\in\Delta_{i}$
+\end_inset
+
+.
+ 由假设知每个
+\begin_inset Formula $\xi_{i}$
+\end_inset
+
+都满足
+\begin_inset Formula $f(\xi_{i})\leqslant0$
+\end_inset
+
+, 于是
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)\mathistOperatord x=\lim_{n\rightarrow\infty}\sum_{i=1}^{n}\frac{f(\xi_{i})}{n}\leqslant0,
+\]
+
+\end_inset
+
+矛盾! 故假设不成立, 原命题得证.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\color red
+错误证法
+\end_layout
+
+\end_inset
+
 用反证法.
  假设对任意
 \begin_inset Formula $x\in[a,b]$
@@ -29925,6 +30023,17 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\color red
+错误证法
+\end_layout
+
+\end_inset
+
 将区间
 \begin_inset Formula $[a,b]$
 \end_inset
@@ -30103,6 +30212,281 @@ status collapsed
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\color red
+错误证法
+\end_layout
+
+\end_inset
+
+由积分第一中值定理可知, 存在
+\begin_inset Formula $\xi\in[a,b]$
+\end_inset
+
+, 使得
+\begin_inset Formula $\int_{a}^{b}f(x)\mathistOperatord x=f(\xi)\cdot(b-a)>0$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\color red
+错误证法
+\end_layout
+
+\end_inset
+
+因为对任意标记分割
+\begin_inset Formula $(T,\xi)$
+\end_inset
+
+都有
+\begin_inset Formula 
+\[
+\sum_{i=1}^{n}f(\xi_{i})\Delta x_{i}>0,
+\]
+
+\end_inset
+
+所以
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)\mathistOperatord x=\lim_{\Vert T\Vert\rightarrow0}\sum_{i=1}^{n}f(\xi_{i})\Delta x_{i}>0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\color red
+错误证法
+\end_layout
+
+\end_inset
+
+用反证法.
+ 假设
+\begin_inset Formula 
+\[
+0\geqslant\int_{a}^{b}f(x)\mathistOperatord x=\lim_{\Vert T\Vert\rightarrow0}\sum_{i=1}^{n}f(\xi_{i})\Delta x_{i},
+\]
+
+\end_inset
+
+则存在标记分割
+\begin_inset Formula $(T,\xi)$
+\end_inset
+
+, 使得
+\begin_inset Formula 
+\[
+\sum_{i=1}^{n}f(\xi_{i})\Delta x_{i}\leqslant0,
+\]
+
+\end_inset
+
+于是存在某个
+\begin_inset Formula $\xi_{i}$
+\end_inset
+
+满足
+\begin_inset Formula $f(\xi_{i})\leqslant0$
+\end_inset
+
+, 矛盾! 故假设不成立, 原命题得证.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\color red
+错误证法
+\end_layout
+
+\end_inset
+
+因为对任意
+\begin_inset Formula $x\in[a,b]$
+\end_inset
+
+都有
+\begin_inset Formula $f(x)>0$
+\end_inset
+
+, 所以
+\begin_inset Formula $\int_{a}^{b}f(x)\mathistOperatord x\geqslant0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+下面用反证法.
+ 假设
+\begin_inset Formula $\int_{a}^{b}f(x)\mathistOperatord x=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+此时对任意
+\begin_inset Formula $c\in[a,b]$
+\end_inset
+
+都有
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)\mathistOperatord x=\int_{a}^{c}f(x)\mathistOperatord x+\int_{c}^{b}f(x)\mathistOperatord x=0,
+\]
+
+\end_inset
+
+又由
+\begin_inset Formula $f\geqslant0$
+\end_inset
+
+可知
+\begin_inset Formula $\int_{a}^{c}f(x)\mathistOperatord x\geqslant0$
+\end_inset
+
+且
+\begin_inset Formula $\int_{c}^{b}f(x)\mathistOperatord x\geqslant0$
+\end_inset
+
+, 故必有
+\begin_inset Formula $\int_{a}^{c}f(x)\mathistOperatord x=\int_{c}^{b}f(x)\mathistOperatord x=0$
+\end_inset
+
+.
+ 由
+\begin_inset Formula $c$
+\end_inset
+
+的任意性可知
+\begin_inset Formula $f\equiv0$
+\end_inset
+
+, 矛盾! 故假设不成立, 原命题得证.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+第九题
+\end_layout
+
+\begin_layout Exercise
+证明: 存在(与下面的
+\begin_inset Formula $f$
+\end_inset
+
+无关的)常数
+\begin_inset Formula $M>0$
+\end_inset
+
+, 使得当
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上连续可微且
+\begin_inset Formula $f(b)=0$
+\end_inset
+
+时, 都有
+\begin_inset Formula 
+\[
+\int_{a}^{b}[f(x)]^{2}\mathistOperatord x\leqslant M\int_{a}^{b}[f'(x)]^{2}\mathistOperatord x.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\color red
+错误证法
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -30335,7 +30719,7 @@ status open
 \end_inset
 
 , 故必有
-\begin_inset Formula $\int_{a}^{c}f(x)\mathistOperatord x+\int_{c}^{b}f(x)\mathistOperatord x=0$
+\begin_inset Formula $\int_{a}^{c}f(x)\mathistOperatord x=\int_{c}^{b}f(x)\mathistOperatord x=0$
 \end_inset
 
 .
