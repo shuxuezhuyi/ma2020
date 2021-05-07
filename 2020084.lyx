@@ -24736,6 +24736,564 @@ a_{n}=\sum_{k=1}^{n}f(k)-\int_{1}^{n}f(x)\mathistOperatord x.
 .
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+设
+\begin_inset Formula $a\geqslant0$
+\end_inset
+
+.
+ 导出曲边梯形
+\begin_inset Formula 
+\[
+0\leqslant y\leqslant f(x),\quad a\leqslant x\leqslant b
+\]
+
+\end_inset
+
+绕
+\begin_inset Formula $y$
+\end_inset
+
+轴旋转所得立体的体积公式为
+\begin_inset Formula 
+\[
+V=2\pi\int_{a}^{b}xf(x)\mathistOperatord x.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+验证
+\begin_inset Formula $0\leqslant y\leqslant\sin x$
+\end_inset
+
+, 
+\begin_inset Formula $0\leqslant x\leqslant\pi$
+\end_inset
+
+所示平面图形绕
+\begin_inset Formula $y$
+\end_inset
+
+轴旋转所得立体的体积为
+\begin_inset Formula $2\pi^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+验证下列曲线的弧长:
+\end_layout
+
+\begin_layout Exercise
+(2) 曲线
+\begin_inset Formula $\sqrt{x}+\sqrt{y}=1$
+\end_inset
+
+的弧长为
+\begin_inset Formula $1+\frac{\sqrt{2}}{2}\ln(\sqrt{2}+1)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+(4) 设
+\begin_inset Formula $a>0$
+\end_inset
+
+, 则曲线
+\begin_inset Formula 
+\[
+\begin{cases}
+x=a(\cos t+t\sin t),\\
+y=a(\sin t-t\cos t),
+\end{cases}0\leqslant t\leqslant2\pi
+\]
+
+\end_inset
+
+的弧长为
+\begin_inset Formula $2\pi^{2}a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+(6) 设
+\begin_inset Formula $a>0$
+\end_inset
+
+, 则曲线
+\begin_inset Formula 
+\[
+r=a\theta,\quad0\leqslant\theta\leqslant2\pi
+\]
+
+\end_inset
+
+的弧长为
+\begin_inset Formula $a\pi\sqrt{1+4\pi^{2}}+\frac{a}{2}\ln(2\pi+\sqrt{1+4\pi^{2}})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+验证下列各曲线在指定点处的曲率:
+\end_layout
+
+\begin_layout Exercise
+(3) 设
+\begin_inset Formula $a>0$
+\end_inset
+
+, 则曲线
+\begin_inset Formula $\begin{cases}
+x=a(t-\sin t)\\
+y=a(1-\cos t)
+\end{cases}$
+\end_inset
+
+在
+\begin_inset Formula $t=\pi/2$
+\end_inset
+
+对应点处的曲率为
+\begin_inset Formula $\frac{\sqrt{2}}{4a}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Exercise
+(4) 设
+\begin_inset Formula $a>0$
+\end_inset
+
+, 则曲线
+\begin_inset Formula $\begin{cases}
+x=a\cos^{3}t\\
+y=a\sin^{3}t
+\end{cases}$
+\end_inset
+
+在
+\begin_inset Formula $t=\pi/4$
+\end_inset
+
+对应点处的曲率为
+\begin_inset Formula $\frac{2}{3a}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+设曲线由极坐标方程
+\begin_inset Formula $r=r(\theta)$
+\end_inset
+
+给出, 且二阶可导.
+ 证明: 该曲线在点
+\begin_inset Formula $(r,\theta)$
+\end_inset
+
+处的曲率为
+\begin_inset Formula 
+\[
+K=\frac{|r^{2}+2(r')^{2}-rr''|}{(r^{2}+(r')^{2})^{3/2}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+设平面光滑曲线由极坐标方程
+\begin_inset Formula 
+\[
+r=r(\theta),\quad\alpha\leqslant\theta\leqslant\beta
+\]
+
+\end_inset
+
+给出, 其中
+\begin_inset Formula $[\alpha,\beta]\subset[0,\pi]$
+\end_inset
+
+且
+\begin_inset Formula $r(\theta)\geqslant0$
+\end_inset
+
+.
+ 试证明它绕极轴旋转所得旋转曲面的面积为
+\begin_inset Formula 
+\[
+S=2\pi\int_{\alpha}^{\beta}r(\theta)\cdot\sin\theta\cdot\sqrt{[r(\theta)]^{2}+[r'(\theta)]^{2}}\mathistOperatord\theta.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+设
+\begin_inset Formula $a>0$
+\end_inset
+
+.
+ 验证极坐标中的心形线
+\begin_inset Formula $r=a(1+\cos\theta)$
+\end_inset
+
+绕极轴旋转所得旋转曲面的面积为
+\begin_inset Formula $32\pi a^{2}/5$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+设有两条长度都是
+\begin_inset Formula $l$
+\end_inset
+
+、质量都是
+\begin_inset Formula $M$
+\end_inset
+
+的均匀细杆在同一直线上, 中间隔开距离
+\begin_inset Formula $c$
+\end_inset
+
+.
+ 验证它们之间的万有引力为
+\begin_inset Formula 
+\[
+\frac{kM^{2}}{l^{2}}\ln\frac{(c+l)^{2}}{c(c+2l)}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+反常积分
+\end_layout
+
+\begin_layout Exercise
+讨论下列无穷积分是否收敛, 若收敛则求其值:
+\begin_inset Formula 
+\begin{align*}
+(5) & \int_{-\infty}^{+\infty}\frac{\mathistOperatord x}{4x^{2}+4x+5}; & (6) & \int_{0}^{+\infty}e^{-x}\sin x\mathistOperatord x;\\
+(7) & \int_{-\infty}^{+\infty}e^{x}\sin x\mathistOperatord x; & (8) & \int_{0}^{+\infty}\frac{\mathistOperatord x}{\sqrt{1+x^{2}}}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex HINTAsInset
+status open
+
+\begin_layout Plain Layout
+(5) 
+\begin_inset Formula $\pi/4$
+\end_inset
+
+; (6) 
+\begin_inset Formula $1/2$
+\end_inset
+
+; (7) 发散; (8) 发散.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+讨论下列瑕积分是否收敛, 若收敛则求其值:
+\begin_inset Formula 
+\begin{align*}
+(5) & \int_{0}^{1}\ln x\mathistOperatord x; & (6) & \int_{0}^{1}\sqrt{\frac{x}{1-x}}\mathistOperatord x;\\
+(7) & \int_{0}^{1}\frac{\mathistOperatord x}{\sqrt{x-x^{2}}}; & (8) & \int_{0}^{1}\frac{\mathistOperatord x}{x(\ln x)^{p}}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex HINTAsInset
+status open
+
+\begin_layout Plain Layout
+(5) 
+\begin_inset Formula $-1$
+\end_inset
+
+; (6) 
+\begin_inset Formula $\pi/2$
+\end_inset
+
+; (7) 
+\begin_inset Formula $\pi$
+\end_inset
+
+; (8) 发散.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+讨论下列无穷积分的敛散性:
+\begin_inset Formula 
+\begin{align*}
+(4) & \int_{1}^{+\infty}\frac{x\arctan x}{1+x^{3}}\mathistOperatord x; & (5) & \int_{1}^{+\infty}\frac{\ln(1+x)}{x^{n}}\mathistOperatord x; & (6) & \int_{0}^{+\infty}\frac{x^{m}}{1+x^{n}}\mathistOperatord x,\,\text{其中}\,n,m\geqslant0.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex HINTAsInset
+status open
+
+\begin_layout Plain Layout
+(4) 收敛; (5) 
+\begin_inset Formula $n>1$
+\end_inset
+
+时收敛, 
+\begin_inset Formula $n\leqslant1$
+\end_inset
+
+时发散; (6) 
+\begin_inset Formula $n-m>1$
+\end_inset
+
+时收敛, 
+\begin_inset Formula $n-m\leqslant1$
+\end_inset
+
+时发散.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+讨论下列无穷积分是绝对收敛还是条件收敛:
+\begin_inset Formula 
+\begin{align*}
+(3) & \int_{0}^{+\infty}\frac{\sqrt{x}\cos x}{100+x}\mathistOperatord x; & (4) & \int_{c}^{+\infty}\frac{\ln(\ln x)}{\ln x}\sin x\mathistOperatord x.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex HINTAsInset
+status open
+
+\begin_layout Plain Layout
+都是条件收敛.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+设
+\begin_inset Formula $f$
+\end_inset
+
+是
+\begin_inset Formula $[a,+\infty)$
+\end_inset
+
+上的单调函数, 并且
+\begin_inset Formula $\int_{0}^{+\infty}f(x)\mathistOperatord x$
+\end_inset
+
+收敛.
+ 证明: 当
+\begin_inset Formula $x\rightarrow+\infty$
+\end_inset
+
+时
+\begin_inset Formula $f(x)=o(1/x)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+设
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,+\infty)$
+\end_inset
+
+上一致连续, 并且
+\begin_inset Formula $\int_{0}^{+\infty}f(x)\mathistOperatord x$
+\end_inset
+
+收敛.
+ 证明: 
+\begin_inset Formula $\lim_{x\rightarrow+\infty}f(x)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+讨论下列瑕积分的敛散性:
+\begin_inset Formula 
+\begin{align*}
+(5) & \int_{0}^{1}\frac{\arctan x}{1-x^{3}}\mathistOperatord x; & (6) & \int_{0}^{\pi/2}\frac{1-\cos x}{x^{m}}\mathistOperatord x;\\
+(7) & \int_{0}^{1}\frac{1}{x^{\alpha}}\sin\frac{1}{x}\mathistOperatord x; & (8) & \int_{0}^{+\infty}e^{-x}\ln x\mathistOperatord x.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex HINTAsInset
+status open
+
+\begin_layout Plain Layout
+(5) 发散; (6) 
+\begin_inset Formula $m<3$
+\end_inset
+
+时收敛, 
+\begin_inset Formula $m\geqslant3$
+\end_inset
+
+时发散; (7) 
+\begin_inset Formula $0<\alpha<1$
+\end_inset
+
+时绝对收敛, 
+\begin_inset Formula $1\leqslant\alpha<2$
+\end_inset
+
+时条件收敛, 
+\begin_inset Formula $\alpha\geqslant2$
+\end_inset
+
+时发散; (8) 收敛.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+证明书上第259页的定理11.7 (狄利克雷判别法)和定理11.8 (阿贝尔判别法).
+\end_layout
+
 \begin_layout Chapter
 第一学期期末考试
 \end_layout
