@@ -6558,6 +6558,13 @@ status open
 定积分的应用
 \end_layout
 
+\begin_layout Standard
+
+\color red
+本节总假设函数是连续的.
+ 若涉及函数的导函数(或二阶导函数), 则该导函数(相应地, 二阶导函数)也假设是连续的.
+\end_layout
+
 \begin_layout Example
 (1) 
 \begin_inset Formula $x=a$
@@ -6911,6 +6918,447 @@ S=2\pi\int_{\alpha}^{\beta}|y(t)|\cdot\sqrt{(x'(t))^{2}+(y'(t))^{2}}\mathistOper
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+反常积分
+\end_layout
+
+\begin_layout Standard
+定义
+\series bold
+反常积分
+\series default
+(improper integral)及其
+\series bold
+收敛
+\series default
+、
+\series bold
+发散
+\series default
+、
+\series bold
+绝对收敛
+\series default
+(converges absolutely)与
+\series bold
+条件收敛
+\series default
+(conditional convergence).
+\end_layout
+
+\begin_layout Standard
+反常积分
+\begin_inset Formula $=$
+\end_inset
+
+定积分
+\begin_inset Formula $+$
+\end_inset
+
+函数极限
+\end_layout
+
+\begin_layout Standard
+同敛态
+\begin_inset Formula $=$
+\end_inset
+
+(同时收敛或同时发散)
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+反常积分收敛的柯西准则
+\end_layout
+
+\end_inset
+
+反常积分
+\begin_inset Formula $\int_{a}^{\omega}$
+\end_inset
+
+收敛
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+任给
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 存在
+\begin_inset Formula $B$
+\end_inset
+
+, 使得当
+\begin_inset Formula $b_{1},b_{2}\in(B,\omega)$
+\end_inset
+
+时总成立
+\begin_inset Formula $\left|\int_{b_{1}}^{b_{2}}f(x)\mathistOperatord x\right|<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proposition
+(1) 若
+\begin_inset Formula $\int_{a}^{\omega}f_{1}$
+\end_inset
+
+与
+\begin_inset Formula $\int_{a}^{\omega}f_{2}$
+\end_inset
+
+都收敛, 常数
+\begin_inset Formula $k_{1},k_{2}\in\mathbb{R}$
+\end_inset
+
+, 则
+\begin_inset Formula $\int_{a}^{\omega}(k_{1}f_{1}+k_{2}f_{2})$
+\end_inset
+
+也收敛且等于
+\begin_inset Formula $k_{1}\int_{a}^{\omega}f_{1}+k_{2}\int_{a}^{\omega}f_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proposition
+(2) 若
+\begin_inset Formula $c\in(a,\omega)$
+\end_inset
+
+, 则
+\begin_inset Formula $\int_{a}^{\omega}f=\int_{a}^{c}f+\int_{c}^{\omega}f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proposition
+(3) 绝对收敛的反常积分必定收敛.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula 
+\begin{align*}
+(1) & \int^{+\infty}\frac{\mathistOperatord x}{x^{p}}\,\text{收敛}\,\Leftrightarrow p>1\\
+(2) & \int_{0}\frac{\mathistOperatord x}{x^{p}}\,\text{收\text{敛}}\,\Leftrightarrow p<1.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+比较原则, comparison theorem
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+0\leqslant f\leqslant g\Rightarrow\int_{a}^{\omega}f\leqslant\int_{a}^{\omega}g.
+\]
+
+\end_inset
+
+特别地, 此时若
+\begin_inset Formula $\int_{a}^{\omega}g$
+\end_inset
+
+收敛则
+\begin_inset Formula $\int_{a}^{\omega}f$
+\end_inset
+
+也收敛, 若
+\begin_inset Formula $\int_{a}^{\omega}f$
+\end_inset
+
+发散则
+\begin_inset Formula $\int_{a}^{\omega}g$
+\end_inset
+
+也发散.
+\end_layout
+
+\begin_layout Corollary
+设
+\begin_inset Formula $f\geqslant0$
+\end_inset
+
+, 
+\begin_inset Formula $g>0$
+\end_inset
+
+且
+\begin_inset Formula $\lim_{x\rightarrow\omega}f/g=c$
+\end_inset
+
+.
+ 那么:
+\end_layout
+
+\begin_layout Corollary
+(1) 若
+\begin_inset Formula $c\in(0,+\infty)$
+\end_inset
+
+, 则
+\begin_inset Formula $\int_{a}^{\omega}f$
+\end_inset
+
+与
+\begin_inset Formula $\int_{a}^{\omega}g$
+\end_inset
+
+同敛态;
+\end_layout
+
+\begin_layout Corollary
+(2) 若
+\begin_inset Formula $c=0$
+\end_inset
+
+, 则
+\begin_inset Formula $\int_{a}^{\omega}g$
+\end_inset
+
+收敛
+\begin_inset Formula $\Rightarrow\int_{a}^{\omega}f$
+\end_inset
+
+收敛;
+\end_layout
+
+\begin_layout Corollary
+(3) 若
+\begin_inset Formula $c=+\infty$
+\end_inset
+
+, 则
+\begin_inset Formula $\int_{a}^{\omega}g$
+\end_inset
+
+发散
+\begin_inset Formula $\Rightarrow\int_{a}^{\omega}f$
+\end_inset
+
+发散.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Corollary
+设
+\begin_inset Formula $a>0$
+\end_inset
+
+, 而
+\begin_inset Formula $p$
+\end_inset
+
+是常数.
+ 那么:
+\end_layout
+
+\begin_layout Corollary
+(1) 若
+\begin_inset Formula $p>1$
+\end_inset
+
+且
+\begin_inset Formula $0\leqslant f(x)\leqslant1/x^{p}$
+\end_inset
+
+恒成立, 则
+\begin_inset Formula $\int_{a}^{+\infty}f$
+\end_inset
+
+收敛;
+\end_layout
+
+\begin_layout Corollary
+(2) 若
+\begin_inset Formula $p\leqslant1$
+\end_inset
+
+且
+\begin_inset Formula $1/x^{p}\leqslant f(x)$
+\end_inset
+
+恒成立, 则
+\begin_inset Formula $\int_{a}^{+\infty}f$
+\end_inset
+
+发散;
+\end_layout
+
+\begin_layout Corollary
+(1
+\begin_inset Formula $'$
+\end_inset
+
+) 若
+\begin_inset Formula $0<p<1$
+\end_inset
+
+且
+\begin_inset Formula $0\leqslant f(x)\leqslant1/(\omega-x)^{p}$
+\end_inset
+
+恒成立, 则
+\begin_inset Formula $\int_{a}^{\omega}f$
+\end_inset
+
+收敛;
+\end_layout
+
+\begin_layout Corollary
+(2
+\begin_inset Formula $'$
+\end_inset
+
+) 若
+\begin_inset Formula $p\geqslant1$
+\end_inset
+
+且
+\begin_inset Formula $f\geqslant1/(\omega-x)^{p}$
+\end_inset
+
+, 则
+\begin_inset Formula $\int_{a}^{\omega}f$
+\end_inset
+
+发散.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Corollary
+(1) 设
+\begin_inset Formula $f\geqslant0$
+\end_inset
+
+且
+\begin_inset Formula $\lim_{x\rightarrow+\infty}x^{p}f(x)=\lambda$
+\end_inset
+
+, 那么
+\begin_inset Formula $\begin{cases}
+(p>1\,\text{且}\,0\leqslant\lambda<+\infty)\Rightarrow\int_{a}^{+\infty}f\,\text{收敛}\\
+(p\leqslant1\,\text{且}\,0<\lambda\leqslant+\infty)\Rightarrow\int_{a}^{+\infty}f\,\text{发散}
+\end{cases}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Corollary
+(2) 设
+\begin_inset Formula $f\geqslant0$
+\end_inset
+
+且
+\begin_inset Formula $\lim_{x\rightarrow\omega^{-}}(\omega-x)^{p}f(x)=\lambda$
+\end_inset
+
+, 那么
+\begin_inset Formula $\begin{cases}
+(0<p<1\,\text{且}\,0\leqslant\lambda<+\infty)\Rightarrow\int_{a}^{\omega}f\,\text{收敛}\\
+(p\geqslant1\,\text{且}\,0<\lambda\leqslant+\infty)\Rightarrow\int_{a}^{\omega}f\,\text{发散}
+\end{cases}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+狄利克雷判别法, Dirichlet's test
+\end_layout
+
+\end_inset
+
+若
+\begin_inset Formula $\int_{a}^{y}f(x)\mathistOperatord x$
+\end_inset
+
+当
+\begin_inset Formula $y\in(a,\omega)$
+\end_inset
+
+时有界, 并且当
+\begin_inset Formula $x\rightarrow\omega$
+\end_inset
+
+时
+\begin_inset Formula $g(x)\downarrow0$
+\end_inset
+
+, 则
+\begin_inset Formula $\int_{a}^{\omega}(f\cdot g)$
+\end_inset
+
+收敛.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+阿贝尔判别法, Abel's test
+\end_layout
+
+\end_inset
+
+若
+\begin_inset Formula $\int_{a}^{\omega}f$
+\end_inset
+
+收敛, 且
+\begin_inset Formula $g$
+\end_inset
+
+单调有界, 则
+\begin_inset Formula $\int_{a}^{\omega}(f\cdot g)$
+\end_inset
+
+收敛.
 \end_layout
 
 \begin_layout Section
