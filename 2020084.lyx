@@ -16740,6 +16740,360 @@ status collapsed
 
 \end_deeper
 \begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+指出下述计算的
+\color red
+错误
+\color inherit
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+讨论无穷积分的敛散性:
+\begin_inset Formula 
+\begin{align*}
+(1)\int_{1}^{+\infty}\frac{\ln(1+x)}{x^{n}}\mathistOperatord x & ; & (2) & \int_{0}^{+\infty}\frac{x^{m}}{1+x^{n}}\mathistOperatord x,\,\text{其中}\,n,m\geqslant0.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+解
+\end_layout
+
+\end_inset
+
+(1) 因为
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow+\infty}x^{n}\frac{\ln(1+x)}{x^{n}}=\lim_{x\rightarrow+\infty}\ln(1+x)>0,
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+所以
+\begin_inset Formula $\int_{1}^{+\infty}\frac{\ln(1+x)}{x^{n}}\mathistOperatord x$
+\end_inset
+
+收敛.
+\end_layout
+
+\begin_layout Plain Layout
+(1) 因为
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow+\infty}x^{1+\frac{1}{n}}\cdot\frac{\ln(1+x)}{x^{n}}=\lim_{x\rightarrow+\infty}\frac{\ln(1+x)}{x^{n-(1+n^{-1})}}=0,
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+所以
+\begin_inset Formula $\int_{1}^{+\infty}\frac{\ln(1+x)}{x^{n}}\mathistOperatord x$
+\end_inset
+
+收敛.
+\end_layout
+
+\begin_layout Plain Layout
+(2) 先拆分:
+\begin_inset Formula 
+\[
+\int_{0}^{+\infty}\frac{x^{m}}{1+x^{n}}\mathistOperatord x=\lim_{u\rightarrow0^{+}}\int_{u}^{1}\frac{x^{m}}{1+x^{n}}\mathistOperatord x+\lim_{v\rightarrow+\infty}\int_{1}^{v}\frac{x^{m}}{1+x^{n}}\mathistOperatord x.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+对于
+\begin_inset Formula $\lim_{u\rightarrow0^{+}}\int_{u}^{1}\frac{x^{m}}{1+x^{n}}\mathistOperatord x$
+\end_inset
+
+, 由于
+\begin_inset Formula $\lim_{u\rightarrow0^{+}}x^{n-m}\cdot\frac{x^{m}}{1+x^{n}}=1$
+\end_inset
+
+, 故当且仅当
+\begin_inset Formula $n-m>1$
+\end_inset
+
+时, 该积分收敛.
+\end_layout
+
+\begin_layout Plain Layout
+对于
+\begin_inset Formula $\lim_{v\rightarrow+\infty}\int_{1}^{v}\frac{x^{m}}{1+x^{n}}\mathistOperatord x$
+\end_inset
+
+, 由于
+\begin_inset Formula $\lim_{v\rightarrow+\infty}x^{-m}\cdot\frac{x^{m}}{1+x^{n}}=0$
+\end_inset
+
+, 故当且仅当
+\begin_inset Formula $-m>1$
+\end_inset
+
+时, 该积分收敛.
+\end_layout
+
+\begin_layout Plain Layout
+综上所述, 当且仅当
+\begin_inset Formula $n-m>1$
+\end_inset
+
+且
+\begin_inset Formula $m<-1$
+\end_inset
+
+时, 该积分收敛.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+指出下述证明的
+\color red
+错误
+\color inherit
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Quotation
+设
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,+\infty)$
+\end_inset
+
+上一致连续, 并且
+\begin_inset Formula $\int_{0}^{+\infty}f(x)\mathistOperatord x$
+\end_inset
+
+收敛.
+ 证明: 
+\begin_inset Formula $\lim_{x\rightarrow+\infty}f(x)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+因为
+\begin_inset Formula $f$
+\end_inset
+
+一致连续且
+\begin_inset Formula $\int_{0}^{+\infty}f(x)\mathistOperatord x$
+\end_inset
+
+收敛, 所以对任意
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+而言, 总存在
+\begin_inset Formula $\delta>0$
+\end_inset
+
+, 使得当
+\begin_inset Formula $|x_{1}-x_{2}|<\delta$
+\end_inset
+
+时有必有
+\begin_inset Formula $|f(x_{1})-f(x_{2})|<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+因为
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,+\infty)$
+\end_inset
+
+上连续, 所以
+\begin_inset Formula $f$
+\end_inset
+
+在包含于
+\begin_inset Formula $[a,+\infty)$
+\end_inset
+
+的任意闭区间上可积且连续, 从而
+\begin_inset Formula 
+\[
+\int_{x}^{x+\delta}f(t)\mathistOperatord t=\delta\cdot f(t),\qquad(1)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+又因为
+\begin_inset Formula $f$
+\end_inset
+
+可积, 所以对任意
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 存在
+\begin_inset Formula $\delta>0$
+\end_inset
+
+, 使得
+\begin_inset Formula 
+\[
+\left|\int_{x}^{x+\delta}f(t)\mathistOperatord t\right|<\frac{\varepsilon}{\delta}.
+\]
+
+\end_inset
+
+于是当
+\begin_inset Formula $x\in U(x';\delta)$
+\end_inset
+
+时, 有
+\begin_inset Formula 
+\[
+|f(x)|<|f(x)-f(x')|+|f(x')|=\varepsilon+\frac{1}{\delta}\int_{x}^{x+\delta}f(t)\mathistOperatord t<2\varepsilon.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+由
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+的任意性, 以及
+\begin_inset Formula $x_{1},x_{2}$
+\end_inset
+
+的任意性, 结合公式(1)可知, 对任意
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 存在
+\begin_inset Formula $M>0$
+\end_inset
+
+, 使得当
+\begin_inset Formula $x>M$
+\end_inset
+
+时, 必有
+\begin_inset Formula $|f(x)|<\varepsilon$
+\end_inset
+
+.
+ 这表明
+\begin_inset Formula $\lim_{x\rightarrow\infty}f(x)=0$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+举例:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\int_{0}^{+\infty}f(x)\mathistOperatord x$
+\end_inset
+
+收敛, 但
+\begin_inset Formula $\lim_{x\rightarrow+\infty}f(x)$
+\end_inset
+
+不存在.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int_{0}^{+\infty}f(x)\mathistOperatord x$
+\end_inset
+
+收敛, 但
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $(1,+\infty)$
+\end_inset
+
+上无界.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
