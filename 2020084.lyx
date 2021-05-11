@@ -31789,66 +31789,6 @@ status open
 
 \end_layout
 
-\begin_layout Subsection
-第九题
-\end_layout
-
-\begin_layout Exercise
-证明: 存在(与下面的
-\begin_inset Formula $f$
-\end_inset
-
-无关的)常数
-\begin_inset Formula $M>0$
-\end_inset
-
-, 使得当
-\begin_inset Formula $f$
-\end_inset
-
-在
-\begin_inset Formula $[a,b]$
-\end_inset
-
-上连续可微且
-\begin_inset Formula $f(b)=0$
-\end_inset
-
-时, 都有
-\begin_inset Formula 
-\[
-\int_{a}^{b}[f(x)]^{2}\mathistOperatord x\leqslant M\int_{a}^{b}[f'(x)]^{2}\mathistOperatord x.
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex ProofAsInset
-status open
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-
-\color red
-错误证法
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 参考答案
 \end_layout
@@ -31946,6 +31886,98 @@ status open
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+证法二
+\end_layout
+
+\end_inset
+
+因为
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上可积且
+\begin_inset Formula $\int_{a}^{b}f(x)\mathistOperatord x>0$
+\end_inset
+
+, 所以由可积的第一充要条件与达布定理可知, 存在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+的分割
+\begin_inset Formula $T=\{\Delta_{1},\cdots,\Delta_{n}\}$
+\end_inset
+
+, 使得
+\begin_inset Formula 
+\[
+\sum_{i=1}^{n}m_{i}\Delta x_{i}>0,
+\]
+
+\end_inset
+
+其中
+\begin_inset Formula $m_{i}=\inf_{x\in\Delta_{i}}f(x)$
+\end_inset
+
+.
+ 若不然, 则有
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)\mathistOperatord x=\lim_{\Vert T\Vert\rightarrow0}\sum m_{i}\Delta x_{i}\leqslant0,
+\]
+
+\end_inset
+
+矛盾.
+\end_layout
+
+\begin_layout Plain Layout
+现在由
+\begin_inset Formula $\sum m_{i}\Delta x_{i}>0$
+\end_inset
+
+可知, 
+\begin_inset Formula $T$
+\end_inset
+
+中至少有一个小区间
+\begin_inset Formula $\Delta_{i}=[x_{i-1},x_{i}]$
+\end_inset
+
+使得
+\begin_inset Formula $m_{i}>0$
+\end_inset
+
+.
+ 于是对任意
+\begin_inset Formula $x\in[x_{i-1},x_{i}]$
+\end_inset
+
+都有
+\begin_inset Formula $f(x)\geqslant m_{i}>0$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 第八题
 \end_layout
@@ -31964,7 +31996,15 @@ status open
 
 \end_inset
 
-由书上习题9.6第7题的结论可知, 存在
+因为
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上可积, 所以由书上习题9.6第7题的结论可知, 存在
 \begin_inset Formula $x_{0}\in(a,b)$
 \end_inset
 
@@ -32131,7 +32171,15 @@ F(x_{2})-F(x_{1})=\int_{x_{1}}^{x_{2}}f(x)\mathistOperatord x=0,
 \end_layout
 
 \begin_layout Plain Layout
-由书上习题9.6第7题的结论可知, 存在
+因为
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上可积, 所以由书上习题9.6第7题的结论可知, 存在
 \begin_inset Formula $x_{0}\in[a,b]$
 \end_inset
 
@@ -32300,6 +32348,100 @@ status open
 
 .
  矛盾! 故假设不成立, 原命题得证.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+第九题
+\end_layout
+
+\begin_layout Exercise
+证明: 存在(与下面的
+\begin_inset Formula $f$
+\end_inset
+
+无关的)常数
+\begin_inset Formula $M>0$
+\end_inset
+
+, 使得当
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上连续可微且
+\begin_inset Formula $f(b)=0$
+\end_inset
+
+时, 都有
+\begin_inset Formula 
+\[
+\int_{a}^{b}[f(x)]^{2}\mathistOperatord x\leqslant M\int_{a}^{b}[f'(x)]^{2}\mathistOperatord x.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+由牛顿-莱布尼茨公式可知
+\begin_inset Formula $f(x)=f(x)-f(b)=-\int_{x}^{b}f'(t)\mathistOperatord t$
+\end_inset
+
+, 故
+\begin_inset Formula 
+\begin{align*}
+[f(x)]^{2} & =\left(\int_{x}^{b}f'(t)\mathistOperatord t\right)^{2}=\left(\int_{x}^{b}f'(t)\cdot1\cdot\mathistOperatord t\right)^{2}\\
+ & \leqslant\int_{x}^{b}[f'(t)]^{2}\mathistOperatord t\cdot\int_{x}^{b}1^{2}\mathistOperatord t\qquad\leftarrow\text{Hölder不等式}\\
+ & \leqslant\int_{a}^{b}[f'(t)]^{2}\mathistOperatord t\cdot\int_{a}^{b}1\mathistOperatord t\qquad\leftarrow\text{因为}\,f'\geqslant0\,\text{且}\,1\geqslant0\\
+ & =(b-a)\int_{a}^{b}[f'(t)]^{2}\mathistOperatord t.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+因为
+\begin_inset Formula $(b-a)\int_{a}^{b}[f'(t)]^{2}\mathistOperatord t$
+\end_inset
+
+是与
+\begin_inset Formula $x$
+\end_inset
+
+无关的常数, 所以
+\begin_inset Formula 
+\begin{align*}
+\int_{a}^{b}[f(x)]^{2}\mathistOperatord x & \leqslant\int_{a}^{b}\left[(b-a)\int_{a}^{b}[f'(t)]^{2}\mathistOperatord t\right]\mathistOperatord x\\
+ & =(b-a)^{2}\int_{a}^{b}[f'(t)]^{2}\mathistOperatord t\\
+ & =(b-a)^{2}\int_{a}^{b}[f'(x)]^{2}\mathistOperatord x.\qquad\leftarrow\text{只是把符号}\,t\,\text{换成}\,x\,\text{而已}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+因此, 令
+\begin_inset Formula $M=(b-a)^{2}$
+\end_inset
+
+即可完成证明.
 \end_layout
 
 \end_inset
