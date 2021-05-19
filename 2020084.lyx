@@ -17494,6 +17494,248 @@ status collapsed
 
 \end_deeper
 \begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+修正下述证明的
+\color red
+错误
+\color inherit
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Quotation
+证明: (1) 
+\begin_inset Formula $\sum(\sin2^{n})/2^{n}$
+\end_inset
+
+收敛; (2) 
+\begin_inset Formula $\sum\left(n^{2n\sin(1/n)}\right)^{-1}$
+\end_inset
+
+收敛.
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+(1) 对任意
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 存在
+\begin_inset Formula $N=\log_{2}(p/\varepsilon)$
+\end_inset
+
+, 使得当
+\begin_inset Formula $m>N$
+\end_inset
+
+时, 对任意
+\begin_inset Formula $p\in\mathbb{N}_{+}$
+\end_inset
+
+都有
+\begin_inset Formula 
+\[
+\left|\frac{\sin2^{m+1}}{2^{m+1}}+\frac{\sin2^{m+2}}{2^{m+2}}+\cdots+\frac{\sin2^{m+p}}{2^{m+p}}\right|<\frac{1}{2^{m+1}}+\cdots+\frac{1}{2^{m+p}}<\frac{p}{2^{m+1}}<\varepsilon.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+因此, 由级数收敛的柯西准则知原级数收敛.
+\end_layout
+
+\begin_layout Plain Layout
+(2) 因为
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}n\sin\frac{1}{n}=\lim_{x\rightarrow0}\frac{\sin x}{x}=1,
+\]
+
+\end_inset
+
+所以
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}\frac{1}{n^{2n\sin(1/n)}}=\lim_{n\rightarrow\infty}\frac{1}{n^{2}},
+\]
+
+\end_inset
+
+故由
+\begin_inset Formula $\sum1/n^{2}$
+\end_inset
+
+收敛可知原级数收敛.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+指出下述证明的
+\color red
+错误
+\color inherit
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Quotation
+设正项级数
+\begin_inset Formula $\sum_{n=1}^{\infty}u_{n}$
+\end_inset
+
+收敛.
+ 证明: 级数
+\begin_inset Formula $\sum_{n=1}^{\infty}\sqrt{u_{n}u_{n+1}}$
+\end_inset
+
+也收敛.
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+因为
+\begin_inset Formula $\sum u_{n}$
+\end_inset
+
+收敛, 所以极限
+\begin_inset Formula $\lim_{n\rightarrow\infty}u_{n}=A$
+\end_inset
+
+存在.
+ 于是
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}\frac{\sqrt{u_{n}u_{n+1}}}{u_{n}}=\lim_{n\rightarrow\infty}\sqrt{\frac{u_{n+1}}{u_{n}}}=\lim_{n\rightarrow\infty}\frac{\sqrt{u_{n+1}}}{\sqrt{u_{n}}}=1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+再结合
+\begin_inset Formula $\sum u_{n}$
+\end_inset
+
+收敛即可知
+\begin_inset Formula $\sum\sqrt{u_{n}u_{n+1}}$
+\end_inset
+
+也收敛.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+先证明
+\begin_inset Formula $\sum u_{n}^{2}$
+\end_inset
+
+收敛.
+ 因为
+\begin_inset Formula $\sum u_{n}$
+\end_inset
+
+收敛, 所以
+\begin_inset Formula $\lim_{n\rightarrow\infty}u_{n}=0$
+\end_inset
+
+.
+ 由此可见, 对
+\begin_inset Formula $\varepsilon=1$
+\end_inset
+
+, 存在
+\begin_inset Formula $N$
+\end_inset
+
+, 使得当
+\begin_inset Formula $n>N$
+\end_inset
+
+时有
+\begin_inset Formula $0<u_{n}<1$
+\end_inset
+
+, 从而
+\begin_inset Formula $u_{n}^{2}<u_{n}$
+\end_inset
+
+.
+ 故由比较原则可知
+\begin_inset Formula $\sum u_{n}^{2}$
+\end_inset
+
+收敛.
+\end_layout
+
+\begin_layout Plain Layout
+再注意到
+\begin_inset Formula 
+\[
+\sqrt{u_{n}u_{n+1}}\leqslant\frac{u_{n}^{2}+u_{n+1}^{2}}{2},
+\]
+
+\end_inset
+
+并且
+\begin_inset Formula $\sum u_{n}^{2}$
+\end_inset
+
+与
+\begin_inset Formula $\sum u_{n+1}^{2}$
+\end_inset
+
+都收敛, 即可知
+\begin_inset Formula $\sum\sqrt{u_{n}u_{n+1}}$
+\end_inset
+
+也收敛.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
