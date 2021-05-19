@@ -7362,6 +7362,406 @@ status open
 \end_layout
 
 \begin_layout Section
+数项级数
+\end_layout
+
+\begin_layout Standard
+定义
+\series bold
+级数
+\series default
+ (series)及其
+\emph on
+通项
+\emph default
+ (term)与
+\emph on
+部分和
+\emph default
+ (partial sum).
+ 定义级数的
+\series bold
+收敛
+\series default
+、
+\series bold
+和
+\series default
+ (sum)与
+\series bold
+发散
+\series default
+.
+\end_layout
+
+\begin_layout Example
+(1) 
+\series bold
+等比级数
+\series default
+ (
+\series bold
+几何级数
+\series default
+, geometric series) 
+\begin_inset Formula $\sum q^{n}$
+\end_inset
+
+当
+\begin_inset Formula $|q|<1$
+\end_inset
+
+时收敛, 当
+\begin_inset Formula $|q|\geqslant1$
+\end_inset
+
+时发散.
+\end_layout
+
+\begin_layout Example
+(2) 
+\series bold
+调和级数
+\series default
+ (harmonic series) 
+\begin_inset Formula $\sum1/n$
+\end_inset
+
+发散.
+\end_layout
+
+\begin_layout Example
+(3) 
+\begin_inset Formula $p$
+\end_inset
+
+级数
+\begin_inset Formula $\sum1/n^{p}$
+\end_inset
+
+当
+\begin_inset Formula $p>1$
+\end_inset
+
+时收敛, 当
+\begin_inset Formula $p\leqslant1$
+\end_inset
+
+时发散.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+级数收敛的柯西准则, the Cauchy convergence criterion for a series
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\sum u_{n}$
+\end_inset
+
+收敛
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+任给
+\begin_inset Formula $\varepsilon_{0}>0$
+\end_inset
+
+, 存在正整数
+\begin_inset Formula $N$
+\end_inset
+
+, 使得当正整数
+\begin_inset Formula $m>N$
+\end_inset
+
+且
+\begin_inset Formula $p\in\mathbb{N}_{+}$
+\end_inset
+
+时, 都有
+\begin_inset Formula 
+\[
+|u_{m+1}+u_{m+2}+\cdots+u_{m+p}|<\varepsilon.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+若
+\begin_inset Formula $\sum u_{n}$
+\end_inset
+
+和
+\begin_inset Formula $\sum v_{n}$
+\end_inset
+
+都收敛, 则
+\begin_inset Formula $\sum(cu_{n}+dv_{n})$
+\end_inset
+
+也收敛, 并且
+\begin_inset Formula $\sum(cu_{n}+dv_{n})=c\sum u_{n}+d\sum v_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+级数的敛散性不受有限个项影响.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+收敛级数不怕加括号.
+\end_layout
+
+\begin_layout Standard
+定义
+\emph on
+正项级数
+\emph default
+ (series with nonnegative terms).
+\end_layout
+
+\begin_layout Theorem
+正项级数收敛当且仅当部分和有界.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+比较原则, comparison theorem
+\end_layout
+
+\end_inset
+
+正项级数
+\begin_inset Formula 
+\[
+\text{被收敛}\leqslant\text{收敛},\qquad\text{发散}\leqslant\text{被发散}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Corollary
+正项级数若
+\begin_inset Formula $u_{n}/v_{n}\rightarrow l$
+\end_inset
+
+, 则
+\begin_inset Formula $\begin{cases}
+0<l<+\infty & \Rightarrow\sum u_{n}\,\text{与}\,\sum v_{n}\,\text{同敛散}\\
+l=0 & \Rightarrow\sum u_{n}\,\text{被}\,\sum v_{n}\,\text{收敛}\\
+l=+\infty & \Rightarrow\sum u_{n}\,\text{被}\,\sum v_{n}\,\text{发散}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+达朗贝尔判别法, d' Alembert's test, 又称比式判别法
+\end_layout
+
+\end_inset
+
+对于正项级数,
+\begin_inset Formula 
+\begin{align*}
+(1) & \text{最终}\,\frac{u_{n+1}}{u_{n}}\leqslant q\in(0,1)\Rightarrow\sum u_{n}\,\text{收敛};\\
+(2) & \text{最终}\,\frac{u_{n+1}}{u_{n}}\geqslant1\Rightarrow\sum u_{n}\,\text{发散}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+比式判别法的极限形式
+\end_layout
+
+\end_inset
+
+设
+\begin_inset Formula $\sum u_{n}$
+\end_inset
+
+是正项级数, 并且
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}\frac{u_{n+1}}{u_{n}}=q.
+\]
+
+\end_inset
+
+那么
+\begin_inset Formula $\begin{cases}
+q<1 & \Rightarrow\text{收敛}\\
+q\in(1,+\infty] & \Rightarrow\text{发散}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+柯西判别法, Cauchy's test, 又称根式判别法
+\end_layout
+
+\end_inset
+
+对于正项级数,
+\begin_inset Formula 
+\begin{align*}
+(1) & \text{最终}\,\sqrt[n]{u_{n}}\leqslant l<1\Rightarrow\sum u_{n}\,\text{收敛};\\
+(2) & \text{最终}\,\sqrt[n]{u_{n}}\geqslant1\Rightarrow\sum u_{n}\,\text{发散}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+根式判别法的极限形式
+\end_layout
+
+\end_inset
+
+设
+\begin_inset Formula $\sum u_{n}$
+\end_inset
+
+是正项级数, 并且
+\begin_inset Formula 
+\[
+\varlimsup_{n\rightarrow\infty}\sqrt[n]{u_{n}}=l.
+\]
+
+\end_inset
+
+那么
+\begin_inset Formula $\begin{cases}
+l<1 & \Rightarrow\text{收敛}\\
+l>1 & \Rightarrow\text{发散}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+积分判别法
+\end_layout
+
+\end_inset
+
+设非负
+\begin_inset Formula $f$
+\end_inset
+
+单调减, 则
+\begin_inset Formula 
+\[
+\sum_{n=1}^{\infty}f(n)\,\text{收敛}\Leftrightarrow\int_{1}^{+\infty}f(x)\mathistOperatord x\,\text{收敛}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
 讨论
 \end_layout
 
@@ -26096,6 +26496,254 @@ status open
 证明书上第259页的定理11.7 (狄利克雷判别法)和定理11.8 (阿贝尔判别法).
 \end_layout
 
+\begin_layout Section
+数项级数
+\end_layout
+
+\begin_layout Exercise
+证明下列级数收敛, 并求其和:
+\begin_inset Formula 
+\begin{align*}
+(1) & \frac{1}{1\cdot6}+\frac{1}{6\cdot11}+\frac{1}{11\cdot16}+\cdots+\frac{1}{(5n-4)(5n+1)}+\cdots;\\
+(3) & \sum_{n=1}^{\infty}\frac{1}{n(n+1)(n+2)};\\
+(5) & \sum_{n=1}^{\infty}\frac{2n-1}{2^{n}}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex HINTAsInset
+status open
+
+\begin_layout Plain Layout
+(1) 
+\begin_inset Formula $1/5$
+\end_inset
+
+; (3) 
+\begin_inset Formula $1/4$
+\end_inset
+
+; (5) 
+\begin_inset Formula $3$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+应用柯西准则判别下列级数的敛散性:
+\begin_inset Formula 
+\begin{align*}
+(1) & \sum_{n=1}^{\infty}\frac{\sin2^{n}}{2^{n}}; & (2) & \sum_{n=1}^{\infty}\frac{(-1)^{n-1}n^{2}}{2n^{2}+1};\\
+(3) & \sum_{n=1}^{\infty}\frac{(-1)^{n}}{n}; & (4) & \sum_{n=1}^{\infty}\frac{1}{\sqrt{n+n^{2}}}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex HINTAsInset
+status open
+
+\begin_layout Plain Layout
+(1) 收敛; (2) 发散; (3) 收敛; (4) 发散.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+举例说明: 即使级数
+\begin_inset Formula $\sum_{n=1}^{\infty}u_{n}$
+\end_inset
+
+对每个固定的
+\begin_inset Formula $p$
+\end_inset
+
+满足条件
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}(u_{n+1}+\cdots+u_{n+p})=0,
+\]
+
+\end_inset
+
+此级数仍然可能发散.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+设级数
+\begin_inset Formula $\sum_{n=1}^{\infty}u_{n}$
+\end_inset
+
+满足: 加括号后级数
+\begin_inset Formula $\sum_{k=1}^{\infty}\left(u_{n_{k}+1}+u_{n_{k}+2}+\cdots+u_{n_{k+1}}\right)$
+\end_inset
+
+收敛, 其中
+\begin_inset Formula $n_{1}=0$
+\end_inset
+
+, 并且在同一括号中的
+\begin_inset Formula $u_{n_{k}+1},u_{n_{k}+2},\cdots,u_{n_{k+1}}$
+\end_inset
+
+符号相同.
+ 证明: 
+\begin_inset Formula $\sum_{n=1}^{\infty}u_{n}$
+\end_inset
+
+也收敛.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+应用比较原则判别下列级数的敛散性:
+\begin_inset Formula 
+\begin{align*}
+(2) & \sum_{n=1}^{\infty}2^{n}\sin\frac{\pi}{3^{n}}; & (4) & \sum_{n=2}^{\infty}\frac{1}{(\ln n)^{n}}; & (6) & \sum_{n=1}^{\infty}\frac{1}{n\sqrt[n]{n}};\\
+(8) & \sum_{n=2}^{\infty}\frac{n}{(\ln n)^{\ln n}}; & (10) & \sum_{n=1}^{\infty}\frac{1}{n^{2n\sin(1/n)}}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex HINTAsInset
+status open
+
+\begin_layout Plain Layout
+只有(6)是发散的.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+用比式判别法或根式判别法讨论下列级数的敛散性:
+\begin_inset Formula 
+\begin{align*}
+(2) & \sum_{n=1}^{\infty}\frac{(n+1)!}{10^{n}}; & (5) & \sum_{n=1}^{\infty}\frac{n^{2}}{2^{n}}; & (6) & \sum_{n=1}^{\infty}\left(\frac{b}{a_{n}}\right)^{n},\quad\text{其中}\,\lim_{n\rightarrow\infty}a_{n}=a,\text{同时}\,a,b,a_{n}\,\text{均为正数, 并且}\,a\neq b.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex HINTAsInset
+status open
+
+\begin_layout Plain Layout
+(2) 发散; (5) 收敛; (6) 当
+\begin_inset Formula $a>b$
+\end_inset
+
+时收敛, 当
+\begin_inset Formula $a<b$
+\end_inset
+
+时发散.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+设
+\begin_inset Formula $a_{n}\geqslant0$
+\end_inset
+
+恒成立, 并且
+\begin_inset Formula $\{na_{n}:n\in\mathbb{N}_{+}\}$
+\end_inset
+
+有界.
+ 证明: 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}^{2}$
+\end_inset
+
+收敛.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+设
+\begin_inset Formula $a_{n}>0$
+\end_inset
+
+恒成立, 并且级数
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}^{2}$
+\end_inset
+
+收敛.
+ 证明: 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}/n$
+\end_inset
+
+也收敛.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+设正项级数
+\begin_inset Formula $\sum_{n=1}^{\infty}u_{n}$
+\end_inset
+
+收敛.
+ 证明: 级数
+\begin_inset Formula $\sum_{n=1}^{\infty}\sqrt{u_{n}u_{n+1}}$
+\end_inset
+
+也收敛.
+\end_layout
+
 \begin_layout Chapter
 第一学期期末考试
 \end_layout
@@ -31493,7 +32141,7 @@ status open
 \end_inset
 
 , 使得
-\begin_inset Formula $f(x_{1})<0$
+\begin_inset Formula $f(x_{1})\leqslant0$
 \end_inset
 
 且
