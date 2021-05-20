@@ -35,6 +35,9 @@
 
 %公式删除线
 \usepackage{cancel}
+
+% 长等号
+\usepackage{extarrows}
 \end_preamble
 \options UTF8,oneside
 \use_default_options true
@@ -17501,6 +17504,163 @@ status collapsed
 \end_layout
 
 \begin_layout Exercise
+指出下述证明的
+\color red
+错误
+\color inherit
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Quotation
+设
+\begin_inset Formula $a$
+\end_inset
+
+为
+\begin_inset Formula $f(x)$
+\end_inset
+
+的瑕点, 函数
+\begin_inset Formula $F(u)=\int_{a}^{b}f(x)\mathistOperatord x$
+\end_inset
+
+在
+\begin_inset Formula $(a,b]$
+\end_inset
+
+上有界, 函数
+\begin_inset Formula $g(x)$
+\end_inset
+
+在
+\begin_inset Formula $(a,b]$
+\end_inset
+
+上单调且
+\begin_inset Formula $\lim_{x\rightarrow a^{+}}g(x)=0$
+\end_inset
+
+.
+ 证明: 瑕积分
+\begin_inset Formula $\int_{a}^{b}f(x)g(x)\mathistOperatord x$
+\end_inset
+
+收敛.
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+设
+\begin_inset Formula $g(x)$
+\end_inset
+
+单调递减.
+\end_layout
+
+\begin_layout Plain Layout
+由
+\begin_inset Formula $\lim_{x\rightarrow a^{+}}g(x)=0$
+\end_inset
+
+可知, 任给
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 总存在
+\begin_inset Formula $\delta_{1}>0$
+\end_inset
+
+, 使得当
+\begin_inset Formula $x_{1}'\in(a,a+\delta_{1})$
+\end_inset
+
+时, 有
+\begin_inset Formula $|g(x_{1}')|<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+任取
+\begin_inset Formula $x_{1},x_{2}\in U_{+}^{\circ}(a;\delta)$
+\end_inset
+
+, 其中
+\begin_inset Formula $x_{1}<x_{2}$
+\end_inset
+
+.
+ 那么由
+\begin_inset Formula $g$
+\end_inset
+
+的单调性可知
+\begin_inset Formula 
+\[
+\int_{x_{1}}^{x_{2}}f(x)g(x)\mathistOperatord x\leqslant g(x_{1})\int_{x_{1}}^{x_{2}}f(x)\mathistOperatord x.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+因为
+\begin_inset Formula $[x_{1},x_{2}]\subset(a,b]$
+\end_inset
+
+, 并且
+\begin_inset Formula $F$
+\end_inset
+
+在
+\begin_inset Formula $(a,b]$
+\end_inset
+
+上有界, 所以
+\begin_inset Formula $\int_{x_{1}}^{x_{2}}f(x)\mathistOperatord x$
+\end_inset
+
+有界.
+\end_layout
+
+\begin_layout Plain Layout
+设
+\begin_inset Formula $\left|\int_{x_{1}}^{x_{2}}f(x)\mathistOperatord x\right|\leqslant G$
+\end_inset
+
+, 则
+\begin_inset Formula $g(x_{1})\int_{x_{1}}^{x_{2}}f(x)\mathistOperatord x<G\cdot\varepsilon\rightarrow0$
+\end_inset
+
+.
+ 由此可见瑕积分
+\begin_inset Formula $\int_{a}^{b}f(x)g(x)\mathistOperatord x$
+\end_inset
+
+收敛.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
 修正下述证明的
 \color red
 错误
@@ -17511,10 +17671,14 @@ status collapsed
 \begin_deeper
 \begin_layout Quotation
 证明: (1) 
-\begin_inset Formula $\sum(\sin2^{n})/2^{n}$
+\begin_inset Formula $\sum(-1)^{n}/n$
 \end_inset
 
 收敛; (2) 
+\begin_inset Formula $\sum(\sin2^{n})/2^{n}$
+\end_inset
+
+收敛; (3) 
 \begin_inset Formula $\sum\left(n^{2n\sin(1/n)}\right)^{-1}$
 \end_inset
 
@@ -17526,7 +17690,53 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-(1) 对任意
+(1) 观察
+\begin_inset Formula 
+\begin{align*}
+\sum\frac{(-1)^{n}}{n} & =-1+\frac{1}{2}-\frac{1}{3}+\cdots\\
+ & =\left(-1+\frac{1}{2}\right)+\left(-\frac{1}{3}+\frac{1}{4}\right)+\cdots\\
+ & =\sum\left(\frac{-1}{2n-1}+\frac{1}{2n}\right)\eqqcolon\sum u_{n}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+对任给的
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 取
+\begin_inset Formula $N=1/(4\varepsilon)$
+\end_inset
+
+, 则对任意正整数
+\begin_inset Formula $m>N$
+\end_inset
+
+与正整数
+\begin_inset Formula $p$
+\end_inset
+
+, 都有
+\begin_inset Formula 
+\[
+|u_{m+1}+\cdots+u_{m+p}|<\frac{1}{4m}<\varepsilon,
+\]
+
+\end_inset
+
+故
+\begin_inset Formula $\sum u_{n}$
+\end_inset
+
+收敛, 从而原级数收敛.
+\end_layout
+
+\begin_layout Plain Layout
+(2) 对任意
 \begin_inset Formula $\varepsilon>0$
 \end_inset
 
@@ -17558,7 +17768,7 @@ status collapsed
 \end_layout
 
 \begin_layout Plain Layout
-(2) 因为
+(3) 因为
 \begin_inset Formula 
 \[
 \lim_{n\rightarrow\infty}n\sin\frac{1}{n}=\lim_{x\rightarrow0}\frac{\sin x}{x}=1,
@@ -17579,6 +17789,226 @@ status collapsed
 \end_inset
 
 收敛可知原级数收敛.
+\end_layout
+
+\begin_layout Plain Layout
+(3) 因为
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}\frac{u_{n}}{1/n^{2}}=\lim_{n\rightarrow\infty}\frac{n^{2}}{n^{2n\sin(1/n)}}\xlongequal{\sin x\sim x}\lim_{n\rightarrow\infty}\frac{n^{2}}{n^{2n\cdot(1/n)}}=1,
+\]
+
+\end_inset
+
+并且
+\begin_inset Formula $\sum1/n^{2}$
+\end_inset
+
+收敛, 所以原级数收敛.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+修正下述证明的
+\color red
+表达错误
+\color inherit
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Quotation
+设级数
+\begin_inset Formula $\sum_{n=1}^{\infty}u_{n}$
+\end_inset
+
+满足: 加括号后级数
+\begin_inset Formula $\sum_{k=1}^{\infty}\left(u_{n_{k}+1}+u_{n_{k}+2}+\cdots+u_{n_{k+1}}\right)$
+\end_inset
+
+收敛, 其中
+\begin_inset Formula $n_{1}=0$
+\end_inset
+
+, 并且在同一括号中的
+\begin_inset Formula $u_{n_{k}+1},u_{n_{k}+2},\cdots,u_{n_{k+1}}$
+\end_inset
+
+符号相同.
+ 证明: 
+\begin_inset Formula $\sum_{n=1}^{\infty}u_{n}$
+\end_inset
+
+也收敛.
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+因为
+\begin_inset Formula 
+\[
+\sum_{k=1}^{\infty}\left(u_{n_{k}+1}+\cdots+u_{n_{k+1}}\right)
+\]
+
+\end_inset
+
+收敛, 所以
+\begin_inset Formula $\lim_{k\rightarrow\infty}\left(u_{n_{k+1}}+\cdots+u_{n_{k+1}}\right)=0$
+\end_inset
+
+, 存在
+\begin_inset Formula $n_{k}$
+\end_inset
+
+使得
+\begin_inset Formula $\left|u_{n_{k}+1}+\cdots+u_{n_{k+1}}\right|<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+取
+\begin_inset Formula $N=n_{k}$
+\end_inset
+
+, 当
+\begin_inset Formula $m>N$
+\end_inset
+
+, 
+\begin_inset Formula $p\leqslant n_{k+1}-n_{k}$
+\end_inset
+
+时
+\begin_inset Formula 
+\[
+|u_{m+1}+\cdots+u_{m+p}|<\varepsilon,
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+为任给正数.
+\end_layout
+
+\begin_layout Plain Layout
+当
+\begin_inset Formula $p>n_{k+1}-n_{k}$
+\end_inset
+
+时,
+\begin_inset Formula 
+\[
+|u_{m+1}+\cdots+u_{m+p}|<\left|u_{n_{k}+1}+\cdots+u_{n_{k+1}}\right|+\cdots+\left|u_{n_{s}+1}+\cdots+u_{n_{s+1}}\right|<(s-k)\varepsilon.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+故
+\begin_inset Formula $\sum u_{n}$
+\end_inset
+
+收敛.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+指出下述证明的
+\color red
+错误
+\color inherit
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Quotation
+设
+\begin_inset Formula $a_{n}>0$
+\end_inset
+
+恒成立, 并且级数
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}^{2}$
+\end_inset
+
+收敛.
+ 证明: 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}/n$
+\end_inset
+
+也收敛.
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+因为
+\begin_inset Formula $\sum a_{n}^{2}$
+\end_inset
+
+收敛, 所以
+\begin_inset Formula $a_{n+1}^{2}/a_{n}^{2}<q<1$
+\end_inset
+
+.
+ 又因为
+\begin_inset Formula $a_{n}>0$
+\end_inset
+
+, 所以
+\begin_inset Formula $a_{n+1}/a_{n}<\sqrt{q}$
+\end_inset
+
+.
+ 于是由
+\begin_inset Formula 
+\[
+\frac{a_{n+1}/(n+1)}{a_{n}/n}=\frac{a_{n+1}}{a_{n}}\cdot\frac{n}{n+1}<\sqrt{q}\cdot1<1
+\]
+
+\end_inset
+
+可知
+\begin_inset Formula $\sum a_{n}/n$
+\end_inset
+
+也收敛.
 \end_layout
 
 \end_inset
@@ -17647,82 +18077,6 @@ status collapsed
 \end_inset
 
 收敛即可知
-\begin_inset Formula $\sum\sqrt{u_{n}u_{n+1}}$
-\end_inset
-
-也收敛.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Quotation
-\begin_inset Flex ProofAsInset
-status collapsed
-
-\begin_layout Plain Layout
-先证明
-\begin_inset Formula $\sum u_{n}^{2}$
-\end_inset
-
-收敛.
- 因为
-\begin_inset Formula $\sum u_{n}$
-\end_inset
-
-收敛, 所以
-\begin_inset Formula $\lim_{n\rightarrow\infty}u_{n}=0$
-\end_inset
-
-.
- 由此可见, 对
-\begin_inset Formula $\varepsilon=1$
-\end_inset
-
-, 存在
-\begin_inset Formula $N$
-\end_inset
-
-, 使得当
-\begin_inset Formula $n>N$
-\end_inset
-
-时有
-\begin_inset Formula $0<u_{n}<1$
-\end_inset
-
-, 从而
-\begin_inset Formula $u_{n}^{2}<u_{n}$
-\end_inset
-
-.
- 故由比较原则可知
-\begin_inset Formula $\sum u_{n}^{2}$
-\end_inset
-
-收敛.
-\end_layout
-
-\begin_layout Plain Layout
-再注意到
-\begin_inset Formula 
-\[
-\sqrt{u_{n}u_{n+1}}\leqslant\frac{u_{n}^{2}+u_{n+1}^{2}}{2},
-\]
-
-\end_inset
-
-并且
-\begin_inset Formula $\sum u_{n}^{2}$
-\end_inset
-
-与
-\begin_inset Formula $\sum u_{n+1}^{2}$
-\end_inset
-
-都收敛, 即可知
 \begin_inset Formula $\sum\sqrt{u_{n}u_{n+1}}$
 \end_inset
 
