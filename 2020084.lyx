@@ -27340,6 +27340,217 @@ status open
 也收敛.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+判断下列各个级数是绝对收敛、条件收敛还是发散:
+\begin_inset Formula 
+\begin{align*}
+(5) & \sum_{n=1}^{\infty}\left(\frac{(-1)^{n}}{\sqrt{n}}+\frac{1}{n}\right); & (6) & \sum_{n=1}^{\infty}\frac{(-1)^{n}\ln(n+1)}{n+1};\\
+(7) & \sum_{n=1}^{\infty}(-1)^{n}\left(\frac{2n+100}{3n+1}\right)^{n}; & (8) & \sum_{n=1}^{\infty}n!\left(\frac{x}{n}\right)^{n};\\
+(9) & \sum_{n=1}^{\infty}(-1)^{\lfloor(n+5)/3\rfloor}\cdot\frac{1}{n}; & (10) & \sum_{n=1}^{\infty}\frac{\delta_{n}}{n},\,\text{其中}\,\delta_{n}=\begin{cases}
+1, & \text{若}\,n\equiv1\pmod3\,\text{或}\,n\equiv2\pmod3,\\
+-1, & \text{若}\,n\equiv0\pmod3.
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex HINTAsInset
+status open
+
+\begin_layout Plain Layout
+(5) 发散; (6) 条件收敛; (7) 绝对收敛; (8) 
+\begin_inset Formula $|x|<e$
+\end_inset
+
+时绝对收敛, 
+\begin_inset Formula $|x|\geqslant e$
+\end_inset
+
+时发散; (9) 条件收敛; (10) 发散.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+函数列与函数项级数
+\end_layout
+
+\begin_layout Exercise
+讨论下列函数列在所示区间
+\begin_inset Formula $D$
+\end_inset
+
+上是否一致收敛或内闭一致收敛, 并说明理由:
+\end_layout
+
+\begin_layout Exercise
+(3) 
+\begin_inset Formula $f_{n}(x)=\begin{cases}
+1-(n+1)x, & 0\leqslant x\leqslant1/(n+1),\\
+0, & 1/(n+1)<x<1,
+\end{cases}$
+\end_inset
+
+其中
+\begin_inset Formula $n=1,2,\cdots$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Exercise
+(4) 
+\begin_inset Formula $f_{n}(x)=x/n$
+\end_inset
+
+, 其中
+\begin_inset Formula $n=1,2,\cdots$
+\end_inset
+
+, 而
+\begin_inset Formula $D=[0,+\infty)$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Exercise
+(5) 
+\begin_inset Formula $f_{n}(x)=\sin(x/n)$
+\end_inset
+
+, 其中
+\begin_inset Formula $n=1,2,\cdots$
+\end_inset
+
+, 而
+\begin_inset Formula $D=(-\infty,+\infty)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex HINTAsInset
+status open
+
+\begin_layout Plain Layout
+(3) 不一致收敛.
+ (4)与(5): 不一致收敛, 但内闭一致收敛.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+设当
+\begin_inset Formula $n\rightarrow\infty$
+\end_inset
+
+时, 函数列
+\begin_inset Formula $\{f_{n}\}$
+\end_inset
+
+在
+\begin_inset Formula $D$
+\end_inset
+
+上逐点收敛到
+\begin_inset Formula $f$
+\end_inset
+
+, 而恒正数列
+\begin_inset Formula $a_{n}\rightarrow0$
+\end_inset
+
+.
+ 证明: 如果任意正整数
+\begin_inset Formula $n$
+\end_inset
+
+与任意
+\begin_inset Formula $x\in D$
+\end_inset
+
+都有
+\begin_inset Formula $|f_{n}(x)-f(x)|\leqslant a_{n}$
+\end_inset
+
+, 那么函数列
+\begin_inset Formula $\{f_{n}\}$
+\end_inset
+
+在
+\begin_inset Formula $D$
+\end_inset
+
+上一致收敛到
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+设函数项级数
+\begin_inset Formula $\sum_{n=1}^{\infty}u_{n}(x)$
+\end_inset
+
+在
+\begin_inset Formula $D$
+\end_inset
+
+上一致收敛到
+\begin_inset Formula $S(x)$
+\end_inset
+
+, 而函数
+\begin_inset Formula $g$
+\end_inset
+
+在
+\begin_inset Formula $D$
+\end_inset
+
+上有界.
+ 证明: 函数项级数
+\begin_inset Formula $\sum_{n=1}^{\infty}g(x)u_{n}(x)$
+\end_inset
+
+在
+\begin_inset Formula $D$
+\end_inset
+
+上一致收敛到
+\begin_inset Formula $g(x)S(x)$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Chapter
 第一学期期末考试
 \end_layout
