@@ -18090,6 +18090,122 @@ status collapsed
 
 \end_deeper
 \begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+修正下述证明的
+\color red
+错误
+\color inherit
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Quotation
+证明: (1) 
+\begin_inset Formula $\sum_{n=1}^{\infty}\left((-1)^{n}/\sqrt{n}+1/n\right)$
+\end_inset
+
+发散; (2) 
+\begin_inset Formula $\sum_{n=1}^{\infty}(-1)^{n}[(2n+100)/(3n+1)]^{n}$
+\end_inset
+
+绝对收敛; (3) 
+\begin_inset Formula $\sum_{n=1}^{\infty}n!x^{n}/n^{n}$
+\end_inset
+
+当
+\begin_inset Formula $|x|<e$
+\end_inset
+
+时绝对收敛, 当
+\begin_inset Formula $|x|\geqslant e$
+\end_inset
+
+时发散.
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+(1) 因为
+\begin_inset Formula $\sum1/n$
+\end_inset
+
+发散, 所以原级数发散.
+\end_layout
+
+\begin_layout Plain Layout
+(2) 因为当
+\begin_inset Formula $n\rightarrow\infty$
+\end_inset
+
+时有
+\begin_inset Formula 
+\[
+\left(\frac{2n+100}{3n+1}\right)^{n}\sim\left(\frac{2}{3}\right)^{n},
+\]
+
+\end_inset
+
+并且
+\begin_inset Formula $\sum(2/3)^{n}$
+\end_inset
+
+收敛, 所以由比较原则可知原级数绝对收敛.
+\end_layout
+
+\begin_layout Plain Layout
+(3) 记
+\begin_inset Formula $u_{n}=n!x^{n}/n^{n}$
+\end_inset
+
+.
+ 因为
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}\left|\frac{u_{n+1}}{u_{n}}\right|=\lim_{n\rightarrow\infty}\left|x\cdot\left(1-\frac{1}{n+1}\right)^{n}\right|=\frac{|x|}{e},
+\]
+
+\end_inset
+
+所以当
+\begin_inset Formula $|x|<e$
+\end_inset
+
+时原级数绝对收敛, 当
+\begin_inset Formula $|x|>e$
+\end_inset
+
+时原级数发散.
+ 当
+\begin_inset Formula $|x|=e$
+\end_inset
+
+时, 因为
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}n\left(1-\frac{u_{n+1}}{u_{n}}\right)=\lim_{n\rightarrow\infty}\left(n-e\frac{n^{n+1}}{(n+1)^{n}}\right)=\lim_{n\rightarrow\infty}\left(n-\frac{(1+n)^{n}}{n^{n}}\cdot\frac{n^{n+1}}{(n+1)^{n}}\right)=0<1,
+\]
+
+\end_inset
+
+所以由拉贝判别法可知原级数发散.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
