@@ -7390,11 +7390,28 @@ status open
 \series bold
 和
 \series default
- (sum)与
+ (sum)、
 \series bold
 发散
 \series default
-.
+、
+\series bold
+绝对收敛
+\series default
+、
+\series bold
+条件收敛
+\series default
+、
+\series bold
+重排
+\series default
+ (rearrangement)、
+\series bold
+柯西乘积
+\series default
+ (Cauchy product).
+ 
 \end_layout
 
 \begin_layout Example
@@ -7637,7 +7654,7 @@ status open
 status open
 
 \begin_layout Plain Layout
-比式判别法的极限形式
+比式判别法的极限形式, ratio test
 \end_layout
 
 \end_inset
@@ -7705,7 +7722,7 @@ status open
 status open
 
 \begin_layout Plain Layout
-根式判别法的极限形式
+根式判别法的极限形式, root test
 \end_layout
 
 \end_inset
@@ -7744,19 +7761,278 @@ l>1 & \Rightarrow\text{发散}
 status open
 
 \begin_layout Plain Layout
-积分判别法
+积分判别法, integral test
 \end_layout
 
 \end_inset
 
-设非负
-\begin_inset Formula $f$
+设
+\begin_inset Formula $f\downarrow0$
 \end_inset
 
-单调减, 则
+, 则
 \begin_inset Formula 
 \[
 \sum_{n=1}^{\infty}f(n)\,\text{收敛}\Leftrightarrow\int_{1}^{+\infty}f(x)\mathistOperatord x\,\text{收敛}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+莱布尼茨判别法, Leibniz's alternating series test
+\end_layout
+
+\end_inset
+
+若
+\begin_inset Formula $u_{n}\downarrow0$
+\end_inset
+
+, 则
+\begin_inset Formula $\sum(-1)^{n}u_{n}$
+\end_inset
+
+收敛.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+绝对收敛级数必定收敛.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+绝对收敛级数不怕重排.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+两个分别绝对收敛到
+\begin_inset Formula $A$
+\end_inset
+
+和
+\begin_inset Formula $B$
+\end_inset
+
+的级数的柯西乘积绝对收敛到
+\begin_inset Formula $AB$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+阿贝尔判别法, Abel's test
+\end_layout
+
+\end_inset
+
+若
+\begin_inset Formula $a_{n}$
+\end_inset
+
+单调有界且
+\begin_inset Formula $\sum b_{n}$
+\end_inset
+
+收敛, 则
+\begin_inset Formula $\sum a_{n}b_{n}$
+\end_inset
+
+也收敛.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+狄利克雷判别法, Dirichlet's test
+\end_layout
+
+\end_inset
+
+若
+\begin_inset Formula $a_{n}\downarrow0$
+\end_inset
+
+且
+\begin_inset Formula $\sum b_{n}$
+\end_inset
+
+部分和有界, 则
+\begin_inset Formula $\sum a_{n}b_{n}$
+\end_inset
+
+收敛.
+\end_layout
+
+\begin_layout Section
+函数列与函数项级数
+\end_layout
+
+\begin_layout Standard
+定义
+\series bold
+函数列
+\series default
+ (sequence of functions)及其(逐点) 
+\series bold
+收敛
+\series default
+ (converge (pointwise))、
+\emph on
+收敛域
+\emph default
+、
+\emph on
+极限函数
+\emph default
+ (limit function)、
+\series bold
+一致收敛
+\series default
+ (converge uniformly)、
+\series bold
+内闭一致收敛
+\series default
+ (converge uniformly on each closed subinterval).
+ 定义
+\series bold
+函数项级数
+\series default
+ (series of functions)及其(逐点) 
+\series bold
+收敛
+\series default
+、
+\emph on
+收敛域
+\emph default
+、
+\emph on
+部分和函数列
+\emph default
+、
+\emph on
+和函数
+\emph default
+ (sum of the series)、
+\series bold
+一致收敛
+\series default
+、
+\series bold
+内闭一致收敛
+\series default
+、
+\emph on
+优级数
+\emph default
+.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+柯西准则
+\end_layout
+
+\end_inset
+
+(1) 函数列
+\begin_inset Formula $\{f_{n}\}$
+\end_inset
+
+一致收敛
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+任给
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 存在
+\begin_inset Formula $N>0$
+\end_inset
+
+, 使得当
+\begin_inset Formula $m,n>N$
+\end_inset
+
+时恒有
+\begin_inset Formula $|f_{n}-f_{m}|<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Corollary
+(1) 函数列
+\begin_inset Formula $\{f_{n}\}$
+\end_inset
+
+在
+\begin_inset Formula $D$
+\end_inset
+
+上一致收敛的充要条件是
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}\sup_{x\in D}|f_{n}(x)-f(x)|=0.
 \]
 
 \end_inset
@@ -18230,6 +18506,25 @@ status collapsed
 \end_layout
 
 \begin_layout Exercise
+试构造收敛级数
+\begin_inset Formula $\sum a_{n}$
+\end_inset
+
+, 使数列
+\begin_inset Formula $\{na_{n}\}$
+\end_inset
+
+发散.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
 指出下述解法的
 \color red
 错误
@@ -18301,6 +18596,41 @@ status collapsed
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+构造正函数列
+\begin_inset Formula $\{u_{n}(x)\}$
+\end_inset
+
+, 使得对每个
+\begin_inset Formula $x\in[a,b]$
+\end_inset
+
+而言, 当
+\begin_inset Formula $n\rightarrow\infty$
+\end_inset
+
+时数列
+\begin_inset Formula $\{u_{n}(x)\}$
+\end_inset
+
+单调递减收敛到零, 但函数项级数
+\begin_inset Formula $\sum_{n=1}^{\infty}(-1)^{n+1}u_{n}(x)$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上并不一致收敛.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Separator plain
 \end_inset
@@ -18663,26 +18993,6 @@ status open
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Section
-反例
-\end_layout
-
-\begin_layout Standard
-本节难度较高.
-\end_layout
-
-\begin_layout Exercise
-试构造收敛级数
-\begin_inset Formula $\sum a_{n}$
-\end_inset
-
-, 使数列
-\begin_inset Formula $\{na_{n}\}$
-\end_inset
-
-发散.
 \end_layout
 
 \begin_layout Chapter
