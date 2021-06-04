@@ -241,7 +241,7 @@ LatexCommand tableofcontents
 
 \begin_layout Standard
 \begin_inset Tabular
-<lyxtabular version="3" rows="31" columns="2">
+<lyxtabular version="3" rows="32" columns="2">
 <features islongtable="true" longtabularalignment="left">
 <column alignment="left" valignment="top" width="0pt">
 <column alignment="left" valignment="top" width="0pt">
@@ -747,6 +747,29 @@ LatexCommand tableofcontents
 
 \begin_layout Plain Layout
 全体正实数构成的集合
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f_{n}\rightrightarrows f$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+一致收敛
 \end_layout
 
 \end_inset
@@ -7162,143 +7185,6 @@ status open
 发散.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Corollary
-设
-\begin_inset Formula $a>0$
-\end_inset
-
-, 而
-\begin_inset Formula $p$
-\end_inset
-
-是常数.
- 那么:
-\end_layout
-
-\begin_layout Corollary
-(1) 若
-\begin_inset Formula $p>1$
-\end_inset
-
-且
-\begin_inset Formula $0\leqslant f(x)\leqslant1/x^{p}$
-\end_inset
-
-恒成立, 则
-\begin_inset Formula $\int_{a}^{+\infty}f$
-\end_inset
-
-收敛;
-\end_layout
-
-\begin_layout Corollary
-(2) 若
-\begin_inset Formula $p\leqslant1$
-\end_inset
-
-且
-\begin_inset Formula $1/x^{p}\leqslant f(x)$
-\end_inset
-
-恒成立, 则
-\begin_inset Formula $\int_{a}^{+\infty}f$
-\end_inset
-
-发散;
-\end_layout
-
-\begin_layout Corollary
-(1
-\begin_inset Formula $'$
-\end_inset
-
-) 若
-\begin_inset Formula $0<p<1$
-\end_inset
-
-且
-\begin_inset Formula $0\leqslant f(x)\leqslant1/(\omega-x)^{p}$
-\end_inset
-
-恒成立, 则
-\begin_inset Formula $\int_{a}^{\omega}f$
-\end_inset
-
-收敛;
-\end_layout
-
-\begin_layout Corollary
-(2
-\begin_inset Formula $'$
-\end_inset
-
-) 若
-\begin_inset Formula $p\geqslant1$
-\end_inset
-
-且
-\begin_inset Formula $f\geqslant1/(\omega-x)^{p}$
-\end_inset
-
-, 则
-\begin_inset Formula $\int_{a}^{\omega}f$
-\end_inset
-
-发散.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Corollary
-(1) 设
-\begin_inset Formula $f\geqslant0$
-\end_inset
-
-且
-\begin_inset Formula $\lim_{x\rightarrow+\infty}x^{p}f(x)=\lambda$
-\end_inset
-
-, 那么
-\begin_inset Formula $\begin{cases}
-(p>1\,\text{且}\,0\leqslant\lambda<+\infty)\Rightarrow\int_{a}^{+\infty}f\,\text{收敛}\\
-(p\leqslant1\,\text{且}\,0<\lambda\leqslant+\infty)\Rightarrow\int_{a}^{+\infty}f\,\text{发散}
-\end{cases}$
-\end_inset
-
-;
-\end_layout
-
-\begin_layout Corollary
-(2) 设
-\begin_inset Formula $f\geqslant0$
-\end_inset
-
-且
-\begin_inset Formula $\lim_{x\rightarrow\omega^{-}}(\omega-x)^{p}f(x)=\lambda$
-\end_inset
-
-, 那么
-\begin_inset Formula $\begin{cases}
-(0<p<1\,\text{且}\,0\leqslant\lambda<+\infty)\Rightarrow\int_{a}^{\omega}f\,\text{收敛}\\
-(p\geqslant1\,\text{且}\,0<\lambda\leqslant+\infty)\Rightarrow\int_{a}^{\omega}f\,\text{发散}
-\end{cases}$
-\end_inset
-
-.
-\end_layout
-
 \begin_layout Theorem
 \begin_inset Argument 1
 status open
@@ -7947,7 +7833,11 @@ status open
 \series bold
 内闭一致收敛
 \series default
- (converge uniformly on each closed subinterval).
+ (converge uniformly on each closed subinterval)、
+\series bold
+一致有界
+\series default
+ (uniformly bounded).
  定义
 \series bold
 函数项级数
@@ -7969,6 +7859,10 @@ status open
 和函数
 \emph default
  (sum of the series)、
+\emph on
+余项
+\emph default
+、
 \series bold
 一致收敛
 \series default
@@ -8020,6 +7914,38 @@ status open
 .
 \end_layout
 
+\begin_layout Theorem
+(2) 函数项级数
+\begin_inset Formula $\sum u_{n}(x)$
+\end_inset
+
+一致收敛
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+任给
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 存在
+\begin_inset Formula $N>0$
+\end_inset
+
+, 使得当
+\begin_inset Formula $m>n>N$
+\end_inset
+
+时恒有
+\begin_inset Formula 
+\[
+|u_{n}+u_{n+1}+\cdots+u_{m}|<\varepsilon.
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Corollary
 (1) 函数列
 \begin_inset Formula $\{f_{n}\}$
@@ -8029,10 +7955,353 @@ status open
 \begin_inset Formula $D$
 \end_inset
 
-上一致收敛的充要条件是
+上一致收敛于
+\begin_inset Formula $f$
+\end_inset
+
+的充要条件是
 \begin_inset Formula 
 \[
 \lim_{n\rightarrow\infty}\sup_{x\in D}|f_{n}(x)-f(x)|=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Corollary
+(2) 函数项级数
+\begin_inset Formula $\sum u_{n}(x)$
+\end_inset
+
+在
+\begin_inset Formula $D$
+\end_inset
+
+上一致收敛于
+\begin_inset Formula $S(x)$
+\end_inset
+
+的充要条件是
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}\sup_{x\in D}|S_{n}(x)-S(x)|=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Corollary
+函数列
+\begin_inset Formula $\{f_{n}\}$
+\end_inset
+
+在
+\begin_inset Formula $D$
+\end_inset
+
+上不一致收敛于
+\begin_inset Formula $f$
+\end_inset
+
+的充要条件是, 存在点列
+\begin_inset Formula $\{x_{n}\}\subset D$
+\end_inset
+
+使得数列
+\begin_inset Formula $\{f_{n}(x_{n})-f(x_{n})\}$
+\end_inset
+
+不收敛于零.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Corollary
+函数项级数
+\begin_inset Formula $\sum u_{n}(x)$
+\end_inset
+
+一致收敛的必要条件是
+\begin_inset Formula $u_{n}\rightrightarrows0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+魏尔斯特拉斯判别法, Weierstrass 
+\begin_inset Formula $M$
+\end_inset
+
+ test, 优级数判别法
+\end_layout
+
+\end_inset
+
+若正项级数
+\begin_inset Formula $\sum M_{n}$
+\end_inset
+
+收敛, 且
+\begin_inset Formula $|u_{n}(x)|\leqslant M_{n}$
+\end_inset
+
+恒成立, 则
+\begin_inset Formula $\sum u_{n}(x)$
+\end_inset
+
+一致收敛.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+阿贝尔判别法, Abel's test
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left.\begin{array}{c}
+\sum u_{n}(x)\,\text{一致收敛}\\
+v_{n}(x)\,\text{关于}\,n\,\text{单调}\\
+v_{n}(x)\,\text{一致有界}
+\end{array}\right\} \Rightarrow\sum u_{n}(x)v_{n}(x)\,\text{一致收敛}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+狄利克雷判别法, Dirichlet's test
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left.\begin{array}{c}
+\sum u_{n}(x)\,\text{部分和一致有界}\\
+v_{n}(x)\,\text{关于}\,n\,\text{单调}\\
+v_{n}\rightrightarrows0
+\end{array}\right\} \Rightarrow\sum u_{n}(x)v_{n}(x)\,\text{一致收敛}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+若
+\begin_inset Formula $f_{n}$
+\end_inset
+
+一致收敛, 则
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow\omega}\lim_{n\rightarrow\infty}f_{n}(x)=\lim_{n\rightarrow\infty}\lim_{x\rightarrow\omega}f_{n}(x).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+(1) 若
+\begin_inset Formula $f_{n}$
+\end_inset
+
+皆连续, 且
+\begin_inset Formula $f_{n}\rightrightarrows f$
+\end_inset
+
+, 则
+\begin_inset Formula $f$
+\end_inset
+
+连续.
+\end_layout
+
+\begin_layout Theorem
+(2) 若
+\begin_inset Formula $u_{n}$
+\end_inset
+
+皆连续, 且
+\begin_inset Formula $\sum u_{n}(x)$
+\end_inset
+
+一致收敛, 则
+\begin_inset Formula $\sum u_{n}(x)$
+\end_inset
+
+也连续.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+(1) 若
+\begin_inset Formula $f_{n}$
+\end_inset
+
+皆连续, 且
+\begin_inset Formula $f_{n}$
+\end_inset
+
+一致收敛, 则
+\begin_inset Formula 
+\[
+\int_{a}^{b}\lim_{n\rightarrow\infty}f_{n}(x)\mathistOperatord x=\lim_{n\rightarrow\infty}\int_{a}^{b}f_{n}(x)\mathistOperatord x.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+(2) 若
+\begin_inset Formula $u_{n}$
+\end_inset
+
+皆连续, 且
+\begin_inset Formula $\sum u_{n}(x)$
+\end_inset
+
+一致收敛, 则
+\begin_inset Formula 
+\[
+\sum\int_{a}^{b}u_{n}(x)\mathistOperatord x=\int_{a}^{b}\sum u_{n}(x)\mathistOperatord x.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+(1) 若
+\begin_inset Formula $f_{n}$
+\end_inset
+
+皆连续可微, 
+\begin_inset Formula $f_{n}$
+\end_inset
+
+逐点收敛且
+\begin_inset Formula $f_{n}'$
+\end_inset
+
+一致收敛, 则
+\begin_inset Formula $f_{n}$
+\end_inset
+
+一致收敛且
+\begin_inset Formula 
+\[
+\frac{\mathistOperatord}{\mathistOperatord x}\lim_{n\rightarrow\infty}f_{n}(x)=\lim_{n\rightarrow\infty}\frac{\mathistOperatord}{\mathistOperatord x}f_{n}(x).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+(2) 若
+\begin_inset Formula $u_{n}$
+\end_inset
+
+皆连续可微, 
+\begin_inset Formula $\sum u_{n}(x)$
+\end_inset
+
+逐点收敛且
+\begin_inset Formula $\sum u_{n}'(x)$
+\end_inset
+
+一致收敛, 则
+\begin_inset Formula $\sum u_{n}$
+\end_inset
+
+一致收敛且
+\begin_inset Formula 
+\[
+\frac{\mathistOperatord}{\mathistOperatord x}\sum u_{n}(x)=\sum\frac{\mathistOperatord}{\mathistOperatord x}u_{n}(x).
 \]
 
 \end_inset
