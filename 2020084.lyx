@@ -18206,6 +18206,33 @@ status collapsed
 \end_layout
 
 \begin_layout Exercise
+构造连续函数
+\begin_inset Formula $f(x)$
+\end_inset
+
+, 使得
+\begin_inset Formula $\int_{a}^{+\infty}f(x)\mathistOperatord x$
+\end_inset
+
+绝对收敛, 
+\begin_inset Formula $\lim_{x\rightarrow+\infty}f(x)=0$
+\end_inset
+
+, 但
+\begin_inset Formula $\int_{a}^{+\infty}[f(x)]^{2}\mathistOperatord x$
+\end_inset
+
+发散.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
 修正下述证明的
 \color red
 错误

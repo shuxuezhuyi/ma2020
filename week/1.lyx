@@ -435,6 +435,30 @@ e^{x},\sin x,\cos x,\ln(1+x),(1+x)^{\alpha},\frac{1}{1-x}
 定积分的换元积分公式与分部积分公式.
 \end_layout
 
+\begin_layout Enumerate
+
+\series bold
+无穷积分
+\series default
+与
+\series bold
+瑕积分
+\series default
+的定义.
+\end_layout
+
+\begin_layout Enumerate
+数项
+\series bold
+级数
+\series default
+及其
+\series bold
+收敛
+\series default
+的定义.
+\end_layout
+
 \begin_layout Section
 验证
 \end_layout
@@ -4064,6 +4088,283 @@ height "1pt"
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Subsection
+反常积分
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+第255页的定理11.3与第259页的定理11.7 (狄利克雷判别法): 
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+设
+\begin_inset Formula $F(u)=\int_{a}^{u}f(x)\mathistOperatord x$
+\end_inset
+
+在
+\begin_inset Formula $[a,+\infty)$
+\end_inset
+
+上有界, 
+\begin_inset Formula $g(x)$
+\end_inset
+
+在
+\begin_inset Formula $[a,+\infty)$
+\end_inset
+
+上当
+\begin_inset Formula $x\rightarrow+\infty$
+\end_inset
+
+时单调趋于零.
+ 那么无穷积分
+\begin_inset Formula $\int_{a}^{+\infty}f(x)g(x)\mathistOperatord x$
+\end_inset
+
+收敛.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+设
+\begin_inset Formula $a$
+\end_inset
+
+是
+\begin_inset Formula $f(x)$
+\end_inset
+
+唯一的瑕点, 函数
+\begin_inset Formula $F(u)=\int_{u}^{b}f(x)\mathistOperatord x$
+\end_inset
+
+在
+\begin_inset Formula $(a,b]$
+\end_inset
+
+上有界, 函数
+\begin_inset Formula $g(x)$
+\end_inset
+
+在
+\begin_inset Formula $(a,b]$
+\end_inset
+
+上单调且
+\begin_inset Formula $\lim_{x\rightarrow a^{+}}g(x)=0$
+\end_inset
+
+.
+ 那么瑕积分
+\begin_inset Formula $\int_{a}^{b}f(x)g(x)\mathistOperatord x$
+\end_inset
+
+收敛.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+第255页的定理11.4与第259页的定理11.8 (阿贝尔判别法): 
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+设无穷积分
+\begin_inset Formula $\int_{a}^{+\infty}f(x)\mathistOperatord x$
+\end_inset
+
+收敛, 
+\begin_inset Formula $g(x)$
+\end_inset
+
+在
+\begin_inset Formula $[a,+\infty)$
+\end_inset
+
+上单调有界.
+ 那么无穷积分
+\begin_inset Formula $\int_{a}^{+\infty}f(x)g(x)\mathistOperatord x$
+\end_inset
+
+收敛.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+设
+\begin_inset Formula $a$
+\end_inset
+
+是
+\begin_inset Formula $f(x)$
+\end_inset
+
+唯一的瑕点, 瑕积分
+\begin_inset Formula $\int_{a}^{b}f(x)\mathistOperatord x$
+\end_inset
+
+收敛, 函数
+\begin_inset Formula $g(x)$
+\end_inset
+
+在
+\begin_inset Formula $(a,b]$
+\end_inset
+
+上单调且有界.
+ 那么瑕积分
+\begin_inset Formula $\int_{a}^{b}f(x)g(x)\mathistOperatord x$
+\end_inset
+
+收敛.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Subsection
+数项级数
+\end_layout
+
+\begin_layout Standard
+接下来都是下册的内容, 页码也是下册的.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+第17页的定理12.11 (莱布尼茨判别法): 
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+设数列
+\begin_inset Formula $\{u_{n}\}$
+\end_inset
+
+单调递减到零.
+ 那么级数
+\begin_inset Formula $\sum(-1)^{n}u_{n}$
+\end_inset
+
+收敛.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+叙述级数
+\series bold
+重排
+\series default
+的定义, 然后证明第18页的定理12.13: 
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+设
+\begin_inset Formula $\sum v_{n}$
+\end_inset
+
+是
+\begin_inset Formula $\sum u_{n}$
+\end_inset
+
+的重排.
+ 如果
+\begin_inset Formula $\sum u_{n}$
+\end_inset
+
+绝对收敛, 那么
+\begin_inset Formula $\sum v_{n}$
+\end_inset
+
+也绝对收敛, 并且
+\begin_inset Formula $\sum v_{n}$
+\end_inset
+
+的和等于
+\begin_inset Formula $\sum u_{n}$
+\end_inset
+
+的和.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+第20页的定理12.14 (柯西定理): 
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+设级数
+\begin_inset Formula $\sum u_{n}=A$
+\end_inset
+
+与
+\begin_inset Formula $\sum v_{n}=B$
+\end_inset
+
+都绝对收敛.
+ 那么所有乘积
+\begin_inset Formula $u_{i}v_{j}$
+\end_inset
+
+按任意顺序排列得到的级数
+\begin_inset Formula $\sum w_{n}$
+\end_inset
+
+也绝对收敛, 且有
+\begin_inset Formula $\sum w_{n}=AB$
+\end_inset
+
+.
 \end_layout
 
 \end_inset
