@@ -19088,6 +19088,106 @@ status collapsed
 
 \end_deeper
 \begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+指出下述解法的
+\color red
+错误
+\color inherit
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Quotation
+设
+\begin_inset Formula $S(x)=\sum_{n=1}^{\infty}ne^{-nx}$
+\end_inset
+
+, 
+\begin_inset Formula $x>0$
+\end_inset
+
+.
+ 计算
+\begin_inset Formula $\int_{\ln2}^{\ln3}S(t)\mathistOperatord t$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+解
+\end_layout
+
+\end_inset
+
+对任意
+\begin_inset Formula $x\in(0,+\infty)$
+\end_inset
+
+, 我们有
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}\frac{u_{n+1}(x)}{u_{n}(x)}=\lim_{n\rightarrow\infty}\frac{n+1}{e^{(n+1)x}}\cdot\frac{e^{nx}}{n}=\lim_{n\rightarrow\infty}\frac{n+1}{n}\cdot\frac{1}{e^{x}}<1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+由此可见级数
+\begin_inset Formula $\sum_{n=1}^{\infty}ne^{-nx}$
+\end_inset
+
+在
+\begin_inset Formula $(0,+\infty)$
+\end_inset
+
+上一致收敛.
+\end_layout
+
+\begin_layout Plain Layout
+又因为
+\begin_inset Formula $ne^{-nx}$
+\end_inset
+
+在
+\begin_inset Formula $(0,+\infty)$
+\end_inset
+
+上连续, 所以
+\begin_inset Formula 
+\[
+\int_{\ln2}^{\ln3}\sum_{n=1}^{\infty}\frac{n}{e^{nt}}\mathistOperatord t=\sum_{n=1}^{\infty}\int_{\ln2}^{\ln3}\frac{n}{e^{nt}}\mathistOperatord t=\sum_{n=1}^{\infty}\left(\frac{1}{2^{n}}-\frac{1}{3^{n}}\right)=\frac{1}{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
