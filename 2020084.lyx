@@ -35363,6 +35363,158 @@ status collapsed
 \end_layout
 
 \begin_layout Chapter
+第二学期小测
+\end_layout
+
+\begin_layout Section
+考试中出现的错误
+\end_layout
+
+\begin_layout Subsection
+第二题
+\end_layout
+
+\begin_layout Exercise
+设
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,+\infty)$
+\end_inset
+
+上一致连续, 并且
+\begin_inset Formula $\int_{0}^{+\infty}f(x)\mathistOperatord x$
+\end_inset
+
+收敛.
+ 证明: 
+\begin_inset Formula $\lim_{n\rightarrow+\infty}f(x)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\color red
+错误证法
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+第三题
+\end_layout
+
+\begin_layout Exercise
+设
+\begin_inset Formula $a_{n}>0$
+\end_inset
+
+恒成立, 并且级数
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+发散.
+ 记
+\begin_inset Formula $S_{n}=\sum_{k=1}^{n}a_{k}$
+\end_inset
+
+.
+ 证明: 级数
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{a_{n}}{S_{n}}$
+\end_inset
+
+发散.
+\end_layout
+
+\begin_layout Subsection
+第七题
+\end_layout
+
+\begin_layout Exercise
+讨论函数项级数
+\begin_inset Formula $\sum_{n=0}^{\infty}x^{n}$
+\end_inset
+
+在
+\begin_inset Formula $D=(-1,1)$
+\end_inset
+
+上是否一致收敛、是否内闭一致收敛.
+\end_layout
+
+\begin_layout Subsection
+第八题
+\end_layout
+
+\begin_layout Exercise
+
+\series bold
+(1)
+\series default
+ 设函数项级数
+\begin_inset Formula $\sum_{n=1}^{\infty}u_{n}(x)$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上一致收敛, 并且每一项
+\begin_inset Formula $u_{n}(x)$
+\end_inset
+
+都是连续函数.
+ 证明:
+\begin_inset Formula 
+\[
+\sum_{n=1}^{\infty}\int_{a}^{b}u_{n}(x)\mathistOperatord x=\int_{a}^{b}\sum_{n=1}^{\infty}u_{n}(x)\mathistOperatord x.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+
+\series bold
+(2)
+\series default
+ 运用(1)的结论计算积分
+\begin_inset Formula $\int_{0}^{x}S(t)\mathistOperatord t$
+\end_inset
+
+, 其中
+\begin_inset Formula $S(t)=\sum_{n=1}^{\infty}\frac{t^{n-1}}{n^{2}}$
+\end_inset
+
+, 
+\begin_inset Formula $t\in[-1,1]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Chapter
 直观
 \end_layout
 
