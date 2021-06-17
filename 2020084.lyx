@@ -8310,6 +8310,167 @@ v_{n}\rightrightarrows0
 \end_layout
 
 \begin_layout Section
+幂级数
+\end_layout
+
+\begin_layout Standard
+定义
+\series bold
+幂级数
+\series default
+ (power series)及其
+\series bold
+收敛半径
+\series default
+ (radius of convergence)、
+\series bold
+收敛区间
+\series default
+ (interval of convergence, disk of convergence)、
+\series bold
+相等
+\series default
+.
+ 定义
+\series bold
+泰勒级数
+\series default
+ (Taylor series)与
+\emph on
+麦克劳林级数
+\emph default
+ (Maclaurin series).
+ 注意区分
+\color red
+收敛域
+\color inherit
+与
+\color blue
+收敛区间
+\color inherit
+.
+ 本节幂级数总假设形如
+\begin_inset Formula $\sum a_{n}x^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+阿贝尔定理, Abel's first theorem on power series
+\end_layout
+
+\end_inset
+
+对于幂级数而言, 收敛之内皆绝对收敛, 发散之外皆发散.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+柯西-阿达马定理, Cauchy-Hadamard formula
+\end_layout
+
+\end_inset
+
+对于
+\begin_inset Formula $\sum a_{n}x^{n}$
+\end_inset
+
+, 记收敛半径为
+\begin_inset Formula $R$
+\end_inset
+
+, 则
+\begin_inset Formula 
+\[
+\rho=\varlimsup_{n\rightarrow\infty}\sqrt[n]{|a_{n}|}\Rightarrow\begin{cases}
+\rho=0 & \Rightarrow R=+\infty\\
+\rho\in(0,+\infty) & \Rightarrow R=1/\rho\\
+\rho=+\infty & \Rightarrow R=0
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Remark*
+若视
+\begin_inset Formula $0=1/\infty$
+\end_inset
+
+, 
+\begin_inset Formula $\infty=1/0$
+\end_inset
+
+, 则总有
+\begin_inset Formula $R=1/\rho$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+幂级数在收敛域上一致收敛.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+幂级数在收敛域上连续（若收敛域包含端点, 则在端点处只是单侧连续）.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+幂级数在收敛区间内可逐项求导、逐项积分.
+\end_layout
+
+\begin_layout Corollary
+幂级数在收敛区间内无穷次可微.
+\end_layout
+
+\begin_layout Theorem
+相等的幂级数有相同的系数.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+两个幂级数在相加或相乘之后, 收敛半径将以小为准.
+\end_layout
+
+\begin_layout Section
 讨论
 \end_layout
 
@@ -36310,99 +36471,6 @@ status open
 
 \end_inset
 
-令
-\begin_inset Formula $f_{n}(x)=x^{n}$
-\end_inset
-
-.
- 那么对任意
-\begin_inset Formula $x\in(-1,1)$
-\end_inset
-
-而言, 当
-\begin_inset Formula $n\rightarrow\infty$
-\end_inset
-
-时有
-\begin_inset Formula $f_{n}(x)\rightarrow0$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Plain Layout
-取
-\begin_inset Formula $x_{n}=\sqrt[n]{1/2}$
-\end_inset
-
-, 则
-\begin_inset Formula $\lim_{n\rightarrow\infty}|f_{n}(x_{n})-0|=1/2$
-\end_inset
-
-, 即
-\begin_inset Formula 
-\[
-\lim_{n\rightarrow\infty}\sup_{x\in(-1,1)}|f_{n}(x_{n})-0|\geqslant\frac{1}{2}.
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-对任意
-\begin_inset Formula $[a,b]\subset(-1,1)$
-\end_inset
-
-, 不妨设
-\begin_inset Formula $|b|\geqslant|a|$
-\end_inset
-
-, 则当
-\begin_inset Formula $n\rightarrow\infty$
-\end_inset
-
-时有
-\begin_inset Formula 
-\[
-|f_{n}(x)|=|x^{n}|\leqslant|b|^{n}\rightarrow0,
-\]
-
-\end_inset
-
-故
-\begin_inset Formula $\sum x^{n}$
-\end_inset
-
-在
-\begin_inset Formula $(-1,1)$
-\end_inset
-
-上内闭一致收敛.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex ProofAsInset
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-
-\color red
-错误证法
-\end_layout
-
-\end_inset
-
 对任意
 \begin_inset Formula $x\in(-1,1)$
 \end_inset
@@ -36588,6 +36656,99 @@ f'(x)=\frac{x^{n}}{(1-x)^{2}}((n+1)(1-x)+x).
 
 由此可见
 \begin_inset Formula $\sum_{n=0}^{\infty}x^{n}$
+\end_inset
+
+在
+\begin_inset Formula $(-1,1)$
+\end_inset
+
+上内闭一致收敛.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ProofAsInset
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\color red
+书写潦草
+\end_layout
+
+\end_inset
+
+令
+\begin_inset Formula $f_{n}(x)=x^{n}$
+\end_inset
+
+.
+ 那么对任意
+\begin_inset Formula $x\in(-1,1)$
+\end_inset
+
+而言, 当
+\begin_inset Formula $n\rightarrow\infty$
+\end_inset
+
+时有
+\begin_inset Formula $f_{n}(x)\rightarrow0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+取
+\begin_inset Formula $x_{n}=\sqrt[n]{1/2}$
+\end_inset
+
+, 则
+\begin_inset Formula $\lim_{n\rightarrow\infty}|f_{n}(x_{n})-0|=1/2$
+\end_inset
+
+, 即
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}\sup_{x\in(-1,1)}|f_{n}(x_{n})-0|\geqslant\frac{1}{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+对任意
+\begin_inset Formula $[a,b]\subset(-1,1)$
+\end_inset
+
+, 不妨设
+\begin_inset Formula $|b|\geqslant|a|$
+\end_inset
+
+, 则当
+\begin_inset Formula $n\rightarrow\infty$
+\end_inset
+
+时有
+\begin_inset Formula 
+\[
+|f_{n}(x)|=|x^{n}|\leqslant|b|^{n}\rightarrow0,
+\]
+
+\end_inset
+
+故
+\begin_inset Formula $\sum x^{n}$
 \end_inset
 
 在
