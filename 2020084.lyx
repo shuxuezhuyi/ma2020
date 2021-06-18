@@ -5866,7 +5866,19 @@ Heine-Borel有限覆盖定理, The finite covering theorem
 定积分
 \series default
 (definite integral).
- 引入积分区间、积分的下限和上限(lower and upper limits of integration)等说法.
+ 引入
+\emph on
+积分区间
+\emph default
+、积分的
+\emph on
+下限
+\emph default
+和
+\emph on
+上限
+\emph default
+ (lower and upper limits of integration)等说法.
 \end_layout
 
 \begin_layout Theorem
@@ -8335,7 +8347,15 @@ v_{n}\rightrightarrows0
 \series bold
 泰勒级数
 \series default
- (Taylor series)与
+ (Taylor series)、
+\series bold
+泰勒展开式
+\series default
+ (Taylor expansion, 或称
+\series bold
+幂级数展开式
+\series default
+, power series expansion)与
 \emph on
 麦克劳林级数
 \emph default
@@ -8468,6 +8488,21 @@ status open
 
 \begin_layout Theorem
 两个幂级数在相加或相乘之后, 收敛半径将以小为准.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+函数可以展开成泰勒级数
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+泰勒公式的余项趋于零.
 \end_layout
 
 \begin_layout Section
@@ -28958,11 +28993,8 @@ status open
 上连续, 且有连续的导函数.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
+\begin_layout Section
+幂级数
 \end_layout
 
 \begin_layout Exercise
@@ -29163,6 +29195,101 @@ status open
 \end_inset
 
 .
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+设
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $(a,b)$
+\end_inset
+
+上的各阶导数一致有界, 亦即存在
+\begin_inset Formula $M>0$
+\end_inset
+
+, 使得对任意
+\begin_inset Formula $x\in(a,b)$
+\end_inset
+
+与任意正整数
+\begin_inset Formula $n$
+\end_inset
+
+都有
+\begin_inset Formula $|f^{(n)}(x)|\leqslant M$
+\end_inset
+
+.
+ 证明: 对任意
+\begin_inset Formula $x,x_{0}\in(a,b)$
+\end_inset
+
+而言, 都有
+\begin_inset Formula 
+\[
+f(x)=\sum_{n=0}^{\infty}\frac{f^{(n)}(x_{0})}{n!}(x-x_{0})^{n},
+\]
+
+\end_inset
+
+其中
+\begin_inset Formula $f^{(0)}(x)=f(x)$
+\end_inset
+
+且
+\begin_inset Formula $0!=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Exercise
+利用已知函数的幂级数展开式, 求下列函数在
+\begin_inset Formula $x=0$
+\end_inset
+
+处的幂级数展开式, 并确定展开式收敛于该函数的区间:
+\begin_inset Formula 
+\begin{align*}
+(2) & \frac{x^{10}}{1-x}; & (4) & \sin^{2}x; & (6) & \frac{x}{1+x-2x^{2}}; & (8) & (1+x)e^{-x}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex HINTAsInset
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{align*}
+(2) & \sum_{n=0}^{\infty}x^{n+10},\quad x\in(-1,1);\\
+(4) & \sum_{n=1}^{\infty}(-1)^{n+1}\frac{2^{2n-1}x^{2n}}{(2n)!},\quad x\in[-1/2,1/2);\\
+(6) & \frac{1}{3}\sum_{n=0}^{\infty}(1-(-1)^{n}2^{n})x^{n},\quad x\in(-1/2,1/2);\\
+(8) & \sum_{n=0}^{\infty}\frac{(-1)^{n}(1-n)}{n!}x^{n},\quad x\in(-\infty,+\infty).
+\end{align*}
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
