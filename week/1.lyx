@@ -1239,18 +1239,19 @@ x^{2}\sin\frac{1}{x}, & x\neq0,\\
 \begin_layout Standard
 本节每道题开头的 ☆ 表示``尽量口述, 可辅以书写'', ★ 表示``尽量书写, 遇到较长的文字可辅以口述''.
  星的数量越多表示题目越难.
-\end_layout
-
-\begin_layout Standard
-直接承认第6页的定理1.1(确界原理)成立.
+ 这些标记仅供参考, 毕竟太主观啦.
 \end_layout
 
 \begin_layout Subsection
 极限
 \end_layout
 
+\begin_layout Standard
+直接承认第6页的定理1.1(确界原理)成立.
+\end_layout
+
 \begin_layout Enumerate
-第31页的定理2.8: 
+☆ 第31页的定理2.8: 
 \begin_inset Flex Color Box
 status collapsed
 
@@ -1272,7 +1273,7 @@ status collapsed
 \end_layout
 
 \begin_layout Enumerate
-第33页的定理2.9 (单调有界定理): 
+☆ 用确界原理证明第33页的定理2.9 (单调有界定理): 
 \begin_inset Flex Color Box
 status collapsed
 
@@ -1286,7 +1287,7 @@ status collapsed
 \end_layout
 
 \begin_layout Enumerate
-第34页的例3: 
+★ 第34页的例3: 
 \begin_inset Flex Color Box
 status collapsed
 
@@ -1322,7 +1323,7 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-任何数列都存在单调子列.
+☆☆ 任何数列都存在单调子列.
 \end_layout
 
 \begin_layout Color Box Separator
@@ -1330,7 +1331,7 @@ status collapsed
 \end_layout
 
 \begin_layout Plain Layout
-任何有界数列必定有收敛的子列.
+☆ 任何有界数列必定有收敛的子列.
 \end_layout
 
 \end_inset
@@ -1339,7 +1340,7 @@ status collapsed
 \end_layout
 
 \begin_layout Enumerate
-第36页的定理2.11 (柯西收敛准则): 
+☆ 第36页的定理2.11 (柯西收敛准则): 
 \begin_inset Flex Color Box
 status collapsed
 
@@ -1377,7 +1378,7 @@ status collapsed
 \end_layout
 
 \begin_layout Enumerate
-第50页的定理3.8 (归结原则): 
+☆ 第50页的定理3.8 (归结原则): 
 \begin_inset Flex Color Box
 status collapsed
 
@@ -1420,7 +1421,7 @@ status collapsed
 \end_layout
 
 \begin_layout Enumerate
-第51页的定理3.9对应
+★ 第51页的定理3.9对应
 \begin_inset Formula $x\rightarrow+\infty$
 \end_inset
 
@@ -1463,7 +1464,7 @@ status collapsed
 \end_layout
 
 \begin_layout Enumerate
-第52页的定理3.11 (柯西准则): 
+☆ 第52页的定理3.11 (柯西准则): 
 \begin_inset Flex Color Box
 status collapsed
 
@@ -1510,7 +1511,7 @@ status collapsed
 \end_layout
 
 \begin_layout Enumerate
-第51页的定理3.10 (单调有界定理): 
+☆ 第51页的定理3.10 (单调有界定理): 
 \begin_inset Flex Color Box
 status collapsed
 
@@ -1547,7 +1548,7 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-引理: 若
+☆ 引理: 若
 \begin_inset Formula $f$
 \end_inset
 
@@ -1571,7 +1572,7 @@ status collapsed
 \end_layout
 
 \begin_layout Plain Layout
-若
+★ 若
 \begin_inset Formula $f$
 \end_inset
 
@@ -1596,12 +1597,12 @@ status collapsed
 \end_layout
 
 \begin_layout Enumerate
-第72页的定理4.7 (介值定理): 
+用确界原理证明第72页的定理4.7 (介值定理): 
 \begin_inset Flex Color Box
 status collapsed
 
 \begin_layout Plain Layout
-闭区间
+★ 闭区间
 \begin_inset Formula $[a,b]$
 \end_inset
 
@@ -1629,7 +1630,7 @@ status collapsed
 \end_layout
 
 \begin_layout Plain Layout
-推论: 连续函数
+☆ 推论: 连续函数
 \begin_inset Formula $f:[a,b]\rightarrow[a,b]$
 \end_inset
 
@@ -1642,7 +1643,7 @@ status collapsed
 \end_layout
 
 \begin_layout Enumerate
-第73页的定理4.8: 
+☆ 第73页的定理4.8: 
 \begin_inset Flex Color Box
 status collapsed
 
@@ -1723,7 +1724,7 @@ status open
 
 \end_deeper
 \begin_layout Enumerate
-第75页的例10: 
+☆ 第75页的例10: 
 \begin_inset Flex Color Box
 status collapsed
 
@@ -1766,7 +1767,7 @@ status collapsed
 \end_layout
 
 \begin_layout Enumerate
-第76页的定理4.9 (一致连续性定理): 
+★ 第76页的定理4.9 (一致连续性定理): 
 \begin_inset Flex Color Box
 status collapsed
 
@@ -1796,7 +1797,7 @@ status collapsed
 \end_layout
 
 \begin_layout Enumerate
-第77页的例12: 
+☆ 第77页的例12: 
 \begin_inset Flex Color Box
 status collapsed
 
@@ -1845,7 +1846,7 @@ status collapsed
 
 \end_deeper
 \begin_layout Enumerate
-证明第93页的引理, 并用它证明定理5.8 (链式法则): 
+★ 证明第93页的引理, 并用它证明定理5.8 (链式法则): 
 \begin_inset Flex Color Box
 status collapsed
 
@@ -1894,7 +1895,7 @@ f(x)-f(x_{0})=H(x)\cdot(x-x_{0}).
 \end_layout
 
 \begin_layout Enumerate
-叙述导数与微分的定义, 并且证明第104页的定理5.9: 
+★ 叙述导数与微分的定义, 并且证明第104页的定理5.9: 
 \begin_inset Flex Color Box
 status collapsed
 
@@ -1929,7 +1930,7 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-若
+☆ 若
 \begin_inset Formula $f'_{+}(x_{0})>0$
 \end_inset
 
@@ -1961,11 +1962,7 @@ height "1pt"
 \end_layout
 
 \begin_layout Plain Layout
-
-\color violet
-(口述)
-\color inherit
- 设函数
+☆ 设函数
 \begin_inset Formula $f$
 \end_inset
 
@@ -2006,7 +2003,7 @@ height "1pt"
 \end_layout
 
 \begin_layout Plain Layout
-设
+★★ 设
 \begin_inset Formula $f$
 \end_inset
 
@@ -2119,7 +2116,7 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-设函数
+★ 设函数
 \begin_inset Formula $f$
 \end_inset
 
@@ -2183,11 +2180,7 @@ height "1pt"
 \end_layout
 
 \begin_layout Plain Layout
-
-\color violet
-(口述)
-\color inherit
- 设函数
+☆ 设函数
 \begin_inset Formula $f$
 \end_inset
 
@@ -2228,11 +2221,7 @@ height "1pt"
 \end_layout
 
 \begin_layout Plain Layout
-
-\color violet
-(口述)
-\color inherit
- 设
+☆ 设
 \begin_inset Formula $f$
 \end_inset
 
@@ -2281,11 +2270,7 @@ height "1pt"
 \end_layout
 
 \begin_layout Plain Layout
-
-\color violet
-(口述)
-\color inherit
- (导数极限定理) 设函数
+☆ (导数极限定理) 设函数
 \begin_inset Formula $f$
 \end_inset
 
@@ -2334,11 +2319,7 @@ height "1pt"
 \end_layout
 
 \begin_layout Plain Layout
-
-\color violet
-(口述)
-\color inherit
- 设
+☆ 设
 \begin_inset Formula $f$
 \end_inset
 
@@ -2379,7 +2360,7 @@ height "1pt"
 \end_layout
 
 \begin_layout Plain Layout
-设
+★ 设
 \begin_inset Formula $f$
 \end_inset
 
@@ -2438,7 +2419,7 @@ height "1pt"
 status collapsed
 
 \begin_layout Plain Layout
-设函数
+★ 设函数
 \begin_inset Formula $f$
 \end_inset
 
@@ -2514,7 +2495,7 @@ height "1pt"
 \end_layout
 
 \begin_layout Plain Layout
-设函数
+★ 设函数
 \begin_inset Formula $f$
 \end_inset
 
@@ -2582,7 +2563,7 @@ height "1pt"
 \end_layout
 
 \begin_layout Plain Layout
-设函数
+★★★ 设函数
 \begin_inset Formula $f$
 \end_inset
 
@@ -2648,7 +2629,7 @@ height "1pt"
 status collapsed
 
 \begin_layout Plain Layout
-设
+★ 设
 \begin_inset Formula $f$
 \end_inset
 
@@ -2693,7 +2674,7 @@ height "1pt"
 \end_layout
 
 \begin_layout Plain Layout
-设
+★★ 设
 \begin_inset Formula $f$
 \end_inset
 
@@ -2750,7 +2731,7 @@ height "1pt"
 \end_layout
 
 \begin_layout Plain Layout
-设
+★★★ 设
 \begin_inset Formula $f$
 \end_inset
 
@@ -2801,7 +2782,7 @@ f(x)=f(x_{0})+\frac{f'(x_{0})}{1!}(x-x_{0})+\cdots+\frac{f^{(n)}(x_{0})}{n!}(x-x
 status collapsed
 
 \begin_layout Plain Layout
-设函数
+★ 设函数
 \begin_inset Formula $f:U(x_{0})\rightarrow\mathbb{R}$
 \end_inset
 
@@ -2868,6 +2849,7 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
+★ 
 \begin_inset Formula $f$
 \end_inset
 
@@ -2907,7 +2889,7 @@ height "1pt"
 \end_layout
 
 \begin_layout Plain Layout
-设
+★ 设
 \begin_inset Formula $f$
 \end_inset
 
@@ -2976,7 +2958,7 @@ height "1pt"
 \end_layout
 
 \begin_layout Plain Layout
-设
+☆ 设
 \begin_inset Formula $f$
 \end_inset
 
@@ -3017,7 +2999,7 @@ height "1pt"
 \end_layout
 
 \begin_layout Plain Layout
-设
+★★ 设
 \begin_inset Formula $f$
 \end_inset
 
@@ -3052,7 +3034,7 @@ height "1pt"
 status collapsed
 
 \begin_layout Plain Layout
-若
+★★ 若
 \begin_inset Formula $f$
 \end_inset
 
@@ -3099,7 +3081,7 @@ f\left(\sum_{i=1}^{n}\lambda_{i}x_{i}\right)\leqslant\sum_{i=1}^{n}\lambda_{i}f(
 
 \end_deeper
 \begin_layout Enumerate
-用数列极限的单调有界定理证明第150页的定理7.1 (区间套定理): 
+☆ 用数列极限的单调有界定理证明第150页的定理7.1 (区间套定理): 
 \begin_inset Flex Color Box
 status collapsed
 
@@ -3129,7 +3111,7 @@ status collapsed
 \end_layout
 
 \begin_layout Enumerate
-用区间套定理证明第153页的定理7.3 (有限覆盖定理): 
+☆ 用区间套定理证明第153页的定理7.3 (有限覆盖定理): 
 \begin_inset Flex Color Box
 status collapsed
 
@@ -3159,7 +3141,7 @@ status collapsed
 \end_layout
 
 \begin_layout Enumerate
-用有限覆盖定理证明第152页的定理7.2 (聚点定理): 
+☆ 用有限覆盖定理证明第152页的定理7.2 (聚点定理): 
 \begin_inset Flex Color Box
 status collapsed
 
@@ -3177,7 +3159,7 @@ status collapsed
 \end_layout
 
 \begin_layout Enumerate
-用聚点定理证明第36页的定理2.11 (柯西收敛准则): 
+☆ 用聚点定理证明第36页的定理2.11 (柯西收敛准则): 
 \begin_inset Flex Color Box
 status collapsed
 
@@ -3215,7 +3197,7 @@ status collapsed
 \end_layout
 
 \begin_layout Enumerate
-用柯西收敛准则证明第6页的定理1.1 (确界原理): 
+★★ 用柯西收敛准则证明第6页的定理1.1 (确界原理): 
 \begin_inset Flex Color Box
 status collapsed
 
@@ -3250,7 +3232,7 @@ status collapsed
 \end_layout
 
 \begin_layout Enumerate
-分别用区间套定理和有限覆盖定理证明第72页的连续函数根的存在性定理: 
+☆ 分别用区间套定理和有限覆盖定理证明第72页的连续函数根的存在性定理: 
 \begin_inset Flex Color Box
 status collapsed
 
@@ -3284,7 +3266,7 @@ status collapsed
 \end_layout
 
 \begin_layout Enumerate
-用有限覆盖定理证明第76页的定理4.9 (连续函数的一致连续性定理): 
+☆ 用有限覆盖定理证明第76页的定理4.9 (连续函数的一致连续性定理): 
 \begin_inset Flex Color Box
 status collapsed
 
@@ -3314,7 +3296,7 @@ status collapsed
 \end_layout
 
 \begin_layout Enumerate
-第156页的定理7.4: 
+☆ 第156页的定理7.4: 
 \begin_inset Flex Color Box
 status collapsed
 
@@ -3338,7 +3320,7 @@ status collapsed
 
 \end_deeper
 \begin_layout Enumerate
-叙述定积分(黎曼积分)的定义, 并且证明第193页的定理9.2: 
+★ 叙述定积分(黎曼积分)的定义, 并且证明第193页的定理9.2: 
 \begin_inset Flex Color Box
 status collapsed
 
@@ -3368,7 +3350,7 @@ status collapsed
 \end_layout
 
 \begin_layout Enumerate
-叙述积分和、上和
+☆☆ 叙述积分和、上和
 \begin_inset Formula $S(T)$
 \end_inset
 
@@ -3577,6 +3559,7 @@ height "1pt"
 status collapsed
 
 \begin_layout Plain Layout
+★ 
 \begin_inset Formula $f$
 \end_inset
 
@@ -3612,6 +3595,7 @@ height "1pt"
 \end_layout
 
 \begin_layout Plain Layout
+☆ 
 \begin_inset Formula $f$
 \end_inset
 
@@ -3651,7 +3635,7 @@ height "1pt"
 \end_layout
 
 \begin_layout Plain Layout
-设
+★★ 设
 \begin_inset Formula $f$
 \end_inset
 
@@ -3705,7 +3689,7 @@ height "1pt"
 \end_layout
 
 \begin_layout Enumerate
-第194页的定理9.4: 
+★ 第194页的定理9.4: 
 \begin_inset Flex Color Box
 status collapsed
 
@@ -3735,7 +3719,7 @@ status collapsed
 \end_layout
 
 \begin_layout Enumerate
-第195页的定理9.5: 
+★ 第195页的定理9.5: 
 \begin_inset Flex Color Box
 status collapsed
 
@@ -3765,7 +3749,7 @@ status collapsed
 \end_layout
 
 \begin_layout Enumerate
-第195页的定理9.6: 
+★ 第195页的定理9.6: 
 \begin_inset Flex Color Box
 status collapsed
 
@@ -3801,7 +3785,7 @@ status collapsed
 
 \end_deeper
 \begin_layout Enumerate
-第203页的定理9.8 (积分第一中值定理): 
+★ 第203页的定理9.8 (积分第一中值定理): 
 \begin_inset Flex Color Box
 status collapsed
 
@@ -3847,7 +3831,7 @@ status collapsed
 \end_layout
 
 \begin_layout Enumerate
-第205页的定理9.9: 
+☆ 第205页的定理9.9: 
 \begin_inset Flex Color Box
 status collapsed
 
@@ -3881,7 +3865,7 @@ status collapsed
 \end_layout
 
 \begin_layout Enumerate
-第206页的定理9.10 (原函数存在定理): 
+☆ 第206页的定理9.10 (原函数存在定理): 
 \begin_inset Flex Color Box
 status collapsed
 
@@ -3919,7 +3903,7 @@ status collapsed
 \end_layout
 
 \begin_layout Enumerate
-第190页的定理9.1 (牛顿-莱布尼茨公式): 
+☆ 第190页的定理9.1 (牛顿-莱布尼茨公式): 
 \begin_inset Flex Color Box
 status collapsed
 
@@ -3953,7 +3937,7 @@ status collapsed
 \end_layout
 
 \begin_layout Enumerate
-第212页的泰勒公式: 
+★ 第212页的泰勒公式: 
 \begin_inset Flex Color Box
 status collapsed
 
@@ -3999,7 +3983,7 @@ R_{n}(x)=\frac{1}{n!}\int_{a}^{x}f^{(n+1)}(t)\cdot(x-t)^{n}\mathistOperatord t.
 \end_layout
 
 \begin_layout Enumerate
-第214页的第16题(积分第二中值定理): 
+★ 第214页的第16题(积分第二中值定理): 
 \begin_inset Flex Color Box
 status collapsed
 
@@ -4054,7 +4038,7 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-设
+★★★ 设
 \begin_inset Formula $f$
 \end_inset
 
@@ -4126,7 +4110,7 @@ height "1pt"
 \end_layout
 
 \begin_layout Plain Layout
-推论: 设
+★ 推论: 设
 \begin_inset Formula $f$
 \end_inset
 
@@ -4171,7 +4155,7 @@ height "1pt"
 status collapsed
 
 \begin_layout Plain Layout
-设
+★ 设
 \begin_inset Formula $F(u)=\int_{a}^{u}f(x)\mathistOperatord x$
 \end_inset
 
@@ -4212,7 +4196,7 @@ height "1pt"
 \end_layout
 
 \begin_layout Plain Layout
-设
+☆ 设
 \begin_inset Formula $a$
 \end_inset
 
@@ -4259,7 +4243,7 @@ height "1pt"
 status collapsed
 
 \begin_layout Plain Layout
-设无穷积分
+★ 设无穷积分
 \begin_inset Formula $\int_{a}^{+\infty}f(x)\mathistOperatord x$
 \end_inset
 
@@ -4292,7 +4276,7 @@ height "1pt"
 \end_layout
 
 \begin_layout Plain Layout
-设
+☆ 设
 \begin_inset Formula $a$
 \end_inset
 
@@ -4336,7 +4320,404 @@ height "1pt"
 
 \end_deeper
 \begin_layout Enumerate
-第17页的定理12.11 (莱布尼茨判别法): 
+第3页至第7页的基本性质: 
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+☆ (柯西准则) 
+\begin_inset Formula $\sum u_{n}$
+\end_inset
+
+收敛的充要条件是: 任给
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 总存在
+\begin_inset Formula $N>0$
+\end_inset
+
+, 使得当
+\begin_inset Formula $m>N$
+\end_inset
+
+时, 对任意正整数
+\begin_inset Formula $p$
+\end_inset
+
+都有
+\begin_inset Formula $|u_{m+1}+\cdots+u_{m+p}|<\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+☆ 设
+\begin_inset Formula $\sum u_{n}$
+\end_inset
+
+与
+\begin_inset Formula $\sum v_{n}$
+\end_inset
+
+都收敛.
+ 那么对任意常数
+\begin_inset Formula $c,d$
+\end_inset
+
+而言, 级数
+\begin_inset Formula $\sum(cu_{n}+dv_{n})$
+\end_inset
+
+必定收敛, 且有
+\begin_inset Formula 
+\[
+\sum(cu_{n}+dv_{n})=c\sum u_{n}+d\sum v_{n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+☆ 去掉、增加或改变级数的有限个项并不改变级数的敛散性.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+★ 在收敛级数的项中任意加括号, 既不改变级数的敛散性, 也不改变它的和.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+☆ 正项级数
+\begin_inset Formula $\sum u_{n}$
+\end_inset
+
+收敛的充要条件是它的部分和数列有界.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+☆ (比较原则) 设
+\begin_inset Formula $\sum u_{n}$
+\end_inset
+
+与
+\begin_inset Formula $\sum v_{n}$
+\end_inset
+
+是两个正项级数.
+ 如果存在
+\begin_inset Formula $N>0$
+\end_inset
+
+, 使得当
+\begin_inset Formula $n>N$
+\end_inset
+
+时恒有
+\begin_inset Formula $u_{n}\leqslant v_{n}$
+\end_inset
+
+, 那么
+\end_layout
+
+\begin_layout Plain Layout
+(i) 若
+\begin_inset Formula $\sum v_{n}$
+\end_inset
+
+收敛, 则
+\begin_inset Formula $\sum u_{n}$
+\end_inset
+
+也收敛;
+\end_layout
+
+\begin_layout Plain Layout
+(ii) 若
+\begin_inset Formula $\sum u_{n}$
+\end_inset
+
+发散, 则
+\begin_inset Formula $\sum v_{n}$
+\end_inset
+
+也发散.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+☆ 设
+\begin_inset Formula $\sum u_{n}$
+\end_inset
+
+与
+\begin_inset Formula $\sum v_{n}$
+\end_inset
+
+是两个正项级数.
+ 如果
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}\frac{u_{n}}{v_{n}}=l,
+\]
+
+\end_inset
+
+那么
+\end_layout
+
+\begin_layout Plain Layout
+(i) 当
+\begin_inset Formula $0<l<+\infty$
+\end_inset
+
+时, 
+\begin_inset Formula $\sum u_{n}$
+\end_inset
+
+与
+\begin_inset Formula $\sum v_{n}$
+\end_inset
+
+同时收敛或同时发散;
+\end_layout
+
+\begin_layout Plain Layout
+(ii) 当
+\begin_inset Formula $l=0$
+\end_inset
+
+且
+\begin_inset Formula $\sum v_{n}$
+\end_inset
+
+收敛时, 
+\begin_inset Formula $\sum u_{n}$
+\end_inset
+
+也收敛;
+\end_layout
+
+\begin_layout Plain Layout
+(iii) 当
+\begin_inset Formula $l=+\infty$
+\end_inset
+
+且
+\begin_inset Formula $\sum v_{n}$
+\end_inset
+
+发散时, 
+\begin_inset Formula $\sum u_{n}$
+\end_inset
+
+也发散.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+★ 第8页的定理12.7 (比式判别法): 
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+设
+\begin_inset Formula $\sum u_{n}$
+\end_inset
+
+是正项级数.
+\end_layout
+
+\begin_layout Plain Layout
+(i) 若存在
+\begin_inset Formula $N>0$
+\end_inset
+
+与
+\begin_inset Formula $q\in(0,1)$
+\end_inset
+
+, 使得当
+\begin_inset Formula $n>N$
+\end_inset
+
+时恒有
+\begin_inset Formula $u_{n+1}/u_{n}\leqslant q$
+\end_inset
+
+, 则
+\begin_inset Formula $\sum u_{n}$
+\end_inset
+
+收敛.
+\end_layout
+
+\begin_layout Plain Layout
+(ii) 若存在
+\begin_inset Formula $N>0$
+\end_inset
+
+, 使得当
+\begin_inset Formula $n>N$
+\end_inset
+
+时恒有
+\begin_inset Formula $u_{n+1}/u_{n}\geqslant1$
+\end_inset
+
+, 则
+\begin_inset Formula $\sum u_{n}$
+\end_inset
+
+发散.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+★ 第11页的推论2 (柯西判别法): 
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+设
+\begin_inset Formula $\sum u_{n}$
+\end_inset
+
+是正项级数, 且
+\begin_inset Formula $\varlimsup_{n\rightarrow\infty}\sqrt[n]{u_{n}}=l$
+\end_inset
+
+.
+ 那么当
+\begin_inset Formula $l<1$
+\end_inset
+
+时级数收敛, 当
+\begin_inset Formula $l>1$
+\end_inset
+
+时级数发散.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+★ 第13页的定理12.9 (积分判别法): 
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+设
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[1,+\infty)$
+\end_inset
+
+上单调递减.
+ 那么级数
+\begin_inset Formula $\sum_{n=1}^{\infty}f(n)$
+\end_inset
+
+收敛的充要条件是无穷积分
+\begin_inset Formula $\int_{1}^{+\infty}f(x)\mathistOperatord x$
+\end_inset
+
+收敛.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+★ 第17页的定理12.11 (莱布尼茨判别法): 
 \begin_inset Flex Color Box
 status collapsed
 
@@ -4359,7 +4740,7 @@ status collapsed
 \end_layout
 
 \begin_layout Enumerate
-叙述级数
+★★ 叙述级数
 \series bold
 重排
 \series default
@@ -4402,7 +4783,7 @@ status collapsed
 \end_layout
 
 \begin_layout Enumerate
-第20页的定理12.14 (柯西定理): 
+★★ 第20页的定理12.14 (柯西定理): 
 \begin_inset Flex Color Box
 status collapsed
 
@@ -5334,6 +5715,329 @@ height "1pt"
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Subsection
+幂级数
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+★ 第41页的定理14.1 (阿贝尔定理): 
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+(1) 若幂级数
+\begin_inset Formula $\sum a_{n}x^{n}$
+\end_inset
+
+在
+\begin_inset Formula $x=x_{0}\neq0$
+\end_inset
+
+处收敛, 则当
+\begin_inset Formula $|x|<|x_{0}|$
+\end_inset
+
+时数项级数
+\begin_inset Formula $\sum a_{n}x^{n}$
+\end_inset
+
+收敛且绝对收敛;
+\end_layout
+
+\begin_layout Plain Layout
+(2) 若幂级数
+\begin_inset Formula $\sum a_{n}x^{n}$
+\end_inset
+
+在
+\begin_inset Formula $x=x_{0}$
+\end_inset
+
+处发散, 则当
+\begin_inset Formula $|x|>|x_{0}|$
+\end_inset
+
+时数项级数
+\begin_inset Formula $\sum a_{n}x^{n}$
+\end_inset
+
+发散.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+☆ 第43页的定理14.3 (柯西-阿达马定理): 
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+记幂级数
+\begin_inset Formula $\sum a_{n}x^{n}$
+\end_inset
+
+的收敛半径为
+\begin_inset Formula $R$
+\end_inset
+
+.
+ 令
+\begin_inset Formula 
+\[
+\rho=\varlimsup_{n\rightarrow\infty}\sqrt[n]{|a_{n}|}.
+\]
+
+\end_inset
+
+那么:
+\end_layout
+
+\begin_layout Plain Layout
+(i) 当
+\begin_inset Formula $\rho=0$
+\end_inset
+
+时, 
+\begin_inset Formula $R=+\infty$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Plain Layout
+(ii) 当
+\begin_inset Formula $0<\rho<+\infty$
+\end_inset
+
+时, 
+\begin_inset Formula $R=1/\rho$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Plain Layout
+(iii) 当
+\begin_inset Formula $\rho=+\infty$
+\end_inset
+
+时, 
+\begin_inset Formula $R=0$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+第44页的定理14.4与定理14.5及其推论: 
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+☆ 幂级数在其收敛区间上内闭一致收敛.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+★ 幂级数在其收敛域上内闭一致收敛.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+☆ 幂级数在其收敛域上连续.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+第45页的定理14.7与定理14.8: 
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+★★ 幂级数
+\begin_inset Formula 
+\[
+\sum_{n=0}^{\infty}a_{n}x^{n},\quad\sum_{n=1}^{\infty}na_{n}x^{n-1},\quad\sum_{n=0}^{\infty}\frac{a_{n}}{n+1}x^{n+1}
+\]
+
+\end_inset
+
+具有相同的收敛区间.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+☆ 设幂级数
+\begin_inset Formula $\sum_{n=0}^{\infty}a_{n}x^{n}$
+\end_inset
+
+在收敛区间
+\begin_inset Formula $(-R,R)$
+\end_inset
+
+上的和函数为
+\begin_inset Formula $f$
+\end_inset
+
+, 而
+\begin_inset Formula $x\in(-R,R)$
+\end_inset
+
+.
+ 那么
+\end_layout
+
+\begin_layout Plain Layout
+(i) 
+\begin_inset Formula $f$
+\end_inset
+
+在点
+\begin_inset Formula $x$
+\end_inset
+
+可导, 且有
+\begin_inset Formula 
+\[
+f'(x)=\sum_{n=1}^{\infty}na_{n}x^{n-1};
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(ii) 
+\begin_inset Formula $f$
+\end_inset
+
+在以
+\begin_inset Formula $0$
+\end_inset
+
+和
+\begin_inset Formula $x$
+\end_inset
+
+为端点的区间上可积, 且有
+\begin_inset Formula 
+\[
+\int_{0}^{x}f(t)\mathistOperatord t=\sum_{n=0}^{\infty}\frac{a_{n}}{n+1}x^{n+1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+☆ 第50页的定理14.11: 
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+设
+\begin_inset Formula $f$
+\end_inset
+
+在点
+\begin_inset Formula $x_{0}$
+\end_inset
+
+具有任意阶导数.
+ 那么
+\begin_inset Formula $f$
+\end_inset
+
+在区间
+\begin_inset Formula $(x_{0}-r,x_{0}+r)$
+\end_inset
+
+上等于它的泰勒级数的和函数的充要条件是: 当
+\begin_inset Formula $|x-x_{0}|<r$
+\end_inset
+
+时, 总有
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}R_{n}(x)=0,
+\]
+
+\end_inset
+
+其中
+\begin_inset Formula $R_{n}(x)$
+\end_inset
+
+是
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $x_{0}$
+\end_inset
+
+处的泰勒公式余项.
 \end_layout
 
 \end_inset

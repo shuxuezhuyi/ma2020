@@ -8446,7 +8446,7 @@ status open
 \end_layout
 
 \begin_layout Theorem
-幂级数在收敛域上一致收敛.
+幂级数在收敛域上内闭一致收敛.
 \end_layout
 
 \begin_layout Standard
