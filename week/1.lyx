@@ -38,6 +38,13 @@ number = \chinese{section},}
 % 允许彩色文本框跨页
 \tcbuselibrary{skins, breakable}
 \tcbset{skin = enhanced, breakable, colback = white, colframe = cyan}
+
+% 增加可用符号
+\usepackage{newunicodechar}
+% 用于 ☆ ★ 的字体
+\usepackage{bbding}
+\newunicodechar{☆}{\FiveStarOpen}
+\newunicodechar{★}{\FiveStar}
 \end_preamble
 \options UTF8,oneside
 \use_default_options true
@@ -455,6 +462,62 @@ e^{x},\sin x,\cos x,\ln(1+x),(1+x)^{\alpha},\frac{1}{1-x}
 及其
 \series bold
 收敛
+\series default
+的定义.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+函数列
+\series default
+及其
+\series bold
+收敛
+\series default
+、
+\series bold
+一致收敛
+\series default
+、
+\series bold
+内闭一致收敛
+\series default
+、
+\series bold
+一致有界
+\series default
+的定义.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+函数项级数
+\series default
+及其
+\series bold
+收敛
+\series default
+、
+\series bold
+一致收敛
+\series default
+、
+\series bold
+内闭一致收敛
+\series default
+的定义.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+幂级数
+\series default
+及其
+\series bold
+收敛半径
 \series default
 的定义.
 \end_layout
@@ -1171,6 +1234,11 @@ x^{2}\sin\frac{1}{x}, & x\neq0,\\
 
 \begin_layout Section
 证明
+\end_layout
+
+\begin_layout Standard
+本节每道题开头的 ☆ 表示``尽量口述, 可辅以书写'', ★ 表示``尽量书写, 遇到较长的文字可辅以口述''.
+ 星的数量越多表示题目越难.
 \end_layout
 
 \begin_layout Standard
@@ -1980,11 +2048,7 @@ height "1pt"
 \end_layout
 
 \begin_layout Enumerate
-
-\color violet
-(口述)
-\color inherit
- 第111页的定理6.1 (罗尔中值定理): 
+☆ 第111页的定理6.1 (罗尔中值定理): 
 \begin_inset Flex Color Box
 status collapsed
 
@@ -4365,6 +4429,911 @@ status collapsed
 \end_inset
 
 .
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+★ 证明第21页的分部求和公式, 运用它证明第21页的阿贝尔引理, 进而证明第22页的定理12.15 (阿贝尔判别法)和定理12.16 (狄利克雷判别法):
+ 
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+(Abel变换) 设
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+, 
+\begin_inset Formula $\{b_{n}\}$
+\end_inset
+
+是两个数列.
+ 记
+\begin_inset Formula $B_{k}=\sum_{i=1}^{k}b_{i}$
+\end_inset
+
+.
+ 那么
+\begin_inset Formula 
+\[
+\sum_{k=1}^{p}a_{k}b_{k}=a_{p}B_{p}-\sum_{k=1}^{p-1}(a_{k+1}-a_{k})B_{k}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+(Abel引理) 设
+\begin_inset Formula $\{a_{k}\}$
+\end_inset
+
+是单调数列, 而
+\begin_inset Formula $\left\{ B_{k}=\sum_{i=1}^{k}b_{i}\right\} _{k=1}^{\infty}$
+\end_inset
+
+是有界数列, 亦即存在
+\begin_inset Formula $M>0$
+\end_inset
+
+使得对任意
+\begin_inset Formula $k$
+\end_inset
+
+都有
+\begin_inset Formula $|B_{k}|\leqslant M$
+\end_inset
+
+.
+ 那么
+\begin_inset Formula 
+\[
+\left|\sum_{k=1}^{p}a_{k}b_{k}\right|\leqslant M(|a_{1}|+2|a_{p}|).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+若下列两个条件之一满足, 则级数
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}b_{n}$
+\end_inset
+
+收敛:
+\end_layout
+
+\begin_layout Plain Layout
+(1) (Abel判别法) 
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+单调有界, 
+\begin_inset Formula $\sum b_{n}$
+\end_inset
+
+收敛;
+\end_layout
+
+\begin_layout Plain Layout
+(2) (Dirichlet判别法) 
+\begin_inset Formula $\{a_{n}\}$
+\end_inset
+
+单调趋于零, 
+\begin_inset Formula $\left\{ \sum_{i=1}^{k}b_{i}\right\} _{k=1}^{\infty}$
+\end_inset
+
+有界.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Subsection
+函数列与函数项级数
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+☆ 第27页的定理13.1 (柯西准则): 
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+函数列
+\begin_inset Formula $\{f_{n}\}$
+\end_inset
+
+在数集
+\begin_inset Formula $D$
+\end_inset
+
+上一致收敛的充要条件是, 任给
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 总存在
+\begin_inset Formula $N>0$
+\end_inset
+
+, 使得当
+\begin_inset Formula $n,m>N$
+\end_inset
+
+是, 对任意
+\begin_inset Formula $x\in D$
+\end_inset
+
+都有
+\begin_inset Formula $|f_{n}(x)-f_{m}(x)|<\varepsilon.$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+☆ 第28页的定理13.2: 
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+函数列
+\begin_inset Formula $\{f_{n}\}$
+\end_inset
+
+在数集
+\begin_inset Formula $D$
+\end_inset
+
+上一致收敛到
+\begin_inset Formula $f$
+\end_inset
+
+的充要条件是
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}\sup_{x\in D}|f_{n}(x)-f(x)|=0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+函数列
+\begin_inset Formula $\{f_{n}\}$
+\end_inset
+
+在
+\begin_inset Formula $D$
+\end_inset
+
+上不一致收敛到
+\begin_inset Formula $f$
+\end_inset
+
+的充要条件是: 存在数列
+\begin_inset Formula $\{x_{n}\}\subset D$
+\end_inset
+
+, 使得数列
+\begin_inset Formula $\{f_{n}(x_{n})-f(x_{n})\}$
+\end_inset
+
+不收敛到零.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+☆ 第30页的定理13.3 (柯西准则): 
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+函数项级数
+\begin_inset Formula $\sum u_{n}(x)$
+\end_inset
+
+在数集
+\begin_inset Formula $D$
+\end_inset
+
+上一致收敛的充要条件是: 任给
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 总存在
+\begin_inset Formula $N>0$
+\end_inset
+
+, 使得当
+\begin_inset Formula $n>N$
+\end_inset
+
+时, 对任意
+\begin_inset Formula $x\in D$
+\end_inset
+
+与任意正整数
+\begin_inset Formula $p$
+\end_inset
+
+, 都有
+\begin_inset Formula 
+\[
+\left|\sum_{i=1}^{p}u_{n+i}\right|<\varepsilon.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+函数项级数
+\begin_inset Formula $\sum u_{n}(x)$
+\end_inset
+
+在
+\begin_inset Formula $D$
+\end_inset
+
+上一致收敛的必要条件是函数列
+\begin_inset Formula $\{u_{n}(x)\}$
+\end_inset
+
+在
+\begin_inset Formula $D$
+\end_inset
+
+上一致收敛到零.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+☆ 第31页的定理13.5 (
+\begin_inset Formula $M$
+\end_inset
+
+判别法): 
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+设正项级数
+\begin_inset Formula $\sum M_{n}$
+\end_inset
+
+收敛, 并且对任意
+\begin_inset Formula $x\in D$
+\end_inset
+
+与任意正整数
+\begin_inset Formula $n$
+\end_inset
+
+都有
+\begin_inset Formula $|u_{n}(x)|\leqslant M_{n}$
+\end_inset
+
+.
+ 那么函数项级数
+\begin_inset Formula $\sum u_{n}(x)$
+\end_inset
+
+在
+\begin_inset Formula $D$
+\end_inset
+
+上一致收敛.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+★ 第31页的定理13.6 (阿贝尔判别法): 
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+设
+\end_layout
+
+\begin_layout Plain Layout
+(i) 
+\begin_inset Formula $\sum u_{n}(x)$
+\end_inset
+
+在
+\begin_inset Formula $D$
+\end_inset
+
+上一致收敛;
+\end_layout
+
+\begin_layout Plain Layout
+(ii) 对每个
+\begin_inset Formula $x\in D$
+\end_inset
+
+而言, 数列
+\begin_inset Formula $\{v_{n}(x)\}$
+\end_inset
+
+单调;
+\end_layout
+
+\begin_layout Plain Layout
+(iii) 
+\begin_inset Formula $\{v_{n}(x)\}$
+\end_inset
+
+在
+\begin_inset Formula $D$
+\end_inset
+
+上一致有界.
+\end_layout
+
+\begin_layout Plain Layout
+那么
+\begin_inset Formula $\sum u_{n}(x)v_{n}(x)$
+\end_inset
+
+在
+\begin_inset Formula $D$
+\end_inset
+
+上一致收敛.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+★ 第32页的定理13.7 (狄利克雷判别法): 
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+设
+\end_layout
+
+\begin_layout Plain Layout
+(i) 
+\begin_inset Formula $\sum u_{n}(x)$
+\end_inset
+
+的部分和函数列
+\begin_inset Formula $\left\{ S_{n}(x)=\sum_{k=1}^{n}u_{k}(x)\right\} _{n=1}^{\infty}$
+\end_inset
+
+在
+\begin_inset Formula $D$
+\end_inset
+
+上一致有界;
+\end_layout
+
+\begin_layout Plain Layout
+(ii) 对每个
+\begin_inset Formula $x\in D$
+\end_inset
+
+而言, 数列
+\begin_inset Formula $\{v_{n}(x)\}$
+\end_inset
+
+单调;
+\end_layout
+
+\begin_layout Plain Layout
+(iii) 在
+\begin_inset Formula $D$
+\end_inset
+
+上
+\begin_inset Formula $v_{n}(x)\rightrightarrows0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+那么
+\begin_inset Formula $\sum u_{n}(x)v_{n}(x)$
+\end_inset
+
+在
+\begin_inset Formula $D$
+\end_inset
+
+上一致收敛.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+第34页的定理13.8: 
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+★ 设函数列
+\begin_inset Formula $\{f_{n}\}$
+\end_inset
+
+在
+\begin_inset Formula $(a,b)$
+\end_inset
+
+上一致收敛到
+\begin_inset Formula $f$
+\end_inset
+
+, 并且对每个
+\begin_inset Formula $n$
+\end_inset
+
+都有
+\begin_inset Formula $\lim_{x\rightarrow b^{-}}f_{n}(x)=c_{n}$
+\end_inset
+
+.
+ 那么
+\begin_inset Formula $\lim_{n\rightarrow\infty}c_{n}$
+\end_inset
+
+和
+\begin_inset Formula $\lim_{x\rightarrow b^{-}}f(x)$
+\end_inset
+
+均存在且相等.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+☆ 设
+\begin_inset Formula $\{f_{n}\}$
+\end_inset
+
+在区间
+\begin_inset Formula $I$
+\end_inset
+
+上内闭一致收敛到
+\begin_inset Formula $f$
+\end_inset
+
+, 并且每一项
+\begin_inset Formula $f_{n}$
+\end_inset
+
+都在
+\begin_inset Formula $I$
+\end_inset
+
+上连续.
+ 那么
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $I$
+\end_inset
+
+上也连续.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+☆ 设函数项级数
+\begin_inset Formula $\sum u_{n}(x)$
+\end_inset
+
+在区间
+\begin_inset Formula $I$
+\end_inset
+
+上内闭一致收敛到
+\begin_inset Formula $S(x)$
+\end_inset
+
+, 并且每一项
+\begin_inset Formula $u_{n}(x)$
+\end_inset
+
+都在
+\begin_inset Formula $I$
+\end_inset
+
+上连续.
+ 那么
+\begin_inset Formula $S(x)$
+\end_inset
+
+在
+\begin_inset Formula $I$
+\end_inset
+
+上也连续.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+第36页的定理13.10: 
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+★ 设函数列
+\begin_inset Formula $\{f_{n}\}$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上一致收敛, 并且每一项
+\begin_inset Formula $f_{n}$
+\end_inset
+
+都连续.
+ 那么
+\begin_inset Formula 
+\[
+\int_{a}^{b}\lim_{n\rightarrow\infty}f_{n}(x)\mathistOperatord x=\lim_{n\rightarrow\infty}\int_{a}^{b}f_{n}(x)\mathistOperatord x.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+☆ 设函数项级数
+\begin_inset Formula $\sum u_{n}(x)$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上一致收敛, 并且每一项
+\begin_inset Formula $u_{n}(x)$
+\end_inset
+
+都连续.
+ 那么
+\begin_inset Formula 
+\[
+\int_{a}^{b}\sum u_{n}(x)\mathistOperatord x=\sum\int_{a}^{b}u_{n}(x)\mathistOperatord x.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+第36页的定理13.11: 
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+★ 设
+\begin_inset Formula $\{f_{n}\}$
+\end_inset
+
+是定义在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上的函数列, 每一项
+\begin_inset Formula $f_{n}$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上都有连续的导函数, 并且
+\begin_inset Formula $\{f_{n}'\}$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上一致收敛.
+ 又设, 存在
+\begin_inset Formula $x_{0}\in[a,b]$
+\end_inset
+
+, 使得数列
+\begin_inset Formula $\{f_{n}(x_{0})\}$
+\end_inset
+
+收敛.
+ 那么:
+\end_layout
+
+\begin_layout Plain Layout
+(1) 
+\begin_inset Formula $\{f_{n}\}$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上一致收敛;
+\end_layout
+
+\begin_layout Plain Layout
+(2) 在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上有
+\begin_inset Formula 
+\[
+\frac{\mathistOperatord}{\mathistOperatord x}\left(\lim_{n\rightarrow\infty}f_{n}(x)\right)=\lim_{n\rightarrow\infty}\frac{\mathistOperatord}{\mathistOperatord x}f_{n}(x).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+☆ 设
+\begin_inset Formula $\{f_{n}\}$
+\end_inset
+
+在区间
+\begin_inset Formula $I$
+\end_inset
+
+上收敛到
+\begin_inset Formula $f$
+\end_inset
+
+, 并且
+\begin_inset Formula $\{f_{n}'\}$
+\end_inset
+
+在
+\begin_inset Formula $I$
+\end_inset
+
+上内闭一致收敛.
+ 那么
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $I$
+\end_inset
+
+上可导, 并且
+\begin_inset Formula $f'=\lim_{n\rightarrow\infty}f_{n}'$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+☆ 设函数项级数
+\begin_inset Formula $\sum u_{n}(x)$
+\end_inset
+
+定义在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上, 每一项
+\begin_inset Formula $u_{n}(x)$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上都有连续的导函数, 并且
+\begin_inset Formula $\sum u_{n}'(x)$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上一致收敛.
+ 又设, 存在
+\begin_inset Formula $x_{0}\in[a,b]$
+\end_inset
+
+, 使得数项级数
+\begin_inset Formula $\sum u_{n}(x_{0})$
+\end_inset
+
+收敛.
+ 那么:
+\end_layout
+
+\begin_layout Plain Layout
+(1) 
+\begin_inset Formula $\sum u_{n}(x)$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上一致收敛;
+\end_layout
+
+\begin_layout Plain Layout
+(2) 在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上有
+\begin_inset Formula 
+\[
+\frac{\mathistOperatord}{\mathistOperatord x}\left(\sum u_{n}(x)\right)=\sum\frac{\mathistOperatord}{\mathistOperatord x}u_{n}(x).
+\]
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
