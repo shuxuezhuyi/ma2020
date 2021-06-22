@@ -13223,6 +13223,27 @@ g(x_{0})=f(x_{0}+0)=\lim_{x\rightarrow x_{0}^{+}}f(x).
 
 \begin_layout Enumerate
 设
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上不一致连续.
+ 那么
+\begin_inset Formula $f$
+\end_inset
+
+在任意
+\begin_inset Formula $[c,d]\subset[a,b]$
+\end_inset
+
+上都不一致连续.
+\end_layout
+
+\begin_layout Enumerate
+设
 \begin_inset Formula $f(x)$
 \end_inset
 
@@ -13244,6 +13265,39 @@ g(x_{0})=f(x_{0}+0)=\lim_{x\rightarrow x_{0}^{+}}f(x).
 \end_inset
 
 时, 
+\begin_inset Formula $|f(x_{1})-f(x_{2})|\geqslant\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+设
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上不一致连续.
+ 那么对任意
+\begin_inset Formula $\delta>0$
+\end_inset
+
+, 总存在
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 存在
+\begin_inset Formula $x_{1},x_{2}\in[a,b]$
+\end_inset
+
+, 使得
+\begin_inset Formula $|x_{1}-x_{2}|<\delta$
+\end_inset
+
+且
 \begin_inset Formula $|f(x_{1})-f(x_{2})|\geqslant\varepsilon$
 \end_inset
 
@@ -19582,6 +19636,63 @@ status open
 
 满足
 \begin_inset Formula $|a_{n+p}-a_{n}|>\varepsilon$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+设
+\begin_inset Formula $f$
+\end_inset
+
+是定义在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上的函数, 而
+\begin_inset Formula $J$
+\end_inset
+
+是一个实数.
+ 若对任给的
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+, 总存在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+的分割
+\begin_inset Formula $T$
+\end_inset
+
+, 使得对
+\begin_inset Formula $T$
+\end_inset
+
+上任意选取的标记点集
+\begin_inset Formula $\{\xi_{i}\}$
+\end_inset
+
+都有
+\begin_inset Formula 
+\[
+\left|\sum_{i=1}^{n}f(\xi)\Delta x_{i}-J\right|<\varepsilon,
+\]
+
+\end_inset
+
+则
+\begin_inset Formula $f$
+\end_inset
+
+在
+\begin_inset Formula $[a,b]$
+\end_inset
+
+上可积, 并且
+\begin_inset Formula $\int_{a}^{b}f(x)\mathistOperatord x=J$
 \end_inset
 
 .

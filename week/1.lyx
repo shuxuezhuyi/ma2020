@@ -1767,7 +1767,7 @@ status collapsed
 \end_layout
 
 \begin_layout Enumerate
-★ 第76页的定理4.9 (一致连续性定理): 
+★★ 第76页的定理4.9 (一致连续性定理): 
 \begin_inset Flex Color Box
 status collapsed
 
@@ -5897,7 +5897,7 @@ height "1pt"
 status collapsed
 
 \begin_layout Plain Layout
-★★ 幂级数
+★ 幂级数
 \begin_inset Formula 
 \[
 \sum_{n=0}^{\infty}a_{n}x^{n},\quad\sum_{n=1}^{\infty}na_{n}x^{n-1},\quad\sum_{n=0}^{\infty}\frac{a_{n}}{n+1}x^{n+1}
